@@ -1,8 +1,15 @@
 language: go
 
+services:
+  - postgresql
 go:
   - 1.7
   - master
+
+before_script:
+  - go get -v -t github.com/markbates/pop/soda
+  - soda create -e "test"
+  - soda migrate -e "test"
 
 script:
   - go test -v -race ./...
