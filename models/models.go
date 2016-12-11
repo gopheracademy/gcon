@@ -8,6 +8,7 @@ import (
 	"github.com/markbates/pop"
 )
 
+// DB is the global database connection for the package
 var DB *pop.Connection
 
 func init() {

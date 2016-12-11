@@ -8,6 +8,8 @@ import (
 	"github.com/markbates/buffalo/middleware"
 )
 
+// App is the default web handler for the application
+// Add Routes and middleware here
 func App() http.Handler {
 	a := buffalo.Automatic(buffalo.Options{
 		Env: "development",
