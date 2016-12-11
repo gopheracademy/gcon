@@ -1,0 +1,22 @@
+development:
+  dialect: postgres
+  database: gcon_development
+  user: postgres
+  password: postgres
+  host: 127.0.0.1
+  pool: 5
+
+test:
+  dialect: postgres
+  database: gcon_test
+  user: postgres
+  password: postgres
+  host: 127.0.0.1
+
+production:
+  dialect: postgres
+  database: gcon_production
+  user: postgres
+  password: postgres
+  host: 127.0.0.1
+  pool: 25
