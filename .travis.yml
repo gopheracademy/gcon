@@ -6,3 +6,7 @@ go:
 
 script:
   - go test -v -race ./...
+
+addons:
+  code_climate:
+    repo_token: 0c617dde8a5dc2e6870351abc96c4a689f147d0482bb795fe9e5c1e402c45a73
