@@ -13,6 +13,8 @@
 
 # Testing
 
-## Start Docker -- See above
+## Start Docker -- See above.  
+
+Tests REQUIRE a working database for now.
 
 	buffalo test
