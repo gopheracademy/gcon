@@ -3,9 +3,9 @@ package grifts
 import (
 	"os"
 
+	"github.com/gopheracademy/gcon/actions"
 	"github.com/markbates/buffalo"
 	. "github.com/markbates/grift/grift"
-	"github.com/gopheracademy/gcon/actions"
 	"github.com/olekukonko/tablewriter"
 )
 

@@ -3,10 +3,10 @@ package actions
 import (
 	"net/http"
 
+	"github.com/gopheracademy/gcon/models"
 	"github.com/markbates/buffalo"
 	"github.com/markbates/buffalo/middleware"
-	"github.com/gopheracademy/gcon/models"
-	)
+)
 
 func App() http.Handler {
 	a := buffalo.Automatic(buffalo.Options{
