@@ -2,16 +2,6 @@ package models
 
 import "encoding/json"
 
-/*
-Sponsor Name : Google
-Sponsor Website: https://www.google.com
-Sponsor Description : Google invented Go and is happy to sponsor Gophercon 2017
-Sponsor Contact Name: Steve Francia
-Sponsor Contact Phone: 555-1212
-Sponsor Contact Email : spf@golang.org
-Sponsor Logo Path(or URL?) : /assets/sponsors/platinum/google.png
-*/
-
 // Sponsor
 type Sponsor struct {
 	Name         string `json:"name" db:"name"`
