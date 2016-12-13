@@ -1,3 +1,254 @@
+/*
+ * GopherCon 2017 styles
+ *
+ * Navy: #40657c
+ * Blue: #4cc4ec
+ * Beige: #edead7
+ * Bark: #b3ad9f
+ * Orange: #f9b575
+ */
+html, body {
+  font-size: 10px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  margin: 0;
+  height: 100%;
+  color: #40657c;
+  background: #edead7; /* same as footer */
+
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
 body {
-  font-family: helvetica;
+  font-size: 1.8rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #4cc4ec;
+}
+
+img {
+  max-width: 100%;
+}
+
+input[type="text"] {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #aaa;
+  border-radius: 0.2rem;
+  font-size: 1.6rem;
+  outline: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 90%;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 3.2rem;
+  width: 6rem;
+  border-bottom: 4px solid #40657c;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #f9b575;
+  border-radius: 0.2rem;
+  background: #f9b575;
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/*
+ * Page Header
+ */
+.page-header {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 7rem;
+  background: rgba(73, 112, 136, 0.9);
+}
+
+.page-header-colorbar > div {
+  width: 20%;
+  height: 5px;
+  float: left;
+}
+.page-header-colorbar > div:nth-child(1) {
+  background: #40657c;
+}
+.page-header-colorbar > div:nth-child(2) {
+  background: #4cc4ec;
+}
+.page-header-colorbar > div:nth-child(3) {
+  background: #edead7;
+}
+.page-header-colorbar > div:nth-child(4) {
+  background: #b3ad9f;
+}
+.page-header-colorbar > div:nth-child(5) {
+  background: #f9b575;
+}
+
+.page-header-title {
+  float: left;
+  margin: 0;
+  line-height: 6.5rem;
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+.page-header-title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.page-header-navigation {
+  float: right;
+  text-align: right;
+}
+.page-header-navigation a {
+  display: inline-block;
+  line-height: 6.5rem;
+  margin-left: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border 200ms;
+}
+.page-header-navigation a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/*
+ * Page Content
+ */
+.page-content {
+  background: #fff;
+  padding: 7rem 0 3rem;
+}
+.page-content p {
+  max-width: 70rem;
+}
+
+/*
+ * Page Footer
+ */
+.page-footer {
+  background: #edead7;
+}
+.page-footer a {
+}
+.page-footer-copyinfo,
+.page-footer-navigation {
+  float: left;
+  width: 50%;
+  padding: 6rem 0;
+}
+.page-footer-copyinfo {
+  font-size: 1.4rem;
+}
+.page-footer-navigation {
+  text-align: right;
+  font-size: 1.6rem;
+}
+.page-footer-navigation a {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+/*
+ * Homepage Hero
+ */
+.homepage-hero {
+  position: relative;
+  height: 65rem;
+  overflow: hidden;
+}
+.homepage-hero-content,
+.homepage-hero-overlay,
+.homepage-hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.homepage-hero-background {
+  background-size: cover;
+  background-position: center;
+  background-image: url("/assets/images/homepage_background.jpg");
+}
+.homepage-hero-background video {
+  width: 100%;
+}
+.homepage-hero-overlay {
+  background: #40657c;
+  opacity: 0.9;
+}
+.homepage-hero-content {
+  text-align: center;
+  color: #fff;
+}
+.homepage-hero-content img {
+  width: 90%;
+  height: 90%;
+  max-height: 30rem;
+  max-width: 30rem;
+  margin: 3rem 0 3rem;
+}
+.homepage-hero-content p {
+  color: #f9b575;
+  font-size: 2.2rem;
+  margin: 0;
+  max-width: none;
+}
+.homepage-hero-content h2 {
+  font-weight: 300;
+  font-size: 4.2rem;
+}
+
+/*
+ * Homepage Call to Action
+ */
+.homepage-calltoaction {
+  /* uncomment once the boxes are not sticked to the footer */
+  /* border-bottom: 1px solid #ccc; */
+  /* delete following line once this element is not last */
+  margin-bottom: -3rem;
+}
+.homepage-calltoaction article {
+  float: left;
+  width: 50%;
+  height: 18rem;
+  padding: 4rem;
+}
+.homepage-calltoaction article:first-child {
+  border-right: 1px solid #ccc;
+  text-align: right;
+}
+.homepage-calltoaction article .btn {
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+.homepage-calltoaction article input[type="text"] {
+  width: 21rem;
+  line-height: 1.4;
 }

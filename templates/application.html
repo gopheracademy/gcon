@@ -1,13 +1,55 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Buffalo - gcon</title>
+  <title>GopherCon 2017</title>
   <link rel="stylesheet" href="/assets/application.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" type="text/css" />
 </head>
 <body>
-  {{ yield }}
+  <div class="page-header">
+    <div class="page-header-colorbar clearfix">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="container clearfix">
+      <h1 class="page-header-title">
+        <a href="/">GopherCon 2017</a>
+      </h1>
+      <div class="page-header-navigation">
+        <a href="#">Tickets</a>
+        <a href="#">Call for papers</a>
+      </div>
+    </div>
+  </div>
 
-	<script src="/assets/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script src="/assets/application.js" type="text/javascript" charset="utf-8"></script>
+  <div class="page-content">
+    {{ yield }}
+  </div>
+
+  <footer class="page-footer">
+    <div class="container clearfix">
+      <div class="page-footer-copyinfo">
+        © Copyright 2016 GopherAcademy, LLC.<br />
+        The Gopher character is based on the Go mascot designed by
+        <a href="http://reneefrench.blogspot.com/">Renee French</a>
+        and copyrighted under the
+        <a href="http://creativecommons.org/licenses/by/3.0/us/">
+          Creative Commons Attribution 3.0 license
+        </a>.
+      </div>
+      <div class="page-footer-navigation">
+        <a href="#">Code of Conduct</a>
+        <a href="#">Contact</a>
+        <a href="/about">About</a>
+        <a href="#">Sponsorship</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/application.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
