@@ -1,0 +1,10 @@
+create_table("events", func(t) {
+	t.Column("name", "string", {})
+	t.Column("short_description", "string", {})
+	t.Column("long_description", "text", {})
+	t.Column("date", "timestamp", {})
+	t.Column("start_time", "timestamp", {})
+	t.Column("end_time", "timestamp", {})
+	t.Column("location_id", "integer", {})
+	t.Column("google_maps_link", "text", {})
+})
