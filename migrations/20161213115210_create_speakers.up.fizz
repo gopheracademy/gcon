@@ -1,0 +1,11 @@
+create_table("speakers", func(t) {
+	t.Column("first_name", "string", {})
+	t.Column("last_name", "string", {})
+	t.Column("bio", "string", {})
+	t.Column("website", "string", {})
+	t.Column("twitter", "string", {})
+	t.Column("linkedin", "string", {})
+	t.Column("facebook", "text", {})
+	t.Column("contact_id", "integer", {})
+	t.Column("photo_url", "text", {})
+})

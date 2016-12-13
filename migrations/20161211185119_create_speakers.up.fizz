@@ -1,8 +1,0 @@
-create_table("speakers", func(t) {
-	t.Column("first_name", "string", {})
-	t.Column("last_name", "string", {})
-	t.Column("twitter", "text", {"null": true})
-	t.Column("linkedin", "text", {"null": true})
-	t.Column("facebook", "text", {"null": true})
-	t.Column("imagepath", "text", {"null": true})
-})
