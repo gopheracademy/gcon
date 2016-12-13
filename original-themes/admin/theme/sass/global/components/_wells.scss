@@ -1,0 +1,30 @@
+/***
+Custimized Bootstrap Wells
+***/
+
+.well {
+  border: 0;
+  padding: 20px;   
+
+  @if $theme-type == "default" {
+  		-webkit-box-shadow: none !important;
+     	-moz-box-shadow: none !important;
+          	box-shadow: none !important;  
+   }      
+}
+
+@if $theme-type == "material-design" {
+    .well {
+        @extend .md-shadow-z-1;  
+        @include border-radius($general-border-radius);
+    }
+}
+
+.well-lg {
+  padding: 40px;  
+}
+
+.well-sm {
+  padding: 10px;  
+}
+

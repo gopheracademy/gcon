@@ -1,0 +1,26 @@
+/***
+Dropzone css changes(new in v1.1.1)
+***/
+.dropzone {
+  -webkit-border-radius: 0px ;
+    -moz-border-radius: 0px ;
+         border-radius: 0px ;
+}
+
+.dropzone-file-area {
+	border: 2px dashed #028AF4;
+	background: white;  
+	padding: 20px;
+	margin: 0 auto;
+	text-align: center; 
+}
+
+.dz-hidden-input{ 
+	left :0; 
+}
+
+@media (max-width: $screen-sm-min) { /* 768px */
+	.dropzone-file-area {
+		width: auto;
+	}
+}

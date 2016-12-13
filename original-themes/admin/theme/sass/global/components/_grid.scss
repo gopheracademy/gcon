@@ -1,0 +1,226 @@
+//
+// Metronic Grid System
+//
+
+// Generate the extra small columns
+@mixin make-xs-column($columns) {
+    width: percentage(($columns / $m-grid-columns));
+}
+
+// Generate the small columns
+@mixin make-sm-column($columns) {
+    @media (min-width: map-get($m-layout-breakpoints, md) - 1) {
+        width: percentage(($columns / $m-grid-columns));
+    }
+}
+
+// Generate the medium columns
+@mixin make-md-column($columns) {
+    @media (min-width: map-get($m-layout-breakpoints, lg) - 1) {
+        width: percentage(($columns / $m-grid-columns));
+    }
+}
+
+// Generate the large columns
+@mixin make-lg-column($columns) {
+    @media (min-width: map-get($m-layout-breakpoints, xl) - 1) {
+        width: percentage(($columns));
+    }
+}
+
+// Generate grid columns
+@mixin make-grid-columns($i: 1, $list: ".m-grid-col-xs-#{$i}, .m-grid-col-sm-#{$i}, .m-grid-col-md-#{$i}, .m-grid-col-lg-#{$i}") {
+    @for $i from (1 + 1) through $m-grid-columns {
+        $list: "#{$list}, .m-grid-col-xs-#{$i}, .m-grid-col-sm-#{$i}, .m-grid-col-md-#{$i}, .m-grid-col-lg-#{$i}";
+    }
+}
+
+@mixin calc-grid-column($index, $class, $type) {
+    @if ($type == width) and ($index > 0) {
+        .m-grid-col-#{$class}-#{$index} {
+            width: percentage(($index / $m-grid-columns));
+        }
+    }
+}
+
+@mixin loop-grid-columns($columns, $class, $type) {
+    @for $i from 0 through $columns {
+        @include calc-grid-column($i, $class, $type);
+    }
+}
+
+// Create grid for specific class
+@mixin make-grid($class) {
+    @include loop-grid-columns($m-grid-columns, $class, width);
+}
+
+// table based grid
+
+.m-grid {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+
+    &.m-grid-auto {  
+	    width: auto;
+	}
+
+	&.m-grid-full-height {
+	    height: 100%; 
+
+	    > .m-grid-row {
+	    	height: 100%;
+			position: static;
+
+			> .m-grid-col {
+				height: 100%;
+			}
+	    }
+
+	    > .m-grid-col {
+			height: 100%;
+		}
+	}
+
+	// grid row
+	.m-grid-row {
+    	display: table-row;
+
+    	&.m-grid-row-full-height {
+		    height: 100%;
+			position: static;
+		}
+
+		&.m-grid-row-auto-height {
+		    height: auto;
+
+		    > .m-grid-col {
+				height: auto;
+			}
+		}
+	}
+
+	// grid column
+	.m-grid-col {
+	    display: table-cell;
+	    text-align: left;
+	    vertical-align: top;
+	    
+	    // col options
+	    &.m-grid-col-full-width {
+		    width: 100%;
+		}
+
+		&.m-grid-col-full-height {
+		    height: 100%;
+		}
+
+		&.m-grid-col-auto-height {
+		    height: auto;
+		}
+
+		&.m-grid-col-top {
+		    vertical-align: top;
+		}
+
+		&.m-grid-col-middle {
+		    vertical-align: middle;
+		}
+
+		&.m-grid-col-bottom {
+		    vertical-align: bottom;
+		}
+
+		&.m-grid-col-left {
+		    text-align: left;
+		}
+
+		&.m-grid-col-center {
+		    text-align: center;
+		}
+
+		&.m-grid-col-right {
+		    text-align: right;
+		}
+
+      	&:not(.m-grid-col-middle):not(.m-grid-col-bottom) {
+			vertical-align: top;
+		}
+
+	    // col sizes
+	    &.m-grid-col-xs,
+	    &.m-grid-col-sm,
+	    &.m-grid-col-md,
+	    &.m-grid-col-lg {
+	        width: 100%;
+	        display: block;
+	    }
+	}
+}
+
+// Demo grid
+
+.m-grid.m-grid-demo {
+
+	.m-grid-col {
+		border: 1px solid #ddd;
+		background: #fafafa;
+		height: 100px;
+	}
+}
+
+// Extra small grid
+@include make-grid(xs);
+
+// Small grid
+@media (min-width: map-get($m-layout-breakpoints, sm) - 1px) {
+    @include make-grid(sm);
+}
+
+// Medium grid
+@media (min-width: map-get($m-layout-breakpoints, md) - 1px) {
+    @include make-grid(md);
+}
+
+// Large grid
+@media (min-width: map-get($m-layout-breakpoints, lg) - 1px) {
+    @include make-grid(lg);
+}
+
+// Responsive grids 
+
+//== convert to block below LG resolution
+@each $breakpoint, $breakpoint-width in $m-layout-breakpoints {
+	@media (max-width: $breakpoint-width - 1px) {
+	    .m-grid.m-grid-responsive-#{$breakpoint} {
+	        display: block;
+	        width: auto;
+	        
+	        > .m-grid-row,
+	        > .m-grid-row > .m-grid-col,
+	        > .m-grid-col {
+	            display: block;
+	            width: auto;
+	            height: auto;
+	        }
+
+	        > .m-grid-row {
+	        	display:flex;
+		        flex-flow: column;
+	        }
+
+	        // flex grid mode
+	        &.m-grid-flex {
+		        display:flex;
+		        flex-flow: column;
+
+		        @for $i from (1 + 1) through $m-grid-columns {
+		            > .m-grid-row > .m-grid-col-order-#{$i},
+		            > .m-grid-col-order-#{$i} {
+		                order: #{$i};
+		            }
+		        }
+		    }
+	    }
+	}
+}

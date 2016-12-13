@@ -1,0 +1,122 @@
+/* ----------------------------------------------------------------------------
+    Panels
+---------------------------------------------------------------------------- */
+
+
+.panel-group .panel {
+    .box-shadow(none);
+    .border-radius(0);
+
+    border: none;
+
+    .panel-heading {
+        .border-radius(0);
+
+        padding: 0;
+        border: none;
+        border-bottom: none;
+
+        a {
+            &:extend(.base-clr-bg);
+
+            position: relative;
+            display: block;
+            width: 100%;
+            padding: 15px 15px 15px 50px;
+            font-size: @font-size-large;
+            line-height: 22px;
+            color: @text-white;
+
+            &.collapsed {
+                background-color: @white-alt;
+                color: @text-gray;
+
+                &:before {
+                    content: '+';
+                }
+            }
+
+            &:hover,
+            &.collapsed:hover, {
+                background-color: @gray-lighter;
+                color: darken(@text-gray, 10%);
+            }
+
+            &:before {
+                position: absolute;
+                left: 10px;
+                display: inline-block;
+                width: 30px;
+                content: '-';
+                font-size: 26px;
+                font-weight: @thin-weight;
+                text-align: center;
+                line-height: inherit;
+                color: inherit;
+            }
+        }
+    }
+
+    .panel-heading + .panel-collapse .panel-body {
+        padding: 16px 30px;
+        border: 1px solid #dadfe4;
+        border-top: none;
+    }
+
+    & + .panel {
+        margin-top: 8px;
+    }
+}
+
+.panel-group-alt {
+    line-height: 0;
+}
+
+.panel-group-alt .panel {
+    & + .panel {
+        margin-top: 6px;
+    }
+
+    & > a {
+        .transition(~"color 0.2s ease, background 0.2s ease");
+
+        display: block;
+        padding: 12px 20px;
+        font-family: @font-family-heading;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.22em;
+        border: 1px solid transparent;
+
+        &.collapsed {
+            color: @text-gray-dark;
+            border-color: @gray-blue;
+        }
+
+        &:not(.collapsed) {
+            &:extend(.base-clr-bg);
+
+            color: @text-white;
+
+            .fa {
+                color: @text-white;
+            }
+        }
+
+        .fa {
+            &:extend(.base-clr-txt);
+
+            .transition(~"color 0.2s ease");
+        }
+    }
+
+    .panel-body {
+        border-style: solid;
+        border-width: 0 1px 1px;
+        border-color: @gray-lighter;
+
+        *:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

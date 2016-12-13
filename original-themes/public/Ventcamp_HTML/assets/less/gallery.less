@@ -1,0 +1,291 @@
+/* ----------------------------------------------------------------------------
+    Gallery
+---------------------------------------------------------------------------- */
+
+.gallery {
+    font-size: 0;
+
+    & > * {
+        font-size: @font-size-base;
+    }
+
+    .gallery-item {
+        margin: 0 1.66666% 3.5%;
+        vertical-align: top;
+        display: inline-block;
+        width: 30%;
+        height: auto;
+        overflow: hidden;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.gallery.masonry .masonry-item {
+    line-height: 0;
+
+    img {
+        margin: 0;
+        width: 100%;
+        display: inline-block;
+    }
+}
+
+.gallery.light-slider {
+    .transition(~"min-height 0.5s linear");
+    .clearfix();
+
+    position: relative;
+    padding-left: 50%;
+    border: 2px solid @gray-blue;
+
+    .img-slider-wrapper {
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        bottom: -2px;
+        width: 50%;
+        overflow: hidden;
+
+        .bx-wrapper,
+        .bx-viewport,
+        .img-slider,
+        .img-slider > li {
+            height: 100%;
+        }
+
+        .bx-viewport {
+            min-height: 100%;
+            max-height: 100%;
+        }
+
+        .img-slider > li {
+            .background-size(cover);
+
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .description-slider-wrapper {
+        text-align: left;
+
+        .bx-wrapper {
+            padding-bottom: 65px;
+        }
+
+        .description-slider > li {
+            min-height: 320px;
+            padding: 65px 65px 25px 55px;
+            background-color: @white;
+        }
+
+        .bx-pager {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            margin-left: 52px;
+            z-index: 30;
+            line-height: 0;
+        }
+
+        .bx-pager-item {
+            margin-right: 9px;
+            vertical-align: top;
+            display: inline-block;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .bx-pager-link {
+            .transition(~"background 0.2s ease");
+
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            font-size: 0;
+            padding: 3px;
+            text-indent: -100px;
+            background-color: @gray-lighter;
+            background-clip: content-box;
+            border-radius: 50%;
+
+            &:not(.active):hover {
+                background-color: darken(@gray-lighter, 10%);
+            }
+
+            &.active {
+                &:extend(.base-clr-bg);
+            }
+        }
+    }
+}
+
+.gallery-thumb-link {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+    &:hover,
+    &:active {
+        &:before {
+            opacity: 1;
+        }
+
+        &:after {
+            .scale(1, 1);
+
+            opacity: 1;
+        }
+    }
+
+    &:active:after {
+        .box-shadow(0 0 30px 4px @base-color);
+    }
+
+    &:before {
+        .transition(~"opacity 0.25s ease-out");
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        background-color: fade(@black, 60%);
+        opacity: 0;
+        z-index: 1;
+    }
+
+    &:after {
+        &:extend(.base-clr-bg);
+
+        .box-shadow(0 0 0 0 fade(@base-color, 50%));
+        .transition(~"box-shadow 0.2s ease-out, opacity 0.25s ease-out, transform 0.25s ease-out");
+        .scale(0.1, 0.1);
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -30px 0 0 -30px;
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        font: normal normal normal 14px/1 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: 24px;
+        text-align: center;
+        line-height: 59px;
+        color: @text-white;
+        content: "\f002";
+        border-radius: 50%;
+        opacity: 0;
+        z-index: 2;
+    }
+}
+
+.full-width-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: @screen-sm-max) {
+    .gallery.light-slider .description-slider-wrapper {
+        .description-slider > li {
+            padding: 35px 25px 15px;
+        }
+
+        .bx-wrapper {
+            padding-bottom: 45px;
+        }
+
+        .bx-pager {
+            bottom: 20px;
+            margin-left: 24px;
+        }
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    .gallery.light-slider {
+        .transition(none);
+
+        padding-left: 0;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .img-slider-wrapper {
+            position: static;
+            top: auto;
+            bottom: auto;
+            left: auto;
+            width: auto;
+
+            .bx-wrapper,
+            .bx-viewport,
+            .img-slider {
+                height: 400px !important;
+                min-height: 0 !important;
+                background-color: @gray-darker;
+            }
+
+            .img-slider > li {
+                .background-size(contain);
+            }
+        }
+
+        .description-slider-wrapper {
+            .description-slider > li {
+                min-height: 240px;
+                padding: 50px 20px 20px;
+            }
+
+            .bx-wrapper {
+                position: relative;
+                padding: 0;
+            }
+
+            .bx-pager {
+                .translateX(-50%);
+
+                top: 10px;
+                left: 50%;
+                bottom: auto;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: @screen-xs-min) {
+    .gallery.light-slider .img-slider-wrapper {
+        .bx-wrapper,
+        .bx-viewport,
+        .img-slider {
+            height: 280px !important;
+        }
+    }
+
+    .gallery .gallery-item {
+        margin: 0 2% 4%;
+        width: 42%;
+    }
+
+    .gallery-thumb-link:after {
+        margin: -23px 0 0 -23px;
+        width: 46px;
+        height: 46px;
+        font-size: 20px;
+        line-height: 44px;
+    }
+}

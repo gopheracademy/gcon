@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Ventcamp v2.0 Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+		<h1 class="center">Ventcamp v2.0 - Conference Responsive Landing Page</h1>
+		<center>
+			<img src="assets/images/01_preview.jpg" alt="HTML preview" />
+		</center>
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Updated: 12/01/2016<br>
+					Created: 05/04/2014<br>
+					By: Vivaco<br>
+					Email: <a href="mailto:office@vivaco.com">office@vivaco.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/vivaco">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#registration">Registration page</a></li>
+			<li><a href="#soon">Coming soon page</a></li>
+			<li><a href="#mailchimp">Mailchimp form</a></li>
+			<li><a href="#social">Social networks</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme is a responsive one page layout with one column made on Bootstrap 3.0 foundation so please refer to original docs for more info (<a href="http://getbootstrap.com/css/">http://getbootstrap.com/css/</a>). If you would like to place or make a full screen width element - please place it outside of this div. The general template structure is the same throughout the template.</p>
+		<p>The template consists of:</p>
+		<ol>
+			<li><b>Ventcamp_HTML/index.html</b> - default main page</li>
+			<li><b>Ventcamp_HTML/index-countdown.html</b> - main page with countdown times</li>
+			<li><b>Ventcamp_HTML/index-video.html</b> - main page with YouTube video background</li>
+			<li><b>Ventcamp_HTML/index-html5-video.html</b> - main page with HTML5 hosted video background</li>
+			<li><b>Ventcamp_HTML/index-overlay.html</b> - main page with color overlay and image background</li>
+			<li><b>Ventcamp_HTML/index-tickets-email.html</b> - default main pagethat sends an email/tickets upon completion </li>
+			<li><b>Ventcamp_HTML/index-tickets-eventbright.html</b> - default main page with EventBright integration</li>
+			<li><b>Ventcamp_HTML/index-tickets-paypal.html</b> - default main page with PayPal integration</li>
+			
+			<li style="margin-top:20px;"><b>Ventcamp_HTML/map-settings.json</b> - json file for Advanced Google Map from contacts, used in html</li>
+			<li><b>Ventcamp_HTML/process-form.php</b> - form emails processor, send mail()</li>
+			<li><b>Ventcamp_HTML/mailchimp-api.php</b> - MailChimp subscription processor</li>
+			<li><b>Ventcamp_HTML/registration-form.html</b> - registration form separately</li>
+			<li><b>Ventcamp_HTML/icons-reference.html</b> - icon reference</li>
+			<li><b>Ventcamp_HTML/coming-soon.html</b> - coming soon page</li>
+			
+			
+			<li style="margin-top:20px;"><b>Ventcamp_HTML/elements/*</b> - theme elements</li>
+			<li><b>Ventcamp_HTML/assets/*</b> - theme assets like CSS,JS and images</li>
+			<li><b>Ventcamp_HTML/assets/css/style.css</b> - theme main styles</li>
+			<li><b>Ventcamp_HTML/assets/less</b> - theme LESS files (for advanced users)</li>
+			<li><b>Ventcamp_HTML/assets/Gruntfile.js</b> - theme Grunt file (for advanced users)</li>
+			<li><b>Ventcamp_HTML/assets/package.json</b> - theme packages (for advanced users)</li>
+		</ol>		
+		<p>All of the boxed blocks within the main content area are nested within a div with an class of "container" Here is the general structure.</p>
+		<img src="assets/images/htmlstructure.png" alt="HTML Structure" />
+		<p></p>
+		<p>Ventcamp is build on LESS and all less files are located inside <b>assets/less</b> directory, the proper way to change the theme base color is with these but this wold require additional knowledge <a href="http://tutorialzine.com/2015/07/learn-less-in-10-minutes-or-less/" target="_blank">LESS tutorial</a></p>
+		<p>Alternatively you can always do "Replace all" this color <b>#fe4918</b> in them's <b>style.css</b> with the desired one or use any of those predefined ones :</p>
+		<pre>	
+		*	<b>Pink</b> - ff5f9b
+		*	<b>Green</b> - 39c8b7
+		*	<b>Blue</b> - 59bbd7
+		*	<b>Berry</b> - fe6760
+		*	<b>Orange</b> - ff7200
+		</pre>
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This template is built on Bootstrap 3.0 foundation and uses several CSS files:</p> 
+			<ol>
+				<li><b>bootstrap.css</b> - the main bootstrap styles</li>
+				<li><b>bootstrap-theme.css</b> - several bootstrap amendments to bootstrap</li>
+				<li><b>style.css</b> - template styles</li>
+			</ol>
+		<p>While you can surely edit any file you want, please note that main template styles reside in <b>assets/css/style.css</b> file. If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+		<pre>	
+
+		/*==========================================================================
+		  RESETS AND MASTER STYLES 
+		  ========================================================================== */
+		  
+		  some code
+		  
+		/*==========================================================================
+		  GENERAL & RE-USABLE ADJUSTMENTS
+		  ========================================================================== */
+
+		  some code
+			
+		  -------------
+		  etc, etc. 
+		</pre>
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		<p>This theme imports several Javascript libraries and files, i have put a link to original authors on the titles where you can find more documentation on each of them:</p>
+		<ol>
+			<li><b>Theme main script</b> - ventcamp.js</li>
+			<li><b>Bootstrap scripts</b> - bootstrap.min.js</li>
+			<li><b>Validate JS</b> - jquery.validate.min.js</li>
+			<li><b>Toats noticies</b> - toastr.min.js</li>
+			<li><b>jQuery Waypoints</b> - jquery.waypoints.min.js</li>
+			<li><b>jQuery Appear</b> - jquery.appear.js</li>
+			<li><b>Theme plugins</b> - jquery.plugin.js</li>
+			<li><b>jQuery Count to</b> - jquery.countTo.js</li>
+			<li><b>Masonry</b> - masonry.pkgd.min.js</li>
+			<li><b>Theme modal box script</b> - modal-box.js</li>
+			<li><b>Mailchimp ajax script</b> - mailing-list.js</li>
+			
+			
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="assets/js/toastr.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.plugin.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.countTo.js"></script>
+	<script type="text/javascript" src="assets/js/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="assets/js/modal-box.js"></script>
+	<script type="text/javascript" src="assets/js/ventcamp.js"></script>
+
+			
+		</ol>
+		<ol>
+			<li>Template's JavaScript is used mostly to initialize 3rd party plugins and libraries
+		<pre>	
+		<b>//INIT Appear Animations</b>
+		$('.animated').appear(function(){
+		  var element = $(this);
+		  var animation = element.data('animation');
+		  var animationDelay = element.data('delay');
+		  if (animationDelay) {
+			setTimeout(function(){
+					
+		<b>//INIT STICKY MENU</b>
+		$('#header').waypoint('sticky', {
+			wrapper: '<div class="sticky-wrapper" />',
+			stuckClass: 'sticky'
+		}); 
+		</pre>
+			</li>
+		</ol>
+		<hr>		
+		
+		<h3 id="registration"><strong>D) Registration page</strong> - <a href="#toc">top</a></h3>
+		<p>The only thing you need to do to setup the registration form is to change this file:</p> 
+		<ol>
+			<li><b>HTML/process-form.php</b> -  add your email address, edit fields</li>
+			<li><b>HTML/registration-form.html</b> -  edit form fields + edit JavaScript found on the same page below</li>
+		</ol>
+		<p>The form is validated and then submitted which then sends the data to process-form.php file that just gets the variables and forards the data to your email</p>
+		<hr>	
+		
+		<h3 id="soon"><strong>E) Coming soon page</strong> - <a href="#toc">top</a></h3>
+		<p>The only thing you need to do to setup the mailchimp form is to change this file:</p> 
+		<ol>
+			<li><b>Ventcamp_HTML/coming-soon.html</b> -  add your date at line <b>#137</b> and it's ready!</li>
+		</ol>
+		<hr>
+		
+		<h3 id="mailchimp"><strong>F) Mailchimp form</strong> - <a href="#toc">top</a></h3>
+		<p>The only thing you need to do to setup the mailchimp form is to change this file:</p> 
+		<ol>
+			<li><b>Ventcamp_HTML/mailchim-api.php</b> -  (add Mailchimp API key at line <b>#36</b> and subscription list ID at line <b>#40</b>)</li>
+		</ol>
+		<p>But please refer to the original script author if you need a deeper insight - <a href="http://stackoverflow.com/questions/5025455/some-basic-mailchimp-api-examples-required">http://stackoverflow.com/questions/5025455/some-basic-mailchimp-api-examples-required</a></p>
+		<hr>
+		
+		<h3 id="social"><strong>G) Social networks</strong> - <a href="#toc">top</a></h3>
+		<p>All links to social networks are hardcoded and should be changed directly in the code</p>
+		<hr>		
+				
+		<h3 id="credits"><strong>H) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		<p>I've used the following images, icons or other files as listed.</p>
+		<ul>
+			<li>HTML5 scripts - <a href="https://code.google.com/p/html5shiv/">https://code.google.com/p/html5shiv/</a></li>
+			<li>jQuery appear - <a href="https://github.com/morr/jquery.appear"></a></li>
+			<li>jQuery counter - <a href="https://github.com/mhuggins/jquery-countTo">https://github.com/mhuggins/jquery-countTo</a></li>
+			<li>jQuery Fancybox - <a href="http://fancybox.net/">http://fancybox.net/</a></li>
+			<li>jQuery Waypoints - <a href="http://imakewebthings.com/jquery-waypoints/">http://imakewebthings.com/jquery-waypoints/</a></li>
+			<li>Google Maps - <a href="https://developers.google.com/maps/documentation/javascript/">https://developers.google.com/maps/documentation/javascript/</a></li>
+			<li><a href="http://jquery.com/">jQuery</a> - jquery-1.11.0.min.js</li>
+			<li><a href="http://twitter.github.com/bootstrap/">Bootstrap 3.0</a> - bootstrap.min.js</li>
+			<li>Mailchimp</b> - mailing-list.js</li>
+			<li>Google Fonts -<a href="http://www.google.com/webfonts">http://www.google.com/webfonts</a></li>
+			<li>Font Awesome 4.0.1 - <a href="http://fontawesome.io">http://fontawesome.io</a></li>
+			<li>Bootstrap Framework - <a href="http://twitter.github.com/bootstrap/">http://twitter.github.com/bootstrap</a></li>
+
+		</ul>
+		<hr>
+		
+		<p>We would be glad to help you if you have any questions relating to this theme. No guarantees, but we will do our best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Vivaco Media</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

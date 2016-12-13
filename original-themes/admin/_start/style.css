@@ -1,0 +1,280 @@
+/* General Stylesheet */
+body {
+    font-family: "Roboto", sans-serif;   
+}
+
+a[href]:focus {
+    outline: 0;
+    text-decoration: none;
+}
+
+/* Bootstrap Container */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* Predefined Helper Classes */
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+/* Topbar */
+.topbar {
+    background: #293239;
+}
+
+.topbar:before,
+.topbar:after {
+    display: block;
+    content: " ";
+}
+
+.topbar:after {
+    clear: both;
+}
+
+.topbar .topbar-logo {
+    display: inline-block;
+    float: left;
+    padding: 25px 20px;
+    vertical-align: middle;
+}
+
+.topbar .topbar-logo img {
+    vertical-align: middle;
+}
+
+.topbar .topbar-link,
+.topbar .topbar-purchase {
+    display: inline-block;
+    float: right;
+    font-size: 13px;
+    color: #87929c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 16px;
+    word-spacing: 2px;
+    font-weight: 500;
+}
+
+.topbar .topbar-link:hover,
+.topbar .topbar-purchase:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.topbar .topbar-purchase {    
+    background: #20272c;
+    padding: 12px 20px;
+    margin-top: 14px;
+    margin-left: 45px;
+    margin-right: 45px;
+    font-size: 13px;
+    color: #25bbd6;
+}
+
+.topbar .topbar-purchase:hover {
+
+}
+
+.topbar .topbar-sep {
+    height: 70px;
+    width: 1px;
+    display: inline-block;
+    float: right;
+    border-left: 1px solid #313940;
+}
+
+/* Banner */
+.banner {
+    background: url(../_start/img-new/head_bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 70px 0 40px;
+    margin-top: 70px;
+}
+
+.product-logo {
+    margin: 10px 0;
+}
+
+.banner .banner-title-main {
+	font-size: 38px;
+	font-weight: 100;
+	color: #3c4a55;
+    text-transform: uppercase;
+    margin: 40px 0 40px;
+}
+
+.banner .banner-title-bold {
+    font-weight: 500;
+}
+
+.banner .banner-title-paragraph {
+    font-size: 18px;
+    color: #707f8b;
+    margin-bottom: 40px;
+}
+
+.banner .banner-quote {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.4;
+    background: #eb6d6d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 22px;
+}
+
+/* Widget Banner */
+.widget-banner {
+    background: #f3f5f6;
+    padding: 70px 0;
+}
+
+.widget-banner .widget-body {
+    background: #fff;
+    text-align: center;
+}
+
+.widget-banner .widget-layout {
+    padding: 40px 20px 0;
+}
+
+.widget-banner .widget-title {
+    font-size: 21px;
+    font-weight: 400;
+    color: #515f6b;
+    line-height: 1.4;
+    margin: 0 0 35px;
+}
+
+.widget-banner .widget-subtitle {
+    font-weight: 300;
+    color: #768693;
+}
+
+.widget-banner .widget-btn-list {
+    margin-bottom: 40px;
+}
+
+.widget-banner .widget-btn {
+    color: #919da7;
+    font-size: 13px;
+    font-weight: 500;
+    border-color: #e5e9ec;
+    border-radius: 2px;
+    text-transform: uppercase;
+    padding: 8px 12px;
+}
+
+.widget-banner .widget-btn:hover,
+.widget-banner .widget-btn:focus {
+    color: #fff;
+    background: #eb6d6d;
+    border-color: #eb6d6d;
+}
+
+/* Customer Feedback */
+.customer-feedback {
+    padding: 70px 170px;
+    text-align: center;
+}
+
+.customer-quote {
+    font-size: 18px;
+    font-weight: 400;
+    color: #667583;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.customer-name {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background: #eb6d6d;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+}
+
+@media(max-width: 992px) {
+    .customer-feedback {
+        padding: 70px 0;
+    }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: #343b44;
+    padding: 60px 0;
+}
+
+.footer .footer-logo {
+    margin-bottom: 30px;
+}
+
+.footer .copyright {
+    font-size: 15px;
+    color: #647183;
+    margin-bottom: 0;
+}
+
+.footer .social-icons {
+    margin-bottom: 20px;
+}
+
+.footer .social-icons li a:hover {
+    text-decoration: none;
+}
+
+.footer .social-icons li i {
+    color: #647183;
+    font-size: 22px;
+}
+
+.footer .social-icons li i:hover {
+    color: #32a1cf;
+}
+
+.youtube {
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    transition: all 200ms ease-out;
+    cursor: pointer;
+    margin: 40px auto 0 auto;
+}
+
+iframe {
+  margin: 40px auto 0 auto;
+}
+
+.youtube .play {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAERklEQVR4nOWbTWhcVRTHb1IJVoxGtNCNdal2JYJReC6GWuO83PM/59yUS3FRFARdFlwYP1CfiojQWt36sRCUurRIdVFXIn41lAoVdRGrG1M01YpKrWjiYmaSl8ybZJL3cd+YA//NLObd3++eO8x79z5jSq5Gw+8kov0AP8vMR5l1BtBZQM4B8ks75wCdZdYZZj5qLZ4hov2Nht9Z9vhKKSIaB/gI4M4w62KeAO6Mte4lYOq20FxrlqqOibhHmeWbvNC9ZfDX1mLae391aN6limO/gwgvAPJbWeAZuSDingdwXTBw7/0IsyaA/Fkh+KqOkD+YNfHej1QKD+y7iVlOhgLvFqFfNJvNGyuBJ+KDAF8MDd0tgS8y64OlgSdJMsysL4cG7SOHkyQZLhTee7+d2R2rAVy/S+Jd7/32ouBHAP4gNNRGQyTHc/84NhqNywZp5rvjjnnvt21aABFeCQ+RLwAf2hQ8s7sv9OCLk6AHNgQvIrvbfzKCD76g/O6cu7lf/iER/aQGgy448pExZmhdegAPhR9sObFWH1gT3lp7DaA/5bkIgJhZPgsNmz02novj+KqeApj1ubwXWe4kdyeznAgNvTpE/HQmvKqOMeuFogTUVQSRno+iaLRLAJF7uIgL9O4ubgL8aWgB7S44mNX+35YpICUiAvS9sBLkq1WzT+NFffl6AuoiApi6NT37h6sWkBIRZGkQ8YtLgyji6e1mBYTqCEBPG2Naz+0BWQgtoGoRgCzEsd9hAN1X5BfnFZASUfrSAFQNsyZ1FJASUVpHiLinDJG8U2cBZYogkrcNs5waBAGdstbeU9zdqpw0gPwwSAI6VUxHyFlDpOcHUUBBIuYNs14aZAE5RVwyzPr3/0EAEY0TyfGNjBWQvwZ+CTSbehfAH29mrID8bET0+0EUkAd8WYDOmqJ3ecsG30yr9wqRfm6Y+a1BEFDEjHfHvWmY9ck6CygHvBVr8Xhtb4ZE5HZA3y8DvBNA1TjnrmXWf+sioMwZX5V/VHXMGGMMoKdDCxCRvRWBdzKzdHEO+EisilbPyopHYqp6S9UCAsz4iojI7hUDAtyXVQgIDd6KnOoaWNkbI6FaPSuZGyMArsi7MZoloB4zviI/Nhr3X95jltwTRQmoIfgisy5ai+me67OI7fE4nrqjrqfK1t0eby0FPRB6oGVlchL3rgnfrq19RKbVBdhV9IOSwJmfmJi4vi/4ThERitwyCxVAFqydshuCX5awhQ9KtmuIWd8IDZED/nXT77rvVVv6sHRKwjYi91poqP7Dr+Y6JJ1VSZIMA3wkPNy6bX+o8Bcm0sXMdwM8Fxo0A3xORPaWBp6uPXsmbxCRD0NDL0dOANhVCXy6iAjMcjbcrMt3RITKwdMVRdFo+y5yvkL4eWZ+zHt/ZVD4dEVRNGotpst+dZZZH8k86lqn2pIvT/eqrNfn2xuyqYPZ8mv7s8pfn/8Pybm4TIjanscAAAAASUVORK5CYII=") no-repeat center center;
+    background-size: 64px 64px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+    filter: alpha(opacity=70);
+    transition: all 0.2s ease-out;
+}
+
+.youtube .play:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}

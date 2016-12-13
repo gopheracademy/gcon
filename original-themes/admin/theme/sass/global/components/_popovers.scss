@@ -1,0 +1,41 @@
+/***
+Customized Bootstrap Popover
+***/
+
+/*rtl:ignore*/
+.popover {
+    @if $theme-type == "default" {
+    box-shadow: 5px 5px rgba(#666, 0.1);
+    }
+    padding: 0;
+}
+
+.popover .popover-title {  
+    margin: 0 !important;
+}
+
+@if $theme-type == "material-design" {
+    /*rtl:ignore*/
+    .popover {
+        @include border-radius($general-border-radius);
+        @extend .md-shadow-z-2;        
+        border: 0;
+        background: #fff; 
+    }
+
+    .popover {
+        > .popover-title {
+            background: #fff;
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            padding: 10px 14px 6px 14px;
+            border: 0;
+        }
+
+        .arrow,
+        .arrow:after {
+            display: none !important;
+        }
+    }
+}

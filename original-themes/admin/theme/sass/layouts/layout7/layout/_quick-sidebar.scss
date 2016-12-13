@@ -1,0 +1,62 @@
+/******************
+Page Quick Sidebar
+******************/
+
+/* Page Portlet Fullscreen */
+
+.page-portlet-fullscreen {
+	.page-quick-sidebar-wrapper,
+	.page-quick-sidebar-toggler {
+		z-index: -1;
+	}
+}
+
+/* Quick Sidebar Notification */
+.quick-sidebar-notification {
+	position: relative;
+
+	.badge {
+		position: absolute;
+        top: -23px;
+        left: 12px;
+        width: 22px;
+        height: 22px;
+        font-size: 15px !important;
+        font-weight: 300;
+        line-height: 1;
+        border: 1px solid lighten($brand-danger, 10%);
+        color: lighten($brand-danger, 30%);
+        background: $brand-danger;
+	}
+}
+
+/* Quick sidebar toggler */
+
+.quick-sidebar-toggler {
+	top: 50%;
+	right: 0;
+	padding: 0;
+	z-index: 99;
+	border: none;
+	outline: none;
+	position: fixed;
+	margin-top: -30px;
+	background: $btn-default-bg;
+	width: $quick-siderbar-width-height;
+	height: $quick-siderbar-width-height;
+    box-shadow: 0 0 2px rgba(0,0,0,.15);
+
+	i {
+		padding: 5px;
+		font-size: 15px;
+		color: $btn-default-bg;
+
+		&:before {
+						content: "\e065"#{'/*rtl:"\e066"*/'};  				
+					}
+
+					.page-quick-sidebar-open &:before {
+						content: "\e066"#{'/*rtl:"\e065"*/'};
+					}
+	}
+}

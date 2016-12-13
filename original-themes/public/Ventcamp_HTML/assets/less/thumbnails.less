@@ -1,0 +1,37 @@
+/* ----------------------------------------------------------------------------
+    Thumbnails
+---------------------------------------------------------------------------- */
+
+
+.thumb-wrapper {
+    position: relative;
+    margin: 15px 0;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+
+    .overlay {
+        &:extend(.base-clr-ovl all);
+
+        .transition(~"transform 0.3s ease");
+
+        top: auto;
+        padding: 15px;
+        font-size: @font-size-large;
+        font-weight: @thin-weight;
+        text-align: center;
+        vertical-align: middle;
+        color: @text-white;
+        background-color: transparent;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    &:hover .overlay {
+        top: 0;
+    }
+}

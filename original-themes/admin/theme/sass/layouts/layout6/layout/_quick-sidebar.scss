@@ -1,0 +1,48 @@
+/******************
+Page Quick Sidebar
+******************/
+
+/***
+Quick Sidebar Layout
+***/
+
+/* Quick Sidebar Notification */
+.quick-sidebar-notification {
+	position: relative;
+
+	.badge {
+		top: -40px;
+		left: -5px;
+		position: absolute;
+	}
+}
+
+/* Quick sidebar toggler */
+
+.quick-sidebar-toggler {
+	top: 50%;
+	right: 0;
+	padding: 0;
+	z-index: 99;
+	border: none;
+	outline: none;
+	position: fixed;
+	margin-top: -30px;
+	background: $color-blue;
+	width: $quick-siderbar-width-height;
+	height: $quick-siderbar-width-height;
+
+	i {
+		padding: 5px;
+		font-size: 20px;
+		color: $color-white;
+
+		&:before {
+			content: "\e065"#{'/*rtl:"\e066"*/'};  				
+		}
+
+		.page-quick-sidebar-open &:before {
+			content: "\e066"#{'/*rtl:"\e065"*/'};
+		}
+	}
+}

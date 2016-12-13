@@ -1,0 +1,242 @@
+//
+// Mixins
+// Based on Twitter Bootstrap's _mixings.scss
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Opacity
+
+@mixin opacity($value, $important: '') {
+  opacity: $value #{$important};
+  filter: alpha(opacity=#{$value * 100}) #{$important};
+}
+
+// Border radius.
+
+@mixin border-radius($radius, $important: '') {
+  -webkit-border-radius: $radius#{$important};
+  -moz-border-radius: $radius#{$important};
+  -ms-border-radius: $radius#{$important};  
+  -o-border-radius: $radius#{$important};      
+  border-radius: $radius#{$important}; 
+}
+
+// Placeholder text
+// -------------------------
+@mixin placeholder($color: $input-color-placeholder) {
+  &::-moz-placeholder           { color: $color; opacity: 1; } // See https://github.com/twbs/bootstrap/pull/11526
+  &:-ms-input-placeholder       { color: $color; } // Internet Explorer 10+
+  &::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
+}
+
+// Drop shadows
+// By default set to: none
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: none; // iOS <4.3 & Android <4.1
+          box-shadow: none;
+}
+
+// Labels
+// -------------------------
+@mixin label-variant($color) {
+  background-color: $color;
+  &[href] {
+    &:hover,
+    &:focus {
+      background-color: darken($color, 10%);
+    }
+  }
+}
+
+@mixin  ease-out($duration: 450ms, $property: all, $delay: 0ms) {
+  transition: $property $duration cubic-bezier(0.23, 1, 0.32, 1) $delay;
+}
+
+@mixin  pulsate($animation-name, $start-size: 0.75, $end-size: 1, $duration: 1.5s) {
+  @keyframes "#{$animation-name}" {
+    0%, 100% {
+      transform: scale($start-size);
+    }
+    50% {
+      transform: scale($end-size);
+    }
+  }  
+  animation: $animation-name $duration ease 0s infinite;
+}
+
+/* Cubic Bezier Transition */
+@mixin cubic-transition ($delay, $duration, $property) {
+    transition: {
+        duration: $duration;
+        property: $property;
+        timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+    } 
+}
+
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: rgba($color, $opacity);
+}
+
+@mixin vertical-align($position: absolute) {
+  position: #{$position};
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin transform($degree) {  
+  webkit-transform: $degree;
+  -moz-transform: $degree;
+  -ms-transform: $degree;
+  -o-transform: $degree;
+  transform: $degree;
+}
+
+@mixin transition($transition) {
+  webkit-transition: #{$transition};
+  -moz-transition: #{$transition};
+  -ms-transition: #{$transition};
+  -o-transition: #{$transition};
+  transition: #{$transition};
+}
+
+@mixin burger-icon($line-color, $line-color-hover, $line-width, $line-height, $base-top: -5px, $above-top: 5px, $below-top: -5px) {
+  > span {
+    outline: none !important;
+
+    &:hover {
+      background: $line-color-hover;
+      &:before,
+      &:after {
+        background: $line-color-hover;
+      }
+    }
+  }
+
+  > span,
+  > span:before,
+  > span:after {
+    display: inline-block;
+    width: $line-width;
+    height: $line-height;
+    background: $line-color;
+    position: relative;
+    top: $base-top;
+    transition: all ease .3s;
+  }
+
+  > span:before,
+  > span:after {
+    position: absolute;
+    left: 0;
+    content: '';
+  }
+
+  > span:before {
+    top: $above-top;
+  }
+
+  > span:after {
+    top: $below-top;
+  }
+
+  &.th-toggle-exit {
+    > span {
+      background-color: transparent !important;
+    }
+
+    > span:after {
+      @include transform(translateY(-$base-top) rotateZ(45deg));
+    }
+
+    > span:before {
+      @include transform(translateY($base-top) rotateZ(-45deg));
+    }
+  }
+}
+
+@mixin burger-icon-color-change($line-color, $line-color-hover) {
+  > span,
+  > span:before,
+  > span:after {
+    background: $line-color;
+  }
+
+  > span {
+    &:hover {
+      background: $line-color-hover;
+      &:before,
+      &:after {
+        background: $line-color-hover;
+      }
+    }
+  }
+
+  &.th-toggle-exit {
+    > span {
+      background-color: transparent !important;
+    }
+  }
+}
+
+@mixin close-icon($icon-size, $line-size, $color, $color-hover) {
+  position: relative;
+  display: inline-block;
+  width: $icon-size;
+  height: $icon-size;
+  overflow: hidden;
+  outline: none !important;
+
+  &:hover {
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      background: $color-hover;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    height: $line-size;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: $line-size / 2;
+    background: $color;
+  }
+
+  &::before {
+    @include transform(rotate(45deg));
+  }
+
+  &::after {
+    @include transform(rotate(-45deg));
+  }
+}
+
+@mixin close-icon-color-change($color, $color-hover) {
+  &:hover {
+    &::before,
+    &::after {
+      background: $color-hover;
+    }
+  }
+
+  &::before,
+  &::after {
+    background: $color;
+  }
+}

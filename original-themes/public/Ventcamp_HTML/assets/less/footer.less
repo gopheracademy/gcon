@@ -1,0 +1,136 @@
+/* ----------------------------------------------------------------------------
+    Footer
+---------------------------------------------------------------------------- */
+
+.footer {
+    &:extend(.light-text all);
+
+    padding: 50px 0 0;
+    color: @text-white;
+    background-color: @gray-darker;
+}
+
+.footer-base {
+    padding: 40px 0 30px;
+    background-color: @black-alt;
+    text-align: left;
+}
+
+.footer-nav > li {
+    margin-right: 25px;
+    display: inline-block;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    a {
+        font-family: @font-family-heading;
+        font-size: @font-size-thin;
+        font-weight: @bold-weight;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+
+        &:not(:hover):not(:focus):not(:active) {
+            color: @text-white
+        }
+    }
+}
+
+.footer .socials-nav {
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    display: inline-block;
+    width: auto;
+    text-align: right;
+
+    .socials-nav-item {
+        margin: 0 8px;
+        line-height: 1;
+    }
+
+    & + p {
+        margin: 0 0 0 15px;
+        vertical-align: top;
+        display: inline-block;
+        line-height: 25px;
+    }
+}
+
+.widget-head .fa {
+    margin-right: 5px;
+}
+
+.about-widget img {
+    margin: 20px 0 30px;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+.twitter-widget {
+    margin: 0 0 30px;
+
+    .tweet {
+        margin-bottom: 20px;
+    }
+
+    .tweet-text {
+        margin-bottom: 5px;
+        line-height: 21px;
+    }
+}
+
+.instagram-widget {
+    .instagram-list {
+        margin: 0 -14px 30px;
+        max-width: 450px;
+        padding: 5px 0;
+        font-size: 0;
+        line-height: 0;
+
+        & > li {
+            display: inline-block;
+            width: 33.33333%;
+            padding: 14px;
+        }
+    }
+}
+
+@media (max-width: @screen-sm-max) and (min-width: @screen-sm-min) {
+    .footer .socials-nav {
+        margin-left: -20px;
+
+        .socials-nav-item {
+            margin: 0 2px;
+        }
+
+        & + p {
+            margin: 0 0 0 10px;
+        }
+    }
+}
+
+@media (max-width: @screen-sm-max) {
+    .footer-nav > li {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .footer .socials-nav {
+        margin: 20px 0 20px -12px;
+        width: 100%;
+        text-align: left;
+
+        .socials-nav-item {
+            margin: 0 6px;
+        }
+
+        & + p {
+            margin: 0;
+        }
+    }
+}

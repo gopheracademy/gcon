@@ -1,0 +1,116 @@
+/* ----------------------------------------------------------------------------
+    Testimonials
+---------------------------------------------------------------------------- */
+
+.testimonial {
+    margin-bottom: 15px;
+
+    .text-box {
+        position: relative;
+        margin: 0 0 13px;
+        padding: 40px 30px;
+        text-align: center;
+        background-color: @white-alt;
+        border: 1px solid @gray-lighter;
+
+        &:before,
+        &:after {
+            position: absolute;
+            bottom: -30px;
+            left: 48px;
+            width: 0;
+            height: 0;
+            content: "";
+            border-style: solid;
+        }
+
+        &:before {
+            border-width: 0 31px 30px 0;
+            border-color: transparent @gray-lighter transparent transparent;
+        }
+
+        &:after {
+            margin: 0 0 4px 3px;
+            border-width: 0 26px 26px 0;
+            border-color: transparent @white-alt transparent transparent;
+        }
+    }
+
+    .author-block {
+        position: relative;
+        padding: 17px 0 0 93px;
+        min-height: 70px;
+        text-align: left;
+        line-height: 0;
+
+        * {
+            line-height: 1.5;
+        }
+
+        .photo-container {
+            .background-size(cover);
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .name {
+            &:extend(.base-clr-txt);
+
+            display: inline-block;
+            width: 100%;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .company {
+            display: inline-block;
+        }
+    }
+}
+
+@media (max-width: @screen-sm-max) {
+    .testimonial {
+        .text-box {
+            padding: 25px 15px;
+
+            &:before,
+            &:after {
+                left: 35px;
+            }
+        }
+
+        .author-block {
+            padding-left: 75px;
+
+            .photo-container {
+                top: 10px;
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    .testimonial {
+        margin-bottom: 25px;
+
+        .author-block {
+            min-height: 70px;
+
+            .name {
+                width: 100%;
+            }
+        }
+    }
+}

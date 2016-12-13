@@ -1,0 +1,77 @@
+// Global settings
+@import '_variables';              
+@import 'components/_mixins';  
+
+// General CSS Reset
+@import 'components/_reset-general';  
+    
+// Material Desing Components
+@import 'components/_md';                            
+                      
+// General Components  
+@import 'components/_typography';      
+@import 'components/_utils';       
+@import 'components/_grid';
+@import 'components/_font-icons';           
+@import 'components/_alerts';              
+@import 'components/_badges';        
+@import 'components/_buttons';                             
+@import 'components/_carousel';           
+@import 'components/_charts';                     
+@import 'components/_chats';                
+@import 'components/_close';                            
+@import 'components/_dropdowns';       
+@import 'components/_feeds';               
+@import 'components/_form-layouts';                 
+@import 'components/_form-repeater';  
+@import 'components/_inputs';    
+@import 'components/_icon-buttons';    
+@import 'components/_input-icons'; 
+@import 'components/_labels';    
+@import 'components/_list-groups';  
+@import 'components/_loaders';  
+@import 'components/_metro-icons';        
+@import 'components/_modals';  
+@import 'components/_notes';    
+@import 'components/_pagination';   
+@import 'components/_panels'; 
+@import 'components/_popovers';  
+@import 'components/_portlets'; 
+@import 'components/_progress-bars'; 
+@import 'components/_statistic-blocks'; 
+@import 'components/_social-icons'; 
+@import 'components/_tables'; 
+@import 'components/_tabs'; 
+@import 'components/_tiles';  
+@import 'components/_wells';  
+@import 'components/_widgets'; 
+@import 'components/_animate';
+@import 'components/_headings'; 
+@import 'components/_timeline'; 
+@import 'components/_timeline-2'; 
+@import 'components/_timeline-3'; 
+@import 'components/_tasks-widget'; 
+@import 'components/_comments'; 
+@import 'components/_quick-actions'; 
+
+@import 'components/_app-widgets'; 
+
+@import 'components/_ui-sweetalert'; 
+@import 'components/_clipboard'; 
+
+@import 'components/_bootstrap-multiselect'; 
+
+// Elements
+@import 'components/elements/steps/_step-1';
+@import 'components/elements/lists/_list-1';
+@import 'components/elements/ribbons/_ribbon-1';
+@import 'components/elements/cards/_card-1';
+@import 'components/elements/overlay/_overlay-1';
+
+// Apply flat UI colors to all components
+@import 'components/_colors';
+
+// System components
+
+@import 'components/cookie-consent';
+@import 'components/sidebar';

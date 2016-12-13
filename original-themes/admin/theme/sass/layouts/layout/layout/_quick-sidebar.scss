@@ -1,0 +1,26 @@
+/******************
+Page Quick Sidebar
+******************/
+
+/* Quick sidebar toggler */
+
+.page-header {
+	.top-menu {
+		.dropdown-quick-sidebar-toggler {
+			> .dropdown-toggle {
+				padding: $header-top-menu-general-item-padding !important; 
+				i {
+					top: 0px;  
+					
+					&:before {
+						content: "\e065"#{'/*rtl:"\e066"*/'};  				
+					}
+
+					.page-quick-sidebar-open &:before {
+						content: "\e066"#{'/*rtl:"\e065"*/'};
+					}
+				}
+			}
+		}
+	}
+} 

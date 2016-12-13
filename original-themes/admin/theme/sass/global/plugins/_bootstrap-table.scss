@@ -1,0 +1,30 @@
+.mt-bootstrap-tables{
+	.mt-btm-transform{
+		.bars {
+			height:auto;
+		}
+	}	
+}
+
+.fixed-table-toolbar {
+	.columns {
+		label {
+			margin: 10px;
+			padding: 0 0 0 30px;
+		}
+	}
+}
+
+.fixed-table-header {
+	th.bs-checkbox  {  
+		outline: none;
+
+		.th-inner  {
+			overflow: visible;
+
+			.mt-checkbox {
+				right: -5px;
+			}
+		}
+	}
+}

@@ -1,0 +1,123 @@
+// actions
+.mt-actions {
+	.mt-action {
+		margin: 0px;
+		padding: 15px 0 15px 0;
+		border-bottom:1px solid lighten(#E9EBEE, 5%);
+
+		&:last-child{
+			border-bottom:0px;
+		}
+
+		.mt-action-img {
+            width: 40px;
+			float: left;
+
+			> img {
+				border-radius: 50% !important;
+				margin-bottom: 2px;
+			}
+		}
+			    
+		.mt-action-body {
+			padding-left: 15px;
+			position: relative;
+			overflow:hidden;
+
+			.mt-action-row {
+				display: table;
+				width: 100%;
+
+				.mt-action-info {
+					display: table-cell;
+					vertical-align: top;
+
+					.mt-action-icon {
+						display: table-cell;
+						padding: 6px 20px 6px 6px;
+						
+						> i {		
+							display: inline-block;				
+							position: relative;
+							top: 10px;
+							font-size: 25px;
+							color:#78E0E8;
+						}
+
+					}
+
+					.mt-action-details {
+						display: table-cell;
+						vertical-align: top;
+
+						.mt-action-author {
+							color: #060606;
+							font-weight: 600;
+						}
+
+						.mt-action-desc {
+							margin-bottom: 0;
+							color:darken(#A6A8A8, 5%);
+						}
+					}
+				}
+
+				.mt-action-datetime {
+					vertical-align: top;
+					display: table-cell;
+					text-align: center;
+					width: 150px;					
+					white-space: nowrap;
+					padding-top:15px;
+					color:#A6A8A8;
+					
+					.mt-action-dot {
+						display: inline-block;
+						width: 10px;
+						height: 10px;
+						background-color:red;
+						border-radius: 50% !important;
+						margin-left: 5px;
+						margin-right: 5px;
+					}
+				}
+
+				.mt-action-buttons {
+					vertical-align: top;
+					display: table-cell;
+					text-align: center;
+					width: 160px;
+					white-space: nowrap; 
+					padding-top:10px;
+					
+				}
+			}			
+        }
+	}  
+}
+
+@media (max-width: $screen-xs-max) {  /* 767px */
+	.mt-actions {
+		.mt-action {
+			.mt-action-body {
+				.mt-action-row {
+					display: block;
+
+					.mt-action-info {
+						display: block;
+					}
+
+					.mt-action-datetime {
+						display: inline-block;
+						margin-left: 40px;
+					}
+
+					.mt-action-buttons {
+						display: inline-block;
+						float: right;
+					}
+				}				
+			}
+		}
+	}
+}

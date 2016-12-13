@@ -1,0 +1,72 @@
+/***
+Customized Bootstrap Panels
+***/
+
+.panel {  
+
+    @if $theme-type == "default" {
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    .panel-group & {
+        overflow: visible;
+    }
+
+    .panel-body {
+        font-size: 13px; 
+    }
+
+    .panel-title > a:hover {
+        text-decoration: none;
+    }
+
+    .accordion & .panel-heading {
+        padding: 0;
+    }
+
+    .accordion & .panel-title {
+        padding: 0;
+
+        .accordion-toggle {
+            display: block;
+            padding: 10px 15px;
+        }
+
+        .accordion-toggle.accordion-toggle-styled {
+            background: url("../img/accordion-plusminus.png") no-repeat;
+            background-position: right -19px;
+            margin-right: 15px;
+        }
+
+        .accordion-toggle.accordion-toggle-styled.collapsed {
+            background-position: right 12px;
+        }
+    }
+}
+
+/***
+Accordions
+***/
+
+.panel-heading {
+    background:#eee;
+    
+    a {
+        text-decoration:none;
+    }
+
+    a:active,
+    a:focus,
+    a:hover {
+        text-decoration:none;  
+    }
+}
+
+@if $theme-type == "material-design" {
+    .panel {
+        @extend .md-shadow-z-1;        
+        border: 0; 
+    }
+}

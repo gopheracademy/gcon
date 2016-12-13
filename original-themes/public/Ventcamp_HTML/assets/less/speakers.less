@@ -1,0 +1,161 @@
+/* ----------------------------------------------------------------------------
+    Speakers
+---------------------------------------------------------------------------- */
+
+
+.speaker {
+    margin-bottom: 40px;
+    text-align: center;
+
+    .photo-wrapper {
+        margin: 0 auto 20px;
+        display: inline-block;
+        max-width: 100%;
+
+        &.rounded {
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+
+    .name {
+        &:extend(.base-clr-txt);
+
+        font-size: @font-size-small;
+        font-weight: @bold-weight;
+        text-transform: uppercase;
+        line-height: 14px;
+        letter-spacing: 0.3em;
+
+        & + p small {
+            font-size: @font-size-small + 1;
+        }
+    }
+
+    .about {
+        padding: 0 15px;
+    }
+
+    .speaker-socials > li {
+        padding: 0 10px;
+        display: inline-block;
+        text-align: center;
+
+        a {
+            .transition(none);
+
+            display: inline-block;
+
+            &:not(:hover):not(:focus):not(:active) .fa {
+                background-color: transparent;
+                border-color: @gray-lighter;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                .fa {
+                    color: @text-white;
+                }
+            }
+        }
+
+        .fa {
+            &:extend(.base-clr-bg);
+            &:extend(.base-clr-bd);
+
+            .transition(~"color 0.2s ease, background 0.2s ease, border 0.2s ease");
+
+            width: 30px;
+            height: 30px;
+            line-height: 27px;
+            border-radius: 50%;
+            border: 2px solid;
+        }
+    }
+}
+
+.speakers.masonry {
+    &.width720 .masonry-item {
+        width: 49.5%;
+        padding: 15px 15px;
+    }
+
+    &.width400 .masonry-item {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .masonry-item {
+        vertical-align: top;
+        padding: 10px 15px;
+        text-align: left;
+    }
+
+    .speaker-top {
+        position: relative;
+        margin-bottom: 15px;
+        padding-left: 85px;
+        min-height: 70px;
+
+        .speaker-title {
+            vertical-align: bottom;
+            display: table-cell;
+            height: 45px;
+            padding-bottom: 2px;
+        }
+
+        .name {
+            margin: 0;
+
+            & + p {
+                margin: 0;
+                line-height: 16px;
+            }
+        }
+
+        .photo-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 70px;
+            height: 70px;
+        }
+
+        .speaker-socials > li {
+            padding: 0 10px 0 0;
+
+            .fa {
+                width: 20px;
+                height: 20px;
+                font-size: 11px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .about {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: @screen-xs-min) {
+    .speakers.masonry {
+        .speaker-top {
+            padding-left: 60px;
+            min-height: 50px;
+
+            .photo-wrapper {
+                top: 5px;
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}

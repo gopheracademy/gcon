@@ -1,0 +1,73 @@
+/***
+NoUIRangeSlider
+***/
+
+.noUi-horizontal {
+	margin: 9px 0; 
+}
+
+/***
+Color variants
+***/
+
+@mixin noui-rangeslider-variant($state, $background) {
+	.noUi-#{$state} .noUi-connect {
+		background: $background;           
+	}
+}
+
+@include noui-rangeslider-variant("primary", $btn-primary-bg);
+@include noui-rangeslider-variant("info", $btn-info-bg);
+@include noui-rangeslider-variant("success", $btn-success-bg); 
+@include noui-rangeslider-variant("warning", $btn-warning-bg);
+@include noui-rangeslider-variant("danger", $btn-danger-bg);
+@include noui-rangeslider-variant("default", $brand-default); 
+
+/* Conect slider */
+
+/* For this slider, disable the 'origin' size. */
+.noui-connect .noUi-origin {
+	right: auto;
+	width: 0;
+}
+
+/* Position the bar and color it. */
+.noui-connect .connect {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background: #80C9F5;
+	box-shadow: inset 0 0 3px rgba(51,51,51,0.45);
+}
+
+/* When the slider is moved by tap,
+   transition the connect bar like the handle. */
+.noui-connect.noUi-state-tap .connect {
+-webkit-transition: left 300ms, right 300ms;
+	transition: left 300ms, right 300ms;
+}
+
+/**
+noUI Tooltips
+**/
+
+.noUi-handle {
+	.noUi-tooltip {
+		display: block;
+		position: absolute;
+		border: 1px solid #D9D9D9;
+		font-size: 12px;
+		border-radius: 3px;     
+		background: #fff;
+		top: -55px;
+		padding: 5px;
+		left: -10px;
+		text-align: center;
+		min-width: 50px;
+
+		strong {  
+			display: block;
+			padding: 2px;
+		}
+	}
+}

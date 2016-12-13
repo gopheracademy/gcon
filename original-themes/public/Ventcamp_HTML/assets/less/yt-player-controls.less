@@ -1,0 +1,196 @@
+/* ----------------------------------------------------------------------------
+    Jquery.mb.YTPlayer controls
+---------------------------------------------------------------------------- */
+
+
+.ytp-player-background {
+    .user-select(none);
+
+    background-position: center !important;
+
+    &.no-video-bg {
+        background: transparent url('@{img-path}background/controls_bg.jpg') top center no-repeat;
+
+        .video-conrols {
+            display: none;
+        }
+    }
+
+    & > *:not(.mbYTP_wrapper):not(.video-conrols) {
+        z-index: 1;
+    }
+
+    .video-conrols {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        .yt-play-btn-big {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -41px 0 0 -28px;
+            display: block;
+            width: 56px;
+            height: 82px;
+            background: transparent url('@{img-path}icon/yt_play_big_56x82.png') center no-repeat;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        .bottom {
+            position: absolute;
+            bottom: 8px;
+            left: 0;
+            right: 0;
+            height: 42px;
+            text-align: center;
+
+            .controls-container:hover,
+            &:hover .controls-container {
+                opacity: 1;
+            }
+        }
+    }
+
+    .controls-container {
+        .transition(opacity 0.3s ease);
+
+        position: relative;
+        padding: 11px 13px;
+        text-align: left;
+        background-color: fade(@black, 10%);
+        opacity: 0.3;
+        z-index: 999;
+
+        &.center {
+            display: inline-block;
+        }
+
+        &.left,
+        &.right {
+            display: block;
+        }
+
+        &.left {
+            float: left;
+        }
+
+        &.right {
+            float: right;
+        }
+    }
+}
+
+.ytp-player-background .controls-container {
+    & > * {
+        height: 20px;
+    }
+
+    i {
+        position: relative;
+        margin-right: 20px;
+        display: inline-block;
+        width: 20px;
+        cursor: pointer;
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            display: block;
+            background: transparent url('@{img-path}icon/yt_controls_40x40.png') no-repeat;
+        }
+    }
+
+    .yt-play-toggle {
+        &:before {
+            opacity: 1;
+            background-position: 0 0;
+        }
+
+        &:after {
+            opacity: 0;
+            background-position: 0 -20px;
+        }
+
+        &.active:before {
+            opacity: 0;
+        }
+
+        &.active:after {
+            opacity: 1;
+        }
+    }
+
+    .yt-mute-toggle {
+        &:before {
+            opacity: 1;
+            background-position: -20px 0;
+        }
+
+        &:after {
+            opacity: 0;
+            background-position: -20px -20px;
+        }
+
+        &.active:before {
+            opacity: 0;
+        }
+
+        &.active:after {
+            opacity: 1;
+        }
+    }
+
+    .yt-volume-slider {
+        display: inline-block;
+        width: 90px;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin-top: -3px;
+            display: block;
+            height: 6px;
+            background-color: lighten(@gray-lighter, 5%);
+            border-radius: 3px;
+        }
+
+        .ui-slider-handle {
+            .transition(left 0.1s ease);
+
+            position: absolute;
+            top: 2px;
+            margin-left: -8px;
+            display: block;
+            width: 16px;
+            height: 16px;
+            background-color: @white;
+            border-radius: 50%;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .ui-slider-range {
+            .transition(width 0.1s ease);
+
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin-top: -3px;
+            height: 6px;
+            border-radius: 3px 0 0 3px;
+        }
+    }
+}

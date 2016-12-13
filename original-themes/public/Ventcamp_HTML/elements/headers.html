@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>Home</title>
+
+	<meta name="description" content="PSD to HTML5+CSS3 conversion.">
+	<meta name="keywords" content="PSD, HTML5, CSS3">
+	<meta name="author" content="Vivaco">
+
+	<link rel="shortcut icon" href="../assets/img/favicon.ico">
+	<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.jpg">
+	<link rel="apple-touch-icon" sizes="72x72" href="../assets/img/apple-touch-icon-72x72.jpg">
+	<link rel="apple-touch-icon" sizes="114x114" href="../assets/img/apple-touch-icon-114x114.jpg">
+
+	<link rel="stylesheet" type="text/css" href="../assets/css/custom-animations.css" />
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+
+	<!--[if lt IE 9]>
+		<script src="../assets/js/html5shiv.js"></script>
+		<script src="../assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="preloader-mask">
+		<div class="preloader"></div>
+	</div>
+
+	<section class="hero-section bg1 bg-cover window-height light-text">
+		<ul class="socials-nav">
+			<li class="socials-nav-item"><a href="#"><span class="fa fa-twitter"></span></a></li>
+			<li class="socials-nav-item"><a href="#"><span class="fa fa-facebook"></span></a></li>
+			<li class="socials-nav-item"><a href="#"><span class="fa fa-github"></span></a></li>
+			<li class="socials-nav-item"><a href="#"><span class="fa fa-vimeo-square"></span></a></li>
+			<li class="socials-nav-item"><a href="#"><span class="fa fa-google-plus"></span></a></li>
+			<li class="socials-nav-item"><a href="#"><span class="fa fa-instagram"></span></a></li>
+		</ul>
+		<div class="heading-block centered-block align-center">
+			<div class="container">
+				<h5 class="heading-alt" style="margin-bottom: 8px;"><span class="fa fa-calendar-o base-clr-txt"></span>28.nov <span class="fa fa-map-marker base-clr-txt" style="margin-left: 14px;"></span>New York, NY</h5>
+				<h1 class="extra-heading">Ventcamp</h1>
+				<h6 class="thin base-font">Massive conference about <strong>web developement</strong></h6>
+				<div class="btns-container">
+					<a href="#" class="btn btn-md" data-modal-link="email-ticket">GET TICKETS</a>
+					<a href="#" class="btn btn-outline btn-md" data-modal-link="0">VIDEO</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="hero-section bg3 bg-cover overlay gradient-overlay window-height align-center light-text">
+		<div class="heading-block centered-block">
+			<div class="container">
+				<h6 class="thin base-font">Massive conference about <strong>web developement</strong></h6>
+				<h1 class="extra-heading">Ventcamp</h1>
+				<h5 class="heading-alt" style="margin-bottom: 8px;"><span class="fa fa-calendar-o base-clr-txt"></span>28.nov <span class="fa fa-map-marker base-clr-txt"></span>New York, NY</h5>
+			</div>
+		</div>
+		<div class="btns-container">
+			<a href="#" class="btn btn-md btn-rounded" data-modal-link="email-ticket">Get tickets</a>
+			<a href="#" class="btn btn-md btn-outline btn-rounded" data-modal-link="0">Video</a>
+		</div>
+	</section>
+
+	<div class="hero-section bg2 bg-cover light-text align-center">
+		<div class="container window-height">
+			<h5 class="heading-alt hero-heading-top" style="margin-bottom: 8px;"><span class="fa fa-calendar-o base-clr-txt"></span>28.nov <span class="fa fa-map-marker base-clr-txt"></span>Lyon, france</h5>
+
+			<div class="heading-block centered-block">
+				<h1 class="extra-heading">Ventcamp</h1>
+				<div class="btns-container">
+					<a href="#" class="btn btn-md btn-rounded" data-modal-link="email-ticket">Get tickets</a>
+					<a href="#" class="btn btn-md btn-outline btn-rounded" data-modal-link="0">Video</a>
+				</div>
+			</div>
+
+			<h5 class="heading-alt hero-heading-bottom">Massive conference about web developement</h5>
+		</div>
+	</div>
+
+	<div class="modal-window" data-modal="email-ticket" style="background-color: rgba(2, 2, 2, 0.85);">
+		<div class="modal-box small animated" data-animation="zoomIn" data-duration="700">
+			<span class="close-btn icon icon-office-52"></span>
+
+			<h5 class="align-center"><span class="highlight">Event Registration</span></h5>
+
+			<form class="form registration-form align-center">
+
+				<fieldset class="col-sm-12">
+					<label for="first_name">First Name</label>
+					<input id="first_name" name="first_name" type="text">
+				</fieldset>
+
+				<fieldset class="col-sm-12">
+					<label for="last_name">Last Name</label>
+					<input id="last_name" name="last_name" type="text">
+				</fieldset>
+
+				<fieldset class="col-sm-12">
+					<label for="email">Email</label>
+					<input id="email" name="email" type="email">
+				</fieldset>
+
+				<fieldset class="col-sm-6">
+					<label for="pass1">Ticket type</label>
+					<select id="pass1" name="pass1">
+						<option value="" selected disabled>-- Select --</option>
+						<option value="0">Early Bird</option>
+						<option value="1">Silver Pass</option>
+						<option value="2">Gold Pass</option>
+						<option value="3">Ultimate Mega Ultra Legendary Pass</option>
+					</select>
+				</fieldset>
+
+				<fieldset class="col-sm-6">
+					<label for="pass2"># tickets</label>
+					<select id="pass2" name="pass2">
+						<option value="a">Variant A</option>
+						<option value="b">Variant B</option>
+						<option value="c">Variant C</option>
+						<option value="d">Variant D</option>
+						<option value="e">Variant E</option>
+						<option value="f" disabled>Variant F</option>
+						<option value="g">Variant G</option>
+						<option value="h">Variant H</option>
+						<option value="i">Variant I</option>
+						<option value="j">Variant J</option>
+						<option value="k">Variant K</option>
+						<option value="l">Variant L</option>
+						<option value="m">Variant M</option>
+					</select>
+				</fieldset>
+
+				<fieldset class="col-sm-12">
+					<input id="privacy" name="privacy" type="checkbox"><label for="privacy">I read & agree with <a href="#">Terms of service</a> </label>
+					<br />
+					<br />
+				</fieldset>
+
+				<input type="submit" value="submit" class="btn">
+			</form>
+
+		</div>
+	</div>
+
+	<div class="modal-window" data-modal="0" style="background-color: rgba(2, 2, 2, 0.85);">
+		<div class="modal-box iframe-box iframe-video">
+			<span class="close-btn icon icon-office-52"></span>
+
+			<iframe src="https://www.youtube.com/embed/goH-Pv1w6xo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="../assets/js/jquery-1.11.3.min.js?ver=1"></script>
+	<![endif]-->
+	<!--[if (gte IE 9) | (!IE)]><!-->
+		<script type="text/javascript" src="../assets/js/jquery-2.1.4.min.js?ver=1"></script>
+	<!--<![endif]-->
+
+	<script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../assets/js/toastr.min.js"></script>
+	<script type="text/javascript" src="../assets/js/jquery.waypoints.min.js"></script>
+	<script type="text/javascript" src="../assets/js/jquery.appear.js"></script>
+	<script type="text/javascript" src="../assets/js/modal-box.js"></script>
+	<script type="text/javascript" src="../assets/js/ventcamp.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+/* ----------------------------------------------------------------------------
+    Modal boxes
+---------------------------------------------------------------------------- */
+
+.modal-window {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    cursor: default;
+    z-index: 9999;
+
+    &:not(.base-clr-bg) {
+        background-color: fade(@white, 90%);
+    }
+}
+
+.modal-box {
+    .background-size(cover);
+    .box-shadow(0 0 25px 0 fade(@black, 12%));
+
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 64%;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 40px 30px 25px;
+    border: 1px solid @gray-lighter;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:not(.base-clr-bg) {
+        background-color: @white;
+    }
+
+    &.light-text .close-btn {
+        color: @text-white;
+
+        &:not(:hover) {
+            color: @text-white;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .close-btn {
+        .transition(~"color 0.2s ease, background 0.2s ease");
+
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        font-size: 14px;
+        cursor: pointer;
+        opacity: 1;
+        z-index: 20;
+
+        &:not(:hover) {
+            color: @text-black;
+        }
+    }
+
+    *:nth-child(2) {
+        margin-top: 0;
+    }
+
+    &.iframe-box.iframe-video {
+        border: none;
+        padding-bottom: 35.866%;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+        }
+    }
+
+    &.iframe-box,
+    &.iframe-box.large,
+    &.iframe-box.small {
+        padding: 0;
+
+        .close-btn {
+            top: 0;
+            right: 0;
+            padding: 12px;
+            font-size: 16px;
+            width: 40px;
+            line-height: 1;
+            background-color: fade(@white, 60%);
+
+            &:hover {
+                background-color: fade(@white, 95%);
+            }
+        }
+    }
+}
+
+.modal-box {
+    &.small {
+        width: 30%;
+        padding: 30px 15px 20px;
+        font-size: 100%;
+
+        .close-btn {
+            font-size: 12px;
+            right: 15px;
+            top: 12px;
+        }
+    }
+
+    &.large {
+        width: 90%;
+        height: 100%;
+        padding: 50px 44px 25px;
+
+        .close-btn {
+            right: 50px;
+            top: 20px;
+        }
+    }
+}
+
+.modal-box {
+    &.top {
+        .translateY(0);
+
+        top: 0;
+        bottom: auto;
+    }
+
+    &.bottom {
+        .translateY(0);
+
+        top: auto;
+        bottom: 0;
+    }
+
+    &.left {
+        float: left;
+    }
+
+    &.right {
+        float: right;
+    }
+}
+
+@media (max-width: @screen-sm-max) {
+    .modal-box {
+        width: 70%;
+
+        &.small {
+            width: 40%;
+        }
+
+        &.large {
+            width: 94%;
+        }
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    .modal-box {
+        width: 90%;
+        padding: 40px 20px 25px;
+
+        &.small {
+            width: 60%;
+
+            .close-btn {
+                right: 20px;
+            }
+        }
+
+        &.large {
+            width: 100%;
+            padding: 50px 24px 25px;
+
+            .close-btn {
+                right: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: @screen-xs-middle) {
+    .modal-box {
+        width: 100%;
+
+        &.small {
+            width: 80%;
+        }
+    }
+}

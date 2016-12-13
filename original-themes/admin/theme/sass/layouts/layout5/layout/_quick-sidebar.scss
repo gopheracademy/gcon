@@ -1,0 +1,49 @@
+/******************
+Page Quick Sidebar
+******************/
+
+/***
+Quick Sidebar Layout
+***/
+
+/* Page Portlet Fullscreen */
+
+.page-portlet-fullscreen {
+	.page-quick-sidebar-wrapper,
+	.page-quick-sidebar-toggler {
+		z-index: -1;
+	}
+}
+
+/* Quick sidebar toggler */
+
+.page-header {
+	.mega-menu {
+		.quick-sidebar-toggler {
+			top: 9px;
+			border: none;
+			outline: none;
+			padding: 5px 5px; 
+			margin-left: 15px;
+			position: relative;
+			background: #45b6af;
+			@include border-radius(2px);
+			width: $header-user-activity-width;
+			height: $header-user-activity-height;
+
+			i {
+				position: relative;
+				top: 1px;
+				color: $text-white-color;
+
+				&:before {
+					content: "\e065"#{'/*rtl:"\e066"*/'};  				
+				}
+
+				.page-quick-sidebar-open &:before {
+					content: "\e066"#{'/*rtl:"\e065"*/'};
+				}
+			}
+		}
+	}
+}

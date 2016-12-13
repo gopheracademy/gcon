@@ -1,0 +1,176 @@
+//== Colors
+
+$gray-base:              		darken(#34495E, 20%); 
+$gray-dark:              		lighten($gray-base, 20%); 
+$gray:                   		lighten($gray-base, 33.5%);
+$gray-light:             		lighten($gray-base, 46.7%);
+
+$brand-primary:         		darken(#428bca, 6.5%);
+$brand-success:         		lighten(#32c5d2, 1%); 
+$brand-info:            		lighten(#5893dd, 3%); 
+$brand-warning:        			#F1C40F;  
+$brand-danger:          		lighten(#eb5d68, 3%);    
+
+//== Forms
+//
+//##
+
+//** `<input>` background color
+$input-bg:                       #fff ;
+//** `<input disabled>` background color
+$input-bg-disabled:              darken(#f1f4f7, 1%);
+
+//** Text color for `<input>`s
+$input-color:                    lighten(#000000, 33.5%);
+//** `<input>` border color
+$input-border:                   darken(#e1e5ec, 10%);
+
+//** Border color for inputs on focus
+$input-border-focus:             darken($input-border, 15%);
+
+//** Placeholder text color
+$input-color-placeholder:        #999;
+
+$legend-color:                   $gray-dark;
+$legend-border-color:            #e5e5e5 ;
+
+//== Dropdowns
+
+$dropdown-link-hover-bg:        #e1e5ec; // set by keenthemes
+
+//== Wells
+
+$well-bg:                     	lighten($gray-base, 87%);  // set by keenthemes
+
+//== Tables
+
+//** Default background color used for all tables.
+$table-bg:                      transparent;
+
+//** Background color used for `.table-striped`.
+  
+$table-bg-accent:               lighten($general-panel-bg-color, 3%);  
+
+//** Background color used for `.table-hover`.
+$table-bg-hover:                darken($general-panel-bg-color, 1%);
+$table-bg-active:               $table-bg-hover;
+
+//** Border color for table and cell borders.
+$table-border-color:           	darken($general-panel-bg-color, 3%);
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+$state-success-text:             darken($brand-success, 10%);  
+$state-success-bg:               lighten($brand-success, 28%);
+$state-success-border:           lighten($brand-success, 28%);
+
+$state-info-text:             	 darken($brand-info, 12%);  
+$state-info-bg:               	 lighten($brand-info, 29%);
+$state-info-border:           	 lighten($brand-info, 29%);
+
+$state-danger-text:              darken($brand-danger, 10%);  
+$state-danger-bg:                lighten($brand-danger, 26%);
+$state-danger-border:            lighten($brand-danger, 26%);
+
+$state-warning-text:             darken($brand-warning, 10%);  
+$state-warning-bg:               lighten($brand-warning, 27%);  
+$state-warning-border:           lighten($brand-warning, 27%);
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-font-weight:                normal;
+
+$btn-default-color:              #333;
+$btn-default-bg:                 #fff;
+$btn-default-border:             #ccc;
+
+$btn-primary-color:              #fff;
+$btn-primary-bg:                 $brand-primary;
+$btn-primary-border:             darken($btn-primary-bg, 5%);
+
+$btn-success-color:              #fff;
+$btn-success-bg:                 $brand-success;
+$btn-success-border:             darken($btn-success-bg, 5%);
+
+$btn-info-color:                 #fff;
+$btn-info-bg:                    $brand-info;
+$btn-info-border:                darken($btn-info-bg, 5%);
+
+$btn-warning-color:              #fff;
+$btn-warning-bg:                 $brand-warning;
+$btn-warning-border:             darken($btn-warning-bg, 5%);
+
+$btn-danger-color:               #fff;
+$btn-danger-bg:                  $brand-danger;
+$btn-danger-border:              darken($btn-danger-bg, 5%);
+
+$btn-link-disabled-color:        $gray-light;
+
+
+//== Alerts
+//
+//## Define alert colors, border radius, and padding.
+
+$alert-success-bg:            $state-success-bg;
+$alert-success-text:          $state-success-text;
+$alert-success-border:        $state-success-border;
+
+$alert-info-bg:               $state-info-bg;
+$alert-info-text:             $state-info-text;
+$alert-info-border:           $state-info-border;
+
+$alert-warning-bg:            $state-warning-bg;
+$alert-warning-text:          $state-warning-text;
+$alert-warning-border:        $state-warning-border;
+
+$alert-danger-bg:             $state-danger-bg;
+$alert-danger-text:           $state-danger-text;
+$alert-danger-border:         $state-danger-border;
+
+//== Progress bars
+//
+//##
+
+//** Default progress bar color
+$progress-bar-bg:             $brand-primary;
+//** Success progress bar color
+$progress-bar-success-bg:     $brand-success;
+//** Warning progress bar color
+$progress-bar-warning-bg:     $brand-warning;
+//** Danger progress bar color
+$progress-bar-danger-bg:      $brand-danger;
+//** Info progress bar color
+$progress-bar-info-bg:        $brand-info;
+
+//== Panels
+//
+//##
+
+$panel-primary-text:          #fff;
+$panel-primary-border:        $brand-primary;
+$panel-primary-heading-bg:    $brand-primary;
+
+$panel-success-text:          $state-success-text;
+$panel-success-border:        $state-success-border;
+$panel-success-heading-bg:    $state-success-bg;
+
+$panel-info-text:             $state-info-text;
+$panel-info-border:           $state-info-border;
+$panel-info-heading-bg:       $state-info-bg;
+
+$panel-warning-text:          $state-warning-text;
+$panel-warning-border:        $state-warning-border;
+$panel-warning-heading-bg:    $state-warning-bg;
+
+$panel-danger-text:           $state-danger-text;
+$panel-danger-border:         $state-danger-border;
+$panel-danger-heading-bg:     $state-danger-bg;
+
+//== List Group
+$list-group-disabled-bg:      		$general-panel-bg-color;
+$list-group-disabled-color:			lighten($general-panel-font-color, 45%);
+$list-group-disabled-text-color:	lighten($general-panel-font-color, 45%);

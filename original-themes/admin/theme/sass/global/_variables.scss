@@ -1,0 +1,120 @@
+//## Bootstrap 
+//
+// Core bootstrap variables and mixins
+@import "colors";
+
+@import "../bootstrap/variables";
+@import "../bootstrap/mixins";
+
+$direction: 						'ltr' !default;
+$theme-style: 						'square' !default;         
+$theme-type:  						'default' !default;
+    
+//##  Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-primary:  	  		 	"Open Sans", sans-serif !default;
+$font-family-nav:	  		 		Roboto, sans-serif !default;
+$font-family-default:  	  		 	"Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+$general-heading-color:				#3f444a;
+$general-text-color:  				darken(#677581, 5%);
+$general-transition:				all 0.3s;
+
+// Global text color on <body>
+$text-color:            			#333333 !default;      
+  
+// Global light text color on <body>
+$text-light-color:     	 			#ffffff !default;  
+
+// Global muted text color on <body>
+$text-muted-color:      			#444444 !default;
+   
+// Global textual link color.
+$link-color:            			#5b9bd1 !default;
+
+// Link hover color.
+$link-hover-color:      			darken($link-color, 15%) !default;
+
+$primary-link-color:                #65A0D0 !default;
+
+$general-border-radius:				4px !default;
+
+@if $theme-type == "material-design" {
+	$general-border-radius:			2px !global;
+} 
+
+$dropdown-shadow:					5px 5px rgba(#666, 0.1);
+$icon-size-normal:					14px !default;
+$brand-default:						lighten(#b7c0ce, 1%) !default;  
+$general-panel-bg-color:			#f1f4f7 !default;
+$general-panel-border-color:		darken(#f1f4f7, 3%) !default;
+$general-panel-font-color:			#3f444a !default;
+$general-shadow:					0px 2px 3px 2px rgba(0, 0, 0, 0.03);  
+$general-icon-color:				darken($general-panel-bg-color, 15%);
+$page-content-solid-bg-color:       darken($general-panel-bg-color, 1%) !default; // content solid bg color. default:#F0F2F7.
+
+//## Z-index master list
+//
+
+$zindex-navbar:            			9995;
+$zindex-navbar-above:      			9999;
+$zindex-dropdown:          			1000;
+$zindex-popover:           			1010;
+$zindex-tooltip:           			1030;
+$zindex-navbar-fixed:      			1030;
+$zindex-modal-background:  			10049; 
+$zindex-modal:             			10050;
+$zindex-top:						10100;
+
+//== Media queries breakpoints
+//
+//Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-xs-min:              		480px !default;
+
+// Small screen / tablet  
+$screen-sm-min:              		768px !default;
+
+// Medium screen / desktop
+$screen-md-min:              		992px !default;
+
+// Large screen / wide desktop
+$screen-lg-min:             	 	1200px !default;
+
+// Large scree / wider desktop      
+$screen-lg-med:                     1260px !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              		($screen-sm-min - 1) !default;  // 767px
+$screen-sm-max:              		($screen-md-min - 1) !default;  // 991px
+$screen-md-max:              		($screen-lg-min - 1) !default;  // 1199px  
+
+//## Image  paths
+$global-img-path:           		'../img/' !default; 
+$page-img-path:           			'../img/' !default;   
+$page-media-path:           		'../media/' !default; 
+
+// Metronic grid system
+
+$m-layout-breakpoints: (
+  // Small screen / phone
+  xs: 480px,
+  // Medium screen / tablet
+  sm: 768px,
+  // Large screen / desktop
+  md: 992px,
+  // Extra large screen / wide desktop
+  lg: 1260px
+) !default;
+
+//== Grid system
+
+//** Number of columns in the grid.
+$m-grid-columns:              12 !default;
+$m-grid-columns-gutter:       20px !default;
+
+
+@import "_bootstrap-override";

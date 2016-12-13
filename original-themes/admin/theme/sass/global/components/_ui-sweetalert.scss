@@ -1,0 +1,44 @@
+// BOOTSTRAP SWEET ALERTS
+
+// OVERRIDE DEFAULT SWEET ALERT STYLING
+body.stop-scrolling {height:auto !important; overflow:visible !important; }
+.sweet-alert .sa-icon.sa-success .sa-placeholder,
+.sweet-alert .sa-icon{
+	border-radius: 50% !important;
+}
+
+.sweet-alert h2{
+	font-size:20px;
+	padding-top:5px;
+}
+
+.sweet-alert p{
+	font-size: 14px;
+}
+
+.sweet-alert .btn{
+	font-size:14px;
+	padding: 8px 14px;
+
+	&:focus{
+		border-color: transparent;
+	}
+}
+
+.mt-sweetalert{
+	margin: 0 5px 5px 0 ;
+
+	&:hover{ cursor: pointer;}
+
+	&.mt-italic{
+		font-style: italic;
+	}
+	&:focus{
+		outline:none !important;
+		border: 1px solid transparent;
+	}
+}
+
+.mt-sweetalert-title{
+	margin: 30px 0 15px 0;
+}

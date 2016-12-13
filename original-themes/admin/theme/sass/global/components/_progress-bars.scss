@@ -1,0 +1,41 @@
+/***
+Customized Progress Bars
+***/
+
+.progress {  
+  border: 0; 
+  background-image: none;
+  filter: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;   
+
+  &.progress-sm {
+    height: 12px;
+  }
+
+  .page-md & {
+    text-indent: -99999px;
+  }
+}
+
+/* Custom colors */
+
+@each $name, $colors in $component-colors {
+    .progress-bar.#{$name} {
+        background: map-get($colors, base) !important;
+        color: map-get($colors, font) !important;
+    }
+}
+
+@if $theme-type == "material-design" {
+    .progress {
+        height: 8px;
+        border-radius: 0 !important;
+
+        &.progress-sm {
+            height: 6px;
+        }
+    }
+}

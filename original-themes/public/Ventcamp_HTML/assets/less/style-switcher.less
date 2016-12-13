@@ -1,0 +1,238 @@
+/* ----------------------------------------------------------------------------
+    Style switcher
+---------------------------------------------------------------------------- */
+
+.style-switcher {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 350px;
+    z-index: 9999;
+
+    .style-toggle {
+        .border-radius(5%);
+
+        position: absolute;
+        top: 30%;
+        right: 0;
+        margin-left:-2px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background-color: fade(@black, 30%);
+
+        .fa {
+            color: @text-white;
+        }
+    }
+
+    .style-switcher-container {
+        .box-shadow(0 2px 5px fade(@black, 10%));
+
+        width: 300px;
+        height: 100%;
+        padding: 10px 15px;
+        background-color: @white;
+        border: 2px solid @white-alt;
+        overflow-y: auto;
+        direction: rtl;
+
+        section {
+            direction: ltr;
+            padding: 10px 0;
+        }
+
+        ul {
+            margin: 0;
+        }
+    }
+}
+
+.style-switcher .template-set-color {
+    .clearfix();
+
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+
+    & > li {
+        float: left;
+        display: inline-block;
+    }
+
+    .color {
+        .border-radius(5px);
+
+        display: block;
+        padding: 15px;
+        margin-right: 5px;
+        font-size: 12px;
+        text-transform: uppercase;
+        line-height: normal;
+        color: @text-white;
+        background-color: @gray-dark;
+
+        &.pink {
+            background-color: @pink;
+        }
+
+        &.green {
+            background-color: @green;
+        }
+
+        &.blue {
+            background-color: @blue;
+        }
+
+        &.berry {
+            background-color: @berry;
+        }
+
+        &.orange {
+            background-color: @orange;
+        }
+    }
+}
+
+.style-switcher .template-animations-switch {
+    input[type="checkbox"] {
+        display: none;
+
+        & + label {
+            .transition(~"background 0.2s ease, color 0.2s ease");
+
+            position: relative;
+            display: block;
+            width: 65px;
+            height: 32px;
+            font-family: @font-family-heading;
+            font-size: @font-size-small - 1px;
+            font-weight: @bold-weight;
+            text-transform: uppercase;
+            border-radius: 16px;
+            background: @white-alt;
+            cursor: pointer;
+            overflow: hidden;
+
+            &:before,
+            &:after {
+                .box-sizing(border-box);
+                .transition(~"left 0.2s ease, right 0.2s ease");
+
+                position: absolute;
+                top: 0;
+                display: block;
+                width: 35px;
+                height: 100%;
+                line-height: 32px;
+            }
+
+            &:before {
+                content: "Off";
+                left: 0;
+                color: darken(@gray-light, 7%);
+                text-align: center;
+            }
+
+            &:after {
+                content: 'On';
+                right: -32px;
+                color: @text-white;
+                padding-left: 5px;
+            }
+
+            & > i {
+                .transition(~"right 0.2s ease");
+
+                position: absolute;
+                top: 3px;
+                right: 4px;
+                display: block;
+                width: 26px;
+                height: 26px;
+                border-radius: 13px;
+                background-color: @white;
+            }
+        }
+
+        &:checked + label {
+            background-color: #92c83c;
+
+            &:before {
+                left: -32px;
+            }
+
+            &:after {
+                right: 0;
+            }
+
+            & > i {
+                right: 35px;
+            }
+        }
+    }
+}
+
+.style-switcher .set-template {
+    font-size: 0;
+
+    li {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 10px;
+
+        &:nth-child(2n) {
+            margin-left: 10px;
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        display: block;
+    }
+
+    a {
+        position: relative;
+        display: table;
+        width: 120px;
+        height: 64px;
+        text-decoration: none;
+        z-index: 10;
+
+        &:hover,
+        &:focus,
+        &:active {
+            .content {
+                opacity: 1;
+            }
+        }
+
+        &:active .content {
+            background-color: @black;
+        }
+
+        .content {
+            .transition(~"background 0.2s ease, opacity 0.2s ease");
+
+            vertical-align: middle;
+            display: table-cell;
+            padding: 0 10px;
+            font-size: @font-size-thin;
+            font-weight: @bold-weight;
+            text-transform: uppercase;
+            text-align: center;
+            color: @text-white;
+            background-color: fade(@black, 80%);
+            opacity: 0;
+        }
+    }
+}

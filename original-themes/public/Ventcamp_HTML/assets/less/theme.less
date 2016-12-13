@@ -1,0 +1,359 @@
+/* ----------------------------------------------------------------------------
+    Theme styles
+---------------------------------------------------------------------------- */
+
+
+.bg1 {
+    background-image: url("@{img-path}backgrounds/bg1.jpg");
+}
+
+.bg2 {
+    background-image: url("@{img-path}backgrounds/bg2.jpg");
+}
+
+.bg3 {
+    background-image: url("@{img-path}backgrounds/bg3.jpg");
+}
+
+.bg4 {
+    background-image: url("@{img-path}backgrounds/bg4.jpg");
+}
+
+.bg5 {
+    background-image: url("@{img-path}backgrounds/bg5.jpg");
+}
+.bg1.overlay:before {
+	opacity: 0.9;
+}
+.bg4.overlay:before {
+    background-color: #282f43;
+	opacity: 0.85;
+}
+.bg5.overlay:before {
+  background-color: #262627;
+  opacity: 0.7;
+}
+.gradient-overlay:before {
+    background: #9001a5;
+    background: -moz-linear-gradient(top,  #9001a5 0%, #10171a 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9001a5), color-stop(100%,#10171a));
+    background: -webkit-linear-gradient(top,  #9001a5 0%,#10171a 100%);
+    background: -o-linear-gradient(top,  #9001a5 0%,#10171a 100%);
+    background: -ms-linear-gradient(top,  #9001a5 0%,#10171a 100%);
+    background: linear-gradient(to bottom,  #9001a5 0%,#10171a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9001a5', endColorstr='#10171a',GradientType=0 );
+    opacity: 0.7;
+}
+
+.hero-section {
+    z-index: 1;
+    overflow: hidden;
+}
+
+.stat-section,
+.signup-section {
+    padding: 50px 0 48px;
+}
+
+.prices-section {
+    padding: 26px 0 100px;
+}
+
+.shortcodes-section {
+    padding: 26px 0 100px;
+}
+
+.call-to-action-section {
+    padding: 50px 0 48px;
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    .heading {
+        margin-bottom: 20px;
+        line-height: 30px;
+    }
+}
+
+.contacts-section {
+    position: relative;
+    padding: 0;
+}
+
+.line-heading {
+    text-align: center;
+    white-space: nowrap;
+
+    &:before,
+    &:after {
+        vertical-align: middle;
+        display: inline-block;
+        width: 12.4%;
+        height: 1px;
+        content: "";
+        background-color: @text-white;
+    }
+
+    &:before {
+        margin-right: 2.5%;
+    }
+
+    &:after {
+        margin-left: 2.5%;
+    }
+}
+
+.shortcodes-icons-list {
+    padding: 10px 0;
+
+    & > li {
+        padding: 0 12px;
+    }
+
+    .icon {
+        font-size: 54px;
+    }
+}
+
+.sponsors-list {
+    margin: 30px 0;
+    display: table;
+    width: 100%;
+    text-align: center;
+
+    & > li {
+        vertical-align: middle;
+        display: table-cell;
+        padding: 10px 20px;
+
+        img {
+            display: inline-block;
+            max-width: 100%;
+        }
+    }
+}
+
+.comming-soon .heading-block {
+    padding: 50px 0;
+
+    .form {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 410px;
+        padding-top: 60px;
+    }
+}
+
+#contacts-map {
+    min-height: 300px;
+}
+
+// GoogleMaps and fixed background fix
+#contacts-map,
+#contacts-map > *,
+#contacts-map > .gm-style > div:not(:first-child),
+#contacts-map > .gm-style > div:not(:first-child) div,
+#contacts-map > .gm-style > div:first-child > div:nth-child(2),
+#contacts-map > .gm-style > div > div div{
+    transform: none !important;
+}
+
+.form-register {
+    margin: 0 auto 10px;
+    max-width: 620px;
+    padding-bottom: 25px;
+
+    .checkbox-wrapper {
+        margin-left: -35px;
+
+        label {
+            line-height: 1.6;
+        }
+    }
+}
+
+.venue-section {
+    .venue-hotel-logo {
+        margin: 0 0 43px;
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .venue-title {
+        margin: 0 0 12px;
+
+        & + h6 {
+            margin: 0 0 12px;
+        }
+    }
+
+    .venue-title-icon {
+        margin: 0;
+        text-align: center;
+    }
+
+    .btn {
+        margin: 30px 0 0;
+        padding-left: 47px;
+
+        .fa {
+            position: absolute;
+            left: 20px;
+            top: 13px;
+            font-size: 19px;
+        }
+    }
+}
+
+.modal-box.paypal-modal {
+    max-width: 420px;
+    padding-left: 25px;
+    padding-right: 25px;
+    overflow: visible;
+
+    form {
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        text-align: left;
+
+        td {
+            padding-bottom: 6px;
+        }
+    }
+
+    input[type="image"] {
+        margin-top: 15px;
+        display: inline-block;
+    }
+
+    select,
+    .pseudo-select {
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (min-width: @screen-lg-min) {
+    .venue-section .left-col {
+        width: 27%;
+    }
+}
+
+@media (min-width: @screen-md-min) {
+    .venue-section {
+        padding: 105px 0 80px;
+
+        .left-col {
+            width: 30%;
+        }
+
+        .right-col {
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: @screen-sm-max) {
+    .venue-section {
+        padding: 85px 0 60px;
+
+        .venue-hotel-logo {
+            margin: 0 0 25px;
+        }
+
+        .venue-title-icon {
+            text-align: left;
+        }
+
+        .venue-title .venue-icon {
+            margin: 0 25px 0 0;
+        }
+
+        .btn {
+            margin: 20px 0 30px;
+        }
+
+        .right-col {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    .line-heading {
+        &:before,
+        &:after {
+            width: 5.5%;
+        }
+    }
+
+    .sponsors-list > li {
+        padding: 5px 10px;
+    }
+
+    .prices-section .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .form-register {
+        .form-group {
+            padding-bottom: 0;
+
+            & > label {
+                width: 100%;
+                text-align: left;
+                line-height: 30px;
+            }
+        }
+
+        .checkbox-wrapper {
+            margin-left: 0;
+        }
+    }
+
+    .hero-section,
+    .hero-section > .container {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}
+
+@media (max-width: @screen-xs-min ) {
+    .extra-heading {
+        font-size: @font-size-h3;
+    }
+
+    .line-heading {
+        white-space: normal;
+
+        &:before,
+        &:after {
+            margin: 10px 0;
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .sponsors-list {
+        margin: 0;
+        display: block;
+        font-size: 0;
+
+        & > li {
+            width: 100%;
+            display: inline-block;
+            padding: 20px 0;
+        }
+    }
+
+    .signup-section .form .form-group {
+        margin-bottom: 0;
+        width: 100%;
+    }
+}

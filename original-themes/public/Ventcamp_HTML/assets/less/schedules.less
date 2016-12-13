@@ -1,0 +1,564 @@
+/* ----------------------------------------------------------------------------
+    Schedules
+---------------------------------------------------------------------------- */
+
+
+.schedule {
+    margin-bottom: 50px;
+    text-align: left;
+    background-color: @white;
+
+    .tab-content .nav-current {
+        background-color: @gray-blue;
+        border-color: @gray-lighter;
+    }
+}
+
+.nav.nav-schedule {
+    display: table;
+    width: 100%;
+    border-style: solid;
+    border-width: 0 1px 0 0;
+    border-color: @gray-lighter;
+    z-index: 10;
+}
+
+.nav.nav-schedule > li {
+    .transition(~"background 0.2s ease, border 0.2s ease");
+
+    position: relative;
+    display: table-cell;
+    font-size: @font-size-base;
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+    border-color: @gray-lighter;
+    margin-bottom: 0px;
+	
+    &:after {
+        &:extend(.base-clr-bd);
+
+        .transition(~"opacity 0.15s ease");
+
+        position: absolute;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        width: 0;
+        height: 0;
+        content: "";
+        border-style: solid;
+        border-width: 7px 10px 0 10px;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    & > a {
+        .transition(~"color 0.2s ease");
+
+        display: block;
+        text-decoration: none;
+        padding: 20px 15px 12px;
+        text-align: center;
+
+        *:first-child {
+            margin-top: 0;
+        }
+
+        *:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+        }
+
+        h1, h2, h3, h4, h5, h6{
+            &:first-child {
+                margin: 0 0 -2px;
+            }
+        }
+    }
+}
+
+.nav.nav-schedule > li.active {
+    &:extend(.base-clr-bg);
+    // &:extend(.base-clr-bd);
+
+    &:after {
+        opacity: 1;
+    }
+
+    &,
+    &:hover,
+    &:active {
+        cursor: default;
+        pointer-events: none;
+    }
+
+    a,
+    a:hover,
+    a:focus {
+        &, * {
+            color: @text-white;
+        }
+    }
+}
+
+.schedule .tab-content {
+    padding: 0;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    border-color: transparent @gray-lighter @gray-lighter;
+
+    .img-responsive {
+        margin: 0;
+    }
+
+    .nav.nav-schedule {
+        display: inline-block;
+        background-color: @gray-blue;
+        border: none;
+
+        & > li {
+            display: inline-block;
+            border-width: 0 0 1px;
+
+            &:not(.active) {
+                border-color: transparent;
+            }
+
+            &:after {
+                display: none;
+            }
+
+            & > a {
+                margin: 0;
+                padding: 16px 45px 14px;
+                font-family: @font-family-heading;
+                font-weight: @bold-weight;
+                text-transform: uppercase;
+
+                &:not(:hover):not(:active) {
+                    color: @text-gray;
+                }
+            }
+        }
+
+        & > li.active {
+            &:extend(.base-clr-bd);
+
+            background-color: transparent;
+
+            & > a:not(:hover):not(:active),
+            & > a:hover,
+            & > a:focus {
+                &:extend(.base-clr-txt);
+            }
+        }
+    }
+}
+
+.schedule .tab-content-schedule {
+    position: relative;
+    border: none;
+    padding: 90px 100px 80px 80px;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 104px;
+        width: 0;
+        display: block;
+        content: "";
+        border-right: 1px solid @gray-blue;
+    }
+
+    .panel-group {
+        margin-bottom: 0;
+    }
+
+    .schedule-item {
+        position: relative;
+        margin-bottom: 22px;
+        min-height: 65px;
+        padding: 0 0 0 104px;
+        background-color: transparent;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.schedule .schedule-item {
+    & + .schedule-item {
+        margin-top: 0;
+    }
+
+    .lecture-icon-wrapper {
+        &:extend(.base-clr-bd);
+
+        position: absolute;
+        vertical-align: middle;
+        top: 25px;
+        left: 4px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 36px;
+        background-color: @white;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .schedule-item-toggle {
+        margin-bottom: 0;
+        display: block;
+        text-decoration: none;
+        color: @text-black;
+
+        &.collapsed .title .icon {
+            &:extend(.base-clr-txt);
+        }
+
+        .time {
+            margin-bottom: 10px;
+            font-size: @font-size-base;
+
+            .icon {
+                margin-right: 8px;
+                vertical-align: middle;
+                color: @text-gray-light;
+            }
+        }
+
+        .title {
+            position: relative;
+            margin: 0;
+            padding: 0 35px 11px 0;
+            border-bottom: 1px solid @gray-blue;
+
+            .icon {
+                .transition(~"transform 0.3s ease");
+
+                position: absolute;
+                right: 10px;
+                bottom: 11px;
+                font-size: @font-size-small;
+                color: @text-gray;
+            }
+        }
+    }
+
+    .schedule-item-body {
+        margin-top: 0;
+        /*font-size: @font-size-small;*/
+
+        .speaker-wrapper {
+            margin-bottom: 0;
+        }
+
+        & > article,
+        & > div {
+            margin: 0;
+            padding: 11px 0;
+        }
+
+        .speaker-name {
+            &:extend(.base-clr-txt);
+
+            display: inline-block;
+            font-size: @font-size-thin;
+            text-transform: uppercase;
+            letter-spacing: 0.5em;
+        }
+    }
+}
+
+.download-schedule-btn {
+    .transition(~"color 0.2s ease, background 0.2s ease, border 0.2s ease");
+
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 220px;
+    padding: 15px 25px 15px 90px;
+    font-size: @font-size-large;
+    text-align: left;
+    line-height: 25px;
+    border: 1px solid @gray-light;
+
+    &:hover,
+    &:focus {
+        &:extend(.base-clr-bg);
+        &:extend(.base-clr-bd);
+
+        color: @text-white;
+        text-decoration: none;
+    }
+
+    .icon {
+        position: absolute;
+        top: 50%;
+        left: 25px;
+        margin-top: -20px;
+        font-size: @font-size-h3;
+        color: inherit;
+    }
+}
+
+.schedule.schedule-light {
+    margin-bottom: 30px;
+
+    .nav-current {
+        font-family: @font-family-heading;
+        font-weight: @bold-weight;
+        text-transform: uppercase;
+        color: @text-gray-dark;
+    }
+
+    .nav.nav-schedule {
+        &:extend(.base-clr-bd);
+
+        border-style: solid;
+        border-width: 1px;
+        border-collapse: separate;
+    }
+
+    .nav.nav-schedule > li {
+        &:extend(.base-clr-bg);
+
+        border-width: 0 1px;
+        border-color: transparent @white;
+
+        &:first-child {
+            border-left-color: transparent;
+        }
+
+        &:last-child {
+            border-right-color: transparent;
+        }
+
+        &:after {
+            display: none;
+        }
+
+        & > a {
+            padding: 24px 15px 19px;
+            font-family: @font-family-heading;
+            font-weight: @bold-weight;
+            text-transform: uppercase;
+            color: @text-white;
+        }
+    }
+
+    .nav.nav-schedule > li.active {
+        background-color: @white;
+
+        a,
+        a:hover,
+        a:focus {
+            &, * {
+                &:extend(.base-clr-txt);
+            }
+        }
+    }
+
+    .tab-content {
+        &:extend(.base-clr-bd);
+
+        padding: 60px;
+    }
+
+    .schedule-item {
+        margin-bottom: 40px;
+        overflow: visible;
+
+        .schedule-item-toggle {
+            position: relative;
+            margin-bottom: 0;
+            display: block;
+            font-size: 0;
+            text-decoration: none;
+            color: @text-black;
+
+            .time {
+                vertical-align: top;
+                margin: 0 20.5% 0 0;
+                width: 26.5%;
+                text-align: right;
+            }
+
+            .lecture-icon-wrapper {
+                &:extend(.base-clr-bg);
+
+                margin: 0 40px;
+                position: absolute;
+                top: -8px;
+                left: 26.5%;
+                display: inline-block;
+                line-height: 38px;
+                border: none;
+
+                * {
+                    color: @text-white;
+                }
+            }
+
+            .title {
+                display: inline-block;
+                width: 53%;
+                padding: 0;
+                border: none;
+            }
+        }
+
+        .schedule-item-body {
+            margin: 0 0 0 47%;
+
+            .speaker-name {
+                &:extend(.base-clr-txt);
+
+                display: inline-block;
+                font-size: @font-size-thin;
+                text-transform: uppercase;
+                letter-spacing: 0.5em;
+            }
+        }
+    }
+}
+
+@media (max-width: @screen-sm-max) {
+    .schedule .tab-content .img-responsive {
+        margin: 0;
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    .schedule .tab-content {
+        border: none;
+    }
+
+    .schedule .tab-content-schedule {
+        padding: 35px 20px;
+
+        &:before {
+            display: none;
+        }
+
+        .schedule-item {
+            margin-bottom: 30px;
+            padding-left: 70px;
+        }
+    }
+
+    .schedule.schedule-light {
+        .nav.nav-schedule {
+            border-color: @gray-lighter;
+        }
+
+        .nav.nav-schedule > li {
+            background-color: transparent;
+
+            & > a {
+                color: @text-color;
+            }
+        }
+
+        .tab-content {
+            padding: 10px 20px 30px;
+        }
+    }
+
+    .schedule.schedule-light .schedule-item {
+        margin-bottom: 40px;
+        overflow: visible;
+
+        .schedule-item-toggle {
+            .time {
+                margin: 0 0 15px;
+                width: 100%;
+                text-align: left;
+            }
+
+            .lecture-icon-wrapper {
+                &:extend(.base-clr-bg);
+
+                position: absolute;
+                top: 30px;
+                left: 0;
+                margin: 0;
+            }
+
+            .title {
+                margin: 0 0 20px;
+                vertical-align: top;
+                width: auto;
+                padding-left: 50px;
+            }
+        }
+
+        .schedule-item-body {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: @screen-xs-min) {
+    .schedule .tab-content-schedule {
+        padding: 35px 0;
+
+        .schedule-item {
+            margin-bottom: 30px;
+            padding-left: 0;
+
+            .lecture-icon-wrapper {
+                top: 27px;
+                left: 0;
+                width: 30px;
+                height: 30px;
+                font-size: 16px;
+                line-height: 28px;
+            }
+
+            .schedule-item-toggle .title {
+                padding-left: 40px;
+            }
+        }
+
+        .speaker-name {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .speaker-photo-wrapper {
+        display: none;
+    }
+
+    .schedule.schedule-light .tab-content {
+        padding: 10px 5px 20px;
+    }
+
+    .schedule.schedule-light .schedule-item .schedule-item-toggle {
+        .lecture-icon-wrapper {
+            top: 32px;
+            width: 30px;
+            height: 30px;
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        .title {
+            padding-left: 35px;
+        }
+    }
+}

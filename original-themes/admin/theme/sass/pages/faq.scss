@@ -1,0 +1,116 @@
+@import '../global/_variables'; // global variables.
+@import '../global/components/_mixins'; // global mixings.
+
+/***
+FAQ page
+***/
+
+// BEGIN : GENERAL FAQ CLASSES
+.faq-page{
+
+	// BEGIN : BORDER CONTAINERS
+	.bordered{
+		border:1px solid;
+		border-color: $general-panel-border-color;
+	}
+	// END : BORDERED CONTAINERS
+
+	// BEGIN: SEARCH BAR
+	.search-bar{
+		padding:20px;
+		margin-bottom: 30px;
+		background-color: #fff;
+
+		.input-group{
+			width:100%;
+
+			>input{
+				border:none;
+				background-color: #f3f6f9;
+				color:#a0a9b4;
+				height:55px;
+			}
+		}
+ 	}
+	// END : SEARCH BAR
+
+}
+
+// EMD : GENERAL FAQ CLASSES
+
+// FAQ Page 1
+.faq-content-1{
+
+	.faq-section{
+		background-color:#fff;
+		padding:40px 30px 30px 30px;
+		margin-bottom: 30px;
+
+		>.faq-title{
+			margin:0 0 20px 0;
+			font-size: 14px;
+			font-weight: 600;
+			letter-spacing: 1px;
+
+		}
+
+		.panel-group{
+			margin-bottom: 0;
+		}
+
+		>.faq-content{
+
+			.panel{
+				border:none;
+			}
+
+			.panel-heading{
+				background-color: transparent;
+				margin-top: 15px;
+
+				i{
+					font-size: 10px;
+					color:#dae0e5;
+					margin-right: 10px;
+					margin-top: 4px;
+					float:left;
+				}
+
+				.accordion-toggle{
+					padding-left:0;
+					padding-right: 0;
+					font-size:16px;
+					font-weight: 600;
+					color:#5c646a;
+					padding: 0 0 10px 20px;
+					line-height: 22px;
+
+					&:hover{
+						text-decoration: none;
+						color:#3598DC;
+					}
+				}
+			}
+
+			.panel-body{
+				border:none;
+				background-color: #f3f6f9;
+				margin-left:20px;
+
+				>p {
+					color:#6a757e;
+					font-size: 14px;
+					line-height: 22px;
+
+					&:first-child{
+						margin-top:0;
+					}
+
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}

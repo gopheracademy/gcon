@@ -1,0 +1,82 @@
+// General mode
+
+.mt-element-card {
+
+	.mt-card-item{
+		border:1px solid;
+		border-color: $general-panel-border-color;
+		position: relative;
+		margin-bottom:30px;
+
+		.mt-card-avatar{
+			margin-bottom: 15px;
+		}
+
+		.mt-card-content{
+			text-align: center;
+
+			.mt-card-name{
+				font-size: 16px;
+				font-weight: 600;
+				margin-bottom: 10px;
+			}
+
+			.mt-card-desc{
+				font-size: 14px;
+				margin: 0 0 10px 0;
+			}
+
+			.mt-card-social{
+
+				>ul{
+					padding: 0;
+					margin-bottom: 10px;
+
+					>li{
+						list-style: none;
+						display: inline-block;
+						margin: 0 3px;
+
+						> a{
+							color: #000;
+							font-size:18px;
+
+							&.mt-card-btn{
+								color:#fff;
+
+								&:hover{
+									color: $brand-success;
+								}
+							}
+
+							&:hover{
+								color: $brand-warning;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.mt-card-round{
+
+		.mt-card-item{
+			padding:40px 40px 10px 40px;
+
+			.mt-card-avatar{
+				border-radius: 50% !important;
+				-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+
+				.mt-overlay{
+					@include border-radius(50%);
+				}
+			}
+		}
+	}
+
+
+	
+}
+
+

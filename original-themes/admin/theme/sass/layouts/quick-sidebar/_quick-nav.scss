@@ -1,0 +1,261 @@
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+.quick-nav {
+	position: fixed;
+	z-index: $zindex-top + 3;
+	top: 50%;
+	right: 10px;
+	margin-top: -230px;
+	pointer-events: none;
+
+	.quick-nav-bg {
+		/* this is the stretching navigation background */
+		position: absolute;
+		z-index: $zindex-top + 2;
+		top: 0;
+		right: 0;
+		width: 60px;
+		height: 60px;
+		border-radius: 30px !important;
+		background: #36C6D3;
+		box-shadow: 0 1px 4px rgba(#000, .2);
+		@include transition('height .2s, box-shadow .2s');
+	}
+
+	&.nav-is-visible {
+		pointer-events: auto;
+	}
+
+	&.nav-is-visible .quick-nav-bg {
+		height: 100%;
+		box-shadow: 0 6px 30px rgba(#000, .2);
+	}
+}
+
+.quick-nav-trigger {
+	position: absolute;
+	z-index: $zindex-top + 3;
+	top: 0;
+	right: 0;
+	height: 60px;
+	width: 60px;
+	border-radius: 50% !important;
+	overflow: hidden;
+	white-space: nowrap;
+	color: transparent;
+	pointer-events: auto;
+
+	span, 
+	span::after, 
+	span::before {
+		/* this is the hamburger icon */
+		position: absolute;
+		width: 16px;
+		height: 2px;
+		background-color: #ffffff;
+	}
+	
+	span {
+		/* middle line of the hamburger icon */
+		@include transition(background-color .2s);
+
+		left: 50%;
+	    top: 50%;
+	    bottom: auto;
+	    right: auto;
+	    @include transform(translateX(-50%) translateY(-50%));
+	}
+
+	span::after, 
+	span::before {
+		/* top and bottom lines of the hamburger icon */
+		content: '';
+		top: 0;
+		left: 0;
+		@include backface-visibility(hidden);
+		@include transition(transform .2s);
+	}
+
+	span::before {
+		@include transform(translateY(-6px));
+	}
+
+	span::after {
+		@include transform(translateY(6px));
+	}
+
+	.no-touch &:hover ~ .quick-nav-bg {
+		box-shadow: 0 6px 30px rgba(#000, .2);
+	}
+
+	.nav-is-visible & {
+
+		span {
+			background-color: transparent;
+		}
+
+		span::before {
+			@include transform(rotate(-45deg));
+		}
+
+		span::after {
+			@include transform(rotate(45deg));
+		}
+	}
+}
+
+.quick-nav ul {
+	position: relative;
+	z-index: $zindex-top + 3;
+	padding: 60px 0 0;
+	visibility: hidden;
+	@include transition(visibility .3s);
+	text-align: right;
+	list-style: none;
+
+	> li {
+		a {
+			position: relative;
+			display: block;
+			height: 50px;
+			line-height: 50px;
+			padding: 0 calc(1em + 60px) 0 1em;
+			font-size: 1.4rem;
+			@include transition(color .2s);
+
+			&:hover {
+				text-decoration: none;
+
+				> span {
+					text-decoration: none;
+				}
+			}
+
+			> i {
+				/* navigation item icons */
+				content: '';
+				position: absolute;
+				height: 16px;
+				width: 16px;
+				font-size: 18px;
+				right: 24px;
+				top: 16px;
+				color: darken(#fff, 8%);
+			}
+
+			&::before {
+				/* line visible next to the active navigation item */
+				content: '';
+				position: absolute;
+				width: 3px;
+				height: 16px;
+				top: 50%;
+				right: 60px;
+				@include transform(translateX(3px) translateY(-50%) scaleY(0));
+				background-color: #FF3F3F;
+			}
+		}
+
+		span {
+			/* navigation item labels */
+			color: darken(#fff, 8%);
+			font-weight: 400;
+			display: block;
+			opacity: 0;
+			@include transform(translateX(-25px));
+		}
+
+		&:last-child {
+			padding-bottom: 10px;
+		}
+	}	
+}
+
+.quick-nav.nav-is-visible ul {
+	visibility: visible;
+
+	a::after {
+		/* navigation item icons */
+		@include transform(translateY(-50%) scale(1));
+		@include animation(scaleIn .15s backwards);
+		@include transition(opacity .2s);
+	}
+
+	a:hover {
+		&::after {
+			opacity: 1;
+		}
+
+		&::before {
+			@include transform(translateX(3px) translateY(-50%) scaleY(2));
+			@include transition(transform .15s .3s);
+		}
+
+		> span {
+			color: darken(#fff, 0);
+		}
+
+		> i {
+			color: darken(#fff, 2%);
+		}
+	}
+
+	span {
+		opacity: 1;
+		@include transform(translateX(0));
+		@include animation(slideIn .15s backwards);
+		@include transition(transform .2s);
+	}
+
+	.no-touch & a:hover {
+
+		&::after {
+			opacity: 1;
+		}
+
+		span {
+			@include transform(translateX(-5px));
+		}
+	}
+}
+
+.quick-nav-overlay {
+	display: none;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	position: fixed;
+	z-index: $zindex-top + 1;
+	background: rgba(#000, 0);
+}
+
+.quick-nav.nav-is-visible + .quick-nav-overlay {
+	background: rgba(#000, 0.8);
+	display: block;
+	-webkit-transition: background .7s ease-out;
+    -moz-transition: background .7s ease-out;
+    -o-transition: background .7s ease-out;
+    transition: background .7s ease-out;
+}
+
+@media (max-width: $screen-sm-max) { /* 991px */
+
+	.quick-nav {
+		top: 120px;
+		margin-top: 0;
+	}
+}

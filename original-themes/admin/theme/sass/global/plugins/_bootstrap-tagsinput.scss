@@ -1,0 +1,49 @@
+/***
+Modify bootstrap-tagsinput plugin's css
+***/
+
+.bootstrap-tagsinput {
+	
+	.tag [data-role="remove"] {
+    	box-shadow: none;
+    	font-family: arial;
+
+   		&:after {
+    		font-family: arial;
+		}
+
+    	&:hover {
+        	text-decoration: none; 
+        	box-shadow: none;   
+    	}
+    }
+
+    .tag {
+    	display: inline-block;
+    	margin-top: 2px;
+    	padding: 4px 6px 4px 6px;
+
+    	input {
+    		width: 5em !important;
+    	}
+    }
+
+    display: block;
+    padding: 4px 4px 6px 4px;
+    font-size: 14px;
+    font-weight: normal;
+    min-height: 34px;
+    color: $input-color;
+    background-color: $input-bg;
+    border: 1px solid $input-border;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.bootstrap-tagsinput-width-auto {
+	.bootstrap-tagsinput {
+		display: inline-block;
+	}
+}

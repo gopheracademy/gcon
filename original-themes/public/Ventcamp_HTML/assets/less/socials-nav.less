@@ -1,0 +1,52 @@
+/* ----------------------------------------------------------------------------
+    Socials navigation
+---------------------------------------------------------------------------- */
+
+
+.socials-nav {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.socials-nav-item {
+    margin: 0 12px;
+    display: inline-block;
+    width: 24px;
+    font-size: @font-size-h6;
+
+    a {
+        display: inline-block;
+        padding: 2px 6px;
+
+        &:not(:hover):not(:active):not(:focus) {
+            color: @text-white;
+        }
+
+        .fa {
+            color: inherit;
+        }
+    }
+}
+
+@media (max-width: @screen-sm-max) {
+    .socials-nav {
+        top: 30px;
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    .socials-nav {
+        position: relative;
+        top: auto;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: @screen-xs-min) {
+    .socials-nav-item {
+        margin: 0 6px;
+    }
+}

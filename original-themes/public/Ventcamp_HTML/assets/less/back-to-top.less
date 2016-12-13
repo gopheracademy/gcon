@@ -1,0 +1,27 @@
+/* ----------------------------------------------------------------------------
+    Back to top button
+---------------------------------------------------------------------------- */
+
+
+.back-to-top {
+    .transition(opacity 0.5s ease);
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+    color: @text-white;
+    background-color: fade(@black, 80);
+    cursor: pointer;
+    z-index: 9999;
+    opacity: 0.4;
+
+    &:hover {
+        opacity: 1;
+    }
+}

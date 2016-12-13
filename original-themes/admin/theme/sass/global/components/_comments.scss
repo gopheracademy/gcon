@@ -1,0 +1,102 @@
+// comments
+.mt-comments {
+	.mt-comment {
+		padding: 10px;
+		margin: 0 0 10px 0;
+
+		.mt-comment-img {
+			width: 40px;
+			float: left;
+
+			> img {
+				border-radius: 50% !important;
+			}
+		}
+
+		.mt-comment-body {
+			padding-left: 20px;
+			position: relative;
+			overflow:hidden;
+
+			.mt-comment-info {
+				@include clearfix();
+
+				.mt-comment-author {
+					display: inline-block;
+					float: left;	
+					margin: 0px 0px 10px 0;
+					color:#060606;
+					font-weight: 600;
+				}
+
+				.mt-comment-date {
+					display: inline-block;
+					float:right;
+					margin: 0px;
+					color:#BABABA;
+				}
+			}
+
+			.mt-comment-text {
+				color: darken(#BFBFBF, 15%);
+			}
+
+			.mt-comment-details {
+				margin:10px 0px 0px 0;				
+				
+				.mt-comment-status {
+					text-transform: uppercase;
+					float: left;
+
+					&.mt-comment-status-pending {
+						color:#B8C0F5;						
+					}
+
+					&.mt-comment-status-approved {
+						color:#6BD873;
+					}
+
+					&.mt-comment-status-rejected {
+						color:red;
+					}
+				}
+
+				.mt-comment-actions {
+					display: none;
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					float: right;
+
+					> li {
+						float: left;
+						padding: 0 5px;
+						margin: 0;
+
+						> a {
+							text-transform: uppercase;
+							color: #999999;
+
+							&:hover {
+								color: darken(#999999, 20%);
+								text-decoration: none;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&:hover {
+			background: #f9f9f9;	
+
+			.mt-comment-body {
+				.mt-comment-details {
+					.mt-comment-actions {
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+}

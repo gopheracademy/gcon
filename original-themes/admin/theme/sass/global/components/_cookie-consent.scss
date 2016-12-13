@@ -1,0 +1,41 @@
+.mt-cookie-consent-bar {
+	position: fixed;
+	bottom: 0;
+	z-index: $zindex-top + 1;
+	padding: 10px 25px;
+	width: 100%;
+	background: rgba(#000000, 0.9);
+	color: #ffffff;
+	left: 0;
+	right: 0;
+
+	.mt-cookie-consent-bar-holder {
+		display: table;
+		width: 100%;
+
+		.mt-cookie-consent-bar-content {
+			display: table-cell;
+			text-align: left;
+			vertical-align: middle;
+		}
+
+		.mt-cookie-consent-bar-action {
+			display: table-cell;
+			text-align: right;
+			vertical-align: middle;
+
+			.mt-cookie-consent-btn {
+				
+			}
+		}
+	}
+
+	&.mt-cookie-consent-bar-top {
+
+	}
+
+	&.mt-cookie-consent-bar-light {
+		background: rgba(#eeeeee, 0.9);
+		color: #333;
+	}
+}

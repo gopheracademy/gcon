@@ -1,0 +1,108 @@
+/***
+Form Repeater
+****/
+
+.mt-repeater{
+	display:table;
+	width: 100%;
+
+	.mt-repeater-item{
+		border-bottom:1px solid #ddd;
+		padding-bottom:15px;
+		margin-bottom: 15px;
+
+		&.mt-overflow{
+			overflow: auto;
+		}
+	}
+	.mt-repeater-title{
+		font-size: 18px;
+		text-transform: uppercase;
+		margin-top: 0;
+		font-weight: 600;
+	}
+
+	.mt-repeater-input{
+		display:table-cell;
+		vertical-align: top;
+		padding:0 10px 10px 10px;		
+		width:1%;
+
+		input[type="text"], textarea, select{
+			width:100%;
+		}
+
+		.control-label{
+			padding-top: 0;
+			margin-bottom: 5px;
+		}
+
+		&.mt-repeater-textarea{ width:3%; }
+
+		&:first-child{
+			padding-left:0;
+		}
+		&:last-child{
+			padding-right:0;
+		}
+	}
+
+	.mt-repeater-delete{
+		margin-top: 1.8em;
+
+		&.mt-repeater-del-right{
+			float:right;
+			margin-top:10px;
+		}
+	}
+
+
+	.mt-repeater-cell{
+		display: table;
+		width:100%;
+
+		.mt-repeater-input-inline,
+		.mt-repeater-btn-inline{
+			display:table-cell;
+		}
+
+		.mt-repeater-input-inline{
+			width:100%;
+			border-right:none;
+		}
+
+		.mt-repeater-btn-inline{
+			width:1%;
+			float:none;
+		}
+	}
+
+	.mt-repeater-row{
+		margin-right: 0;
+	}
+	
+	
+}
+
+@media (max-width:991px){
+	.mt-repeater{
+		.mt-repeater-input{
+			width:100%;
+			display:block;
+			padding-left:0;
+			padding-right:0;
+
+			&.mt-repeater-textarea{
+				width:100%;
+			}
+
+			.control-label{
+				text-align: left !important;
+			}
+
+			.mt-repeater-delete{
+				margin-top: 0;
+			}
+		}
+	}
+}

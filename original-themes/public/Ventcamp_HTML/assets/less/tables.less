@@ -1,0 +1,54 @@
+/* ----------------------------------------------------------------------------
+    Tables
+---------------------------------------------------------------------------- */
+
+
+.table {
+    text-align: left;
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: @gray-lighter;
+
+    & > thead > tr {
+        & > th,
+        & > td {
+            &:extend(.base-clr-bg);
+
+            font-family: @font-family-heading;
+            font-weight: 600;
+            color: @text-white;
+            border: none !important;
+        }
+    }
+
+    & > thead > tr > th,
+    & > tbody > tr > th,
+    & > tfoot > tr > th,
+    & > thead > tr > td,
+    & > tbody > tr > td,
+    & > tfoot > tr > td {
+        vertical-align: middle;
+        padding: 15px 25px;
+        border-style: solid;
+        border-width: 0 1px 0 1px;
+        border-color: @gray-lighter;
+    }
+	
+    tr:nth-child(even) {
+	    background: #ededef;
+	}
+}
+
+
+/* Media queries */
+
+@media (max-width: @screen-xs-max) {
+    .table > thead > tr > th,
+    .table > tbody > tr > th,
+    .table > tfoot > tr > th,
+    .table > thead > tr > td,
+    .table > tbody > tr > td,
+    .table > tfoot > tr > td {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,289 @@
+/* ----------------------------------------------------------------------------
+    Typography
+---------------------------------------------------------------------------- */
+
+* {
+    -webkit-font-smoothing: antialiased !important;
+}
+
+body {
+    font-family: @font-family-base;
+    font-size: @font-size-base;
+    font-weight: @normal-weight;
+    color: @text-color;
+    line-height: 1.5625;
+}
+
+.highlight {
+    &:extend(.base-clr-txt);
+}
+
+.thin {
+    font-weight: @light-weight;
+}
+
+.normal {
+    font-weight: @normal-weight;
+}
+
+.bold {
+    font-weight: @semibold-weight;
+}
+
+.base-font {
+    font-family: @font-family-base;
+}
+
+.heading-font {
+    font-family: @font-family-heading;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: @font-size-h1;
+}
+
+h2 {
+    font-size: @font-size-h2;
+}
+
+h3 {
+    font-size: @font-size-h3;
+    letter-spacing: -0.05em;
+}
+
+h4 {
+    font-size: @font-size-h4;
+}
+
+h5 {
+    font-size: @font-size-h5;
+}
+
+h6 {
+    font-size: @font-size-h6;
+}
+
+.h7 {
+    font-size: @font-size-base;
+}
+
+.h8 {
+    font-size: @font-size-small;
+    letter-spacing: 0.02em;
+}
+
+.extra-heading {
+    margin: 0 0 8px;
+    font-size: 132px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+h1, h2, h4, h5, h6, .h7, {
+    font-family: @font-family-heading;
+    font-weight: @bold-weight;
+}
+
+h1, h2, h4, h5 {
+    letter-spacing: -0.06em;
+}
+
+h3, .h8 {
+    font-family: @font-family-base;
+    font-weight: @normal-weight;
+}
+
+h1, h2, h4, h5 {
+    color: @text-black;
+}
+
+h3, h6, .h7 {
+    color: @text-gray-dark;
+}
+
+.h8 {
+    color: @text-alt-color;
+}
+
+h5.heading-alt {
+    text-transform: uppercase;
+    font-size: @font-size-h6 - 1px;
+    line-height: 1.7;
+    letter-spacing: 0.5em;
+    color: @text-gray-dark;
+}
+
+h6.heading-alt {
+    font-size: @font-size-base;
+    line-height: 1.5;
+    color: lighten(@text-gray-dark, 13%);
+    letter-spacing: 0.15em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+}
+
+h1, h2 {
+    margin: 15px 0 20px;
+}
+
+p, article {
+    margin: 0 0 10px;
+    line-height: 29px;
+
+    &.small {
+        font-size: @font-size-small;
+        font-weight: @semibold-weight;
+        line-height: 25px;
+        color: @gray-light;
+    }
+}
+
+strong {
+    display: inline-block;
+    font-weight: @semibold-weight;
+}
+
+small {
+    display: inline-block;
+    font-size: @font-size-small;
+}
+
+.text-alt {
+    color: @text-alt-color;
+}
+
+a {
+    &:extend(.base-clr-txt);
+
+    .transition(~"color 0.2s ease");
+
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        &:extend(.base-clr-txt);
+
+        outline: none;
+    }
+}
+
+.link-btn {
+    display: inline-block;
+    font-family: @font-family-heading;
+    font-weight: @bold-weight;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+}
+
+span {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.light-text {
+    color: @text-white;
+
+    h1, h2, h3, h4, h5, h6, .h7, .h8 {
+        color: inherit;
+
+        &.heading-alt {
+            color: inherit;
+        }
+    }
+}
+
+.dark-text {
+    color: @text-black;
+
+    &.fa {
+        color: @text-black;
+    }
+
+    .fa {
+        color: inherit;
+    }
+}
+
+
+/* Media queries */
+
+@media (max-width: @screen-sm-max) {
+    body {
+        font-size: @font-size-small;
+    }
+
+    .extra-heading {
+        font-size: 110px;
+    }
+
+    h5.heading-alt,
+    h6.heading-alt {
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    h1 {
+        font-size: @font-size-h1 * 0.52;
+    }
+
+    h2 {
+        font-size: @font-size-h2 * 0.6;
+    }
+
+    h3 {
+        font-size: @font-size-h3 * 0.63;
+    }
+
+    h4 {
+        font-size: @font-size-h4 * 0.67;
+    }
+
+    h5 {
+        font-size: @font-size-h5 * 0.8;
+    }
+
+    h6 {
+        font-size: @font-size-h6 * 0.9;
+    }
+
+    .heading {
+        font-size: @font-size-base * 0.8;
+    }
+
+    .extra-heading {
+        font-size: 80px;
+    }
+
+    .sub-title,
+    .sub-title.alt {
+        font-size: @font-size-small;
+    }
+
+    .sub-title,
+    .sub-title.big {
+        font-size: @font-size-base;
+    }
+}

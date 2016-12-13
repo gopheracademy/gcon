@@ -1,0 +1,90 @@
+// TITLE 1
+
+.m-heading-1 {
+	margin: 0 0 20px 0;
+	background: #ffffff;  
+
+	> h3 { 
+		font-size:20px;
+		color: $general-heading-color;
+		font-weight:500;
+		margin:0 0 15px 0;
+
+		> i {
+			font-size: 18px; 
+			color: lighten($general-heading-color, 30%);
+		}
+	}
+	
+	> p {
+		color: $general-text-color;
+		margin: 10px 0 0 0;
+
+		&:first-child {
+			margin-top: 0; 
+		}
+	}
+
+	&.m-bordered {
+		border-right: 1px solid $gray-base;
+		border-top: 1px solid $gray-base;
+		border-bottom: 1px solid $gray-base;
+		padding: 15px 15px;
+
+		.page-container-bg-solid & {
+			border-right: 0;
+			border-top: 0;
+			border-bottom: 0;  
+		}
+	}
+
+	padding-left: 15px;
+	border-left: 8px solid  lighten($general-heading-color, 30%);
+
+
+	&.m-title-md {
+
+		> h3 { 
+			font-size:18px;
+			margin-bottom: 10px;
+
+			> i {
+				font-size: 16px; 
+				color: lighten($general-heading-color, 30%);
+			}
+		}
+
+		> p {
+			margin: 15px 0;
+		}
+	}
+
+	&.m-title-sm {
+
+		> h3 { 
+			font-size:16px;
+			margin-bottom: 10px;
+
+			> i {
+				font-size: 14px; 
+				color: lighten($general-heading-color, 30%);
+			}
+		}
+
+		> p {
+			margin: 10px 0;
+		}
+	}
+}
+
+// END 
+
+// BEGIN: Mobile Mode
+
+@media (max-width: $screen-sm-max) { /* 991px */
+	.m-heading-1 {
+		margin: 0px 0; 
+	}
+}
+
+// END
