@@ -1,0 +1,7 @@
+create_table("hotels", func(t) {
+	t.Column("block_code", "text", {})
+	t.Column("room_rate", "integer", {})
+	t.Column("photo_url", "text", {})
+	t.Column("location_id", "integer", {})
+	t.Column("contact_id", "integer", {})
+})
