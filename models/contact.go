@@ -5,6 +5,7 @@ import (
 	"time"
 )
 
+// Contact represents an entity used for communications with a number of components
 type Contact struct {
 	ID        int       `json:"id" db:"id"`
 	CreatedAt time.Time `json:"created_at" db:"created_at"`
