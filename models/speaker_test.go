@@ -7,11 +7,12 @@ import (
 	"github.com/gopheracademy/gcon/models"
 )
 
+// Test_Speaker
 func Test_Speaker(t *testing.T) {
 	s := &models.Speaker{}
-	s.FirstName = "Gary"
-	s.LastName = "Gopher"
-	if m := s.String(); !strings.Contains(m, "Gary") {
-		t.Errorf("expected contains %s, got %s", "Gary", m)
+	s.FirstName = "Brian"
+	s.PhotoURL = "https://blog.gopheracademy.com/postimages/advent-2015/gophercon2016.svg"
+	if m := s.String(); !strings.Contains(m, "Brian") {
+		t.Errorf("expected contains %s, got %s", "Brian", m)
 	}
 }
