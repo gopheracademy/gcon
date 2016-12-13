@@ -1,0 +1,7 @@
+create_table("sponsors", func(t) {
+	t.Column("name", "string", {})
+	t.Column("website", "string", {})
+	t.Column("description", "string", {})
+	t.Column("logo", "text", {})
+	t.Column("contact_id", "integer", {})
+})

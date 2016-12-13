@@ -1,16 +1,19 @@
 package models
 
-import "encoding/json"
+import (
+	"encoding/json"
+	"time"
+)
 
-// Sponsor
 type Sponsor struct {
-	Name         string `json:"name" db:"name"`
-	Website      string `json:"website" db:"website"`
-	Description  string `json:"description" db:"description"`
-	ContactName  string `json:"contact_name" db:"contact_name"`
-	ContactPhone string `json:"contact_phone" db:"contact_phone"`
-	ContactEmail string `json:"contact_email" db:"contact_email"`
-	Logo         string `json:"contact_logo" db:"contact_logo"`
+	ID          int       `json:"id" db:"id"`
+	CreatedAt   time.Time `json:"created_at" db:"created_at"`
+	UpdatedAt   time.Time `json:"updated_at" db:"updated_at"`
+	Name        string    `json:"name" db:"name"`
+	Website     string    `json:"website" db:"website"`
+	Description string    `json:"description" db:"description"`
+	Logo        string    `json:"logo" db:"logo"`
+	ContactId   int       `json:"contact_id" db:"contact_id"`
 }
 
 // String is not required by pop and may be deleted
@@ -19,10 +22,10 @@ func (s Sponsor) String() string {
 	return string(b)
 }
 
-// Sponsors
+// Sponsors is not required by pop and may be deleted
 type Sponsors []Sponsor
 
-// String
+// String is not required by pop and may be deleted
 func (s Sponsors) String() string {
 	b, _ := json.Marshal(s)
 	return string(b)
