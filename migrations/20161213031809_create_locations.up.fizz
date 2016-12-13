@@ -1,0 +1,7 @@
+create_table("locations", func(t) {
+	t.Column("name", "string", {})
+	t.Column("address", "string", {})
+	t.Column("ciy", "string", {})
+	t.Column("state", "string", {})
+	t.Column("zip", "text", {})
+})
