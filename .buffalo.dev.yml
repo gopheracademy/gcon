@@ -3,6 +3,7 @@ ignored_folders:
 - vendor
 - log
 - tmp
+- original-themes
 included_extensions:
 - .go
 - .html
