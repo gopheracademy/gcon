@@ -1,3 +1,147 @@
+/*
+ * GopherCon 2017 styles
+ *
+ * Navy: #40657c
+ * Blue: #4cc4ec
+ * Beige: #edead7
+ * Bark: #b3ad9f
+ * Orange: #f9b575
+ */
+html, body {
+  font-size: 10px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  height: 100%;
+  color: #40657c;
+
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
 body {
-  font-family: helvetica;
+  font-size: 1.8rem;
+  padding-top: 7rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #4cc4ec;
+}
+
+img {
+  max-width: 100%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 90%;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+/*
+ * Page header
+ */
+.page-header {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 7rem;
+}
+
+.page-header-colorbar > div {
+  width: 20%;
+  height: 5px;
+  float: left;
+}
+.page-header-colorbar > div:nth-child(1) {
+  background: #40657c;
+}
+.page-header-colorbar > div:nth-child(2) {
+  background: #4cc4ec;
+}
+.page-header-colorbar > div:nth-child(3) {
+  background: #edead7;
+}
+.page-header-colorbar > div:nth-child(4) {
+  background: #b3ad9f;
+}
+.page-header-colorbar > div:nth-child(5) {
+  background: #f9b575;
+}
+
+.page-header-navigation {
+  text-align: right;
+}
+.page-header-navigation a {
+  display: inline-block;
+  line-height: 7rem;
+  margin-left: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border 200ms;
+}
+.page-header-navigation a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/*
+ * Homepage Hero
+ */
+.homepage-hero {
+  position: relative;
+  height: 65rem;
+  margin-top: -7rem;
+  overflow: hidden;
+}
+.homepage-hero-content,
+.homepage-hero-overlay,
+.homepage-hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.homepage-hero-background {
+  background-size: cover;
+  background-position: center;
+  background-image: url("/assets/images/homepage_background.jpg");
+}
+.homepage-hero-background video {
+  width: 100%;
+}
+.homepage-hero-overlay {
+  background: #40657c;
+  opacity: 0.9;
+}
+.homepage-hero-content {
+  text-align: center;
+  color: #fff;
+}
+.homepage-hero-content img {
+  width: 90%;
+  height: 90%;
+  max-height: 30rem;
+  max-width: 30rem;
+  margin: 6rem 0 3rem;
+}
+.homepage-hero-content p {
+  color: #f9b575;
+  font-size: 2.2rem;
+  margin: 0;
+}
+.homepage-hero-content h2 {
+  font-weight: 300;
+  font-size: 4.2rem;
 }
