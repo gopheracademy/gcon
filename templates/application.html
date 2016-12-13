@@ -14,15 +14,20 @@
       <div></div>
       <div></div>
     </div>
-    <div class="page-header-navigation">
-      <div class="container">
+    <div class="container clearfix">
+      <h1 class="page-header-title">
+        <a href="/">GopherCon 2017</a>
+      </h1>
+      <div class="page-header-navigation">
         <a href="#">Tickets</a>
         <a href="#">Call for papers</a>
       </div>
     </div>
   </div>
 
-  {{ yield }}
+  <div class="page-content">
+    {{ yield }}
+  </div>
 
   <footer class="page-footer">
     <div class="container clearfix">
@@ -38,7 +43,7 @@
       <div class="page-footer-navigation">
         <a href="#">Code of Conduct</a>
         <a href="#">Contact</a>
-        <a href="#">About</a>
+        <a href="/about">About</a>
         <a href="#">Sponsorship</a>
       </div>
     </div>

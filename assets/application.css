@@ -14,13 +14,13 @@ html, body {
   margin: 0;
   height: 100%;
   color: #40657c;
+  background: #edead7; /* same as footer */
 
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
 }
 body {
   font-size: 1.8rem;
-  padding-top: 7rem;
 }
 
 * {
@@ -55,6 +55,13 @@ input[type="text"] {
   margin: 0 auto;
 }
 
+.title {
+  font-weight: 300;
+  font-size: 3.2rem;
+  width: 6rem;
+  border-bottom: 4px solid #40657c;
+}
+
 .btn {
   padding: 0.6rem 1.2rem;
   border: 1px solid #f9b575;
@@ -77,6 +84,7 @@ input[type="text"] {
   left: 0;
   right: 0;
   height: 7rem;
+  background: rgba(73, 112, 136, 0.9);
 }
 
 .page-header-colorbar > div {
@@ -100,12 +108,25 @@ input[type="text"] {
   background: #f9b575;
 }
 
+.page-header-title {
+  float: left;
+  margin: 0;
+  line-height: 6.5rem;
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+.page-header-title a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .page-header-navigation {
+  float: right;
   text-align: right;
 }
 .page-header-navigation a {
   display: inline-block;
-  line-height: 7rem;
+  line-height: 6.5rem;
   margin-left: 1.5rem;
   color: #fff;
   text-decoration: none;
@@ -114,6 +135,17 @@ input[type="text"] {
 }
 .page-header-navigation a:hover {
   border-bottom: 2px solid #fff;
+}
+
+/*
+ * Page Content
+ */
+.page-content {
+  background: #fff;
+  padding: 7rem 0 3rem;
+}
+.page-content p {
+  max-width: 70rem;
 }
 
 /*
@@ -148,7 +180,6 @@ input[type="text"] {
 .homepage-hero {
   position: relative;
   height: 65rem;
-  margin-top: -7rem;
   overflow: hidden;
 }
 .homepage-hero-content,
@@ -181,12 +212,13 @@ input[type="text"] {
   height: 90%;
   max-height: 30rem;
   max-width: 30rem;
-  margin: 6rem 0 3rem;
+  margin: 3rem 0 3rem;
 }
 .homepage-hero-content p {
   color: #f9b575;
   font-size: 2.2rem;
   margin: 0;
+  max-width: none;
 }
 .homepage-hero-content h2 {
   font-weight: 300;
@@ -199,6 +231,8 @@ input[type="text"] {
 .homepage-calltoaction {
   /* uncomment once the boxes are not sticked to the footer */
   /* border-bottom: 1px solid #ccc; */
+  /* delete following line once this element is not last */
+  margin-bottom: -3rem;
 }
 .homepage-calltoaction article {
   float: left;
