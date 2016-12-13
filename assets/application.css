@@ -10,6 +10,7 @@
 html, body {
   font-size: 10px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.4;
   margin: 0;
   height: 100%;
   color: #40657c;
@@ -34,6 +35,14 @@ img {
   max-width: 100%;
 }
 
+input[type="text"] {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #aaa;
+  border-radius: 0.2rem;
+  font-size: 1.6rem;
+  outline: none;
+}
+
 .clearfix:after {
   content: "";
   display: table;
@@ -46,8 +55,20 @@ img {
   margin: 0 auto;
 }
 
+.btn {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #f9b575;
+  border-radius: 0.2rem;
+  background: #f9b575;
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
 /*
- * Page header
+ * Page Header
  */
 .page-header {
   z-index: 10;
@@ -93,6 +114,32 @@ img {
 }
 .page-header-navigation a:hover {
   border-bottom: 2px solid #fff;
+}
+
+/*
+ * Page Footer
+ */
+.page-footer {
+  background: #edead7;
+}
+.page-footer a {
+}
+.page-footer-copyinfo,
+.page-footer-navigation {
+  float: left;
+  width: 50%;
+  padding: 6rem 0;
+}
+.page-footer-copyinfo {
+  font-size: 1.4rem;
+}
+.page-footer-navigation {
+  text-align: right;
+  font-size: 1.6rem;
+}
+.page-footer-navigation a {
+  display: inline-block;
+  margin-left: 1rem;
 }
 
 /*
@@ -144,4 +191,30 @@ img {
 .homepage-hero-content h2 {
   font-weight: 300;
   font-size: 4.2rem;
+}
+
+/*
+ * Homepage Call to Action
+ */
+.homepage-calltoaction {
+  /* uncomment once the boxes are not sticked to the footer */
+  /* border-bottom: 1px solid #ccc; */
+}
+.homepage-calltoaction article {
+  float: left;
+  width: 50%;
+  height: 18rem;
+  padding: 4rem;
+}
+.homepage-calltoaction article:first-child {
+  border-right: 1px solid #ccc;
+  text-align: right;
+}
+.homepage-calltoaction article .btn {
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+.homepage-calltoaction article input[type="text"] {
+  width: 21rem;
+  line-height: 1.4;
 }
