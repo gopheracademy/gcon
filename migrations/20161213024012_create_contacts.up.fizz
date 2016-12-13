@@ -1,0 +1,5 @@
+create_table("contacts", func(t) {
+	t.Column("name", "string", {})
+	t.Column("phone", "string", {})
+	t.Column("email", "text", {})
+})
