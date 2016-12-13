@@ -1,0 +1,8 @@
+version: '2'
+services:
+  db:
+    build:
+      context: .dev/docker/db
+      dockerfile: Dockerfile
+    ports:
+      - "5432:5432"
