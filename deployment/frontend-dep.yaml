@@ -1,19 +1,19 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: gcon
+  name: gconweb
   labels:
-    app: gcon
+    app: gconweb
 spec:
   replicas: 3
   template:
     metadata:
       labels:
-        app: gcon
+        app: gconweb
     spec:
       containers:
         - image: bketelsen/gcon:2
-          name: gcon
+          name: gconweb
           env:
           - name: POSTGRES_PASSWORD
             valueFrom:

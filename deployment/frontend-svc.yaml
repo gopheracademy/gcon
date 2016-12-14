@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: gcon
+  name: gconweb
   labels:
-    app: gcon
+    app: gconweb
 spec:
   ports:
     - port: 80
       targetPort: web
   selector:
-    app: gcon
+    app: gconweb
   type: LoadBalancer
