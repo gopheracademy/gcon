@@ -7,7 +7,7 @@ go:
   - master
 
 before_script:
-  - curl https://glide.sh/get | sh && glide install
+  - go get github.com/Masterminds/glide
   - soda create -e "test"
   - soda migrate -e "test"
 
