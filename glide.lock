@@ -1,8 +1,6 @@
-hash: 4ebe5c3059e3f4819c995d882913bf77cec2f979e0634210a3d336f0dad5c64b
-updated: 2016-12-13T20:58:46.770423347-07:00
+hash: 2b375b17967a1d2135e8a5ca1e9a21783378b52cc9035697b604ef5d4c90a4fd
+updated: 2016-12-13T21:12:58.988122622-07:00
 imports:
-- name: github.com/ajg/form
-  version: 523a5da1a92f01b01f840b61689c0340a0243532
 - name: github.com/aymerick/raymond
   version: 72acac2207479d21dd45898c2a4264246c818148
   subpackages:
@@ -40,7 +38,7 @@ imports:
   subpackages:
   - oid
 - name: github.com/markbates/buffalo
-  version: 0e6ca68dc17d8b85d789e3ae2fe5b25be1b254a7
+  version: a0ce7b01745a8b4bcdd6b2227ec279c1f252f90e
   subpackages:
   - middleware
   - render
@@ -58,9 +56,8 @@ imports:
 - name: github.com/markbates/inflect
   version: e9adfa85ab886d42d9ddd577785378dffaf84c85
 - name: github.com/markbates/pop
-  version: 4592c1cb27203ddd060e40752f5c388a37ff49ab
+  version: 03495b45c267796cb08cf04253be4cd2a235f5fb
   subpackages:
-  - soda
   - columns
   - fizz
   - fizz/translators
@@ -69,8 +66,6 @@ imports:
   subpackages:
   - refresh/web
   - refresh
-- name: github.com/markbates/willie
-  version: cf7c4a7c06ea6a65b79294bbfb4ae18b580f6ecc
 - name: github.com/mattn/anko
   version: 146636cd1e5f0beab721a722f2b5a0fb4613e515
   subpackages:
