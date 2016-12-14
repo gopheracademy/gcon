@@ -2,6 +2,10 @@ language: go
 
 services:
   - postgresql
+
+env:
+  - GO15VENDOREXPERIMENT=1
+
 go:
   - 1.7
   - master
@@ -9,11 +13,11 @@ go:
 before_script:
   - go get -v -t github.com/markbates/pop/soda
   - go get github.com/Masterminds/glide
-
-script:
   - glide install
   - soda create -e "test"
   - soda migrate -e "test"
+
+script:
   - make test
 
 addons:
