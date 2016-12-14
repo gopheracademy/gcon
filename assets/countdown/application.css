@@ -1,0 +1,136 @@
+/*
+ * GopherCon 2017 Countdown Styles
+ *
+ * Navy: #40657c
+ * Blue: #4cc4ec
+ * Beige: #edead7
+ * Bark: #b3ad9f
+ * Orange: #f9b575
+ */
+html, body {
+  font-size: 10px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  margin: 0;
+  height: 100%;
+  color: #40657c;
+  background: #edead7;
+
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #4cc4ec;
+}
+
+input[type="email"] {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #aaa;
+  border-radius: 0.2rem;
+  font-size: 1.8rem;
+  outline: none;
+  min-width: 24rem;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #40657c;
+  border-radius: 0.2rem;
+  background: #40657c;
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.text-highlight {
+  color: #4cc4ec;
+}
+
+/*
+ * Content
+ */
+.page-content {
+  padding: 6rem 3rem; 3rem;
+}
+
+h1 {
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+h2 {
+  font-size: 2.6rem;
+  font-weight: 400;
+  margin-top: 6rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 6.2rem;
+  }
+  h2 {
+    font-size: 3.8rem;
+    margin-top: 8rem;
+  }
+}
+
+.countdown {
+  width: 90%;
+  max-width: 920px;
+  margin: 3rem auto;
+}
+.countdown-block {
+  float: left;
+  width: 23%;
+  margin-right: 2.666666%; /* 8% left / by 3 spacings */
+  background: #4cc4ec;
+  height: 11rem;
+  padding-top: 2.5rem;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+}
+.countdown-block:last-child {
+  margin-right: 0;
+}
+.countdown-block aside {
+  font-size: 1.6rem;
+}
+@media (min-width: 768px) {
+  .countdown-block {
+    height: 20rem;
+    padding-top: 4rem;
+    font-size: 10.5rem;
+  }
+  .countdown-block aside {
+    font-size: 2rem;
+  }
+}
+
+.subscription-form-email {
+  display: inline-block;
+}
+.subscription-form-email .btn {
+  margin-left: 1.5rem;
+}
+#mc_embed_signup div.mce_inline_error {
+  margin-top: 0.4rem!important;
+  border-radius: 0.2rem;
+}
