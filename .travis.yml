@@ -10,10 +10,12 @@ go:
   - 1.7
   - master
 
-before_script:
-  - go get -v -t github.com/markbates/pop/soda
+install:
   - go get github.com/Masterminds/glide
-  - glide install
+  - go get -v -t github.com/markbates/pop/soda 
+  - make deps
+
+before_script:
   - soda create -e "test"
   - soda migrate -e "test"
 
