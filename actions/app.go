@@ -15,12 +15,16 @@ import (
 // App is where all routes and middleware for buffalo
 // should be defined. This is the nerve center of your
 // application.
+var ENV string
+
+func init() {
+	ENV = defaults.String(os.Getenv("GO_ENV"), "development")
+}
 func App() http.Handler {
-	env := defaults.String(os.Getenv("GO_ENV"), "development")
 	a := buffalo.Automatic(buffalo.Options{
-		Env: env,
+		Env: ENV,
 	})
-	log.Println("Environment:", env)
+	log.Println("Environment:", ENV)
 
 	a.Use(middleware.PopTransaction(models.DB))
 	a.ServeFiles("/assets", assetsPath())
