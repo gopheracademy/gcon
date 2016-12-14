@@ -1,6 +1,6 @@
 development:
   dialect: postgres
-  database: gcon_development
+  database: postgres
   user: postgres
   password: postgres
   host: 127.0.0.1
@@ -15,8 +15,8 @@ test:
 
 production:
   dialect: postgres
-  database: gcon_production
+  database: postgres
   user: postgres
-  password: postgres
-  host: 127.0.0.1
+  password: {{ env "POSTGRES_PASSWORD" }}
+  host: gcon-sql
   pool: 25
