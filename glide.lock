@@ -1,5 +1,5 @@
-hash: a8308658d6a09d1bf755cef5c0a5160c52b884311d6606a8255ef02ce94dc3f5
-updated: 2016-12-13T15:19:25.12815049-07:00
+hash: ccf20af0492b05983a80c3487a4eda33ffca74f92e2cf7f78cb2fa0c3799e364
+updated: 2016-12-13T20:14:54.270162379-07:00
 imports:
 - name: github.com/aymerick/raymond
   version: 72acac2207479d21dd45898c2a4264246c818148
@@ -58,6 +58,7 @@ imports:
 - name: github.com/markbates/pop
   version: 4592c1cb27203ddd060e40752f5c388a37ff49ab
   subpackages:
+  - soda
   - columns
   - fizz
   - fizz/translators
@@ -66,6 +67,8 @@ imports:
   subpackages:
   - refresh/web
   - refresh
+- name: github.com/markbates/willie
+  version: cf7c4a7c06ea6a65b79294bbfb4ae18b580f6ecc
 - name: github.com/mattn/anko
   version: 146636cd1e5f0beab721a722f2b5a0fb4613e515
   subpackages:
