@@ -15,7 +15,6 @@ import:
 - package: github.com/markbates/willie
 - package: github.com/markbates/pop
 - package: github.com/markbates/inflect
-- package: github.com/markbates/pop
 - package: github.com/markbates/refresh
   version: ~1.2.0
 - package: github.com/olekukonko/tablewriter

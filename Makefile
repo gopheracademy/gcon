@@ -24,7 +24,7 @@ TEST_LIST = $(foreach pkg, $(ALL_PACKAGES), $(pkg)_test)
 test: $(TEST_LIST)
 $(TEST_LIST): %_test:
 	if [ ! -d coverage ]; then mkdir coverage; fi 
-	$(GOTEST) -v $* -cover -race -coverprofile=coverage/$(subst /,_,$*).coverprofile 
+	$(GOTEST) -v ./$* -cover -race -coverprofile=coverage/$(subst /,_,$*).coverprofile 
 
 COVER_LIST = $(foreach pkg, $(ALL_PACKAGES), $(pkg)_cover)
 cover: $(COVER_LIST)
