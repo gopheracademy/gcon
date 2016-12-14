@@ -14,6 +14,12 @@ spec:
       containers:
         - image: bketelsen/gcon:2
           name: gcon
+          env:
+          - name: POSTGRES_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: db-pass
+                key: password
           ports:
             - containerPort: 3000
               name: web
