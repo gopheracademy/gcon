@@ -1,0 +1,2 @@
+FROM postgres:latest
+COPY 10-createdb.sql /docker-entrypoint-initdb.d/10-createdb.sql

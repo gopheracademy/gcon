@@ -2,14 +2,23 @@
 
 # Running
 
-## Start Docker
+## Start Database Server (Postgres)
 
-	 docker run --name gcon -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
+	 docker-compose up -d
+
+## Load database tables
+
+You only need to run this command when you're starting up the project for the very first time.
+
 	 soda create -a
 
 ## Start Server
 
 	buffalo dev
+
+## Shutdown Postgres after development
+
+	docker-compose stop
 
 # Testing
 
