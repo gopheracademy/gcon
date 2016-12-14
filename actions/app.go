@@ -12,14 +12,17 @@ import (
 	"github.com/markbates/going/defaults"
 )
 
-// App is where all routes and middleware for buffalo
-// should be defined. This is the nerve center of your
-// application.
+// ENV is the environment, computed below from environment variable or defaulted
+// to development
 var ENV string
 
 func init() {
 	ENV = defaults.String(os.Getenv("GO_ENV"), "development")
 }
+
+// App is where all routes and middleware for buffalo
+// should be defined. This is the nerve center of your
+// application.
 func App() http.Handler {
 	a := buffalo.Automatic(buffalo.Options{
 		Env: ENV,
