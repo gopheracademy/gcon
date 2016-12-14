@@ -5,7 +5,8 @@ services:
 
 env:
   - GO15VENDOREXPERIMENT=1
-
+  - "PATH=/home/travis/gopath/bin:$PATH"
+  
 go:
   - 1.7
   - master
