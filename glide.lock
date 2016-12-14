@@ -1,5 +1,5 @@
-hash: 4dcfffe133c89aad5b426773816ca61459f050f26cb22589b7b706d12c963a1a
-updated: 2016-12-13T22:00:26.436901836-07:00
+hash: 44ffedf9431dea77bb5e43ceac9361cb539612d9101831ca535e7e428a7eddd3
+updated: 2016-12-13T22:03:55.239473725-07:00
 imports:
 - name: github.com/ajg/form
   version: 523a5da1a92f01b01f840b61689c0340a0243532
@@ -145,6 +145,8 @@ imports:
   version: f4cad6c6324d3f584e1743d8b3e0e017a5f3a636
 - name: github.com/sourcegraph/syntaxhighlight
   version: c95ac474b7cb9c711f4591b553a2caaa24ea3d37
+- name: github.com/stretchr/testify
+  version: 18a02ba4a312f95da08ff4cfc0055750ce50ae9e
 - name: golang.org/x/net
   version: cfae461cedfdcab6e261a26eb77db53695623303
   subpackages:
