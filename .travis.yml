@@ -7,6 +7,7 @@ go:
   - master
 
 before_script:
+  - go get -v -t github.com/markbates/pop/soda
   - go get github.com/Masterminds/glide
 
 script:
