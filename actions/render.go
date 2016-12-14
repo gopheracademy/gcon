@@ -12,13 +12,13 @@ var r *render.Engine
 
 func init() {
 	r = render.New(render.Options{
-		TemplatesPath: fromHere("../templates"),
+		TemplatesPath: fromHere("../templates/public"),
 		HTMLLayout:    "application.html",
 	})
 }
 
 func assetsPath() http.Dir {
-	return http.Dir(fromHere("../assets"))
+	return http.Dir(fromHere("../assets/public"))
 }
 
 func fromHere(p string) string {

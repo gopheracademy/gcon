@@ -1,6 +1,6 @@
-FROM alpine
-ADD gcon /gcon/gcon
-ADD templates/ /gcon/
-ADD assets/ /gcon/
+FROM ubuntu
+ADD . /gcon
 WORKDIR /gcon
+EXPOSE 3000
 ENTRYPOINT ["/gcon/gcon"]
+
