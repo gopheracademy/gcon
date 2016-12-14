@@ -8,11 +8,11 @@ go:
 
 before_script:
   - go get github.com/Masterminds/glide
+
+script:
   - glide install
   - soda create -e "test"
   - soda migrate -e "test"
-
-script:
   - make test
 
 addons:
