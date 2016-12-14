@@ -12,7 +12,7 @@ var r *render.Engine
 
 func init() {
 	r = render.New(render.Options{
-		TemplatesPath: fromHere("templates/public"),
+		TemplatesPath: templatesPath(),
 		HTMLLayout:    "application.html",
 	})
 }
