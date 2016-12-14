@@ -1,5 +1,5 @@
-hash: 05aff201dce8502d72713b401a93d6711f95963b96d97e1fa6f7fc2adab3d4a8
-updated: 2016-12-13T21:31:16.59878059-07:00
+hash: 3302bb28c339e7c9838b6bed2e0254620a425262aa81eadead608f9a3f4bf1e3
+updated: 2016-12-13T21:54:04.580011588-07:00
 imports:
 - name: github.com/aymerick/raymond
   version: 72acac2207479d21dd45898c2a4264246c818148
@@ -53,16 +53,18 @@ imports:
   version: 882ae17aabb2260c2ee807c7d64e5c73310a37b0
   subpackages:
   - grift
+- name: github.com/markbates/hmax
+  version: b6c7cb2ab5f435e74dfc81cc9efaf3ce85397f56
 - name: github.com/markbates/inflect
   version: e9adfa85ab886d42d9ddd577785378dffaf84c85
 - name: github.com/markbates/pop
-  version: 03495b45c267796cb08cf04253be4cd2a235f5fb
+  version: 4592c1cb27203ddd060e40752f5c388a37ff49ab
   subpackages:
   - columns
   - fizz
   - fizz/translators
 - name: github.com/markbates/refresh
-  version: 3213a6d37bdbfcb5541cc06fe41539556019f410
+  version: 3b31d64dec02d89d735e1f60c05ed41a43c5207e
   subpackages:
   - refresh/web
   - refresh
@@ -144,8 +146,8 @@ imports:
 - name: golang.org/x/net
   version: cfae461cedfdcab6e261a26eb77db53695623303
   subpackages:
-  - html
   - context
+  - html
   - html/atom
 - name: golang.org/x/sys
   version: 478fcf54317e52ab69f40bb4c7a1520288d7f7ea
