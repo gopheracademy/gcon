@@ -1,5 +1,5 @@
-hash: 2b375b17967a1d2135e8a5ca1e9a21783378b52cc9035697b604ef5d4c90a4fd
-updated: 2016-12-13T21:12:58.988122622-07:00
+hash: 05aff201dce8502d72713b401a93d6711f95963b96d97e1fa6f7fc2adab3d4a8
+updated: 2016-12-13T21:31:16.59878059-07:00
 imports:
 - name: github.com/aymerick/raymond
   version: 72acac2207479d21dd45898c2a4264246c818148
@@ -66,6 +66,8 @@ imports:
   subpackages:
   - refresh/web
   - refresh
+- name: github.com/markbates/willie
+  version: cf7c4a7c06ea6a65b79294bbfb4ae18b580f6ecc
 - name: github.com/mattn/anko
   version: 146636cd1e5f0beab721a722f2b5a0fb4613e515
   subpackages:

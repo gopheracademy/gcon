@@ -11,6 +11,8 @@ import:
 - package: github.com/markbates/grift
   subpackages:
   - grift
+- package: github.com/markbates/hmax
+- package: github.com/markbates/willie
 - package: github.com/markbates/pop
   version: ~3.9.2
 - package: github.com/olekukonko/tablewriter
