@@ -7,13 +7,12 @@ go:
   - master
 
 before_script:
-  - go get -v -t github.com/markbates/pop/soda
   - curl https://glide.sh/get | sh && glide install
   - soda create -e "test"
   - soda migrate -e "test"
 
 script:
-  - go test -v -race ./...
+  - make test
 
 addons:
   code_climate:
