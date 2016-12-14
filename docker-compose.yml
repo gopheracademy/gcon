@@ -1,0 +1,11 @@
+version: "2"
+services:
+  db:
+      build:
+        context: ./dockerfiles
+        dockerfile: postgres.docker
+      ports:
+          - "5432:5432"
+      environment:
+        POSTGRES_PASSWORD: postgres
+        POSTGRES_USER: postgres
