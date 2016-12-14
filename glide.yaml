@@ -1,0 +1,14 @@
+package: github.com/gopheracademy/gcon
+import:
+- package: github.com/markbates/buffalo
+  subpackages:
+  - middleware
+  - render
+- package: github.com/markbates/going
+  subpackages:
+  - defaults
+- package: github.com/markbates/grift
+  subpackages:
+  - grift
+- package: github.com/markbates/pop
+- package: github.com/olekukonko/tablewriter
