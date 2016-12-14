@@ -19,16 +19,16 @@ func init() {
 
 func assetsPath() http.Dir {
 	if ENV == "production" {
-		return http.Dir("/gcon/assets")
+		return http.Dir("/gcon/assets/public")
 	}
-	return http.Dir(fromHere("../assets"))
+	return http.Dir(fromHere("../assets/public"))
 }
 
 func templatesPath() string {
 	if ENV == "production" {
-		return "/gcon/templates"
+		return "/gcon/templates/public"
 	}
-	return fromHere("../templates")
+	return fromHere("../templates/public")
 }
 
 func fromHere(p string) string {

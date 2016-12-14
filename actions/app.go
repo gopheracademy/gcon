@@ -25,7 +25,8 @@ func App() http.Handler {
 		Env: ENV,
 	})
 	log.Println("Environment:", ENV)
-
+	log.Println("Assets:", assetsPath())
+	log.Println("Templates:", templatesPath())
 	a.Use(middleware.PopTransaction(models.DB))
 	a.ServeFiles("/assets", assetsPath())
 	a.GET("/", HomeHandler)
