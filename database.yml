@@ -17,6 +17,6 @@ production:
   dialect: postgres
   database: gcon_production
   user: postgres
-  password: postgres
-  host: 127.0.0.1
+  password: {{ env "POSTGRES_PASSWORD" }}
+  host: gcon-sql
   pool: 25

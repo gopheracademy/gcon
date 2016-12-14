@@ -47,6 +47,8 @@ spec:
       - image: postgres:9.5
         name: postgres 
         env:
+        - name: PGDATA
+          value: /var/lib/postgresql/data/pgdata
         - name: POSTGRES_PASSWORD
           valueFrom:
             secretKeyRef:
@@ -57,7 +59,7 @@ spec:
           name: sql
         volumeMounts:
         - name: pg-persistent-storage
-          mountPath: /var/lib/postgresql/data/pgdata
+          mountPath: /var/lib/postgresql/data
       volumes:
       - name: pg-persistent-storage
         persistentVolumeClaim:
