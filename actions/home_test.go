@@ -15,5 +15,5 @@ func Test_HomeHandler(t *testing.T) {
 	res := w.Request("/").Get()
 
 	r.Equal(200, res.Code)
-	r.Contains(res.Body.String(), "Welcome to Buffalo!")
+	r.Contains(res.Body.String(), "Registration")
 }
