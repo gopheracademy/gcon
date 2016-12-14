@@ -1,6 +1,7 @@
 package actions
 
 import (
+	"log"
 	"net/http"
 	"os"
 
@@ -19,7 +20,7 @@ func App() http.Handler {
 	a := buffalo.Automatic(buffalo.Options{
 		Env: env,
 	})
-	buffalo.Logger.Info("Environment", env)
+	log.Println("Environment:", env)
 
 	a.Use(middleware.PopTransaction(models.DB))
 	a.ServeFiles("/assets", assetsPath())
