@@ -11,4 +11,7 @@ import:
   subpackages:
   - grift
 - package: github.com/markbates/pop
+  subpackages:
+  - soda
 - package: github.com/olekukonko/tablewriter
+- package: github.com/markbates/willie
