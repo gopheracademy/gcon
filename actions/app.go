@@ -5,6 +5,7 @@ import (
 
 	"github.com/gopheracademy/gcon/actions/admin"
 	"github.com/gopheracademy/gcon/models"
+	"github.com/kiasaki/gcon/actions/countdown"
 	"github.com/markbates/buffalo"
 	"github.com/markbates/buffalo/middleware"
 )
@@ -19,7 +20,9 @@ func App() http.Handler {
 
 	a.Use(middleware.PopTransaction(models.DB))
 	a.ServeFiles("/assets", assetsPath())
-	a.GET("/", HomeHandler)
+
+	a.GET("/", countdown.CountdownHandler)
+
 	adm := a.Group("/admin")
 	adm.GET("/", admin.AdminHandler)
 

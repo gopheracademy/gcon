@@ -1,7 +1,6 @@
 package admin
 
 import (
-	"net/http"
 	"path"
 	"runtime"
 
@@ -15,10 +14,6 @@ func init() {
 		TemplatesPath: fromHere("../../templates/admin"),
 		HTMLLayout:    "application.html",
 	})
-}
-
-func assetsPath() http.Dir {
-	return http.Dir(fromHere("../../assets"))
 }
 
 func fromHere(p string) string {
