@@ -8,6 +8,7 @@ go:
 
 before_script:
   - go get github.com/Masterminds/glide
+  - glide install
   - soda create -e "test"
   - soda migrate -e "test"
 
