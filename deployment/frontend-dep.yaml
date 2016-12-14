@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: gcon
+  labels:
+    app: gcon
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: gcon
+    spec:
+      containers:
+        - image: bketelsen/gcon:2
+          name: gcon
+          ports:
+            - containerPort: 3000
+              name: web

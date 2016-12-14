@@ -15,7 +15,7 @@ test:
 
 production:
   dialect: postgres
-  database: gcon_production
+  database: postgres
   user: postgres
   password: {{ env "POSTGRES_PASSWORD" }}
   host: gcon-sql
