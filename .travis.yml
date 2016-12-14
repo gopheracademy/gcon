@@ -6,17 +6,15 @@ services:
 env:
   - GO15VENDOREXPERIMENT=1
   - "PATH=/home/travis/gopath/bin:$PATH"
-  
+
 go:
   - 1.7
   - master
 
-install:
+before_script:
   - go get github.com/Masterminds/glide
   - go get -v -t github.com/markbates/pop/soda 
   - make deps
-
-before_script:
   - soda create -e "test"
   - soda migrate -e "test"
 
