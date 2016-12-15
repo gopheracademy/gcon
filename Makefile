@@ -7,8 +7,6 @@ DOCKER=docker
 SODA=soda
 GLIDE=glide
 
-ALL_PACKAGES = actions models grifts
-
 deps: 
 	$(GLIDE) install
 
@@ -20,16 +18,10 @@ clean:
 	rm -f $(GOPATH)/bin/gcon
 	rm -rf gcon
 
-TEST_LIST = $(foreach pkg, $(ALL_PACKAGES), $(pkg)_test)
-test: $(TEST_LIST)
-$(TEST_LIST): %_test:
-	if [ ! -d coverage ]; then mkdir coverage; fi 
-	$(GOTEST) -v ./$* -cover -race -coverprofile=coverage/$(subst /,_,$*).coverprofile 
-
-COVER_LIST = $(foreach pkg, $(ALL_PACKAGES), $(pkg)_cover)
-cover: $(COVER_LIST)
-$(COVER_LIST): %_cover:
-	$(GOCMD) tool cover -html=coverage/$(subst /,_,$*).coverprofile -o coverage/$(subst /,_,$*).html
+test:
+	$(GOTEST) -v ./grifts -race
+	$(GOTEST) -v ./models -race
+	$(GOTEST) -v ./actions -race
 
 define GIT_ERROR
 FATAL: Git (git) is required to download gcon dependencies.
