@@ -4,11 +4,5 @@ services:
     build:
       context: .dev/docker/db
       dockerfile: Dockerfile
-  dev_app:
-    build:
-      context: .dev/docker/app
-      dockerfile: Dockerfile
     ports:
-      - "3000:3000"
-    volumes: 
-      - $GOPATH/src:/go/src
+      - "5432:5432"

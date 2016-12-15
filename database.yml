@@ -3,7 +3,7 @@ development:
   database: postgres
   user: postgres
   password: postgres
-  host: db
+  host: 127.0.0.1
   pool: 5
 
 test:
