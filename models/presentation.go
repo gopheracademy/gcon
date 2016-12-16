@@ -13,7 +13,7 @@ type Presentation struct {
 	Title            string    `json:"title" db:"title"`
 	ShortDescription string    `json:"short_description" db:"short_description"`
 	LongDescription  string    `json:"long_description" db:"long_description"`
-	SpeakerID        int       `json:"speaker_id" db:"speaker_id"`
+	SpeakerIDs       []int     `json:"speaker_id"`
 }
 
 // String is not required by pop and may be deleted
