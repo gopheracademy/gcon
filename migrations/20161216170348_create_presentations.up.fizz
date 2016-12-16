@@ -1,0 +1,6 @@
+create_table("presentations", func(t) {
+	t.Column("title", "string", {})
+	t.Column("short_description", "string", {})
+	t.Column("long_description", "text", {})
+	t.Column("speaker_id", "integer", {})
+})
