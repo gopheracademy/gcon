@@ -1,0 +1,4 @@
+create_table("presentation_speakers", func(t) {
+	t.Column("presentation_id", "integer", {})
+	t.Column("speaker_id", "integer", {})
+})
