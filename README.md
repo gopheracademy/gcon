@@ -35,10 +35,10 @@ Versions are managed in the `glide.yaml` file.  A `glide.lock` file is created
 
 ## Running
 
-### Start Docker
+### Start Database
 
 ```
-docker run --name gcon -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
+docker-compose up
 soda create -a
 ```
 
