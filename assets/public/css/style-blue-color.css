@@ -6167,7 +6167,7 @@ button[type="submit"] .loading {
 .navigation-item {
   margin-left: 21px;
   display: inline-block;
-  padding: 34px 0 33px;
+  padding: 34px 0 16px;
 }
 .navigation-item:first-child {
   margin-left: 0;

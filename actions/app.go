@@ -32,7 +32,8 @@ func App() http.Handler {
 	a.Use(setTemplate())
 	a.Use(middleware.PopTransaction(models.DB))
 	a.ServeFiles("/assets", assetsPath())
-	a.GET("/", HomeHandler)
+	a.GET("/", CountdownHandler)
+	a.GET("/home", HomeHandler)
 	adm := a.Group("/admin")
 	adm.GET("/index", AdminHandler)
 
