@@ -12,23 +12,23 @@ var r *render.Engine
 
 func init() {
 	r = render.New(render.Options{
-		TemplatesPath: templatesPath(),
-		HTMLLayout:    "application.html",
+		//	TemplatesPath: templatesPath(),
+		HTMLLayout: "application.html",
 	})
 }
 
 func assetsPath() http.Dir {
 	if ENV == "production" {
-		return http.Dir("/gcon/assets/public")
+		return http.Dir("/gcon/assets")
 	}
-	return http.Dir(fromHere("../assets/public"))
+	return http.Dir(fromHere("../assets"))
 }
 
 func templatesPath() string {
 	if ENV == "production" {
-		return "/gcon/templates/public"
+		return "/gcon/templates"
 	}
-	return fromHere("../templates/public")
+	return fromHere("../templates")
 }
 
 func fromHere(p string) string {
