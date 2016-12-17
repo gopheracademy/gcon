@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"strings"
 
-	"github.com/gopheracademy/gcon/actions/admin"
 	"github.com/gopheracademy/gcon/models"
 	"github.com/markbates/buffalo"
 	"github.com/markbates/buffalo/middleware"
@@ -29,12 +29,32 @@ func App() http.Handler {
 	})
 	log.Println("Environment:", ENV)
 	log.Println("Assets:", assetsPath())
-	log.Println("Templates:", templatesPath())
+	a.Use(setTemplate())
 	a.Use(middleware.PopTransaction(models.DB))
 	a.ServeFiles("/assets", assetsPath())
 	a.GET("/", HomeHandler)
 	adm := a.Group("/admin")
-	adm.GET("/", admin.AdminHandler)
+	adm.GET("/index", AdminHandler)
 
 	return a
+}
+
+func setTemplate() buffalo.MiddlewareFunc {
+	return func(h buffalo.Handler) buffalo.Handler {
+		return func(c buffalo.Context) error {
+			path := "/public"
+			admin := strings.Contains(c.Request().URL.Path, "admin")
+			if admin {
+				path = "/admin"
+			}
+			r.TemplatesPath = fromHere("../templates" + path)
+
+			if ENV == "production" {
+				r.TemplatesPath = "/gcon/templates" + path
+			}
+			// TODO: Remove after debugging
+			log.Println("Template Path:", r.TemplatesPath)
+			return h(c)
+		}
+	}
 }
