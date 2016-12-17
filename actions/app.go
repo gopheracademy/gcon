@@ -47,15 +47,13 @@ func setTemplate() buffalo.MiddlewareFunc {
 			if admin {
 				path = "/admin"
 			}
+			r.TemplatesPath = fromHere("../templates" + path)
+
 			if ENV == "production" {
 				r.TemplatesPath = "/gcon/templates" + path
 			}
-			if admin {
-				r.TemplatesPath = fromHere("../templates" + path)
-			}
-
-			r.TemplatesPath = fromHere("../templates" + path)
-			log.Println("Using", r.TemplatesPath)
+			// TODO: Remove after debugging
+			log.Println("Template Path:", r.TemplatesPath)
 			return h(c)
 		}
 	}
