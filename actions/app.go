@@ -43,12 +43,17 @@ func setTemplate() buffalo.MiddlewareFunc {
 	return func(h buffalo.Handler) buffalo.Handler {
 		return func(c buffalo.Context) error {
 			path := "/public"
-			if strings.Contains(c.Request().URL.Path, "admin") {
+			admin := strings.Contains(c.Request().URL.Path, "admin")
+			if admin {
 				path = "/admin"
 			}
 			if ENV == "production" {
 				r.TemplatesPath = "/gcon/templates" + path
 			}
+			if admin {
+				r.TemplatesPath = fromHere("../templates" + path)
+			}
+
 			r.TemplatesPath = fromHere("../templates" + path)
 			log.Println("Using", r.TemplatesPath)
 			return h(c)
