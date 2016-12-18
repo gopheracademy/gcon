@@ -16,3 +16,16 @@ func Test_PresentationSpeaker(t *testing.T) {
 		t.Errorf("expected contains %s, got %s", "1", m)
 	}
 }
+
+// Test_PresentationSpeakers
+func Test_PresentationSpeakers(t *testing.T) {
+	p := &models.PresentationSpeakers{
+		{
+			PresentationID: 100,
+			SpeakerID:      999,
+		},
+	}
+	if m := p.String(); !strings.Contains(m, "100") {
+		t.Errorf("expected contains %s, got %s", "100", m)
+	}
+}

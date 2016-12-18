@@ -1,10 +1,8 @@
 # GopherCon 2017 [![Code Climate](https://codeclimate.com/github/gopheracademy/gcon/badges/gpa.svg)](https://codeclimate.com/github/gopheracademy/gcon) [![Build Status](https://travis-ci.org/gopheracademy/gcon.svg?branch=master)](https://travis-ci.org/gopheracademy/gcon)
 
-## Setup
+## Getting Started
 
-We're using [Glide](https://github.com/Masterminds/glide) for dependency management.  
-
-### Installation 
+The GopherCon 2017 website code requires a number of components to successfully build, deploy, and run.  For dependency managmeent, we're using [Glide](https://github.com/Masterminds/glide).
 
 * UNIX/Linux 
 
@@ -25,27 +23,21 @@ sudo add-apt-repository ppa:masterminds/glide && sudo apt-get update
 sudo apt-get install glide
 ```
 
-Once Glide is installed, download the dependencies. 
-
-```
-glide install
-```
-
 Versions are managed in the `glide.yaml` file.  A `glide.lock` file is created
 
-## Running
-
-### Start Database
-
+Once Glide is installed we need to make sure that we have the PostgreSQL image downloaded, have the container built, schema loaded, and dependencies installed. To accomplish this, run the below command.
 ```
-docker-compose up
-soda create -a
+make setup-dev
 ```
 
-### Start Server
-
+Make sure that the project is building successfully.
 ```
-buffalo dev
+make test
+```
+
+Run the project.
+```
+make run-dev
 ```
 
 ## Testing
@@ -54,9 +46,13 @@ buffalo dev
 make test
 ```
 
-### Start Docker -- See above.  
+## Run Buffalo Directly
 
-Tests REQUIRE a working database for now.
+```
+buffalo dev
+```
+
+## Run Buffalo Tests
 
 ```
 buffalo test
