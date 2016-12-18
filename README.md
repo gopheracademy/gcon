@@ -23,7 +23,7 @@ sudo add-apt-repository ppa:masterminds/glide && sudo apt-get update
 sudo apt-get install glide
 ```
 
-Versions are managed in the `glide.yaml` file.  A `glide.lock` file is created
+Versions are managed in the `glide.yaml` file and a subsequent `glide.lock` file is created.
 
 Once Glide is installed we need to make sure that we have the PostgreSQL image downloaded, have the container built, schema loaded, and dependencies installed. To accomplish this, run the below command.
 ```
