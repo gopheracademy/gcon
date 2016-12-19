@@ -2,36 +2,26 @@ package actions
 
 import (
 	"net/http"
-	"path"
-	"runtime"
 
+	rice "github.com/GeertJohan/go.rice"
 	"github.com/markbates/buffalo/render"
+	"github.com/markbates/buffalo/render/resolvers"
 )
 
 var r *render.Engine
+var resolver = &resolvers.RiceBox{
+	Box: rice.MustFindBox("../templates"),
+}
 
 func init() {
 	r = render.New(render.Options{
-	// TemplatesPath: templatesPath(),
-	// HTMLLayout: "application.html",
+		HTMLLayout:     "public/main.html",
+		CacheTemplates: ENV == "production",
+		FileResolver:   resolver,
 	})
 }
 
-func assetsPath() http.Dir {
-	if ENV == "production" {
-		return http.Dir("/gcon/assets")
-	}
-	return http.Dir(fromHere("../assets"))
-}
-
-func templatesPath() string {
-	if ENV == "production" {
-		return "/gcon/templates"
-	}
-	return fromHere("../templates")
-}
-
-func fromHere(p string) string {
-	_, filename, _, _ := runtime.Caller(1)
-	return path.Join(path.Dir(filename), p)
+func assetsPath() http.FileSystem {
+	box := rice.MustFindBox("../assets")
+	return box.HTTPBox()
 }

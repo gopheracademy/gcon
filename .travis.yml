@@ -22,23 +22,26 @@ go:
 before_script:
 - go get github.com/Masterminds/glide
 - go get -v -t github.com/markbates/pop/soda
+- go get github.com/GeertJohan/go.rice/rice
 - make deps
 - soda create -e "test"
 - soda migrate -e "test"
 script:
 - make test
-after_success:
+
+before_deploy: 
+- cd actions
+- rice embed-go
+- cd ..
 - go build
-- docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-- docker build -t $IMAGE:$COMMIT .
-- docker tag $IMAGE:$COMMIT $IMAGE:latest
-- docker tag $IMAGE:$COMMIT $IMAGE:travis-$TRAVIS_BUILD_NUMBER
-- docker push $IMAGE
-- curl https://sdk.cloud.google.com | bash
-- source /home/travis/.bashrc
-- gcloud components update kubectl
-- kubectl get pods
-- kubectl patch deployment $DEPLOYMENT -p '{"spec":{"template":{"spec":{"containers":[{"name":"'"$CONTAINER_NAME"'","image":"'"$IMAGE_VERSION"'"}]}}}}'
+
+deploy:
+  on:
+    branch: master
+    go: '1.7'
+  skip_cleanup: true
+  script: deployment/gce.sh
+  
 addons:
   code_climate:
     repo_token: 0c617dde8a5dc2e6870351abc96c4a689f147d0482bb795fe9e5c1e402c45a73

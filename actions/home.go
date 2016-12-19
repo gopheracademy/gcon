@@ -5,5 +5,5 @@ import "github.com/markbates/buffalo"
 // HomeHandler is a default handler to serve up
 // a home page.
 func HomeHandler(c buffalo.Context) error {
-	return c.Render(200, r.HTML("index.html", "main.html"))
+	return c.Render(200, r.HTML("public/index.html", "public/main.html"))
 }

@@ -14,11 +14,7 @@ import (
 
 // ENV is the environment, computed below from environment variable or defaulted
 // to development
-var ENV string
-
-func init() {
-	ENV = defaults.String(os.Getenv("GO_ENV"), "development")
-}
+var ENV = defaults.String(os.Getenv("GO_ENV"), "development")
 
 // App is where all routes and middleware for buffalo
 // should be defined. This is the nerve center of your
@@ -29,32 +25,28 @@ func App() http.Handler {
 	})
 	log.Println("Environment:", ENV)
 	log.Println("Assets:", assetsPath())
-	a.Use(setTemplate())
+	a.Use(setLayout())
 	a.Use(middleware.PopTransaction(models.DB))
 	a.ServeFiles("/assets", assetsPath())
-	a.GET("/", CountdownHandler)
 	a.GET("/home", HomeHandler)
+	a.GET("/", CountdownHandler)
 	adm := a.Group("/admin")
 	adm.GET("/index", AdminHandler)
 
 	return a
 }
 
-func setTemplate() buffalo.MiddlewareFunc {
+func setLayout() buffalo.MiddlewareFunc {
 	return func(h buffalo.Handler) buffalo.Handler {
 		return func(c buffalo.Context) error {
-			path := "/public"
+			// something tells me this is a race and won't
+			// work the way I expect it to.
 			admin := strings.Contains(c.Request().URL.Path, "admin")
 			if admin {
-				path = "/admin"
+				r.HTMLLayout = "/admin/main.html"
+			} else {
+				r.HTMLLayout = "/public/main.html"
 			}
-			r.TemplatesPath = fromHere("../templates" + path)
-
-			if ENV == "production" {
-				r.TemplatesPath = "/gcon/templates" + path
-			}
-			// TODO: Remove after debugging
-			log.Println("Template Path:", r.TemplatesPath)
 			return h(c)
 		}
 	}
