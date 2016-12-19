@@ -45,6 +45,7 @@ addons:
   code_climate:
     repo_token: 0c617dde8a5dc2e6870351abc96c4a689f147d0482bb795fe9e5c1e402c45a73
 before_install:
-- openssl aes-256-cbc -K $encrypted_c39e32fc3ab6_key -iv $encrypted_c39e32fc3ab6_iv
-  -in secrets.tar.enc -out /home/travis/.kube/ -d
 - mkdir -p /home/travis/.kube
+- openssl aes-256-cbc -K $encrypted_c39e32fc3ab6_key -iv $encrypted_c39e32fc3ab6_iv
+  -in secrets.tar.enc -out /home/travis/.kube/secrets.tar -d
+- tar xvf /home/travis/.kube/secrets.tar -C /home/travis/.kube/
