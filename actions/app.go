@@ -4,7 +4,6 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"strings"
 
 	"github.com/gopheracademy/gcon/models"
 	"github.com/markbates/buffalo"
@@ -25,7 +24,7 @@ func App() http.Handler {
 	})
 	log.Println("Environment:", ENV)
 	log.Println("Assets:", assetsPath())
-	a.Use(setTemplate())
+	//	a.Use(setTemplate())
 	a.Use(middleware.PopTransaction(models.DB))
 	a.ServeFiles("/assets", assetsPath())
 	a.GET("/home", HomeHandler)
@@ -36,6 +35,7 @@ func App() http.Handler {
 	return a
 }
 
+/*
 func setTemplate() buffalo.MiddlewareFunc {
 	return func(h buffalo.Handler) buffalo.Handler {
 		return func(c buffalo.Context) error {
@@ -51,3 +51,4 @@ func setTemplate() buffalo.MiddlewareFunc {
 		}
 	}
 }
+*/

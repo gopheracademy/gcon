@@ -2,6 +2,7 @@ package actions
 
 import "github.com/markbates/buffalo"
 
+// AdminPage is a container that holds variables to populate the admin templates
 type AdminPage struct {
 	Title    string
 	Subtitle string
@@ -22,5 +23,6 @@ func makeAdminPage(title, subtitle, page string) AdminPage {
 // AdminHandler serves the admin root
 func AdminHandler(c buffalo.Context) error {
 	c.Set("adminpage", makeAdminPage("Dashboard", "get stuff done!", "Index"))
-	return c.Render(200, r.HTML("index.html"))
+	r.HTMLLayout = "/admin/main.html"
+	return c.Render(200, r.HTML("admin/index.html"))
 }

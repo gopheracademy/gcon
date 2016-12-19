@@ -9,19 +9,15 @@ import (
 )
 
 var r *render.Engine
-var adminResolver = &resolvers.RiceBox{
-	Box: rice.MustFindBox("../templates/admin"),
-}
-
-var publicResolver = &resolvers.RiceBox{
-	Box: rice.MustFindBox("../templates/public"),
+var resolver = &resolvers.RiceBox{
+	Box: rice.MustFindBox("../templates"),
 }
 
 func init() {
 	r = render.New(render.Options{
-		HTMLLayout:     "main.html",
+		HTMLLayout:     "public/main.html",
 		CacheTemplates: ENV == "production",
-		FileResolver:   publicResolver,
+		FileResolver:   resolver,
 	})
 }
 
