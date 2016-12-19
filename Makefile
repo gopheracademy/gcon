@@ -1,5 +1,6 @@
 GOCMD=go
 GOBUILD=$(GOCMD) build
+GOBUILDPROD=$(GOCMD) build -ldflags "-linkmode external -extldflags -static" 
 GOCLEAN=$(GOCMD) clean
 GOINSTALL=$(GOCMD) install
 GOTEST=$(GOCMD) test
@@ -13,6 +14,9 @@ deps:
 
 build:
 	$(GOBUILD) -v -o gcon
+
+buildprod:
+	$(GOBUILDPROD) -v -o gcon
 
 clean:
 	$(GOCLEAN) -n -i -x
