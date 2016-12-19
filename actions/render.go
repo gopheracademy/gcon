@@ -8,16 +8,31 @@ import (
 	"github.com/markbates/buffalo/render/resolvers"
 )
 
-var r *render.Engine
-var resolver = &resolvers.RiceBox{
-	Box: rice.MustFindBox("../templates"),
+// renderer for Admin Pages
+var adminR *render.Engine
+
+// renderer for Public Pages
+var publicR *render.Engine
+
+var pResolver = &resolvers.RiceBox{
+	Box: rice.MustFindBox("../templates/public"),
+}
+
+var aResolver = &resolvers.RiceBox{
+	Box: rice.MustFindBox("../templates/admin"),
 }
 
 func init() {
-	r = render.New(render.Options{
-		HTMLLayout:     "public/main.html",
+	adminR = render.New(render.Options{
+		HTMLLayout:     "/admin/main.html",
 		CacheTemplates: ENV == "production",
-		FileResolver:   resolver,
+		FileResolver:   aResolver,
+	})
+
+	publicR = render.New(render.Options{
+		HTMLLayout:     "/public/main.html",
+		CacheTemplates: ENV == "production",
+		FileResolver:   pResolver,
 	})
 }
 
