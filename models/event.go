@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-// Event represents an occurrance of note during the time of the conference
+// Event represents an occurrence of note during the time of the conference
 type Event struct {
 	ID               int       `json:"id" db:"id"`
 	CreatedAt        time.Time `json:"created_at" db:"created_at"`
