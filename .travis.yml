@@ -47,7 +47,7 @@ addons:
 before_install:
 - mkdir -p /home/travis/.kube
 - openssl aes-256-cbc -K $encrypted_c39e32fc3ab6_key -iv $encrypted_c39e32fc3ab6_iv
+  -in config.enc -out /home/travis/.kube/config -d
+- openssl aes-256-cbc -K $encrypted_c39e32fc3ab6_key -iv $encrypted_c39e32fc3ab6_iv
   -in gopherconference-d728956769b4.json.enc -out /home/travis/.kube/gopherconference-d728956769b4.json
   -d
-- openssl aes-256-cbc -K $encrypted_c39e32fc3ab6_key -iv $encrypted_c39e32fc3ab6_iv
-  -in config.enc -out /home/travis/.kube/config -d
