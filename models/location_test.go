@@ -16,3 +16,16 @@ func Test_Location(t *testing.T) {
 		t.Errorf("expected contains %s, got %s", "Great Divide", m)
 	}
 }
+
+// Test_Locations
+func Test_Locations(t *testing.T) {
+	l := &models.Locations{
+		{
+			Name: "Great Divide",
+			Zip:  "85013-9810",
+		},
+	}
+	if m := l.String(); !strings.Contains(m, "Great Divide") {
+		t.Errorf("expected contains %s, got %s", "Great Divide", m)
+	}
+}

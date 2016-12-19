@@ -3,9 +3,10 @@ GOBUILD=$(GOCMD) build
 GOCLEAN=$(GOCMD) clean
 GOINSTALL=$(GOCMD) install
 GOTEST=$(GOCMD) test
-DOCKER=docker
+DOCKERCOMPOSE=docker-compose
 SODA=soda
 GLIDE=glide
+BUFFALO=buffalo
 
 deps: 
 	$(GLIDE) install
@@ -22,6 +23,18 @@ test:
 	$(GOTEST) -v ./grifts -race
 	$(GOTEST) -v ./models -race
 	$(GOTEST) -v ./actions -race
+
+setup-dev: deps
+	$(DOCKERCOMPOSE) build
+	$(DOCKERCOMPOSE) up -d
+	$(SODA) create -a
+	docker ps | grep gcon_db
+
+teardown-dev: clean
+	$(DOCKERCOMPOSE) down
+
+run-dev: 
+	$(BUFFALO) dev
 
 define GIT_ERROR
 FATAL: Git (git) is required to download gcon dependencies.

@@ -16,3 +16,16 @@ func Test_Speaker(t *testing.T) {
 		t.Errorf("expected contains %s, got %s", "Brian", m)
 	}
 }
+
+// Test_Speakers
+func Test_Speakers(t *testing.T) {
+	s := &models.Speakers{
+		{
+			FirstName: "Brian",
+			PhotoURL:  "https://blog.gopheracademy.com/postimages/advent-2015/gophercon2016.svg",
+		},
+	}
+	if m := s.String(); !strings.Contains(m, "Brian") {
+		t.Errorf("expected contains %s, got %s", "Brian", m)
+	}
+}
