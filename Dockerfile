@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine:3.1
+FROM ubuntu
 ADD ./assets /gcon/assets
 ADD ./grifts /gcon/grifts
 ADD ./migrations /gcon/migrations
