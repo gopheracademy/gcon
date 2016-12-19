@@ -28,6 +28,7 @@ before_script:
 script:
 - make test
 after_success:
+- go build
 - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 - docker build -t $IMAGE:$COMMIT .
 - docker tag $IMAGE:$COMMIT $IMAGE:latest
