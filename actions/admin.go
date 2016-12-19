@@ -22,5 +22,5 @@ func makeAdminPage(title, subtitle, page string) AdminPage {
 // AdminHandler serves the admin root
 func AdminHandler(c buffalo.Context) error {
 	c.Set("adminpage", makeAdminPage("Dashboard", "get stuff done!", "Index"))
-	return c.Render(200, r.HTML("index.html", "main.html"))
+	return c.Render(200, r.HTML("index.html"))
 }
