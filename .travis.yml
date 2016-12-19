@@ -6,6 +6,7 @@ env:
   matrix:
   - PATH=/home/travis/gopath/bin:$PATH
   global:
+  - GOOGLE_APPLICATION_CREDENTIALS=/home/travis/.kube/gopherconference-d728956769b4.json
   - COMMIT=${TRAVIS_COMMIT::8}
   - IMAGE=bketelsen/gcon
   - CONTAINER_NAME=bketelsen/gcon
