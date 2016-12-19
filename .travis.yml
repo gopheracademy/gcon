@@ -36,10 +36,7 @@ after_success:
 - curl https://sdk.cloud.google.com | bash
 - source /home/travis/.bashrc
 - gcloud components update kubectl
-- kubectl config set-credentials default --username=${GKE_USERNAME} --password=${GKE_PASSWORD}
-- kubectl config set-cluster default --server=${GKE_SERVER} --insecure-skip-tls-verify=true
-- kubectl config set-context default --cluster=default --user=default
-- kubectl config use-context default
+- kubectl get pods
 - kubectl patch deployment $DEPLOYMENT -p '{"spec":{"template":{"spec":{"containers":[{"name":"'"$CONTAINER_NAME"'","image":"'"$IMAGE_VERSION"'"}]}}}}'
 addons:
   code_climate:
