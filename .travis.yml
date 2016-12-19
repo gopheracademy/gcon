@@ -33,6 +33,7 @@ before_deploy:
 - go build -ldflags "-linkmode external -extldflags -static" -o gcon
 
 deploy:
+  provider: script
   on:
     branch: master
     go: '1.7'
