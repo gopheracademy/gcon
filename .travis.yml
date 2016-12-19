@@ -8,7 +8,10 @@ env:
   global:
   - COMMIT=${TRAVIS_COMMIT::8}
   - IMAGE=bketelsen/gcon
+  - CONTAINER_NAME=bketelsen/gcon
   - IMAGE_VERSION=$IMAGE:$COMMIT
+  - CLOUDSDK_CORE_DISABLE_PROMPTS=1
+  - DEPLOYMENT=gconweb
   - secure: rCdN+NKBwTq0W+5cTSIFnkJ7nTApAVkCONgbW5e0PSGj8R+SSt/dn501esARq9OWBpKeiTfxcXXTVWGyb3+J8CWSwV2TiuoljV6sMWfVDCvwoT09LLOJiCjQLqD2sQ+6uNqNylxOIB3Z9GgXoQalgzbLooitBPdRtjGZ9cx2EM6whss+DFYTDIKHJlDD9hkxFxnZL63yryUQekQpvOAPsGMdlfzPe5pnB4GpeMpctqw6J+fjgQwq0F+WuF9JAC++S85on4jqIJZz4YVOdnfm9zKiqkH2GOs5wpUqoweZadRc821t+rpClv426Yb2VofYvaloJksgN+V6mPUzUmjZuFEY+SUmVIuHpTJ+dCXF1t2pKtKcoGpwTZ0+lFXr1xm58PcSiMAt3EB6Nfjx9LM81YgzFCs57JWCsU48ix6xAbb8YflRnF6oFEE9WF+OfrRpDVbdjo5iZDIFDmd+PbKXWMqraszimIqu0441AQEm7Qrc5TapuEfrFRYsYWqQjmsfRC/aMPfw5SBTpwqFAOt+r0w28Lvo/gQl3kKvZJB2soe9qXdYRzeh0OC9tm0BVdUlwlFRAzONsFhah3L2faU3A67rLXjtIB0h58rNeWZvqAJ18v/c/r1sOpgtrcZXpKBTwbve/f3IaEt/c75CDIQUy46YsCIUXKI3b2jOeQQgXNY=
   - secure: qnXznrqUiVtDLAKo8lvwwvKf1HxuNPSTPkcSV6uvdrMkQ0lMskIdT4hcCixj4kXxtXtRKfQJPCYkga+r+wcrmsj/Sw1IOElweXejMpBEM++kCP0ByIFDKXTU1tSIbNaSyMAQq834GCDcDqMybwbGFlKOPcxcadKhyXz8zTDdz2owduRDwA49Z4shUqw9oMTJYTEQaBpTVYfSvrBejV+NvJ41EvtMckbJYMUkGN7GYhlwa6ERHDWweb0MJ+tjsEGjXPfbAW+Qknf2nIqXe5aJWkJLv9F/briszgnvLC91hVrcQEiD1VcORx1TY4hZIvAeEoWnd3pwAzKr3fqoWWnDFCZmKifEob8L1tRqbOrTmbDHfdDSgv0kvsdHt02kofY/xhbeiC3z7ciiRFlcYIHali+h2QlRsP3ejJJi6D+44UfHErrZHszGW3Rup9gv0KGwvyOUboU14tTCyAAQ04ZcyYrNlvpc0hOnySY2zPeN7GCGGRDR6M32cEJDMPDkanoZZUBdf3VB3CfQUuxE/gq2Xs5dpb9zS0XvacxXa76yQCpUZPr2gh4RdlKPWhtc6eP/twflf26n0dMET1bqfORfANcYy57D3t1+RMB2PeCn8GtwiZ48qP6in0MX6P6IU8Sqxmc5khSlfyGJJtpZkT+x4uC402spQdx4zA3t4HBdRbs=
   - secure: HyyoKWURbaEaIsg7LYkbHX646fo06NSJIhbr3L/MYmrKdMxCpenOJ1xmyBmlQ2tg2OGi86BEuh78rLWxsxog7XVEUBXM6wTFGfIj/nuApTzffmW9v+Yvr0UrA6mP4NDHbtwrwPfJMThg3X732KeBNB7x675eJrLuGY1IOHX9xhcg7iOAVCapVwf7n6oO0XXI6kIi+fx6jaBOlsTpE04okuKVfTJzTA0el2B+6udVaE6QJSgOzDhrwDhpg4hXw72EzgsYt8PJcFU8Ii4Jj2dQUFOiUAVXHlZ5XbYu1xb4HM1+Qy/AQbThgc7AEo+QIM2f8/hXHEimgk8IRIIB4IF4v/lj17MfLMJ5zgJdj2jT3mTgTDBczYMF+5kyi8HNojogpGV/Kq5kLi6mBTtzAnHEvsfymka68/6P/h8RdvapfdGe5IkCM6kmvaEj/XHch5NQRV/tpdrf3DjlPBtLCRHrKrlVwYeA9eXpSSQFDeBNHNgld9Mk5INoaLqBaCi3hmTtdKZ7s+mTCTp7jKTpuuZ7FKHkbvJw6e+X45gMdmOjLsT9/wCuxQ2V6JgJT5CKohPKpy6PcYWaLm4SvyxuTNX6z6MMp4Atbtwt1d9FH0ieNInmHzzFI93kPDS5rX9gY3YWI1Oj+tcLBMmOCUIEahzoAhuWYyuLr7hRLDorl6aYfXI=
@@ -29,6 +32,17 @@ after_success:
 - docker tag $IMAGE:$COMMIT $IMAGE:latest
 - docker tag $IMAGE:$COMMIT $IMAGE:travis-$TRAVIS_BUILD_NUMBER
 - docker push $IMAGE
+- curl https://sdk.cloud.google.com | bash
+- source /home/travis/.bashrc
+- gcloud components update kubectl
+- kubectl config set-credentials default --username=${GKE_USERNAME} --password=${GKE_PASSWORD}
+- kubectl config set-cluster default --server=${GKE_SERVER} --insecure-skip-tls-verify=true
+- kubectl config set-context default --cluster=default --user=default
+- kubectl config use-context default
+- kubectl patch deployment $DEPLOYMENT -p '{"spec":{"template":{"spec":{"containers":[{"name":"'"$CONTAINER_NAME"'","image":"'"$IMAGE_VERSION"'"}]}}}}'
 addons:
   code_climate:
     repo_token: 0c617dde8a5dc2e6870351abc96c4a689f147d0482bb795fe9e5c1e402c45a73
+before_install:
+- openssl aes-256-cbc -K $encrypted_c39e32fc3ab6_key -iv $encrypted_c39e32fc3ab6_iv
+  -in config.enc -out /home/travis/.kube/config -d
