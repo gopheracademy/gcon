@@ -38,6 +38,7 @@ before_deploy:
 deploy:
   on:
     branch: master
+    go: '1.7'
   skip_cleanup: true
   script: deployment/gce.sh
   
