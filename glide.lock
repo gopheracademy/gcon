@@ -1,5 +1,5 @@
-hash: 0fce01560a89b8a779132be3f29dc1c7ddabcf497bf532067d0d54a887086e47
-updated: 2016-12-14T23:07:22.196265548-07:00
+hash: 1b3f77878ecdc4865687584398c636c5d799f2234e7db9f39ff6d145f5b4fee3
+updated: 2016-12-19T20:23:40.527969241-07:00
 imports:
 - name: github.com/ajg/form
   version: 523a5da1a92f01b01f840b61689c0340a0243532
@@ -48,12 +48,12 @@ imports:
   subpackages:
   - oid
 - name: github.com/markbates/buffalo
-  version: fd40b1f4ed9827da45e72bf7366b5e82432e2644
+  version: f8c5beae8307a8774227f7fe93ed8c3d287511d5
   subpackages:
   - middleware
   - render
-  - render/helpers
   - render/resolvers
+  - render/helpers
 - name: github.com/markbates/going
   version: d2c428e156c30c40a6abfa2ed4c279c92998da4d
   subpackages:
