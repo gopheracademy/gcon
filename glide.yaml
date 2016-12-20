@@ -1,7 +1,7 @@
 package: github.com/gopheracademy/gcon
 import:
 - package: github.com/markbates/buffalo
-  version: fd40b1f4ed9827da45e72bf7366b5e82432e2644
+  version: f8c5beae8307a8774227f7fe93ed8c3d287511d5
   subpackages:
   - middleware
   - render
