@@ -4,6 +4,8 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"path/filepath"
+	"strings"
 
 	"github.com/gopheracademy/gcon/models"
 	"github.com/markbates/buffalo"
@@ -22,8 +24,12 @@ func App() http.Handler {
 	a := buffalo.Automatic(buffalo.Options{
 		Env: ENV,
 	})
+	at, err := filepath.Abs("../assets")
+	if err != nil {
+		log.Fatalln(err)
+	}
 	log.Println("Environment:", ENV)
-	log.Println("Assets:", assetsPath())
+	log.Println("Assets:", strings.Join(strings.Split(at, "/")[5:], "/"))
 	a.Use(middleware.PopTransaction(models.DB))
 	a.ServeFiles("/assets", assetsPath())
 	a.GET("/home", HomeHandler)
