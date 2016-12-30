@@ -1,0 +1,14 @@
+# /etc/systemd/system/gophertrain.service
+[Unit]
+Description=gophercon website
+
+[Service]
+PIDFile=/tmp/gophercon.pid-3000
+User=root
+Group=root
+Environment=GO_ENV=production
+WorkingDirectory=/root/src/github.com/gopheracademy/gcon
+ExecStart=/bin/bash -c '/root/src/github.com/gopheracademy/gcon/gcon'
+
+[Install]
+WantedBy=multi-user.target
