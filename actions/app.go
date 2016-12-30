@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/gobuffalo/buffalo"
+	"github.com/gobuffalo/buffalo/middleware"
 	"github.com/gopheracademy/gcon/models"
-	"github.com/markbates/buffalo"
-	"github.com/markbates/buffalo/middleware"
 	"github.com/markbates/going/defaults"
 )
 

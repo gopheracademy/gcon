@@ -1,10 +1,12 @@
 package: github.com/gopheracademy/gcon
 import:
-- package: github.com/markbates/buffalo
-  version: f8c5beae8307a8774227f7fe93ed8c3d287511d5
+- package: github.com/gobuffalo/buffalo
+  version: 14df5abb439b28431565cbe1a4d50c14582c327a
   subpackages:
   - middleware
   - render
+- package: github.com/gobuffalo/velvet
+  version: f5753312da37044668d99b7484515defa1d34c7a
 - package: github.com/markbates/going
   subpackages:
   - defaults

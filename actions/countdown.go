@@ -1,6 +1,6 @@
 package actions
 
-import "github.com/markbates/buffalo"
+import "github.com/gobuffalo/buffalo"
 
 // CountdownHandler serves the countdown page.
 func CountdownHandler(c buffalo.Context) error {
