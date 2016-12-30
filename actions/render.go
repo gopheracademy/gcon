@@ -24,13 +24,13 @@ var aResolver = &resolvers.RiceBox{
 
 func init() {
 	adminR = render.New(render.Options{
-		HTMLLayout:     "/admin/main.html",
+		HTMLLayout:     "main.html",
 		CacheTemplates: ENV == "production",
 		FileResolver:   aResolver,
 	})
 
 	publicR = render.New(render.Options{
-		HTMLLayout:     "/public/main.html",
+		HTMLLayout:     "main.html",
 		CacheTemplates: ENV == "production",
 		FileResolver:   pResolver,
 	})

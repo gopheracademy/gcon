@@ -2,7 +2,6 @@ package actions
 
 import (
 	"log"
-	"net/http"
 	"os"
 	"path/filepath"
 	"strings"
@@ -20,7 +19,7 @@ var ENV = defaults.String(os.Getenv("GO_ENV"), "development")
 // App is where all routes and middleware for buffalo
 // should be defined. This is the nerve center of your
 // application.
-func App() http.Handler {
+func App() *buffalo.App {
 	a := buffalo.Automatic(buffalo.Options{
 		Env: ENV,
 	})
