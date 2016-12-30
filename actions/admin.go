@@ -1,6 +1,6 @@
 package actions
 
-import "github.com/markbates/buffalo"
+import "github.com/gobuffalo/buffalo"
 
 // AdminPage is a container that holds variables to populate the admin templates
 type AdminPage struct {
