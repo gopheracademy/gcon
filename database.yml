@@ -15,8 +15,8 @@ test:
 
 production:
   dialect: postgres
-  database: postgres
-  user: postgres
+  database: gophercon_production
+  user: gophercon
   password: {{ env "POSTGRES_PASSWORD" }}
-  host: gcon-sql
+  host: 127.0.0.1
   pool: 25
