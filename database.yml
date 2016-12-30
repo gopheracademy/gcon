@@ -1,6 +1,6 @@
 development:
   dialect: postgres
-  database: postgres
+  database: gophercon_development
   user: postgres
   password: postgres
   host: 127.0.0.1

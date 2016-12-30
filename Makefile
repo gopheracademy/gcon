@@ -28,6 +28,17 @@ test:
 	$(GOTEST) -v ./models -race
 	$(GOTEST) -v ./actions -race
 
+db-up: 
+	docker run --name=gophercon_db -d -p 5432:5432 -e POSTGRES_DB=gophercon_development postgres
+	sleep 10
+	$(SODA) create 
+	$(SODA) migrate up
+	docker ps | grep gophercon_db
+
+db-down: 
+	docker stop gophercon_db
+	docker rm gophercon_db 
+
 setup-dev: deps
 	$(DOCKERCOMPOSE) build
 	$(DOCKERCOMPOSE) up -d
