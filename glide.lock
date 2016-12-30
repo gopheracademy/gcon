@@ -1,5 +1,5 @@
-hash: e7bc0c2f544657385d6850acebe661538a49649fa89f40d5e3222a70483b1704
-updated: 2016-12-29T19:04:07.471464473-07:00
+hash: 856b932ade4239f6377cab9fd9093b0d7cdbbe14740d1b104f40e86f4f94b05a
+updated: 2016-12-29T20:44:48.757314712-07:00
 imports:
 - name: github.com/ajg/form
   version: 523a5da1a92f01b01f840b61689c0340a0243532
@@ -26,7 +26,7 @@ imports:
 - name: github.com/go-sql-driver/mysql
   version: 2e00b5cd70399450106cec6431c2e2ce3cae5034
 - name: github.com/gobuffalo/buffalo
-  version: 14df5abb439b28431565cbe1a4d50c14582c327a
+  version: b717a254d376cf81462dfca0b8f48f5ec56db12c
   subpackages:
   - middleware
   - render
