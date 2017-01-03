@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://gophercon.com/</loc>
+    <lastmod>2015-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/schedule/10july/</loc>
+    <lastmod>2015-07-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/schedule/9july/</loc>
+    <lastmod>2015-07-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/schedule/8july/</loc>
+    <lastmod>2015-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/schedule/7july/</loc>
+    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/bronze/blitline/</loc>
+    <lastmod>2015-06-01T18:54:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/additional/changelog/</loc>
+    <lastmod>2015-05-21T09:51:52-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/additional/oreilly/</loc>
+    <lastmod>2015-05-21T09:51:52-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/bronze/raintank/</loc>
+    <lastmod>2015-05-21T09:51:52-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/location/</loc>
+    <lastmod>2015-05-15T16:03:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/news/speakers-announced/</loc>
+    <lastmod>2015-05-07T08:03:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/platinum/cisco/</loc>
+    <lastmod>2015-04-27T08:54:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/platinum/mesosphere/</loc>
+    <lastmod>2015-04-27T08:54:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/katherine-cox-buday/</loc>
+    <lastmod>2015-04-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/prometheus/</loc>
+    <lastmod>2015-04-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/simplicity-and-go/</loc>
+    <lastmod>2015-04-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/gold/clusterhq/</loc>
+    <lastmod>2015-04-21T18:54:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/gold/couchbase/</loc>
+    <lastmod>2015-04-21T18:54:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/gold/docker/</loc>
+    <lastmod>2015-04-21T18:54:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/abhishek-kona/</loc>
+    <lastmod>2015-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/bjorn-rabenstein/</loc>
+    <lastmod>2015-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/rebuilding-parse/</loc>
+    <lastmod>2015-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/blake-caldwell/</loc>
+    <lastmod>2015-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/uptime/</loc>
+    <lastmod>2015-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/audrey-lim/</loc>
+    <lastmod>2015-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/learning-go/</loc>
+    <lastmod>2015-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/barak-michener/</loc>
+    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/kevin-cantwell/</loc>
+    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/kelsey-hightower/</loc>
+    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/kyle-erf/</loc>
+    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/rick-hudson/</loc>
+    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/richard-fliam/</loc>
+    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/sarah-adams/</loc>
+    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/sam-helman/</loc>
+    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/tomas-senart/</loc>
+    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/betting/</loc>
+    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/cayley/</loc>
+    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/code-generation/</loc>
+    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/deadlocks-leaks/</loc>
+    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/embrace-the-interface/</loc>
+    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/garbage-collection/</loc>
+    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/struct-tags/</loc>
+    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/what-could-go-wrong/</loc>
+    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/andrew-gerrand/</loc>
+    <lastmod>2015-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/baishampayan-ghose/</loc>
+    <lastmod>2015-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/ben-johnson/</loc>
+    <lastmod>2015-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/derek-parker/</loc>
+    <lastmod>2015-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/hana-kim/</loc>
+    <lastmod>2015-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/dmitry-vyukov/</loc>
+    <lastmod>2015-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/peter-bourgon/</loc>
+    <lastmod>2015-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/russ-cox/</loc>
+    <lastmod>2015-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/speakers/robert-griesemer/</loc>
+    <lastmod>2015-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/closing-keynote/</loc>
+    <lastmod>2015-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/delve/</loc>
+    <lastmod>2015-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/dmitry-vyukov/</loc>
+    <lastmod>2015-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/evolution-of-go/</loc>
+    <lastmod>2015-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/go-kit/</loc>
+    <lastmod>2015-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/go-mobile/</loc>
+    <lastmod>2015-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/opening-keynote/</loc>
+    <lastmod>2015-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/roots-of-go/</loc>
+    <lastmod>2015-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/talks/static-code-analysis/</loc>
+    <lastmod>2015-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/gold/pivotal/</loc>
+    <lastmod>2015-04-08T18:54:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/gold/segment/</loc>
+    <lastmod>2015-04-08T18:54:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/bronze/ardan/</loc>
+    <lastmod>2015-04-01T18:54:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/events/after-party/</loc>
+    <lastmod>2015-04-01T16:03:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/news/diversity/</loc>
+    <lastmod>2015-03-26T19:03:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/news/site-updates/</loc>
+    <lastmod>2015-03-26T19:03:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/bronze/clypd/</loc>
+    <lastmod>2015-03-26T09:51:52-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/bronze/kismatic/</loc>
+    <lastmod>2015-03-26T09:51:52-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/bronze/heroku/</loc>
+    <lastmod>2015-03-26T09:51:52-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/silver/shopkeep/</loc>
+    <lastmod>2015-03-26T09:51:52-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/silver/qwinixtech/</loc>
+    <lastmod>2015-03-26T09:51:17-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/silver/contextio/</loc>
+    <lastmod>2015-03-26T09:51:06-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/silver/mongodb/</loc>
+    <lastmod>2015-03-26T09:51:06-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/silver/rackspace/</loc>
+    <lastmod>2015-03-26T09:51:06-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/gold/thumbtack/</loc>
+    <lastmod>2015-03-26T09:50:39-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/gold/verizon/</loc>
+    <lastmod>2015-03-26T09:50:39-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/gold/xor/</loc>
+    <lastmod>2015-03-26T09:50:39-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/gold/yext/</loc>
+    <lastmod>2015-03-26T09:50:39-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/gold/canonical/</loc>
+    <lastmod>2015-03-26T09:50:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/gold/timehop/</loc>
+    <lastmod>2015-03-26T09:50:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/gold/nodeprime/</loc>
+    <lastmod>2015-03-26T09:50:28-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/gold/bugsnag/</loc>
+    <lastmod>2015-03-26T09:50:19-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/gold/datadog/</loc>
+    <lastmod>2015-03-26T09:50:14-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/gold/influxdb/</loc>
+    <lastmod>2015-03-26T09:50:08-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/gold/coreos/</loc>
+    <lastmod>2015-03-26T09:50:02-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/bronze/crowdstrike/</loc>
+    <lastmod>2015-03-23T18:54:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/bronze/metacaststv/</loc>
+    <lastmod>2015-03-23T18:54:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/diamond/google/</loc>
+    <lastmod>2015-03-23T18:54:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/diamond/twitch/</loc>
+    <lastmod>2015-03-23T18:54:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/gold/apcera/</loc>
+    <lastmod>2015-03-23T18:54:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/gold/sentry/</loc>
+    <lastmod>2015-03-23T18:54:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/sponsor/silver/ironio/</loc>
+    <lastmod>2015-03-23T18:54:34-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/about/</loc>
+    <lastmod>2015-03-21T16:03:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gophercon.com/code-of-conduct/</loc>
+    <lastmod>2015-03-21T16:03:09-04:00</lastmod>
+  </url>
+  
+</urlset>

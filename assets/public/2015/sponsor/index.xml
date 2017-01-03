@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sponsors on GopherCon 2015</title>
+    <link>http://gophercon.com/sponsor/</link>
+    <description>Recent content in Sponsors on GopherCon 2015</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jun 2015 18:54:34 -0400</lastBuildDate>
+    <atom:link href="http://gophercon.com/sponsor/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Blitline</title>
+      <link>http://gophercon.com/sponsor/bronze/blitline/</link>
+      <pubDate>Mon, 01 Jun 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/bronze/blitline/</guid>
+      <description>&lt;p&gt;Blitline is a cloud-based image processing service that provides enterprise level image processing at a fraction of the price that it would cost to build it yourself. Image processing has been done over and over again, usually rebuilt from the ground up for each and every website. We realize this because we’ve built them a million times too. One day we decided that perhaps it‘s time we just do it for everyone. We know how to do it, to do it fast and efficiently, and save you the work.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>changelog</title>
+      <link>http://gophercon.com/sponsor/additional/changelog/</link>
+      <pubDate>Thu, 21 May 2015 09:51:52 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/additional/changelog/</guid>
+      <description>&lt;p&gt;The Changelog covers what&amp;rsquo;s fresh and new in open source.  Open source moves fast, keep up.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>oreilly</title>
+      <link>http://gophercon.com/sponsor/additional/oreilly/</link>
+      <pubDate>Thu, 21 May 2015 09:51:52 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/additional/oreilly/</guid>
+      <description>&lt;p&gt;O&amp;rsquo;Reilly Media spreads the knowledge of innovators through its books, video, articles, research, and conferences. You have something important to say, to teach, to champion. We can help you reach the people who need to hear it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>raintank</title>
+      <link>http://gophercon.com/sponsor/bronze/raintank/</link>
+      <pubDate>Thu, 21 May 2015 09:51:52 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/bronze/raintank/</guid>
+      <description>&lt;p&gt;Raintank is an open source monitoring platform that collects, stores and analyzes data about your infrastructure through a gorgeously powerful front-end. The company behind Grafana.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cisco</title>
+      <link>http://gophercon.com/sponsor/platinum/cisco/</link>
+      <pubDate>Mon, 27 Apr 2015 08:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/platinum/cisco/</guid>
+      <description>&lt;p&gt;Cisco and our partners are building InterCloud to enable developers to launch exciting new Internet of Things (IoT) applications. InterCloud is a global distributed network of public and private clouds, designed to accelerate delivery of high-value application workloads and real-time analytics with near infinite scalability. Cisco is proud to sponsor Gophercon and we ourselves develop several InterCloud services in Go.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mesosphere</title>
+      <link>http://gophercon.com/sponsor/platinum/mesosphere/</link>
+      <pubDate>Mon, 27 Apr 2015 08:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/platinum/mesosphere/</guid>
+      <description>&lt;p&gt;Put your Datacenter on autopilot. With the Mesosphere Datacenter Operating System (DCOS) you can build and run applications that span the entire datacenter. The DCOS makes it easy to build service-oriented applications. It supports Docker containers, avoids over provisioning for small services and manages them all on a single platform. Within minutes, you can install over 40 services with a single command, including Spark, Kubernetes, Jenkins, and Hadoop. Learn more at &lt;a href=&#34;http://mesosphere.com&#34;&gt;mesosphere.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ClusterHQ</title>
+      <link>http://gophercon.com/sponsor/gold/clusterhq/</link>
+      <pubDate>Tue, 21 Apr 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/clusterhq/</guid>
+      <description>&lt;p&gt;As The Container Data People™, ClusterHQ is the company behind the container industry’s first solution for reliably running stateful services like databases inside containers. Through its innovative open-source data volume manager, Flocker, ClusterHQ solves the significant operational challenges that come from running data-backed services inside containers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Couchbase</title>
+      <link>http://gophercon.com/sponsor/gold/couchbase/</link>
+      <pubDate>Tue, 21 Apr 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/couchbase/</guid>
+      <description>&lt;p&gt;Couchbase Server is a high-performance NoSQL distributed database with a flexible data model. It scales on commodity hardware to support large data sets with a high number of concurrent reads and writes while maintaining low latency and strong consistency.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>http://gophercon.com/sponsor/gold/docker/</link>
+      <pubDate>Tue, 21 Apr 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/docker/</guid>
+      <description>&lt;p&gt;Docker, Inc is the company behind the open source Docker platform and the growing Docker ecosystem of contributors, partners and adopters revolutionizing the way distributed applications are built, shipped, and run.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pivotal</title>
+      <link>http://gophercon.com/sponsor/gold/pivotal/</link>
+      <pubDate>Wed, 08 Apr 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/pivotal/</guid>
+      <description>&lt;p&gt;Pivotal offers a modern approach to technology that organizations need to thrive in a new era of business innovation. Our solutions intersect cloud, big data and agile development, creating a framework that increases data leverage, accelerates application delivery, and decreases costs, while providing enterprises the speed and scale they need to compete.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Segment</title>
+      <link>http://gophercon.com/sponsor/gold/segment/</link>
+      <pubDate>Wed, 08 Apr 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/segment/</guid>
+      <description>&lt;p&gt;Segment is building the analytics routing layer for the world. We transform data into over 150 different services, adding new ones every day. We&amp;rsquo;re processing billions of events each month, and maintaining the analytics infrastructure for companies like Rdio, Bonobos, and Atlassian. We&amp;rsquo;re go-nuts for everything from our queueing layer to our data processing pipeline (and we &amp;lt;3 open source). The gopher is our spirit animal.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ardan Labs</title>
+      <link>http://gophercon.com/sponsor/bronze/ardan/</link>
+      <pubDate>Wed, 01 Apr 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/bronze/ardan/</guid>
+      <description>&lt;p&gt;At Ardan Labs we dream big and ask all of our clients to do so as well. With a focused set of principles, we deliver products that work, grow and adapt to the ever changing marketplace. We also help individuals and corporations develop a passion for programming through innovative training courses.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kismatic</title>
+      <link>http://gophercon.com/sponsor/bronze/kismatic/</link>
+      <pubDate>Thu, 26 Mar 2015 09:51:52 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/bronze/kismatic/</guid>
+      <description>&lt;p&gt;Kismatic is the enterprise Kubernetes company. Kubernetes is a vibrant and fast-growing open source project created by and based on Google&amp;rsquo;s 10+ years of experience managing Linux container-based applications at massive scale.&lt;/p&gt;
+
+&lt;p&gt;Kismatic was founded to bring Google-scale datacenter management to the enterprise. Our offerings maximize developer productivity and minimize hardware costs. We do this by collapsing disparate developer and operations workflows into a unified cluster orchestration platform through creating a homogenous pool of datacenter resources that runs applications and services with a few clicks and scales to thousands of machines running seamlessly in the cloud both private and public.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shopkeep</title>
+      <link>http://gophercon.com/sponsor/silver/shopkeep/</link>
+      <pubDate>Thu, 26 Mar 2015 09:51:52 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/silver/shopkeep/</guid>
+      <description>&lt;p&gt;ShopKeep POS, a rapidly expanding company based in New York City,
+provides cloud based point of sale software for managing retail
+shops and restaurants. Founded and designed by a merchant, we
+uniquely understand the challenges of growing a retail business.
+ShopKeep POS helps small business owners in every state across the
+country run a better business.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>clypd</title>
+      <link>http://gophercon.com/sponsor/bronze/clypd/</link>
+      <pubDate>Thu, 26 Mar 2015 09:51:52 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/bronze/clypd/</guid>
+      <description>&lt;p&gt;clypd is the advertising technology platform built exclusively for the television industry, empowering media owners with programmatic ad solutions. Founded in 2012, the company&amp;rsquo;s TV sales platform delivers workflow automation, data-enhanced decisioning and provides media partners with tools to manage their sales efforts. clypd&amp;rsquo;s innovations around programmatic television are opening doors for incremental digital budgets currently not available to the TV media owners. clypd leverages Go for all platform services, including ad matching algorithms, audience modeling, and web service-driven automation.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

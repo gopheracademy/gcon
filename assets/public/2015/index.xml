@@ -1,0 +1,1288 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GopherCon 2015</title>
+    <link>http://gophercon.com/</link>
+    <description>Recent content on GopherCon 2015</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Jul 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://gophercon.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>July 10th Hack Day</title>
+      <link>http://gophercon.com/schedule/10july/</link>
+      <pubDate>Fri, 10 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/schedule/10july/</guid>
+      <description>&lt;div id=&#34;hackday-schedule&#34; class=&#34;tab-pane schedule-page schedule-item-tab&#34;&gt;
+  &lt;div class=&#34;row schedule-item&#34;&gt;
+    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;10:00am - 5:00pm&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 1-2&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;
+            Hack Day
+        &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        &lt;p&gt;Join all your friends in a day of loosly organized collaboration, lightning talks, and general hackery.  We&#39;ll provide the space and the wifi, you bring your favorite project and work together with friends you only get to see in person every year at GopherCon.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;row schedule-item&#34;&gt;
+    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;10:00am - 11:00am&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;
+            Investment 101 for Startups
+        &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        &lt;p&gt;Robin Vasan will give a presentation about venture capital and the process behind getting your startup funded.  &lt;a href=&#34;http://www.mayfield.com/team/investment-team/robin-vasan&#34;&gt;Robin&lt;/a&gt; is a managing director at Mayfield, one of the most prestigious investment firms in the country.  Robin will be joined for a question and answer session by the CEO&#39;s from two of Mayfield&#39;s investments.  Paul Dix from InfluxDB and Mitchell Hashimoto from HashiCorp who will share their experiences as founders going through the investment process.&lt;/p&gt;
+        &lt;p&gt;If you&#39;ve ever considered a startup, this informal presentation is one you can&#39;t afford to miss.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;row schedule-item&#34;&gt;
+    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;11:00am - 5:00pm&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;
+            Lightning Talks
+        &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        &lt;p&gt;We&#39;ve scheduled three lightning talk sessions with 10 talks each over the course of Friday July 10th. The first session begins at 11:00 and runs through to lunch at 12:30. The second resumes at 13:30 and runs through to 15:00. After a short break, the third session begins at 15:30 and runs til we run out of speakers or we reach end of day.&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&#34;http://blog.gopheracademy.com/gophercon-2015/gophercon-lightning-talk-results/&#34;&gt;The list of registered speakers is here&lt;/a&gt;&lt;/p&gt;
+        &lt;h4&gt;Registrations on the day&lt;/h4&gt;
+        &lt;p&gt;We will be accepting registrations on the day, please come to the side of the stage and speak to the organisers. You will present in the third session once all the registered speakers have given their presentations. Registrations on the day will be handled on a first come first served basis.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;row schedule-item highlighted-schedule-item&#34;&gt;
+    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;10:00am - 5:00pm&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;Hack Rooms (401-407)&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;
+            Focused Hack Rooms
+        &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        &lt;p&gt;Some of your favorite open source projects and companies will be hosting hack sessions in dedicated rooms.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;row schedule-item&#34;&gt;
+    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;10:00am - 5:00pm&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;Room 405&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;Denver Gopher&#39;s room&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        &lt;p&gt;Denver is a great city for Go, and not just because they love to host GopherCon. Denver is home to many companies who have chosen to build their businesses on Go.&lt;/p&gt;
+&lt;p&gt;10:00 - 12:30 - InfluxDB&lt;br&gt;
+12:30 - 2:00 - Lunch&lt;br&gt;
+2:00 - 3:30 - Bit.ly&lt;br&gt;
+3:30 - 3:45 - Break&lt;br&gt;
+3:45 - 5:00 - SendGrid&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;row schedule-item&#34;&gt;
+    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;10:00am - 5:00pm&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;Room 403&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;CoreOS room&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        &lt;p&gt;CoreOS is celebrating its second birthday during the CoreOS GopherCon hack day, so join them for a special birthday hack day project, educational talks and workshops from some of your favorite CoreOS team members. In addition, CoreOS will have lightning talks from the Go community on CoreOS tips and tricks. Join in on CoreOS birthday fun, learn how to contribute and leave with more knowledge on CoreOS overall.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;row schedule-item&#34;&gt;
+    &lt;div id=&#34;gobot&#34; class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;10:00am - 5:00pm&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;Room 401&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;Gobot room&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        &lt;p&gt;Gophercon, get ready to hack on hardware using Go &amp; &lt;a href=&#34;http://gobot.io&#34;&gt;Gobot!&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;Last year, you saw all of the amazing things you can do with Golang and hardware devices at our talk.&lt;/p&gt;
+    &lt;p&gt;This year, come hang out with us, and actually make something.&lt;/p&gt;
+    &lt;p&gt;Thanks to Intel, we have 25 Intel Edison single board Linux computer and IoT Grove Starter Kit to give away to the first 25 people to register. The IoT Starter Kits have everything you need to get started connectng your software to the real-world, and do not require any soldering. Just plug in the cables and your&#39;re ready.&lt;/p&gt;
+    &lt;p&gt;To register for a &lt;em&gt;free&lt;/em&gt; Intel Edison single board kit, &lt;a href=&#34;https://gophercon-gobot-hackday.eventbrite.com&#34;&gt;use this link&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;If you miss out, don&#39;t worry. In addition, we&#39;ve brought a bunch of hardware to loan out, such as Sphero robots, Leap Motion gestural controllers, and more.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;row schedule-item&#34;&gt;
+    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;10:00am - 5:00pm&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;Room 406&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;Google Cloud Platform Room&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        &lt;p&gt;Join this room to learn what you can do with the Google Cloud Platform and how to get started. The day will be divided in an introductory part where you we will cover the basis and organize teams with a mission: build an awesome project on the cloud!&lt;/p&gt;
+        &lt;p&gt;Attendees should plan to spend the most of the day in the room, as they will be working in teams. Bring your ideas and laptops and we’ll provide the infrastructure, the experts, and the credits to make it happen!&lt;/p&gt;
+        &lt;p&gt;Gophers such as Francesc Campoy, Andrew Gerrand, and Mark Mandel from Google will be there to make sure you make the best out of this Hack Day.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div id=&#34;diversity&#34; class=&#34;row schedule-item&#34;&gt;
+    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;1pm - 2pm&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;Room 406 (Google Cloud Platform Room)&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;Go Community Code of Conduct and Diversity Discussion&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        &lt;p&gt;There is a lack of diversity in the Go community; this hinders the growth of the community, and the success of the project as a whole.&lt;/p&gt;
+    &lt;p&gt;There is only so much I can do alone. I need your help.&lt;/p&gt;
+    &lt;p&gt;This session is for anyone with ideas or feedback on how we can make the Go community more welcoming and diverse.&lt;/p&gt;
+    &lt;p&gt;This session is also for anyone with a desire to listen, to learn, or to better understand these issues.&lt;/p&gt;
+    &lt;p&gt;The first point for discussion will be the proposed Code of Conduct.&lt;/p&gt;
+    &lt;p&gt;I invite anyone interested in these topics to attend the session and &lt;em&gt;more importantly&lt;/em&gt; &lt;a href=&#34;https://docs.google.com/a/golang.org/forms/d/1Gebv9jKLQMHCuEDBfhDfBISSCoJXzeCJU1a-STKNHX0/viewform?usp=send_form#start=invite&#34;&gt;to suggest a topic for inclusion in the agenda&lt;/a&gt;. When suggesting a topic you may include your name or remain anonymous.&lt;/p&gt;
+    &lt;p&gt;&amp;mdash; Andrew Gerrand (adg@golang.org)&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;row schedule-item&#34;&gt;
+    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;10:00am - 5:00pm&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;Room 404&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;
+          Docker Workshop
+        &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        &lt;p&gt;The Docker Workshop is a 1 day, hands-on class for beginners who want to learn to use and contribute to Docker. Members of the Docker Team will get you up to speed on the basics and coach you from setup to integrating Docker into your working environment. You’ll also learn your way around the Docker Project and leave with the resources to make your first contribution.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;div class=&#34;row schedule-item&#34;&gt;
+    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;10:00am - 5:00pm&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;Room 407&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;
+          Mesosphere and Cisco room
+        &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        &lt;p&gt;Come hack with the Mesosphere and Cisco team for a whole day! We&amp;rsquo;ll help you write your first Mesos framework in Go, teach you how to use Kubernetes on the Mesosphere DCOS and guide you to become a contributor to any of our open-source Go projects. Please let us know if you&amp;rsquo;re interested in attending: &lt;a href=&#34;http://goo.gl/forms/fP1zPBSNdA&#34;&gt;http://goo.gl/forms/fP1zPBSNdA&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;row schedule-item&#34;&gt;
+    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;10:00am - 3:00pm&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;Room 402&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;
+          MongoDB Room
+        &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        &lt;p&gt;MongoDB will be hosting open office hours and birds of a feather sessions during that time.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;row schedule-item highlighted-schedule-item&#34;&gt;
+    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;Afternoon&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;
+            Snacks
+        &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        &lt;p&gt;Join us for light snacks in the afternoon.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;row schedule-item&#34;&gt;
+    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;12:00pm - 4:00pm&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;Room 301&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;
+          Twitch Room
+        &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        &lt;p&gt;Twitch Magic the Gathering Draft Tournament&lt;br /&gt;&lt;br /&gt;
+We are drafting Modern Masters in 2 sessions; free to play and you get to keep your cards. Each session has room for only 40 players so reserve your spot at the Twitch booth. Lunch and snacks provided.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>July 9th Day 2</title>
+      <link>http://gophercon.com/schedule/9july/</link>
+      <pubDate>Thu, 09 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/schedule/9july/</guid>
+      <description>&lt;div id=&#34;day2-schedule&#34; class=&#34;tab-pane schedule-page schedule-item-tab&#34;&gt;
+                  &lt;div class=&#34;row schedule-item highlighted-schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt; 
+                      &lt;span class=&#34;time&#34;&gt;7:00am - 12:00pm&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Lower Lobby F&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;Registration&lt;/span&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item highlighted-schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;7:00am – 8:30am&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 1 - 2&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;Breakfast&lt;/span&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;8:30am&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;Welcome&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;Welcome ceremony and announcements.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;8:40am&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/evolution-of-go&#34;&gt;The Evolution of Go&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/robert-griesemer&#34;&gt;Robert Griesemer&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Engineer at Google&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;9:15am&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/static-code-analysis&#34;&gt;Static Code Analysis Using SSA&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/ben-johnson&#34;&gt;Ben Johnson&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Open source Go developer in databases &amp;amp; distributed systems&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;Single Static Assignment (SSA) is an intermediate representation of code that many compilers use for analysis and optimization.
+                          This talk will look at how the go/ssa package is used in existing Go static analysis tools like eg and oracle and how we
+                          can use it to build our own tools.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;9:50am&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/go-mobile&#34;&gt;Go for mobile devices&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/hana-kim&#34;&gt;Hana Kim&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Engineer at Google&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;How cool would it be to write an app for your Android or iOS phone in your favorite language, Go?&lt;/p&gt;
+                        &lt;p&gt;Since Go 1.4, Android on ARM is one of the officially supported platforms, and Go 1.5 will include iOS support for ARM.
+                          I will present the status of Android/iOS support in Go 1.5, and the efforts around the golang.org/x/mobile repository, which
+                          hosts tools and libraries for mobile app development in Go.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item highlighted-schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;10:20am&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;Break&lt;/span&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;11:00am&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/dmitry-vyukov&#34;&gt;Go Dynamic Tools&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/dmitry-vyukov&#34;&gt;Dmitry Vyukov&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Bug slaughterer at Google&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;Dynamic tools can provide significant value for small time investment. But frequently they are underappreciated by developers.
+                          In this talk I will describe three dynamic tools for Go: data race detector, fuzzing system and execution tracer. The first
+                          two tools are related to bug finding, and the tracer can give insights into performance and latency issues of Go programs.
+                          I will also share our experiences of systematically applying such tools at scale.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;11:35am&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/embrace-the-interface&#34;&gt;Embrace the Interface&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/tomas-senart&#34;&gt;Tomás Senart&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Software Engineer and Author of Vegeta&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;Go gives us powerful abstraction through interfaces with no bureaucracy. In my quest to find the right balance between pragmatism
+                          and abstraction, I have developed some useful patterns that leverage Go’s interfaces to make code modular, lean and clean.&lt;/p&gt;
+                        &lt;p&gt;This is a hands-on opinionated talk about software craftsmanship and sane abstraction techniques. This is a talk where you’ll
+                          learn how to embrace the interface.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;12:10pm&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/uptime&#34;&gt;Uptime: Building Resilient Services with Go&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/blake-caldwell&#34;&gt;Blake Caldwell&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Developer, Kentik&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;Hear about Fog Creek’s first production Go service: a rewrite of their Git and Mercurial SSH reverse proxy from Python.
+                          See how they monitor memory, who’s currently connected, what actions they’re performing, what their code is doing, and how
+                          they implement drain-and-die so a connection is never forcefully closed. Response times halved. Scheduled daily restarts
+                          were replaced with multi-month uptime, and shoulder shrugging about recent crashes were replaced with detailed forensic logs.&lt;/p&gt;
+                        &lt;p&gt;Pick up some tips on how to write resilient services with Go!&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item highlighted-schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;12:40pm&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;Lunch&lt;/span&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;1:40pm&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/caley&#34;&gt;Cayley: Building a Graph Database&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/barak-michener&#34;&gt;Barak Michener&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Backend Developer at CoreOS and lead maintainer of Cayley&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;Written in Go, Cayley is a graph database based on technology behind Freebase.com. Starting with a short history of the
+                          inspirations behind Cayley, this talk will deep-dive into the moving parts of building a graph database, between the various
+                          query languages, the storage engines, and the iterator trees.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;2:15pm&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/code-generation&#34;&gt;Code Generation For The Sake Of Consistency&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/sarah-adams&#34;&gt;Sarah Adams&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Software Engineer at Restless Bandit&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;Maintaining consistency within a growing project is a challenge. I have struggled with my company’s Go web API as it has
+                          grown over the past two years, trying to find a nice solution to this intra-project consistency problem without resorting
+                          to a large-scale framework.&lt;/p&gt;
+                        &lt;p&gt;In my mind, there are three general layers to project consistency:&lt;/p&gt;
+                        &lt;ul&gt;
+                          &lt;li&gt;consistency in implementation among similar bits of code&lt;/li&gt;
+                          &lt;li&gt;consistency in black-box behavior among similar endpoints or commands&lt;/li&gt;
+                          &lt;li&gt;consistency between actual behavior and documented behavior (documentation accuracy)&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;p&gt;This talk will outline how I have leveraged small-scale code and documentation generator tools for each of the three layers
+                          outlined above, specifically for the sake of consistency in a growing Go application without using a large-scale framework.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;2:50pm&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/struct-tags&#34;&gt;The Many Faces of Struct Tags&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/sam-helman&#34;&gt;Sam Helman&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Software Engineer at Flatiron Health&lt;/span&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/kyle-erf&#34;&gt;Kyle Erf&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Kernel Tools Engineer at MongoDB&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;Struct tags are a great feature of Go, but in the general Go community they receive almost no attention. In this talk we
+                          want to show you some of the cleverest and weirdest uses of struct tags we’ve seen. Specifying json and xml fields in struct
+                          tags is commonplace, but have you thought about using tags for object-relational mapping, validation functions, defining
+                          middleware, or command line options? Come join us for a tour of our favorite practical and impractical uses of an underutilized
+                          part of Go.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item highlighted-schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;3:20pm&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;Break&lt;/span&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;4:00pm&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/betting&#34;&gt;Betting the Company on Go and Winning&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/kelsey-hightower&#34;&gt;Kelsey Hightower&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Product Manager, Developer and Chief Advocate at CoreOS&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;Since the very beginning CoreOS bet the farm on Go, even before it became the popular language it is today. CoreOS builds
+                          and ships components that enable users to create distributed systems from the ground up. Just about everything CoreOS builds
+                          including our popular open source projects such as etcd, fleet, and rocket are built using Go; this also holds true for most
+                          CoreOS commercial offerings.&lt;/p&gt;
+                        &lt;p&gt;But how did we do it? What challenges did we face?&lt;/p&gt;
+                        &lt;p&gt;In this talk we will answer these questions and provide a retrospective, if you will, on using Go at CoreOS over the years.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;4:35pm&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/closing-keynote&#34;&gt;Closing Keynote&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/andrew-gerrand&#34;&gt;Andrew Gerrand&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Engineer at Google&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;Andrew will present the final talk of GopherCon 2015.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>July 8th Day 1</title>
+      <link>http://gophercon.com/schedule/8july/</link>
+      <pubDate>Wed, 08 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/schedule/8july/</guid>
+      <description>&lt;div id=&#34;day1-schedule&#34; class=&#34;tab-pane schedule-item-tab schedule-page&#34;&gt;
+                  &lt;div class=&#34;row schedule-item highlighted-schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt; 
+                      &lt;span class=&#34;time&#34;&gt;6:45am - 6:00pm&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Lower Lobby F&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;Registration&lt;/span&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item highlighted-schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;7:00am – 8:30am&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 1 - 2&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;Breakfast&lt;/span&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;8:30am&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;Welcome&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;Welcome ceremony and announcements.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;8:40am&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/opening-keynote&#34;&gt;Opening Keynote&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/russ-cox&#34;&gt;Russ Cox&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Engineer at Google&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;9:30am&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/go-kit&#34;&gt;Go Kit: A Standard Library for Distributed Programming&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/peter-bourgon&#34;&gt;Peter Bourgon&lt;/a&gt;
+                          &lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;Go has emerged as the language of the server, but it remains underrepresented in large, consumer-focused companies like
+                          Facebook, Twitter, Netflix, and SoundCloud. These organizations have largely adopted JVM-based tech stacks for their business
+                          logic, owing in large part to libraries and ecosystems that directly support their service-oriented architectures.&lt;/p&gt;
+                        &lt;p&gt;To reach its next level of success, Go needs more than simple primitives and idioms. It needs a comprehensive toolkit, for
+                          coherent distributed programming in the large. This talk describes Go kit, a toolkit for Go in the modern SOA.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item highlighted-schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;10:00am&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;Break&lt;/span&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;10:40am&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/delve&#34;&gt;Delve Into Go&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/derek-parker&#34;&gt;Derek Parker&lt;/a&gt;
+                          &lt;/span&gt;
+
+                          &lt;span class=&#34;designation&#34;&gt;Engineer at Hashrocket&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;A good debugger is an essential tool for any software engineer – but Go has some unique characteristics (the runtime scheduler,
+                          for instance) that make traditional debuggers unfeasible. So I wrote Delve, a debugger tailored specifically for Go.&lt;/p&gt;
+                        &lt;p&gt;When your software misbehaves, how can you glean insight into its unruliness?&lt;/p&gt;
+                        &lt;p&gt;To answer that we’ll take a deep dive into Delve. We’ll explore what makes software like Delve work, how it aims to solve
+                          problems with existing debuggers, and how you can leverage Delve.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;11:15am&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/learning-go&#34;&gt;How a complete beginner learned Go as her first backend language in 5 weeks.&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/audrey-lim&#34;&gt;Audrey Lim&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Developer Evangelist at Nitrous.IO&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;Go can be seen as a language that is too difficult for beginner programmers. The resources and documentation for the language
+                          seem too technically advanced for the beginner to pick up fundamental programming concepts. Nevertheless within 5 weeks of
+                          looking into Go I taught myself how to build my first CRUD web application and a week later, an API client. In this talk
+                          I will share my thoughts about why I think Go is a fantastic teaching tool, and why beginners should not be afraid to learn
+                          it.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;11:50am&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/deadlocks-leaks&#34;&gt;A Practical Guide to Preventing Deadlocks and Leaks in Go&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/richard-fliam&#34;&gt;Richard Fliam&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Software Engineer Lead on Comcast VIPER’s Pillar linear packager&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;Communicating Sequential Processes (CSP) are a foundational element of writing Go code. Our Go application, Pillar, processes
+                          15 gigabits per second, packages over 3000 channels, serves millions of users, and runs on more than 450 servers nationwide.&lt;/p&gt;
+                        &lt;p&gt;While writing Pillar, we developed five guidelines for the use of Go and CSP. Guidelines that helped us prevent deadlocks,
+                          prevent resource leaks, and simplified our code. Go developers will find lasting value in these battle-tested guidelines.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item highlighted-schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;12:20pm&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;Lunch&lt;/span&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;13:20pm&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/garbage-collection&#34;&gt;Go GC: Solving the Latency Problem&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/rick-hudson&#34;&gt;Rick Hudson&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Engineer at Google&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;Long garbage collection (GC) pauses stand directly in the way of Go’s growth. It is an important, and often times the only,
+                          technical reason practitioners give for not migrating to managed runtimes such as Go. If Go is to live up to its promise
+                          of providing a better place for developers it must eliminate long GC pauses.&lt;/p&gt;
+                        &lt;p&gt;This talk presents and discusses the new 1.5 low latency concurrent GC. Motivations will be given, performance numbers will
+                          be presented, we will deep dive into some technical challenges, but more importantly we will discuss why this approach fits
+                          well with the Go language.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;1:55pm&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/simplicity-and-go&#34;&gt;Simplicity and Go&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/katherine-cox-buday&#34;&gt;Katherine Cox-Buday&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Software Engineer at Canonical&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;The mantra of the Go community is “keep it simple”. Sometimes, this idea is distorted to justify poor engineering decisions.
+                          In this talk, we’ll explore what simple really means, and what Go brings to the table.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;2:30pm&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/rebuilding-parse&#34;&gt;Rebuilding Parse.com in Go - an opinionated rewrite&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/abhishek-kona&#34;&gt;Abhishek Kona&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Engineer at Parse.com&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;Learn how Parse.com a backend platform for mobile app developer reinvented its backend stack without breaking compatibility
+                          with the existing API using Go as the primary tool. One can say this is upgrading the engine of a plane mid-flight. Come
+                          hear about all the war stories.&lt;/p&gt;
+                        &lt;p&gt;Find out how at times we did not do things the “Go-Way”. Learn how we were inspired by the Facebook PHP stack.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;3:00pm&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;Break&lt;/span&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;3:40pm&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/prometheus&#34;&gt;Prometheus: Designing and Implementing a Modern Monitoring Solution in Go&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/bjorn-rabenstein&#34;&gt;Björn Rabenstein&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Production Engineer at SoundCloud&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;Many lessons have been learned from more than two years of developing Prometheus. Most of its components are implemented
+                          in Go, and we run them at their limits during our day-to-day work at SoundCloud.&lt;/p&gt;
+                        &lt;p&gt;This talk will shed light on various aspects of Prometheus from the perspective of a Go developer, from the instrumentation
+                          library all the way to the storage backend.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;4:15pm&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/what-could-go-wrong&#34;&gt;What Could Go Wrong?&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/kevin-cantwell&#34;&gt;Kevin Cantwell&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Lead Architect at Timehop&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;Timehop Engineering has made real strides thanks to using Go in production for two years now and we’ve made plenty of mistakes
+                          along the way. Typed nils, bloated interfaces, runaway goroutines, mysterious closure states… you name the mistake, we’ve
+                          made it.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;4:50pm&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;Mile High Ballroom 3-4&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/talks/roots-of-go&#34;&gt;The Roots of Go&lt;/a&gt;
+                        &lt;/span&gt;
+                        &lt;div class=&#34;speaker&#34;&gt;
+                          &lt;span class=&#34;name&#34;&gt;
+                            &lt;a href=&#34;http://gophercon.com/speakers/baishampayan-ghose&#34;&gt;Baishampayan Ghose&lt;/a&gt;
+                          &lt;/span&gt;
+                          &lt;span class=&#34;designation&#34;&gt;Co-founder at Helpshift&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                        &lt;p&gt;Every once in a while, a new programming language comes up that fundamentally changes how we think about computing. But
+                          even more so often, the core ideas behind a “new” language are hinged upon ideas that were first propounded by languages
+                          or systems which are much older.&lt;/p&gt;
+                        &lt;p&gt;Often our understanding of a language’s features and the intentions thereof are limited by our understanding of its roots.&lt;/p&gt;
+                        &lt;p&gt;In this talk, BG will talk about the origins of the core ideas behind Go and will take you on a “language-archeology” tour
+                          where we’ll trace the roots of Go.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&#34;row schedule-item&#34;&gt;
+                    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+                      &lt;span class=&#34;time&#34;&gt;8:00pm-11:00pm&lt;/span&gt;
+                      &lt;span class=&#34;location&#34;&gt;&lt;br /&gt;&lt;br /&gt;&lt;a href=&#34;http://www.wynkoop.com/&#34;&gt;Wynkoop Brewing Company&lt;/a&gt;
+                      &lt;br /&gt;1634 18th St.&lt;br /&gt;Denver, CO 80202&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+                      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+                        &lt;span class=&#34;title&#34;&gt;
+                          &lt;a href=&#34;http://gophercon.com/events/after-party&#34;&gt;Official After Party&lt;/a&gt;&lt;/a&gt;
+                        &lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&#34;abstract&#34;&gt;
+                      &lt;p&gt;This evening’s offsite event will once again take place at the Wynkoop Brewing Company, Colorado’s oldest brew pub.&lt;/p&gt;
+                      &lt;p&gt;Upon arrival, guests will enter the main level where a large bar and ample seating is available. Just beyond the bar, the Mercantile Room will host a special tasting area for the evening. For guests that want to learn more about Colorado’s local brewery explosion, four (4) professional beer experts will be on-hand to answer questions on all matters of beer, including brewing processes, storage, serving, and sampling. Hops and grains such as wheat, barley and rye will be displayed in glass containers, while tasting notes will allow guests to have an interactive and hands-on experience under the guidance of our brew experts.&lt;/p&gt;
+                      &lt;p&gt;In addition to the main level, guests will have use of the Wynkoop’s entire second floor pool hall. This expansive space features a large bar, ample seating, dartboards, pool tables, table shuffleboard, and foosball.&lt;/p&gt;
+
+                      &lt;p&gt;Admission requires your GopherCon badge or T-Shirt, and a government issued photo ID if you intend on drinking.&lt;/p&gt;
+                      &lt;p&gt;&lt;a href=&#34;http://www.wynkoop.com/&#34;&gt;Wynkoop Brewing Company&lt;/a&gt;
+                      &lt;br /&gt;1634 18th St.&lt;br /&gt;Denver, CO 80202&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>July 7th Workshops</title>
+      <link>http://gophercon.com/schedule/7july/</link>
+      <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/schedule/7july/</guid>
+      <description>&lt;div id=&#34;workshop-schedule&#34; class=&#34;tab-pane schedule-page schedule-item-tab&#34;&gt;
+  &lt;div class=&#34;row schedule-item&#34;&gt;
+    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;9:00am - 5:00pm&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;Room 301&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;
+            Go Bootcamp
+        &lt;/span&gt;
+        &lt;div class=&#34;speaker&#34;&gt;
+          &lt;span class=&#34;name&#34;&gt;
+            William Kennedy (@goinggodotnet)
+          &lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        &lt;p&gt;The Go Bootcamp is a 1 day class providing a comprehensive and idiomatic overview of the Go programming language. We will cover topics ranging from language syntax, Go&#39;s approach to object-oriented semantics, concurrency, channels and more. This class is great for anyone wanting to get a jump start on learning Go or wanting to understand more about the language and internals!&lt;/p&gt;
+
+        &lt;p&gt;William Kennedy works in Miami, FL as a managing partner at Ardan Studios: a mobile, web and systems development company. He is also the co-author of the book Go In Action, the author of the blog GoingGo.Net and the organizer for Miami&#39;s Go and MongoDB meetups.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;div class=&#34;row schedule-item&#34;&gt;
+    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;9:00am - 10:45am&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;Room 302&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;
+            Go Workshop Track: Working with Data in Go
+        &lt;/span&gt;
+        &lt;div class=&#34;speaker&#34;&gt;
+          &lt;span class=&#34;name&#34;&gt;
+            Cory LaNou
+          &lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        &lt;p&gt;Working with data is a core component of many applications, and Go has great support for working with many different types of databases. In this workshop, we will cover the use of MongoDB to store and retrieve data with the mgo driver. Following this, you will learn best practices for building packages and apps that work with and expose data from any database.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;row schedule-item&#34;&gt;
+    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;11:00am - 12:45am&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;Room 302&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;
+            Go Workshop Track: Exploring Go&amp;rsquo;s Utility Ecosystem
+        &lt;/span&gt;
+        &lt;div class=&#34;speaker&#34;&gt;
+          &lt;span class=&#34;name&#34;&gt;
+            Kevin Gillette
+          &lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        &lt;p&gt;Discover the full breadth and depth of the Go development and analysis tools available today. We will explore the go tool, golint, oracle, profiling, and various other utilities that will bolster your efficiency and capabilities as a developer. If you know the language and libraries but haven&amp;rsquo;t had time to peruse the toolchain, this is a great opportunity to learn about what you&amp;rsquo;ve been missing!&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;row schedule-item highlighted-schedule-item&#34;&gt;
+    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;12:00pm - 6:00pm&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;Lower Lobby F&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;Registration&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        &lt;p&gt;Come early and beat the registration lines.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;row schedule-item&#34;&gt;
+    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;1:30pm - 5:00pm&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;Room 302&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;
+            Go Workshop Track: HTTP - Web Apps and APIs
+        &lt;/span&gt;
+        &lt;div class=&#34;speaker&#34;&gt;
+          &lt;span class=&#34;name&#34;&gt;
+            Jeremy Saenz, Mark Bates
+          &lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        &lt;p&gt;The Go standard library provides a lot of great utility for building web applications and APIs, but it can sometimes it can be difficult to figure out how to build things the “right” way. In this two part workshop Jeremy and Mark will walk you through build web applications and APIs using the standard library and a few third party packages to make building applications fun and easy. Over the two parts Mark and Jeremy will build a web application with an Angular front-end that talks JSON to Go. Middleware, rendering, error handling, routing, testing, and more will covered.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;row schedule-item highlighted-schedule-item&#34;&gt;
+    &lt;div class=&#34;col-md-3 schedule-item-slot&#34;&gt;
+      &lt;span class=&#34;time&#34;&gt;6:00pm - 10:00pm&lt;/span&gt;
+      &lt;span class=&#34;location&#34;&gt;
+        &lt;br /&gt;
+        &lt;a href=&#34;http://maps.google.com/maps?f=q&amp;hl=en&amp;q=1062+Delaware+Street%2C+Denver%2C+CO%2C+80204%2C+us&#34;&gt;Galvanize, 1062 Delaware Street, Denver, CO&lt;/a&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;col-md-9 schedule-item-details&#34;&gt;
+      &lt;div class=&#34;schedule-item-summary&#34;&gt;
+        &lt;span class=&#34;title&#34;&gt;
+            GopherCon Kickoff Party
+        &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;abstract&#34;&gt;
+        Join us for the Pre-Party and kick off GopherCon 2015 in style! More details available on the Denver Gophers &lt;a href=&#34;http://www.meetup.com/Denver-Go-Language-User-Group/events/222335594/&#34;&gt;Meetup page&lt;/a&gt;.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blitline</title>
+      <link>http://gophercon.com/sponsor/bronze/blitline/</link>
+      <pubDate>Mon, 01 Jun 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/bronze/blitline/</guid>
+      <description>&lt;p&gt;Blitline is a cloud-based image processing service that provides enterprise level image processing at a fraction of the price that it would cost to build it yourself. Image processing has been done over and over again, usually rebuilt from the ground up for each and every website. We realize this because we’ve built them a million times too. One day we decided that perhaps it‘s time we just do it for everyone. We know how to do it, to do it fast and efficiently, and save you the work.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>changelog</title>
+      <link>http://gophercon.com/sponsor/additional/changelog/</link>
+      <pubDate>Thu, 21 May 2015 09:51:52 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/additional/changelog/</guid>
+      <description>&lt;p&gt;The Changelog covers what&amp;rsquo;s fresh and new in open source.  Open source moves fast, keep up.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>oreilly</title>
+      <link>http://gophercon.com/sponsor/additional/oreilly/</link>
+      <pubDate>Thu, 21 May 2015 09:51:52 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/additional/oreilly/</guid>
+      <description>&lt;p&gt;O&amp;rsquo;Reilly Media spreads the knowledge of innovators through its books, video, articles, research, and conferences. You have something important to say, to teach, to champion. We can help you reach the people who need to hear it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>raintank</title>
+      <link>http://gophercon.com/sponsor/bronze/raintank/</link>
+      <pubDate>Thu, 21 May 2015 09:51:52 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/bronze/raintank/</guid>
+      <description>&lt;p&gt;Raintank is an open source monitoring platform that collects, stores and analyzes data about your infrastructure through a gorgeously powerful front-end. The company behind Grafana.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Colorado Convention Center</title>
+      <link>http://gophercon.com/location/</link>
+      <pubDate>Fri, 15 May 2015 16:03:09 -0400</pubDate>
+      
+      <guid>http://gophercon.com/location/</guid>
+      <description>
+
+&lt;h2 id=&#34;colorado-convention-center:fbfe9718c8b1ffc1f742e3d3af89cce8&#34;&gt;Colorado Convention Center&lt;/h2&gt;
+
+&lt;p&gt;Opened in 1990, with more than 100 professional meeting planners working together with architects to design every aspect of the building, the result was simple; a sensible, state-of-the-art facility with easy traffic flow and everything you need in a stunningly beautiful building in the heart of downtown Denver. Expanded in 2005, well-known as one of the most practical and “user friendly” meeting facilities, the Colorado Convention Center is now home to over 250+ events annually. The Colorado Convention Center is located within easy walking distance of over 8,700 hotel rooms, 300 restaurants, 9 theatres of the Denver Performing Arts Complex and a wide variety of shopping and retail outlets.&lt;/p&gt;
+
+&lt;p&gt;More Information can be found here: &lt;a href=&#34;http://denverconvention.com&#34;&gt;Colorado Convention Center&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;address:fbfe9718c8b1ffc1f742e3d3af89cce8&#34;&gt;Address&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;Colorado Convention Center
+700 14th Street
+Denver, Colorado 80202
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;iframe src=&#34;https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3067.8723967161754!2d-104.99639859999999!3d39.7425171!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c78d19ee5341f%3A0x3d2bbf54ad753723!2s700+14th+St%2C+Denver%2C+CO+80202!5e0!3m2!1sen!2sus!4v1431656220832&#34; width=&#34;600&#34; height=&#34;450&#34; frameborder=&#34;0&#34; style=&#34;border:0&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Speakers Announced</title>
+      <link>http://gophercon.com/news/speakers-announced/</link>
+      <pubDate>Thu, 07 May 2015 08:03:09 -0400</pubDate>
+      
+      <guid>http://gophercon.com/news/speakers-announced/</guid>
+      <description>&lt;p&gt;##FOR IMMEDIATE RELEASE: 5/7/15
+Brian Ketelsen
+GopherAcademy Inc.
+1-813-368-3425
+gophercon@gopheracademy.com&lt;/p&gt;
+
+&lt;p&gt;#GopherCon 2015 Announces 2015 Speakers
+##World&amp;rsquo;s Largest Gathering of Go Developers In Denver On July 7-10
+Denver, CO: Today, GopherAcademy, LLC announced the speakers for their annual conference celebrating the Go Programming Language. After a sold-out conference in 2014, GopherCon is expanding this year, to the Colorado Convention Center, where they will host 1,500 Go enthusiasts from around the globe. This three day conference will be the largest gathering of Go developers ever. The newly announced speakers include engineers with diverse backgrounds from companies large and small.&lt;/p&gt;
+
+&lt;p&gt;Once again, GopherCon has a variety of sponsors that highlights the impact this programming language has had on the industry. &amp;ldquo;Written for the cloud, Go was designed to solve a wide range of computing problems by providing a powerful and easy to understand way to write reliable code,&amp;rdquo; said Jason Buberel, Product Manager at Google. &amp;ldquo;GopherCon has been instrumental in bringing that community of developers together and we are proud to be a Diamond Sponsor of the event.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Even companies traditionally known for infrastructure are realizing the benefits of Go. Cisco&amp;rsquo;s Keith Chambers said: &amp;ldquo;We love Go for building distributed systems at Cisco. While we believe in polyglot microservices, the teams that have embraced Go are delivering new services to market in less time. Cisco wants to see the Go community grow and we believe sponsoring GopherCon is a great way to do that!&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Two great examples of companies that have built entirely new economies around Go are Docker, Inc. and CoreOS. “We wanted to support this event because the Go language has been absolutely essential to the growth and adoption of Docker,” said Steve Francia, chief operator of the Docker project. “Go is at the heart of the Docker project, providing the simplicity, reliability and feature set we need to create a strong foundation for the community. We look forward to GopherCon and collaborating with the developers and contributors that share our passion for Go and the Go community.”&lt;/p&gt;
+
+&lt;p&gt;Alex Polvi, CEO of CoreOS writes: &amp;ldquo;GopherCon is an important event for CoreOS because we have built many of our components with Go,&amp;rdquo; said Alex. &amp;ldquo;Go has propelled the container industry forward by providing a language that is easy to build reliant distributed systems. We are big supporters of Go and GopherCon and look forward to celebrating all things Go in July.”&lt;/p&gt;
+
+&lt;p&gt;The momentum of Go has captured the attention of venture capital firms, as well. Robin Vasan of Mayfield tells us: “The software stack is being re-imagined with a distributed systems architecture – and the Go community is right at the heart of that effort.”&lt;/p&gt;
+
+&lt;p&gt;This year, GopherCon also includes a pair of optional workshops on July 7 th with workshops available for both beginning and advanced programmers. “Our conference this year aims to build on the tremendous success of the sold-out GopherCon 2014,” said Erik St. Martin from Gopher Academy, LLC. “Last year we saw many early adopters of Go at GopherCon. This year, it&amp;rsquo;s clear that the attendees are coming equally from Fortune 500 companies, small to medium businesses, and startups.  We&amp;rsquo;re excited to be providing such a large venue for developers of all backgrounds to come together and advance their craft.”&lt;/p&gt;
+
+&lt;p&gt;More information can be found on GopherCon&amp;rsquo;s website at &lt;a href=&#34;http://www.gophercon.com&#34;&gt;http://www.gophercon.com&lt;/a&gt; Speakers, schedule information, and sponsors are now published there. Sponsorship opportunities are available until May 15 th , 2015, and conference tickets will be available until they sell out.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;About GopherAcademy LLC: GopherAcademy, LLC is a community organization founded in 2012 by Brian Ketelsen and Erik St. Martin for the promotion of the Go programming language through community events and educational programs. &lt;a href=&#34;http://www.gopheracademy.com&#34;&gt;http://www.gopheracademy.com&lt;/a&gt; or @gopheracademy on Twitter.
+###&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cisco</title>
+      <link>http://gophercon.com/sponsor/platinum/cisco/</link>
+      <pubDate>Mon, 27 Apr 2015 08:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/platinum/cisco/</guid>
+      <description>&lt;p&gt;Cisco and our partners are building InterCloud to enable developers to launch exciting new Internet of Things (IoT) applications. InterCloud is a global distributed network of public and private clouds, designed to accelerate delivery of high-value application workloads and real-time analytics with near infinite scalability. Cisco is proud to sponsor Gophercon and we ourselves develop several InterCloud services in Go.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mesosphere</title>
+      <link>http://gophercon.com/sponsor/platinum/mesosphere/</link>
+      <pubDate>Mon, 27 Apr 2015 08:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/platinum/mesosphere/</guid>
+      <description>&lt;p&gt;Put your Datacenter on autopilot. With the Mesosphere Datacenter Operating System (DCOS) you can build and run applications that span the entire datacenter. The DCOS makes it easy to build service-oriented applications. It supports Docker containers, avoids over provisioning for small services and manages them all on a single platform. Within minutes, you can install over 40 services with a single command, including Spark, Kubernetes, Jenkins, and Hadoop. Learn more at &lt;a href=&#34;http://mesosphere.com&#34;&gt;mesosphere.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Katherine Cox-Buday</title>
+      <link>http://gophercon.com/speakers/katherine-cox-buday/</link>
+      <pubDate>Wed, 22 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/speakers/katherine-cox-buday/</guid>
+      <description>&lt;p&gt;Katherine is a computer scientist currently working at Canonical (of Ubuntu fame) on Juju, a cloud orchestration system. Her hobbies include software engineering, creative writing, Go (igo, baduk, weiquei), and guitar, all of which she pursues intermittently and with various levels of dedication.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Prometheus: Designing and Implementing a Modern Monitoring Solution in Go</title>
+      <link>http://gophercon.com/talks/prometheus/</link>
+      <pubDate>Wed, 22 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/talks/prometheus/</guid>
+      <description>&lt;p&gt;Many lessons have been learned from more than two years of developing Prometheus. Most of its components are implemented in Go, and we run them at their limits during our day-to-day work at SoundCloud. This talk will shed light on various aspects of Prometheus from the perspective of a Go developer, from the instrumentation library all the way to the storage backend.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simplicity and Go</title>
+      <link>http://gophercon.com/talks/simplicity-and-go/</link>
+      <pubDate>Wed, 22 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/talks/simplicity-and-go/</guid>
+      <description>&lt;p&gt;The mantra of the Go community is &amp;ldquo;keep it simple&amp;rdquo;. Sometimes, this idea is distorted to justify poor engineering decisions. In this talk, we&amp;rsquo;ll explore what simple really means, and what Go brings to the table.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

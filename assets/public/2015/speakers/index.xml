@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Speakers on GopherCon 2015</title>
+    <link>http://gophercon.com/speakers/</link>
+    <description>Recent content in Speakers on GopherCon 2015</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 Apr 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://gophercon.com/speakers/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Katherine Cox-Buday</title>
+      <link>http://gophercon.com/speakers/katherine-cox-buday/</link>
+      <pubDate>Wed, 22 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/speakers/katherine-cox-buday/</guid>
+      <description>&lt;p&gt;Katherine is a computer scientist currently working at Canonical (of Ubuntu fame) on Juju, a cloud orchestration system. Her hobbies include software engineering, creative writing, Go (igo, baduk, weiquei), and guitar, all of which she pursues intermittently and with various levels of dedication.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Abhishek Kona</title>
+      <link>http://gophercon.com/speakers/abhishek-kona/</link>
+      <pubDate>Tue, 21 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/speakers/abhishek-kona/</guid>
+      <description>&lt;p&gt;Abhishek Kona works as an Engineer at Parse.com at Facebook. Previously Abhishek was an engineer at Flipkart.com India.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Björn Rabenstein</title>
+      <link>http://gophercon.com/speakers/bjorn-rabenstein/</link>
+      <pubDate>Tue, 21 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/speakers/bjorn-rabenstein/</guid>
+      <description>&lt;p&gt;Björn Rabenstein is a production engineer at SoundCloud and one of the main Prometheus authors. In his previous life, he was a SiteReliability Engineer at Google for many years. In yet another previous life, he was a scientist working on macromolecular modeling.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blake Caldwell</title>
+      <link>http://gophercon.com/speakers/blake-caldwell/</link>
+      <pubDate>Mon, 20 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/speakers/blake-caldwell/</guid>
+      <description>&lt;p&gt;Blake is currently a backend developer at Kentik. Until recently, he was a developer at Fog Creek Software. Prior to that, he spent several years writing enterprise Java code. It wasn’t until Google I/O last year that he learned that his whole life was a lie. Once bitten by the gopher, there was no going back. When not coding in Go, he’s hardware hacking with a Raspberry Pi and a soldering iron.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Audrey Lim</title>
+      <link>http://gophercon.com/speakers/audrey-lim/</link>
+      <pubDate>Sat, 18 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/speakers/audrey-lim/</guid>
+      <description>&lt;p&gt;A former lawyer and a self-taught programmer from the beautiful city of Singapore, Audrey became interested in the world of programming and computer science. She picked up front-end programming in April 2014 before learning Go as her first backend language in July 2014. She&amp;rsquo;s since moved to programming full-time as her career at Nitrous.IO.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Barak Michener</title>
+      <link>http://gophercon.com/speakers/barak-michener/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/speakers/barak-michener/</guid>
+      <description>&lt;p&gt;Barak is a backend Go developer working on etcd for CoreOS and lead maintainer of Cayley.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kelsey Hightower</title>
+      <link>http://gophercon.com/speakers/kelsey-hightower/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/speakers/kelsey-hightower/</guid>
+      <description>&lt;p&gt;Kelsey Hightower
+Product Manager, Developer and Chief Advocate at CoreOS&lt;/p&gt;
+
+&lt;p&gt;Kelsey has worn every hat possible throughout his career in tech and enjoys leadership roles focused on making things happen and shipping software.&lt;/p&gt;
+
+&lt;p&gt;Kelsey is a strong open source advocate focused on building simple tools that make people smile. When he is not slinging Go code you can catch him giving technical workshops covering everything from Programming, System Administration, and his favorite Linux distro (CoreOS).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kevin Cantwell</title>
+      <link>http://gophercon.com/speakers/kevin-cantwell/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/speakers/kevin-cantwell/</guid>
+      <description>&lt;p&gt;Kevin is currently the Lead Architect at Timehop where he&amp;rsquo;s been employed for the past two and-a-half years. Before that Kevin worked at Gilt City and Goldman Sachs and thinks Go gets better and better the more he uses it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kyle Erf</title>
+      <link>http://gophercon.com/speakers/kyle-erf/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/speakers/kyle-erf/</guid>
+      <description>&lt;p&gt;Kyle Erf is a Kernel Tools Engineer at MongoDB in NYC, where he develops an internal continuous integration system and the tools that are bundled with the MongoDB database. When he&amp;rsquo;s not programming Go, he&amp;rsquo;s trying to get the high score on the Q*bert machine at the bar next to his apartment.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Richard Fliam</title>
+      <link>http://gophercon.com/speakers/richard-fliam/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/speakers/richard-fliam/</guid>
+      <description>&lt;p&gt;Richard Fliam is the software engineering lead on Comcast VIPER’s Pillar linear packager. His experience includes real-time and big data applications, content delivery networks, video packagers, and embedded devices. He has contributed to MongoDB, Apache Storm, and The Apache HTTP Server. In addition to Go he has written production applications in C, Java, Python, and Clojure.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rick Hudson</title>
+      <link>http://gophercon.com/speakers/rick-hudson/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/speakers/rick-hudson/</guid>
+      <description>&lt;p&gt;Richard L. Hudson (Rick) is best known for his work in memory management including the invention of the Train, Sapphire, and Mississippi Delta algorithms as well as GC stack maps which enabled garbage collection in statically typed languages like Java, C#, and Go. He has published papers on language runtimes, memory management, concurrency, synchronization, memory models and transactional memory. Rick is a member of Google&amp;rsquo;s Go team where he is working on Go&amp;rsquo;s GC and runtime issues.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sam Helman</title>
+      <link>http://gophercon.com/speakers/sam-helman/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/speakers/sam-helman/</guid>
+      <description>&lt;p&gt;Sam Helman currently works as a software engineer at Flatiron Health. Before that, he worked at MongoDB, where he was part of the team that used Go to build a continuous integration system from scratch. When he&amp;rsquo;s not programming he spends his time reading, cooking and exploring New York City.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sarah Adams</title>
+      <link>http://gophercon.com/speakers/sarah-adams/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/speakers/sarah-adams/</guid>
+      <description>&lt;p&gt;Sarah started writing Go in August of 2013. She gets excited about tools that make things like code-consistency, tests and documentation more doable. Sarah is a big fan of Rob Pike’s. She hopes to shake his hand this year at Gophercon. If you are sitting next to Rob Pike, kindly let him know.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tomás Senart</title>
+      <link>http://gophercon.com/speakers/tomas-senart/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/speakers/tomas-senart/</guid>
+      <description>&lt;p&gt;Tomás&amp;rsquo; journey with Go started at SoundCloud nearly &lt;a href=&#34;https://github.com/soundcloud/roshi&#34;&gt;3 years ago&lt;/a&gt;. He is the author of &lt;a href=&#34;https://github.com/tsenart/vegeta&#34;&gt;Vegeta&lt;/a&gt;, an HTTP load testing tool and library written in Go. While not thinking about elegant solutions to large scale problems, computational or not, Tomás enjoys life in his home city: Berlin.  Tomás works at Mesosphere now.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Andrew Gerrand</title>
+      <link>http://gophercon.com/speakers/andrew-gerrand/</link>
+      <pubDate>Fri, 10 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/speakers/andrew-gerrand/</guid>
+      <description>&lt;p&gt;Andrew Gerrand works on the Go Programming Language at Google Sydney. He has written dozens of articles about Go, and given many talks and workshops at conferences around the world. He is the co-author of A Tour of Go, and is the fourth most prolific contributor to the Go project. He is passionate about software quality, and believes Go is a unique tool for building reliable software at scale. Before Go and Google, Andrew wrote software for Internet companies.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

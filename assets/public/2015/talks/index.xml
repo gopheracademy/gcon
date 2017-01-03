@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks on GopherCon 2015</title>
+    <link>http://gophercon.com/talks/</link>
+    <description>Recent content in Talks on GopherCon 2015</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 Apr 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://gophercon.com/talks/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Prometheus: Designing and Implementing a Modern Monitoring Solution in Go</title>
+      <link>http://gophercon.com/talks/prometheus/</link>
+      <pubDate>Wed, 22 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/talks/prometheus/</guid>
+      <description>&lt;p&gt;Many lessons have been learned from more than two years of developing Prometheus. Most of its components are implemented in Go, and we run them at their limits during our day-to-day work at SoundCloud. This talk will shed light on various aspects of Prometheus from the perspective of a Go developer, from the instrumentation library all the way to the storage backend.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simplicity and Go</title>
+      <link>http://gophercon.com/talks/simplicity-and-go/</link>
+      <pubDate>Wed, 22 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/talks/simplicity-and-go/</guid>
+      <description>&lt;p&gt;The mantra of the Go community is &amp;ldquo;keep it simple&amp;rdquo;. Sometimes, this idea is distorted to justify poor engineering decisions. In this talk, we&amp;rsquo;ll explore what simple really means, and what Go brings to the table.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rebuilding Parse.com in Go - an opinionated rewrite</title>
+      <link>http://gophercon.com/talks/rebuilding-parse/</link>
+      <pubDate>Tue, 21 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/talks/rebuilding-parse/</guid>
+      <description>&lt;p&gt;Learn how Parse.com a backend platform for mobile app developer reinvented its backend stack without breaking compatibility with the existing API using Go as the primary tool. One can say this is upgrading the engine of a plane mid-flight. Come hear about all the war stories.&lt;/p&gt;
+
+&lt;p&gt;Find out how at times we did not do things the &amp;ldquo;Go-Way&amp;rdquo;. Learn how we were inspired by the Facebook PHP stack.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Uptime: Building Resilient Services with Go</title>
+      <link>http://gophercon.com/talks/uptime/</link>
+      <pubDate>Mon, 20 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/talks/uptime/</guid>
+      <description>&lt;p&gt;Hear about Fog Creek’s first production Go service: a rewrite of their Git and Mercurial SSH reverse proxy from Python. See how they monitor memory, who’s currently connected, what actions they’re performing, what their code is doing, and how they implement drain-and-die so a connection is never forcefully closed. Response times halved. Scheduled daily restarts were replaced with multi-month uptime, and shoulder shrugging about recent crashes were replaced with detailed forensic logs.&lt;/p&gt;
+
+&lt;p&gt;Pick up some tips on how to write resilient services with Go!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How a complete beginner learned Go as her first backend language in 5 weeks.</title>
+      <link>http://gophercon.com/talks/learning-go/</link>
+      <pubDate>Sat, 18 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/talks/learning-go/</guid>
+      <description>&lt;p&gt;Go can be seen as a language that is too difficult for beginner programmers. The resources and documentation for the language seem too technically advanced for the beginner to pick up fundamental programming concepts. Nevertheless within 5 weeks of looking into Go I taught myself how to build my first CRUD web application and a week later, an API client. In this talk I will share my thoughts about why I think Go is a fantastic teaching tool, and why beginners should not be afraid to learn it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Practical Guide to Preventing Deadlocks and Leaks in Go</title>
+      <link>http://gophercon.com/talks/deadlocks-leaks/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/talks/deadlocks-leaks/</guid>
+      <description>&lt;p&gt;Communicating Sequential Processes (CSP) are a foundational element of writing Go code. Our Go application, Pillar, processes 15 gigabits per second, packages over 3000 channels, serves millions of users, and runs on more than 450 servers nationwide.&lt;/p&gt;
+
+&lt;p&gt;While writing Pillar, we developed five guidelines for the use of Go and CSP. Guidelines that helped us prevent deadlocks, prevent resource leaks, and simplified our code. Go developers will find lasting value in these battle-tested guidelines.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Betting the Company on Go and Winning - The Good, The Bad, and Dependency Management</title>
+      <link>http://gophercon.com/talks/betting/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/talks/betting/</guid>
+      <description>&lt;p&gt;Since the very beginning CoreOS bet the farm on Go, even before it became the popular language it is today. CoreOS builds and ships components that enable users to create distributed systems from the ground up. Just about everything CoreOS builds including our popular open source projects such as etcd, fleet, and rocket are built using Go; this also holds true for most CoreOS commercial offerings.&lt;/p&gt;
+
+&lt;p&gt;But how did we do it? What challenges did we face?&lt;/p&gt;
+
+&lt;p&gt;In this talk we will answer these questions and provide a retrospective, if you will, on using Go at CoreOS over the years.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cayley: Building a Graph Database</title>
+      <link>http://gophercon.com/talks/cayley/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/talks/cayley/</guid>
+      <description>&lt;p&gt;Written in Go, &lt;a href=&#34;http://cayley.io/&#34;&gt;Cayley&lt;/a&gt; is a graph database based on technology behind Freebase.com. Starting with a short history of the inspirations behind Cayley, this talk will deep-dive into the moving parts of building a graph database, between the various query languages, the storage engines, and the iterator trees.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Code Generation For The Sake Of Consistency</title>
+      <link>http://gophercon.com/talks/code-generation/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/talks/code-generation/</guid>
+      <description>&lt;p&gt;Maintaining consistency within a growing project is a challenge. I have struggled with my company&amp;rsquo;s Go web API as it has grown over the past two years, trying to find a nice solution to this intra-project consistency problem without resorting to a large-scale framework.&lt;/p&gt;
+
+&lt;p&gt;In my mind, there are three general layers to project consistency:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;consistency in implementation among similar bits of code&lt;/li&gt;
+&lt;li&gt;consistency in black-box behavior among similar endpoints or commands&lt;/li&gt;
+&lt;li&gt;consistency between actual behavior and documented behavior (documentation accuracy)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This talk will outline how I have leveraged small-scale code and documentation generator tools for each of the three layers outlined above, specifically for the sake of consistency in a growing Go application without using a large-scale framework.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Embrace the Interface</title>
+      <link>http://gophercon.com/talks/embrace-the-interface/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/talks/embrace-the-interface/</guid>
+      <description>&lt;p&gt;Go gives us powerful abstraction through interfaces with no bureaucracy. In my quest to find the right balance between pragmatism and abstraction, I have developed some useful patterns that leverage Go&amp;rsquo;s interfaces to make code modular, lean and clean.&lt;/p&gt;
+
+&lt;p&gt;This is a hands-on opinionated talk about software craftsmanship and sane abstraction techniques. This is a talk where you&amp;rsquo;ll learn how to embrace the interface.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Go GC: Solving the Latency Problem</title>
+      <link>http://gophercon.com/talks/garbage-collection/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/talks/garbage-collection/</guid>
+      <description>&lt;p&gt;Long garbage collection (GC) pauses stand directly in the way of Go&amp;rsquo;s growth. It is an important, and often times the only, technical reason practitioners give for not migrating to managed runtimes such as Go. If Go is to live up to its promise of providing a better place for developers it must eliminate long GC pauses. This talk presents and discusses the new 1.5 low latency concurrent GC. Motivations will be given, performance numbers will be presented, we will deep dive into some technical challenges, but more importantly we will discuss why this approach fits well with the Go language.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Many Faces of Struct Tags</title>
+      <link>http://gophercon.com/talks/struct-tags/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/talks/struct-tags/</guid>
+      <description>&lt;p&gt;The Many Faces of Struct Tags&lt;/p&gt;
+
+&lt;p&gt;Struct tags are a great feature of Go, but in the general Go community they receive almost no attention. In this talk we want to show you some of the cleverest and weirdest uses of struct tags we’ve seen. Specifying json and xml fields in struct tags is commonplace, but have you thought about using tags for object-relational mapping, validation functions, defining middleware, or command line options? Come join us for a tour of our favorite practical and impractical uses of an underutilized part of Go.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What Could Go Wrong?</title>
+      <link>http://gophercon.com/talks/what-could-go-wrong/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/talks/what-could-go-wrong/</guid>
+      <description>&lt;p&gt;Timehop Engineering has made real strides thanks to using Go in production for two years now and we&amp;rsquo;ve made plenty of mistakes along the way. Typed nils, bloated interfaces, runaway goroutines, mysterious closure states&amp;hellip; you name the mistake, we&amp;rsquo;ve made it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Closing Keynote</title>
+      <link>http://gophercon.com/talks/closing-keynote/</link>
+      <pubDate>Fri, 10 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/talks/closing-keynote/</guid>
+      <description>&lt;p&gt;Andrew will present the final talk of GopherCon 2015.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Delve Into Go</title>
+      <link>http://gophercon.com/talks/delve/</link>
+      <pubDate>Fri, 10 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gophercon.com/talks/delve/</guid>
+      <description>&lt;p&gt;A good debugger is an essential tool for any software engineer – but Go has some unique characteristics (the runtime scheduler, for instance) that make traditional debuggers unfeasible. So I wrote Delve, a debugger tailored specifically for Go.&lt;/p&gt;
+
+&lt;p&gt;When your software misbehaves, how can you glean insight into its unruliness?&lt;/p&gt;
+
+&lt;p&gt;To answer that we&amp;rsquo;ll take a deep dive into Delve. We&amp;rsquo;ll explore what makes software like Delve work, how it aims to solve problems with existing debuggers, and how you can leverage Delve.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

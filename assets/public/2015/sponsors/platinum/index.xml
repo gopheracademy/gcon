@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Platinum on GopherCon 2015</title>
+    <link>http://gophercon.com/sponsors/platinum/</link>
+    <description>Recent content in Platinum on GopherCon 2015</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Apr 2015 08:54:34 -0400</lastBuildDate>
+    <atom:link href="http://gophercon.com/sponsors/platinum/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Cisco</title>
+      <link>http://gophercon.com/sponsor/platinum/cisco/</link>
+      <pubDate>Mon, 27 Apr 2015 08:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/platinum/cisco/</guid>
+      <description>&lt;p&gt;Cisco and our partners are building InterCloud to enable developers to launch exciting new Internet of Things (IoT) applications. InterCloud is a global distributed network of public and private clouds, designed to accelerate delivery of high-value application workloads and real-time analytics with near infinite scalability. Cisco is proud to sponsor Gophercon and we ourselves develop several InterCloud services in Go.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mesosphere</title>
+      <link>http://gophercon.com/sponsor/platinum/mesosphere/</link>
+      <pubDate>Mon, 27 Apr 2015 08:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/platinum/mesosphere/</guid>
+      <description>&lt;p&gt;Put your Datacenter on autopilot. With the Mesosphere Datacenter Operating System (DCOS) you can build and run applications that span the entire datacenter. The DCOS makes it easy to build service-oriented applications. It supports Docker containers, avoids over provisioning for small services and manages them all on a single platform. Within minutes, you can install over 40 services with a single command, including Spark, Kubernetes, Jenkins, and Hadoop. Learn more at &lt;a href=&#34;http://mesosphere.com&#34;&gt;mesosphere.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

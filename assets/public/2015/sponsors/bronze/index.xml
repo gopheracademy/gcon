@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bronze on GopherCon 2015</title>
+    <link>http://gophercon.com/sponsors/bronze/</link>
+    <description>Recent content in Bronze on GopherCon 2015</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 May 2015 09:51:52 -0400</lastBuildDate>
+    <atom:link href="http://gophercon.com/sponsors/bronze/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>raintank</title>
+      <link>http://gophercon.com/sponsor/bronze/raintank/</link>
+      <pubDate>Thu, 21 May 2015 09:51:52 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/bronze/raintank/</guid>
+      <description>&lt;p&gt;Raintank is an open source monitoring platform that collects, stores and analyzes data about your infrastructure through a gorgeously powerful front-end. The company behind Grafana.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kismatic</title>
+      <link>http://gophercon.com/sponsor/bronze/kismatic/</link>
+      <pubDate>Thu, 26 Mar 2015 09:51:52 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/bronze/kismatic/</guid>
+      <description>&lt;p&gt;Kismatic is the enterprise Kubernetes company. Kubernetes is a vibrant and fast-growing open source project created by and based on Google&amp;rsquo;s 10+ years of experience managing Linux container-based applications at massive scale.&lt;/p&gt;
+
+&lt;p&gt;Kismatic was founded to bring Google-scale datacenter management to the enterprise. Our offerings maximize developer productivity and minimize hardware costs. We do this by collapsing disparate developer and operations workflows into a unified cluster orchestration platform through creating a homogenous pool of datacenter resources that runs applications and services with a few clicks and scales to thousands of machines running seamlessly in the cloud both private and public.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>clypd</title>
+      <link>http://gophercon.com/sponsor/bronze/clypd/</link>
+      <pubDate>Thu, 26 Mar 2015 09:51:52 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/bronze/clypd/</guid>
+      <description>&lt;p&gt;clypd is the advertising technology platform built exclusively for the television industry, empowering media owners with programmatic ad solutions. Founded in 2012, the company&amp;rsquo;s TV sales platform delivers workflow automation, data-enhanced decisioning and provides media partners with tools to manage their sales efforts. clypd&amp;rsquo;s innovations around programmatic television are opening doors for incremental digital budgets currently not available to the TV media owners. clypd leverages Go for all platform services, including ad matching algorithms, audience modeling, and web service-driven automation.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>heroku</title>
+      <link>http://gophercon.com/sponsor/bronze/heroku/</link>
+      <pubDate>Thu, 26 Mar 2015 09:51:52 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/bronze/heroku/</guid>
+      <description>&lt;p&gt;Heroku is a cloud application platform – a new way of building and deploying web apps.&lt;/p&gt;
+
+&lt;p&gt;Our service lets app developers spend their time on their application code, not managing servers, deployment, ongoing operations, or scaling.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CrowdStrike</title>
+      <link>http://gophercon.com/sponsor/bronze/crowdstrike/</link>
+      <pubDate>Mon, 23 Mar 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/bronze/crowdstrike/</guid>
+      <description>&lt;p&gt;CrowdStrike™ provides next-generation endpoint protection, threat intelligence, 24-hour monitoring and incident response services to many of the world’s largest and most advanced companies and government agencies. The cloud-based CrowdStrike Falcon Platform prioritizes threats and offers the most comprehensive endpoint protection technology available, enabling customers to detect, prevent, record and search in real time to stop malware and the most advanced targeted attacks before they can cause damage. CrowdStrike’s dedicated 24X7 Security Operations Center, Threat Intelligence and Incident Response services use the Falcon platform to immediately detect &amp;ndash; and prevent &amp;ndash; advanced malware and adversary activity on your endpoints while attacks are still in-progress, minimizing business impact and significantly speeding up incident response and recovery times.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Metacasts.tv</title>
+      <link>http://gophercon.com/sponsor/bronze/metacaststv/</link>
+      <pubDate>Mon, 23 Mar 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/bronze/metacaststv/</guid>
+      <description>&lt;p&gt;Presented in HD and available on your computer, tablet or mobile phone, MetaCasts.tv digs deep into Go to help you better understand topics such as testing, concurrency, packages and more.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blitline</title>
+      <link>http://gophercon.com/sponsor/bronze/blitline/</link>
+      <pubDate>Mon, 01 Jun 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/bronze/blitline/</guid>
+      <description>&lt;p&gt;Blitline is a cloud-based image processing service that provides enterprise level image processing at a fraction of the price that it would cost to build it yourself. Image processing has been done over and over again, usually rebuilt from the ground up for each and every website. We realize this because we’ve built them a million times too. One day we decided that perhaps it‘s time we just do it for everyone. We know how to do it, to do it fast and efficiently, and save you the work.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ardan Labs</title>
+      <link>http://gophercon.com/sponsor/bronze/ardan/</link>
+      <pubDate>Wed, 01 Apr 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/bronze/ardan/</guid>
+      <description>&lt;p&gt;At Ardan Labs we dream big and ask all of our clients to do so as well. With a focused set of principles, we deliver products that work, grow and adapt to the ever changing marketplace. We also help individuals and corporations develop a passion for programming through innovative training courses.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

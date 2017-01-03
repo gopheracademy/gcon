@@ -1,0 +1,1889 @@
+<!doctype html>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="GopherCon is organized by GopherAcademy, LLC, a community-driven group of developers focused on the education of developers and the promotion of the Go programming language."
+    name="description">
+    <meta content="go, golang, gophercon, convention" name="keywords">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="gophercon.com" name="author">
+    <meta content="GopherCon 2015" name="copyright">
+    <title>Gophercon 2015</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css'>
+  </head>
+  
+  <body>
+    <header><nav id="top-nav" class="navbar navbar-default navbar-fixed-top">
+  <div class="row colors">
+    <div class="col-md-2 animated slideInDown"></div>
+      <div class="col-md-2 animated slideInDown"></div>
+      <div class="col-md-2 animated slideInDown"></div>
+      <div class="col-md-2 animated slideInDown"></div>
+      <div class="col-md-2 animated slideInDown"></div>
+      <div class="col-md-2 animated slideInDown"></div>
+  </div>
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ABOUT <span class="caret"></span></a>
+		  <ul class="dropdown-menu" role="menu">
+            <li><a href="/location">Location</a></li>
+            <li><a href="/about">About GopherCon</a></li>
+            <li><a href="/code-of-conduct">Code of Conduct</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">SPONSORS <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/sponsors">GopherCon Sponsors</a></li>
+            <li><a href="/Gophercon2015Prospectus.pdf">Sponsorship Prospectus</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">SCHEDULE <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/#schedule-at-a-glance">Schedule At A Glance</a></li>
+            <li><a href="/#workshop-schedule">Workshops</a></li>
+            <li><a href="/#keynotes">Keynotes</a></li>
+			<li><a href="/speakers">Speakers</a></li>
+			<li><a href="/talks">Talks</a></li>
+			<li><a href="/schedule/7july">July 7th Workshops</a></li>
+			<li><a href="/schedule/8july">July 8th Day 1</a></li>
+			<li><a href="/schedule/9july">July 9th Day 2</a></li>
+			<li><a href="/schedule/10july">July 10th Hack Day</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">EVENTS <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.meetup.com/Denver-Go-Language-User-Group/events/222335594/">Kickoff Party</a></li>
+            <li><a href="/events/after-party">After Party</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">REGISTRATION <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://ti.to/gophercon/gophercon-2015">Book Tickets</a></li>
+            <li><a href="/#hotels">Hotels</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="/news">NEWS</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <div class="header-content">
+        <div class="container">
+          <div class="row">
+            <div class="tickets-section col-md-3">
+              <h3>Need tickets?</h3>
+              <p>Get your tickets early and guarantee your entrance to the largest
+                <b>Go</b>conference in the world.</p>
+              <a href="https://ti.to/gophercon/gophercon-2015" class="btn btn-orange" target="_blank">Purchase Tickets <span  class="fa fa-arrow-circle-right"></span></a>
+            </div>
+            <div class="col-md-6">
+              <img class="animated slideInDown" src="images/gc15-logo.svg" alt="GopherCon 2015" title="GopherCon 2015" width="500" />
+            </div>
+            <div class="tickets-section col-md-3">
+              <div>
+                <h3>Lightning Talks</h3>
+                <p>Interested in presenting a lightning talk on Hack Day?</p>
+                <a href="https://gophercon.typeform.com/to/c6GOUe" class="btn btn-blue" target="_blank">Become a Speaker</a>
+              </div>
+              <br />
+              <section class="countdown">
+                <script src="countdown/countdown.js" type="text/javascript"></script>
+                <script type="application/javascript">
+                  var myCountdownTest = new Countdown({
+                            year	: 2015,
+                            month	: 7,
+                            day		: 7,
+                            hour:   9,
+                            minute	: 0,
+                            second	: 0,
+                            rangeHi		: "day",
+                            rangeLo		: "minute",
+                            width	: 180,
+                            height	: 60,
+                            labels : {
+                                font 	: "Open Sans",
+                                color	: "#999999",
+                                weight	: "normal",
+                                offset  : 5,
+                                textScale : 1.3
+                            },
+                            numbers	: {
+                              font : "Open Sans",
+                              color	: "#FFFFFF",
+                              bkgd	: "#40657c"
+                            }
+                        });
+                </script>
+              </section>
+            
+            </div>
+          </div>
+        </div>
+        <div class="color-bar">
+          <div style="display: none;" class="mobile-buttons">
+            <a href="https://ti.to/gophercon/gophercon-2015" class="btn btn-orange" target="_blank" class="btn btn-orange">Tickets</a>
+            <a href="/speakers" class="btn btn-blue" target="_blank">Speakers</a>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main-info">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <h1>July 7th - 10th, 2015 in Denver, CO</h1>
+              <p class="subheader">
+                <b>GopherCon</b>, It is the largest event in the world dedicated solely to the Go programming language. It's attended by the best and the brightest of the Go team and community. Join us as 1,500 gophers converge on <strong>Denver, Colorado</strong> for 3 full days of talks, events, &amp; hacking.
+              </p>
+              <p class="subheader" style="margin-bottom: 0">Early Registration <strong>July 7th  12:00pm - 6:00pm</strong>, Come early and beat the registration lines.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content event-dates">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="event-date">
+                <div class="event-date-orange">
+                  <h3>
+                    <span class="fa fa-calendar-o"></span>July
+                    <span>7th</span>
+                  </h3>
+                </div>
+                <h4>
+                  <strong>Work Shop</strong> (Optional)</h4>
+                <p>We are offering two workshop tracks, an all day bootcamp and an assorted track.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="event-date">
+                <div class="event-date-blue">
+                  <h3>
+                    <span class="fa fa-calendar-o"></span>July
+                    <span>8th</span>
+                  </h3>
+                </div>
+                <h4>
+                  <strong>Main Event</strong> (Day 1)</h4>
+                <p>Featuring our first day of guest speakers talks and presentations.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="event-date">
+                <div class="event-date-blue">
+                  <h3>
+                    <span class="fa fa-calendar-o"></span>July
+                    <span>9th</span>
+                  </h3>
+                </div>
+                <h4>
+                  <strong>Main Event</strong> (Day 2)</h4>
+                <p>Our second and last day of guest speakers talks and presentations.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="event-date">
+                <div class="event-date-orange">
+                  <h3>
+                    <span class="fa fa-calendar-o"></span>July
+                    <span>10th</span>
+                  </h3>
+                </div>
+                <h4>
+                  <strong>Hack Day</strong> (Optional)</h4>
+                <p>Optional (but highly recommended) hack day. Socialize and work with your Go friends.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="keynotes" class="content keynotes">
+        <div class="container">
+          <div class="col-md-10 col-md-offset-1 text-center">
+            <h1>Keynote Speakers</h1>
+            <p class="subheader">We have the brightest in the industry to deliver opening and closing keynotes on both days.</p>
+          </div>
+          <div class="speaker col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <a href="/speakers/russ-cox"><img src="/images/speakers/russ-cox.png" alt="Russ Cox"></a>
+              <div class="caption">
+                <h4>
+                  <div class="handle">
+                    <a href="http://twitter.com/_rsc"><i class="fa fa-twitter"></i></a>
+                  </div>
+                  <a href="/speakers/russ-cox">Russ Cox</a>
+                </h4>
+                <span class="title">Engineer at Google</span>
+                <p>Russ Cox has worked on the Go programming language at Google since 2008.</p>
+              </div>
+            </div>
+          </div>
+          <div class="speaker col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <a href="/speakers/robert-griesemer"><img src="/images/speakers/robert-griesemer.png" alt="Robert Griesemer"></a>
+              <div class="caption">
+                <h4>
+                  <a href="/speakers/robert-griesemer">Robert Griesemer</a>
+                </h4>
+                <span class="title">Engineer at Google</span>
+                <p>Robert Griesemer is a software engineer at Google, and one of the designers of the Go language.</p>
+              </div>
+            </div>
+          </div>
+          <div class="speaker col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <a href="/speakers/dmitry-vyukov"><img src="/images/speakers/dmitry-vyukov.jpg" alt="Dmitry Vyukov"></a>
+              <div class="caption">
+                <h4>
+                  <div class="handle">
+                    <a href="http://twitter.com/dvyukov"><i class="fa fa-twitter"></i></a>
+                  </div>
+                  <a href="/speakers/dmitry-vyukov">Dmitry Vyukov</a>
+                </h4>
+                <span class="title">Bug slaughterer at Google</span>
+              </div>
+            </div>
+          </div>
+          <div class="speaker col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <a href="/speakers/andrew-gerrand"><img src="/images/speakers/andrew-gerrand.jpg" alt="Andrew Gerrand"></a>
+              <div class="caption">
+                <h4>
+                  <div class="handle">
+                    <a href="http://twitter.com/enneff"><i class="fa fa-twitter"></i></a>
+                  </div>
+                  <a href="/speakers/andrew-gerrand">Andrew Gerrand</a>
+                </h4>
+                <span class="title">Engineer at Google</span>
+                <p>Andrew Gerrand works on the Go Programming Language at Google Sydney.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="speakers" class="content speakers">
+        <div class="container">
+          <div class="text-center">
+            <h1>Speakers</h1>
+            <p class="subheader">&nbsp;</p>
+          </div>
+          <div class="col-md-10 col-md-offset-1">
+            <div class="speaker col-md-3">
+              <div class="thumbnail">
+                <a href="/speakers/baishampayan-ghose"><img src="/images/speakers/baishampayan-ghose.jpg" alt="Baishampayan Ghose"></a>
+                <div class="caption">
+                  <h4>
+                    <a href="/speakers/baishampayan-ghose">Baishampayan Ghose</a>
+                  </h4>
+                  <span class="title">Co-founder at Helpshift</span>
+                  <div class="handle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="speaker col-md-3">
+              <div class="thumbnail">
+                <a href="/speakers/ben-johnson"><img src="/images/speakers/ben-johnson.jpg" alt="Ben Johnson"></a>
+                <div class="caption">
+                  <h4>
+                    <a href="/speakers/ben-johnson">Ben Johnson</a>
+                  </h4>
+                  <span class="title">Open source Go developer in databases & distributed systems.</span>
+                  <div class="handle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="speaker col-md-3">
+              <div class="thumbnail">
+                <a href="/speakers/derek-parker"><img src="/images/speakers/derek-parker.jpg" alt="Derek Parker"></a>
+                <div class="caption">
+                  <h4>
+                    <a href="/speakers/derek-parker">Derek Parker</a>
+                  </h4>
+                  <span class="title">Engineer at Hashrocket</span>
+                  <div class="handle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="speaker col-md-3">
+              <div class="thumbnail">
+                <a href="/speakers/hana-kim"><img src="/images/speakers/hana-kim.png" alt="Hana Kim"></a>
+                <div class="caption">
+                  <h4>
+                    <a href="/speakers/hana-kim">Hana Kim</a>
+                  </h4>
+                  <span class="title">Software engineer on the Go team at Google.</span>
+                  <div class="handle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 col-md-offset-1">
+            <div class="speaker col-md-3">
+              <div class="thumbnail">
+                <a href="/speakers/peter-bourgon"><img src="/images/speakers/peter-bourgon.jpg" alt="Peter Bourgon"></a>
+                <div class="caption">
+                  <h4>
+                    <a href="/speakers/peter-bourgon">Peter Bourgon</a>
+                  </h4>
+                  <span class="title">Engineer at Weaveworks</span>
+                  <div class="handle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="speaker col-md-3">
+              <div class="thumbnail">
+                <a href="/speakers/barak-michener"><img src="/images/speakers/barak-michener.jpg" alt="Barak Michener"></a>
+                <div class="caption">
+                  <h4>
+                    <a href="/speakers/barak-michener">Barak Michener</a>
+                  </h4>
+                  <span class="title">Backend Developer at CoreOS and lead maintainer of Cayley</span>
+                  <div class="handle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="speaker col-md-3">
+              <div class="thumbnail">
+                <a href="/speakers/kevin-cantwell"><img src="/images/speakers/kevin-cantwell.jpg" alt="Kevin Cantwell"></a>
+                <div class="caption">
+                  <h4>
+                    <a href="/speakers/kevin-cantwell">Kevin Cantwell</a>
+                  </h4>
+                  <span class="title">Lead Architect at Timehop</span>
+                  <div class="handle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="speaker col-md-3">
+              <div class="thumbnail">
+                <a href="/speakers/kelsey-hightower"><img src="/images/speakers/kelsey-hightower.jpg" alt="Kelsey Hightower"></a>
+                <div class="caption">
+                  <h4>
+                    <a href="/speakers/kelsey-hightower">Kelsey Hightower</a>
+                  </h4>
+                  <span class="title">Product Manager, Developer and Chief Advocate at CoreOS</span>
+                  <div class="handle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 col-md-offset-1">
+            <div class="speaker col-md-3">
+              <div class="thumbnail">
+                <a href="/speakers/rick-hudson"><img src="/images/speakers/rick-hudson.jpg" alt="Rick Hudson"></a>
+                <div class="caption">
+                  <h4>
+                    <a href="/speakers/rick-hudson">Rick Hudson</a>
+                  </h4>
+                  <span class="title">Rick is a member of Google's Go team where he is working on Go's GC and runtime issues.</span>
+                  <div class="handle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="speaker col-md-3">
+              <div class="thumbnail">
+                <a href="/speakers/kyle-erf"><img src="/images/speakers/kyle-erf.jpg" alt="Kyle Erf"></a>
+                <div class="caption">
+                  <h4>
+                    <a href="/speakers/kyle-erf">Kyle Erf</a>
+                  </h4>
+                  <span class="title">Kyle Erf is a Kernel Tools Engineer at MongoDB</span>
+                  <div class="handle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="speaker col-md-3">
+              <div class="thumbnail">
+                <a href="/speakers/sam-helman"><img src="/images/speakers/sam-helman.png" alt="Sam Helman"></a>
+                <div class="caption">
+                  <h4>
+                    <a href="/speakers/sam-helman">Sam Helman</a>
+                  </h4>
+                  <span class="title">Software Engineer at Flatiron Health</span>
+                  <div class="handle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="speaker col-md-3">
+              <div class="thumbnail">
+                <a href="/speakers/sarah-adams"><img src="/images/speakers/sarah-adams.jpg" alt="Sarah Adams"></a>
+                <div class="caption">
+                  <h4>
+                    <a href="/speakers/sarah-adams">Sarah Adams</a>
+                  </h4>
+                  <span class="title">Software Engineer at Restless Bandit</span>
+                  <div class="handle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 col-md-offset-1">
+            <div class="speaker col-md-3">
+              <div class="thumbnail">
+                <a href="/speakers/richard-fliam"><img src="/images/speakers/richard-fliam.jpg" alt="Richard Fliam"></a>
+                <div class="caption">
+                  <h4>
+                    <a href="/speakers/richard-fliam">Richard Fliam</a>
+                  </h4>
+                  <span class="title">Software Engineer Lead on Comcast VIPER’s Pillar linear packager</span>
+                  <div class="handle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="speaker col-md-3">
+              <div class="thumbnail">
+                <a href="/speakers/tomas-senart"><img src="/images/speakers/tomas-senart.jpg" alt="Tomás Senart"></a>
+                <div class="caption">
+					<h4>
+				  <div class="handle">
+				    <a href="http://twitter.com/tsenart"><i class="fa fa-twitter"></i></a>
+				  </div>
+                    <a href="/speakers/tomas-senart">Tomás Senart</a>
+                  </h4>
+                  <span class="title">Software Engineer at Mesosphere and Author of
+                    <a href="https://github.com/tsenart/vegeta">Vegeta</a>
+                  </span>
+
+                </div>
+              </div>
+            </div>
+            <div class="speaker col-md-3">
+              <div class="thumbnail">
+                <a href="/speakers/audrey-lim"><img src="/images/speakers/audrey-lim.jpg" alt="Audrey Lim"></a>
+                <div class="caption">
+                  <h4>
+                    <a href="/speakers/audrey-lim">Audrey Lim</a>
+                  </h4>
+                  <span class="title">Developer Evangelist at Nitrous.IO</span>
+                  <div class="handle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="speaker col-md-3">
+              <div class="thumbnail">
+                <a href="/speakers/blake-caldwell"><img src="/images/speakers/blakecaldwell.png" alt="Blake Caldwell"></a>
+                <div class="caption">
+                  <h4>
+                    <a href="/speakers/blake-caldwell">Blake Caldwell</a>
+                  </h4>
+                  <span class="title">Developer, Kentik</span>
+                  <div class="handle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 col-md-offset-1">
+            <div class="speaker col-md-3">
+              <div class="thumbnail">
+                <a href="/speakers/katherine-cox-buday"><img src="/images/speakers/katherine-cox-buday.jpg" alt="Katherine Cox-Buday"></a>
+                <div class="caption">
+                  <h4>
+                    <a href="/speakers/katherine-cox-buday">Katherine Cox-Buday</a>
+                  </h4>
+                  <span class="title">Software Engineer at Canonical</span>
+                  <div class="handle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="speaker col-md-3">
+              <div class="thumbnail">
+                <a href="/speakers/abhishek-kona"><img src="/images/speakers/abhishek-kona.png" alt="Abhishek Kona"></a>
+                <div class="caption">
+                  <h4>
+                    <a href="/speakers/abhishek-kona">Abhishek Kona</a>
+                  </h4>
+                  <span class="title">Engineer at Parse.com</span>
+                  <div class="handle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="speaker col-md-3">
+              <div class="thumbnail">
+                <a href="/speakers/bjorn-rabenstein"><img src="/images/speakers/bjorn-rabenstein.jpg" alt="Björn Rabenstein"></a>
+                <div class="caption">
+                  <h4>
+                    <a href="/speakers/bjorn-rabenstein">Björn Rabenstein</a>
+                  </h4>
+                  <span class="title">Production Engineer at SoundCloud</span>
+                  <div class="handle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content schedule">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center">
+              <ul class="nav nav-tabs schedule-days">
+                <li role="presentation" class="active">
+                  <a data-toggle="tab" href="#workshop-schedule">July <span>7th</span></a>
+                </li>
+                <li role="presentation" class="">
+                  <a data-toggle="tab" href="#day1-schedule">July <span>8th</span></a>
+                </li>
+                <li role="presentation" class="">
+                  <a data-toggle="tab" href="#day2-schedule">July <span>9th</span></a>
+                </li>
+                <li role="presentation" class="">
+                  <a data-toggle="tab" href="#hackday-schedule">July <span>10th</span></a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div id="workshop-schedule" class="tab-pane schedule-tab active tab-pane-subtabs">
+                  <ul class="nav nav-tabs">
+                    <li role="presentation" class="active">
+                      <a data-toggle="tab" href="#bootcamp-schedule">Go Bootcamp</a>
+                    </li>
+                    <li role="presentation" class="">
+                      <a data-toggle="tab" href="#workshop-tutorials-schedule">Workshop Track</a>
+				  </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div id="bootcamp-schedule" class="schedule-tab schedule-item-tab tab-pane active">
+                      <div class="row schedule-item">
+                        <div class="col-md-3 schedule-item-slot">
+                          <span class="time">9:00am - 5:00pm</span>
+                          <span class="location">Room 301</span>
+                        </div>
+                        <div class="col-md-9 schedule-item-details">
+                          <div class="schedule-item-summary">
+                            <span class="title">Go Bootcamp</span>
+                            <div class="speaker">
+                              <span class="name">William Kennedy</span>
+                              <span class="designation">Ardan Labs</span>
+                            </div>
+                          </div>
+                          <div class="abstract">
+                            <p>The Go Bootcamp is a 1 day class providing a comprehensive and idiomatic overview of the Go programming language. We will
+                              cover topics ranging from language syntax, Go's approach to object-oriented semantics, concurrency, channels and more. This
+                              class is great for anyone wanting to get a jump start on learning Go or wanting to understand more about the language and
+                              internals!</p>
+                            <p>
+                              <strong>Teacher:</strong>William Kennedy (
+                              <a href="https://twitter.com/goinggodotnet">@goinggodotnet</a>)
+                              <br />William Kennedy works in Miami, FL as a managing partner at Ardan Studios: a mobile, web and systems development company.
+                              He is also the co-author of the book Go In Action, the author of the blog
+                              <a href="http://www.goinggo.net/">GoingGo.Net</a>and the organizer for Miami's Go and MongoDB meetups.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col-md-3 text-right">
+                          <img src="/images/temp-logos/ardan.png" width="100" />
+                        </div>
+                        <div class="col-md-9">
+                          <p>The Go Bootcamp is an all day workshop to get you up and running with Go provided by
+                            <a href="https://ardanlabs.com">Ardan Labs.</a>Tickets for this workshop can be purchased at an additional cost.</p>
+                          <a href="https://ti.to/gophercon/gophercon-2015" class="btn btn-orange"
+                          target="_blank">Purchase Tickets <span  class="fa fa-arrow-circle-right"></span></a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="workshop-tutorials-schedule" class="schedule-tab schedule-item-tab tab-pane">
+                      <div class="row schedule-item">
+                        <div class="col-md-3 schedule-item-slot">
+                          <span class="time">9:00am - 10:45am</span>
+                          <span class="location">Room 302</span>
+                        </div>
+                        <div class="col-md-9 schedule-item-details">
+                          <div class="schedule-item-summary">
+                            <span class="title">Working with Data in Go</span>
+                            <div class="speaker">
+                              <span class="name">Cory LaNou</span>
+                              <span class="designation">InfluxDB</span>
+                            </div>
+                          </div>
+                          <div class="abstract">
+                            <p>Working with data is a core component of many applications, and Go has great support for working with many different types
+                              of databases. In this workshop, we will cover the use of MongoDB to store and retrieve data with the mgo driver. Following
+                              this, you will learn best practices for building packages and apps that work with and expose data from any database.</p>
+                            <p>
+                              <strong>Teacher:</strong>Cory LaNou (
+                              <a href="https://twitter.com/corylanou">@corylanou</a>)
+                              <br />Cory LaNou is a full stack web developer and entrepreneur with over 17 years of experience. After 11 years of being a successful
+                              serial entrepreneur, he has joined the InfluxDB team, working on building an open source time series database written in
+                              Go. He is active in the Go community, leading the Denver Gophers meetup, as well as mentoring students in his free time.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row schedule-item">
+                        <div class="col-md-3 schedule-item-slot">
+                          <span class="time">11:00am - 12:45pm</span>
+                          <span class="location">Room 302</span>
+                        </div>
+                        <div class="col-md-9 schedule-item-details">
+                          <div class="schedule-item-summary">
+                            <span class="title">Exploring Go's Utility Ecosystem</span>
+                            <div class="speaker">
+                              <span class="name">Kevin Gillette</span>
+                            </div>
+                          </div>
+                          <div class="abstract">
+                            <p>Discover the full breadth and depth of the Go development and analysis tools available today. We will explore the go tool,
+                              golint, oracle, profiling, and various other utilities that will bolster your efficiency and capabilities as a developer.
+                              If you know the language and libraries but haven't had time to peruse the toolchain, this is a great opportunity to learn
+                              about what you've been missing!</p>
+                            <p>
+                              <strong>Teacher:</strong>Kevin Gillette (
+                              <a href="https://twitter.com/kevingillette">@kevingillette</a>)
+                              <br />Kevin is an experienced software engineer that has enthusiastically used Go since 2012 to develop efficient, high-reliability
+                              backend systems. With a focus on breadth of knowledge, Kevin has expertise in a variety of languages and platforms, a firm
+                              grounding in theory, as well as a keen interest in computing history.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row schedule-item">
+                        <div class="col-md-3 schedule-item-slot">
+                          <span class="time">1:30pm - 5:00pm</span>
+                          <span class="location">Room 302</span>
+                        </div>
+                        <div class="col-md-9 schedule-item-details">
+                          <div class="schedule-item-summary">
+                            <span class="title">HTTP - Web Apps and APIs</span>
+                            <div class="speaker">
+                              <span class="name">Mark Bates, Jeremy Saenz</span>
+                            </div>
+                          </div>
+                          <div class="abstract">
+                            <p>The Go standard library provides a lot of great utility for building web applications and APIs, but it can sometimes it
+                              can be difficult to figure out how to build things the “right” way. In this two part workshop Jeremy and Mark will walk you
+                              through build web applications and APIs using the standard library and a few third party packages to make building applications
+                              fun and easy. Over the two parts Mark and Jeremy will build a web application with an Angular front-end that talks JSON to
+                              Go. Middleware, rendering, error handling, routing, testing, and more will covered.</p>
+                            <p>
+                              <strong>Teacher:</strong>Mark Bates (
+                              <a href="https://twitter.com/markbates">@markbates</a>)
+                              <br />Mark Bates is the founder and chief architect of the Boston, MA based consulting company, Meta42 Labs. Mark spends his days
+                              focusing on new application development and consulting for his clients. At night he writes books, raises kids, and occasionally
+                              he forms a band and "tries to make it". Mark is the author of three books, "Distributed Programming with Ruby" (2009), "Programming
+                              in CoffeeScript" (2012), and "Conquering the Command Line" (2014). He also runs the weekly Golang screencast site,
+                              <a href="http://www.metacasts.tv">www.metacasts.tv</a>.</p>
+                            <p>
+                              <strong>Teacher:</strong>Jeremy Saenz (
+                              <a href="https://twitter.com/codegangsta">@codegangsta</a>)
+                              <br />Jeremy, AKA Code Gangsta, is a fellow Gopher, author, speaker and screencaster. You have probably heard about one of his
+                              open source projects like Martini, Negroni, Gin, CLI and others. Jeremy is also the voice behind
+                              <a href="http://gophercasts.io">GopherCasts.io</a>and loves teaching people about technology through his programming screencasts.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col-md-3 text-right">
+                          <img src="/images/temp-logos/ardan.png" width="100" />
+                        </div>
+                        <div class="col-md-9">
+                          <p>This track is a series of highly focused workshops to further your Go knowledge by using Go in practice. They are taught
+                            by a number of renowned community members and provided by
+                            <a href="https://ardanlabs.com">Ardan Labs.</a>. Tickets for this workshop can be purchased at an additional cost.</p>
+                          <a href="https://ti.to/gophercon/gophercon-2015"
+                          class="btn btn-orange" target="_blank">Purchase Tickets <span  class="fa fa-arrow-circle-right"></span></a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="day1-schedule" class="tab-pane schedule-item-tab schedule-tab">
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">8:30am</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">Welcome</span>
+                      </div>
+                      <div class="abstract">
+                        <p>Welcome ceremony and announcements.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">8:40am</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/opening-keynote">Opening Keynote</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/russ-cox">Russ Cox</a>
+                          </span>
+                          <span class="designation">Engineer at Google</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">9:30am</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/go-kit">Go Kit: A Standard Library for Distributed Programming</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/peter-bourgon">Peter Bourgon</a>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>Go has emerged as the language of the server, but it remains underrepresented in large, consumer-focused companies like
+                          Facebook, Twitter, Netflix, and SoundCloud. These organizations have largely adopted JVM-based tech stacks for their business
+                          logic, owing in large part to libraries and ecosystems that directly support their service-oriented architectures.</p>
+                        <p>To reach its next level of success, Go needs more than simple primitives and idioms. It needs a comprehensive toolkit, for
+                          coherent distributed programming in the large. This talk describes Go kit, a toolkit for Go in the modern SOA.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">10:00am</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">Break</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">10:40am</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/delve">Delve Into Go</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/derek-parker">Derek Parker</a>
+                          </span>
+                          <span class="designation">Engineer at Hashrocket</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>A good debugger is an essential tool for any software engineer – but Go has some unique characteristics (the runtime scheduler,
+                          for instance) that make traditional debuggers unfeasible. So I wrote Delve, a debugger tailored specifically for Go.</p>
+                        <p>When your software misbehaves, how can you glean insight into its unruliness?</p>
+                        <p>To answer that we’ll take a deep dive into Delve. We’ll explore what makes software like Delve work, how it aims to solve
+                          problems with existing debuggers, and how you can leverage Delve.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">11:15am</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/code-generation">Code Generation For The Sake Of Consistency</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/sarah-adams">Sarah Adams</a>
+                          </span>
+                          <span class="designation">Software Engineer at Restless Bandit</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>Maintaining consistency within a growing project is a challenge. I have struggled with my company’s Go web API as it has
+                          grown over the past two years, trying to find a nice solution to this intra-project consistency problem without resorting
+                          to a large-scale framework.</p>
+                        <p>In my mind, there are three general layers to project consistency:</p>
+                        <ul>
+                          <li>consistency in implementation among similar bits of code</li>
+                          <li>consistency in black-box behavior among similar endpoints or commands</li>
+                          <li>consistency between actual behavior and documented behavior (documentation accuracy)</li>
+                        </ul>
+                        <p>This talk will outline how I have leveraged small-scale code and documentation generator tools for each of the three layers
+                          outlined above, specifically for the sake of consistency in a growing Go application without using a large-scale framework.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">11:50am</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/deadlocks-leaks">A Practical Guide to Preventing Deadlocks and Leaks in Go</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/richard-fliam">Richard Fliam</a>
+                          </span>
+                          <span class="designation">Software Engineer Lead on Comcast VIPER’s Pillar linear packager</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>Communicating Sequential Processes (CSP) are a foundational element of writing Go code. Our Go application, Pillar, processes
+                          15 gigabits per second, packages over 3000 channels, serves millions of users, and runs on more than 450 servers nationwide.</p>
+                        <p>While writing Pillar, we developed five guidelines for the use of Go and CSP. Guidelines that helped us prevent deadlocks,
+                          prevent resource leaks, and simplified our code. Go developers will find lasting value in these battle-tested guidelines.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">12:20pm</span>
+                      <span class="location">Mile High Ballroom 1-2</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">Lunch</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">13:20pm</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/garbage-collection">Go GC: Solving the Latency Problem</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/rick-hudson">Rick Hudson</a>
+                          </span>
+                          <span class="designation">Engineer at Google</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>Long garbage collection (GC) pauses stand directly in the way of Go’s growth. It is an important, and often times the only,
+                          technical reason practitioners give for not migrating to managed runtimes such as Go. If Go is to live up to its promise
+                          of providing a better place for developers it must eliminate long GC pauses.</p>
+                        <p>This talk presents and discusses the new 1.5 low latency concurrent GC. Motivations will be given, performance numbers will
+                          be presented, we will deep dive into some technical challenges, but more importantly we will discuss why this approach fits
+                          well with the Go language.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">1:55pm</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/simplicity-and-go">Simplicity and Go</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/katherine-cox-buday">Katherine Cox-Buday</a>
+                          </span>
+                          <span class="designation">Software Engineer at Canonical</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>The mantra of the Go community is “keep it simple”. Sometimes, this idea is distorted to justify poor engineering decisions.
+                          In this talk, we’ll explore what simple really means, and what Go brings to the table.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">2:30pm</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/rebuilding-parse">Rebuilding Parse.com in Go - an opinionated rewrite</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/abhishek-kona">Abhishek Kona</a>
+                          </span>
+                          <span class="designation">Engineer at Parse.com</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>Learn how Parse.com a backend platform for mobile app developer reinvented its backend stack without breaking compatibility
+                          with the existing API using Go as the primary tool. One can say this is upgrading the engine of a plane mid-flight. Come
+                          hear about all the war stories.</p>
+                        <p>Find out how at times we did not do things the “Go-Way”. Learn how we were inspired by the Facebook PHP stack.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">3:00pm</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">Break</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">3:40pm</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/prometheus">Prometheus: Designing and Implementing a Modern Monitoring Solution in Go</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/bjorn-rabenstein">Björn Rabenstein</a>
+                          </span>
+                          <span class="designation">Production Engineer at SoundCloud</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>Many lessons have been learned from more than two years of developing Prometheus. Most of its components are implemented
+                          in Go, and we run them at their limits during our day-to-day work at SoundCloud.</p>
+                        <p>This talk will shed light on various aspects of Prometheus from the perspective of a Go developer, from the instrumentation
+                          library all the way to the storage backend.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">4:15pm</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/what-could-go-wrong">What Could Go Wrong?</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/kevin-cantwell">Kevin Cantwell</a>
+                          </span>
+                          <span class="designation">Lead Architect at Timehop</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>Timehop Engineering has made real strides thanks to using Go in production for two years now and we’ve made plenty of mistakes
+                          along the way. Typed nils, bloated interfaces, runaway goroutines, mysterious closure states… you name the mistake, we’ve
+                          made it.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">4:50pm</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/roots-of-go">The Roots of Go</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/baishampayan-ghose">Baishampayan Ghose</a>
+                          </span>
+                          <span class="designation">Co-founder at Helpshift</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>Every once in a while, a new programming language comes up that fundamentally changes how we think about computing. But
+                          even more so often, the core ideas behind a “new” language are hinged upon ideas that were first propounded by languages
+                          or systems which are much older.</p>
+                        <p>Often our understanding of a language’s features and the intentions thereof are limited by our understanding of its roots.</p>
+                        <p>In this talk, BG will talk about the origins of the core ideas behind Go and will take you on a “language-archeology” tour
+                          where we’ll trace the roots of Go.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">8:00pm - 11:00pm</span>
+                      <span class="location"><br /><a href="http://www.wynkoop.com/">Wynkoop Brewing Company</a>
+                      <br />1634 18th St.<br />Denver, CO 80202</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/events/after-party">Official After Party</a>
+                        </span>
+                      </div>
+                      <div class="abstract">
+                      <p>This evening’s offsite event will once again take place at the Wynkoop Brewing Company, Colorado’s oldest brew pub.</p>
+                      <p>Upon arrival, guests will enter the main level where a large bar and ample seating is available. Just beyond the bar, the Mercantile Room will host a special tasting area for the evening. For guests that want to learn more about Colorado’s local brewery explosion, four (4) professional beer experts will be on-hand to answer questions on all matters of beer, including brewing processes, storage, serving, and sampling. Hops and grains such as wheat, barley and rye will be displayed in glass containers, while tasting notes will allow guests to have an interactive and hands-on experience under the guidance of our brew experts.</p>
+                      <p>In addition to the main level, guests will have use of the Wynkoop’s entire second floor pool hall. This expansive space features a large bar, ample seating, dartboards, pool tables, table shuffleboard, and foosball.</p>
+                      <p><a href="http://www.wynkoop.com/">Wynkoop Brewing Company</a>
+                      <br />1634 18th St.<br />Denver, CO 80202</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="day2-schedule" class="tab-pane schedule-tab schedule-item-tab">
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">8:30am</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">Welcome</span>
+                      </div>
+                      <div class="abstract">
+                        <p>Welcome ceremony and announcements.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">8:40am</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/evolution-of-go">The Evolution of Go</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/robert-griesemer">Robert Griesemer</a>
+                          </span>
+                          <span class="designation">Engineer at Google</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">9:15am</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/static-code-analysis">Static Code Analysis Using SSA</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/ben-johnson">Ben Johnson</a>
+                          </span>
+                          <span class="designation">Open source Go developer in databases &amp; distributed systems</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>Single Static Assignment (SSA) is an intermediate representation of code that many compilers use for analysis and optimization.
+                          This talk will look at how the go/ssa package is used in existing Go static analysis tools like eg and oracle and how we
+                          can use it to build our own tools.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">9:50am</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/go-mobile">Go for mobile devices</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/hana-kim">Hana Kim</a>
+                          </span>
+                          <span class="designation">Engineer at Google</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>How cool would it be to write an app for your Android or iOS phone in your favorite language, Go?</p>
+                        <p>Since Go 1.4, Android on ARM is one of the officially supported platforms, and Go 1.5 will include iOS support for ARM.
+                          I will present the status of Android/iOS support in Go 1.5, and the efforts around the golang.org/x/mobile repository, which
+                          hosts tools and libraries for mobile app development in Go.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">10:20am</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">Break</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">11:00am</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/dmitry-vyukov">Go Dynamic Tools</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/dmitry-vyukov">Dmitry Vyukov</a>
+                          </span>
+                          <span class="designation">Bug slaughterer at Google</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>Dynamic tools can provide significant value for small time investment. But frequently they are underappreciated by developers.
+                          In this talk I will describe three dynamic tools for Go: data race detector, fuzzing system and execution tracer. The first
+                          two tools are related to bug finding, and the tracer can give insights into performance and latency issues of Go programs.
+                          I will also share our experiences of systematically applying such tools at scale.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">11:35am</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/embrace-the-interface">Embrace the Interface</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/tomas-senart">Tomás Senart</a>
+                          </span>
+                          <span class="designation">Software Engineer and Author of Vegeta</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>Go gives us powerful abstraction through interfaces with no bureaucracy. In my quest to find the right balance between pragmatism
+                          and abstraction, I have developed some useful patterns that leverage Go’s interfaces to make code modular, lean and clean.</p>
+                        <p>This is a hands-on opinionated talk about software craftsmanship and sane abstraction techniques. This is a talk where you’ll
+                          learn how to embrace the interface.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">12:10pm</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/uptime">Uptime: Building Resilient Services with Go</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/blake-caldwell">Blake Caldwell</a>
+                          </span>
+                          <span class="designation">Developer, Kentik</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>Hear about Fog Creek’s first production Go service: a rewrite of their Git and Mercurial SSH reverse proxy from Python.
+                          See how they monitor memory, who’s currently connected, what actions they’re performing, what their code is doing, and how
+                          they implement drain-and-die so a connection is never forcefully closed. Response times halved. Scheduled daily restarts
+                          were replaced with multi-month uptime, and shoulder shrugging about recent crashes were replaced with detailed forensic logs.</p>
+                        <p>Pick up some tips on how to write resilient services with Go!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">12:40pm</span>
+                      <span class="location">Mile High Ballroom 1-2</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">Lunch</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">1:40pm</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/caley">Cayley: Building a Graph Database</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/barak-michener">Barak Michener</a>
+                          </span>
+                          <span class="designation">Backend Developer at CoreOS and lead maintainer of Cayley</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>Written in Go, Cayley is a graph database based on technology behind Freebase.com. Starting with a short history of the
+                          inspirations behind Cayley, this talk will deep-dive into the moving parts of building a graph database, between the various
+                          query languages, the storage engines, and the iterator trees.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">2:15pm</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/learning-go">How a complete beginner learned Go as her first backend language in 5 weeks.</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/audrey-lim">Audrey Lim</a>
+                          </span>
+                          <span class="designation">Developer Evangelist at Nitrous.IO</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>Go can be seen as a language that is too difficult for beginner programmers. The resources and documentation for the language
+                          seem too technically advanced for the beginner to pick up fundamental programming concepts. Nevertheless within 5 weeks of
+                          looking into Go I taught myself how to build my first CRUD web application and a week later, an API client. In this talk
+                          I will share my thoughts about why I think Go is a fantastic teaching tool, and why beginners should not be afraid to learn
+                          it.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">2:50pm</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/struct-tags">The Many Faces of Struct Tags</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/sam-helman">Sam Helman</a>
+                          </span>
+                          <span class="designation">Software Engineer at Flatiron Health</span>
+                        </div>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/kyle-erf">Kyle Erf</a>
+                          </span>
+                          <span class="designation">Kernel Tools Engineer at MongoDB</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>Struct tags are a great feature of Go, but in the general Go community they receive almost no attention. In this talk we
+                          want to show you some of the cleverest and weirdest uses of struct tags we’ve seen. Specifying json and xml fields in struct
+                          tags is commonplace, but have you thought about using tags for object-relational mapping, validation functions, defining
+                          middleware, or command line options? Come join us for a tour of our favorite practical and impractical uses of an underutilized
+                          part of Go.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">3:20pm</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">Break</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">4:00pm</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/betting">Betting the Company on Go and Winning</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/kelsey-hightower">Kelsey Hightower</a>
+                          </span>
+                          <span class="designation">Product Manager, Developer and Chief Advocate at CoreOS</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>Since the very beginning CoreOS bet the farm on Go, even before it became the popular language it is today. CoreOS builds
+                          and ships components that enable users to create distributed systems from the ground up. Just about everything CoreOS builds
+                          including our popular open source projects such as etcd, fleet, and rocket are built using Go; this also holds true for most
+                          CoreOS commercial offerings.</p>
+                        <p>But how did we do it? What challenges did we face?</p>
+                        <p>In this talk we will answer these questions and provide a retrospective, if you will, on using Go at CoreOS over the years.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">4:35pm</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          <a href="/talks/closing-keynote">Closing Keynote</a>
+                        </span>
+                        <div class="speaker">
+                          <span class="name">
+                            <a href="/speakers/andrew-gerrand">Andrew Gerrand</a>
+                          </span>
+                          <span class="designation">Engineer at Google</span>
+                        </div>
+                      </div>
+                      <div class="abstract">
+                        <p>Andrew will present the final talk of GopherCon 2015.</p>
+                      </div>
+                    </div>
+
+				</div>
+
+			</div>
+			<div id="hackday-schedule" class="tab-pane schedule-tab schedule-item-tab">
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">10:00am - 5:00pm</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                           Hack Day
+                        </span>
+                      </div>
+                      <div class="abstract">
+                        <p>Join all your friends in a day of loosly organized collaboration, lightning talks, and general hackery.  We'll provide the space and the wifi, you bring your favorite project and work together with friends you only get to see in person every year at GopherCon.</p>
+                      </div>
+				  </div>
+			  </div>
+
+<div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">11:00am - 5:00pm</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                           Lightning Talks
+                        </span>
+                      </div>
+                      <div class="abstract">
+                        <p>Five minute lightning talks will run until everybody has had their say.  Check back in a few days for an online signup form.</p>
+                      </div>
+				  </div>
+			  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">10:00am - 5:00pm</span>
+                      <span class="location">Hack Rooms</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                           Focused Hack Rooms
+                        </span>
+                      </div>
+                      <div class="abstract">
+                        <p>Some of your favorite open source projects and companies will be hosting hack sessions in dedicated rooms.  Join the core teams of great projects like Etcd and Gobot and hack the day away.</p>
+                      </div>
+				  </div>
+			  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">10:00am - 11:00am</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          	Investment 101 for Startups
+                        </span>
+                      </div>
+                      <div class="abstract">
+						  <p>Robin Vasan will give a presentation about venture capital and the process behind getting your startup funded.  <a href="http://www.mayfield.com/team/investment-team/robin-vasan">Robin</a> is a managing director at Mayfield, one of the most prestigious investment firms in the country.  Robin will be joined for a question and answer session by the CEO's from two of Mayfield's investments.  Paul Dix from InfluxDB and Mitchell Hashimoto from HashiCorp who will share their experiences as founders going through the investment process.</p>
+						  <p>If you've ever considered a startup, this informal presentation is one you can't afford to miss.</p>
+                      </div>
+				  </div>
+			  </div>
+                  <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">10:00am - 5:00pm</span>
+                      <span class="location">Hack Rooms</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                           Hardware Hack Lab - by Gobot.io
+                        </span>
+                      </div>
+                      <div class="abstract">
+                        <p>Want to hack hardware using Golang? Come to the Gophercon "Hardware Lending Lab" where we will have a bunch of Intel Edison single board computers, Sphero robots, Leap Motion gestural controllers, and more that you can borrow and program with your favorite language. Mentors Ron Evans (@deadprogram) and Adrian Zankich (@adzankich), the creators of Gobot (http://gobot.io) will be there to help out. There will be some cool giveaways too. Come play with us!</p>
+                      </div>
+				  </div>
+			  </div>
+        <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">10:00am - 5:00pm</span>
+                      <span class="location">Hack Rooms</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          Docker Workshop
+                        </span>
+                      </div>
+                      <div class="abstract">
+                        <p>The Docker Workshop is a 1 day, hands-on class for beginners who want to learn to use and contribute to Docker. Members of the Docker Team will get you up to speed on the basics and coach you from setup to integrating Docker into your working environment. You’ll also learn your way around the Docker Project and leave with the resources to make your first contribution.</p>
+                      </div>
+				  </div>
+			  </div>
+                         <div class="row schedule-item">
+                    <div class="col-md-3 schedule-item-slot">
+                      <span class="time">Afternoon</span>
+                      <span class="location">Mile High Ballroom 3-4</span>
+                    </div>
+                    <div class="col-md-9 schedule-item-details">
+                      <div class="schedule-item-summary">
+                        <span class="title">
+                          	Snacks 
+                        </span>
+                      </div>
+                      <div class="abstract">
+                        <p>Join us for light snacks in the afternoon.</p>
+                      </div>
+				  </div>
+		  </div>             
+	  </div>
+              </div>
+            </div>
+      </section>
+
+      <section class="content schedule2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center">
+              <a name="schedule-at-a-glance"></a>
+              <h1>Schedule of Events</h1>
+              <br />
+              <h3>Tuesday, July 7th, 2015</h3>
+              <table width="80%" style="text-align: left; margin: 0 auto;">
+                <tr>
+                  <td width="25%"><strong>8:30 a.m. - 9:30 a.m.</strong></td>
+                  <td width="75">Go Bootcamp/Workshops Registration, 300s Corridor</td>
+                </tr>
+                <tr>
+                  <td><strong>9:00 a.m. – 5:00 p.m.</strong></td>
+                  <td>Go Bootcamp/Workshops, Rooms 301 and 302</td>
+                </tr>
+                <tr>
+                  <td><strong>10:00 a.m. – 6:00 p.m.</strong></td>
+                  <td>Exhibitor Move-In, Mile High Ballroom Foyer</td>
+                </tr>
+                <tr>
+                  <td><strong>12:00 p.m. – 6:00 p.m.</strong></td>
+                  <td>Registration, Lower Lobby F</td>
+                </tr>
+              </table>
+
+              <h3>Wednesday, July 8th, 2015</h3>
+              <table width="80%" style="text-align: left; margin: 0 auto;">
+                <tr>
+                  <td width="25%"><strong>7:00 a.m. – 8:30 a.m.</strong></td>
+                  <td width="75%">Breakfast, Mile High Ballroom 1 - 2</td>
+                </tr>
+                <tr>
+                  <td><strong>7:00 a.m. – 5:30 p.m.</strong></td>
+                  <td>Exhibitor Area Open, Mile High Ballroom Foyer</td>
+                </tr>
+                <tr>
+                  <td><strong>6:45 a.m. – 6:00 p.m.</strong></td>
+                  <td>Registration, Lower Lobby F</td>
+                </tr>
+                <tr>
+                  <td><strong>7:00 a.m. – 6:30 p.m.</strong></td>
+                  <td>Speakers’ Lounge Open, Room 302</td>
+                </tr>
+                <tr>
+                  <td><strong>7:00 a.m. – 6:30 p.m.</strong></td>
+                  <td>Sponsors’ Lounge Open, Room 303</td>
+                </tr>
+                <tr>
+                  <td><strong>8:30 a.m. – 5:30 p.m.</strong></td>
+                  <td>Main Theatre, Mile High Ballroom 3 – 4</td>
+                </tr>
+                <tr>
+                  <td><strong>12:20 p.m. – 1:10 p.m.</strong></td>
+                  <td>Lunch, Mile High Ballroom 1 - 2</td>
+                </tr>
+                <tr>
+                  <td><strong>8:00 p.m. – 11:00 p.m.</strong></td>
+                  <td>GopherCon After Party, Wynkoop Brewing Company</td>
+                </tr>
+              </table>
+
+              <h3>Thursday, July 9th, 2015</h3>
+              <table width="80%" style="text-align: left; margin: 0 auto;">
+                <tr>
+                  <td width="25%"><strong>7:00 a.m. – 8:30 a.m.</strong></td>
+                  <td width="75%">Breakfast, Mile High Ballroom 1 - 2</td>
+                </tr>
+                <tr>
+                  <td><strong>7:00 a.m. – 5:30 p.m.</strong></td>
+                  <td>Exhibitor Area Open, Mile High Ballroom Foyer</td>
+                </tr>
+                <tr>
+                  <td><strong>7:00 a.m. – 12:00 p.m.</strong></td>
+                  <td>Registration, Lower Lobby F</td>
+                </tr>
+                <tr>
+                  <td><strong>7:00 a.m. – 6:30 p.m.</strong></td>
+                  <td>Speakers’ Lounge Open, Room 302</td>
+                </tr>
+                <tr>
+                  <td><strong>7:00 a.m. – 6:30 p.m.</strong></td>
+                  <td>Sponsors’ Lounge Open, Room 303</td>
+                </tr>
+                <tr>
+                  <td><strong>8:30 a.m. – 5:30 p.m.</strong></td>
+                  <td>Main Theatre, Mile High Ballroom 3 – 4</td>
+                </tr>
+                <tr>
+                  <td><strong>12:40 p.m. – 1:30 p.m.</strong></td>
+                  <td>Lunch, Mile High Ballroom 1 - 2</td>
+                </tr>
+              </table>
+
+              <h3>Friday, July 10th, 2015</h3>
+              <table width="80%" style="text-align: left; margin: 0 auto;">
+                <tr>
+                  <td width="25%"><strong>9:00 a.m. – 6:00 p.m.</strong></td>
+                  <td width="75%">Speakers’ Lounge Open, Room 302</td>
+                </tr>
+                <tr>
+                  <td><strong>9:00 a.m. – 6:00 p.m.</strong></td>
+                  <td>Sponsors’ Lounge Open, Room 303</td>
+                </tr>
+                <tr>
+                  <td><strong>10:00 a.m. – 5:00 p.m.</strong></td>
+                  <td>Hack Day Lightning Talks, Mile High Ballroom 3 – 4</td>
+                </tr>
+                <tr>
+                  <td><strong>10:00 a.m. – 5:00 p.m.</strong></td>
+                  <td>Hybrid Group Hack Day, Room 401</td>
+                </tr>
+                <tr>
+                  <td><strong>10:00 a.m. – 5:00 p.m.</strong></td>
+                  <td>MongoDB Hack Day, Room 402</td>
+                </tr>
+                <tr>
+                  <td><strong>10:00 a.m. – 5:00 p.m.</strong></td>
+                  <td>CoreOS Hack Day, Room 403</td>
+                </tr>
+                <tr>
+                  <td><strong>10:00 a.m. – 5:00 p.m.</strong></td>
+                  <td>Docker Hack Day, Room 404</td>
+                </tr>
+                <tr>
+                  <td><strong>10:00 a.m. – 5:00 p.m.</strong></td>
+                  <td>Denver Go Group, Room 405</td>
+                </tr>
+                <tr>
+                  <td><strong>10:00 a.m. – 5:00 p.m.</strong></td>
+                  <td>Google Cloud Platform, Room 406</td>
+                </tr>
+                <tr>
+                  <td><strong>10:00 a.m. – 5:00 p.m.</strong></td>
+                  <td>Mesosphere, Room 407</td>
+                </tr>
+                <tr>
+                  <td><strong>12:30 p.m. – 2:00 p.m. </strong></td>
+                  <td>Afternoon Break, Mile High Ballroom Foyer & 400s Corridor</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-sponsors content">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1 text-center">
+      <h1>Thanks to Our Sponsors</h1>
+      <p class="subheader">Without their support this would not be possible</p>
+
+      
+        <div class="col-md-12 diamond">
+          
+            <a href="http://gophercon.com/sponsor/diamond/google/"><img src="/images/temp-logos/google.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/diamond/twitch/"><img src="/images/temp-logos/twitch.png"></img></a>
+          
+          <div class="clearfix"></div>
+        </div>
+        <br /><br />
+        
+        <div class="col-md-12 platinum">
+          
+            <a href="http://gophercon.com/sponsor/platinum/cisco/"><img src="/images/temp-logos/cisco.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/platinum/mesosphere/"><img src="/images/temp-logos/mesosphere.png"></img></a>
+          
+          <div class="clearfix"></div>
+        </div>
+        <br /><br />
+        
+        <div class="col-md-12 gold">
+          
+            <a href="http://gophercon.com/sponsor/gold/clusterhq/"><img src="/images/temp-logos/clusterhq.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/gold/couchbase/"><img src="/images/temp-logos/couchbase.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/gold/docker/"><img src="/images/temp-logos/docker.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/gold/pivotal/"><img src="/images/temp-logos/pivotal.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/gold/segment/"><img src="/images/temp-logos/segment.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/gold/thumbtack/"><img src="/images/temp-logos/thumbtack.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/gold/verizon/"><img src="/images/temp-logos/verizon.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/gold/xor/"><img src="/images/temp-logos/xor.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/gold/yext/"><img src="/images/temp-logos/yext.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/gold/canonical/"><img src="/images/temp-logos/ubuntu.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/gold/timehop/"><img src="/images/temp-logos/timehop.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/gold/nodeprime/"><img src="/images/temp-logos/nodeprime.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/gold/bugsnag/"><img src="/images/temp-logos/bugsnag.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/gold/datadog/"><img src="/images/temp-logos/datadog.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/gold/influxdb/"><img src="/images/temp-logos/influxdb.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/gold/coreos/"><img src="/images/temp-logos/coreos.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/gold/apcera/"><img src="/images/temp-logos/apcera.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/gold/sentry/"><img src="/images/temp-logos/sentry.png"></img></a>
+          
+          <div class="clearfix"></div>
+        </div>
+        <br /><br />
+        
+        <div class="col-md-12 silver">
+          
+            <a href="http://gophercon.com/sponsor/silver/qwinixtech/"><img src="/images/temp-logos/qwinixtech.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/silver/contextio/"><img src="/images/temp-logos/contextio-logo.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/silver/mongodb/"><img src="/images/temp-logos/mongodb.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/silver/rackspace/"><img src="/images/temp-logos/rackspace.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/silver/ironio/"><img src="/images/temp-logos/ironio.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/silver/shopkeep/"><img src="/images/temp-logos/shopkeep.png"></img></a>
+          
+          <div class="clearfix"></div>
+        </div>
+        
+        
+        <div class="col-md-12 bronze">
+          
+            <a href="http://gophercon.com/sponsor/bronze/raintank/"><img src="/images/temp-logos/raintank.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/bronze/kismatic/"><img src="/images/temp-logos/kismatic.gif"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/bronze/clypd/"><img src="/images/temp-logos/clypd.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/bronze/heroku/"><img src="/images/temp-logos/heroku.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/bronze/crowdstrike/"><img src="/images/temp-logos/crowdstrike.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/bronze/metacaststv/"><img src="/images/temp-logos/metacasts.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/bronze/blitline/"><img src="/images/temp-logos/blitline.png"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/bronze/ardan/"><img src="/images/temp-logos/ardan.png"></img></a>
+          
+          <div class="clearfix"></div>
+	  </div>
+	  
+        <div class="col-md-12 bronze">
+          
+            <a href="http://gophercon.com/sponsor/additional/changelog/"><img src="/images/temp-logos/changelog.svg"></img></a>
+          
+            <a href="http://gophercon.com/sponsor/additional/oreilly/"><img src="/images/temp-logos/ORM_logo_box1_hex.jpg"></img></a>
+          
+          <div class="clearfix"></div>
+        </div>
+    </div>
+  </div>
+</section>
+
+    <section id="hotels" class="content hotels">
+    	<div class="container">
+        	<div class="col-md-10 col-md-offset-1 text-center">
+                <h1>Hotel Accommodations</h1>
+                <p class="subheader">We have arranged special rates and reserved room blocks at hotels close to the Convention Center. Be sure to use the links, phone numbers, or booking codes below to get the reduced rates. <br /> If you have any trouble, call <strong>1-866-650-8858</strong> for help!</p>
+        	</div>
+        </div>
+
+
+        <div class="hampton col-md-2">
+        	<h4>Hampton Inn</h4>
+        	<section>
+				<div style="float:left"><p><b>$169.00</b> / night, plus tax</p>
+                <p>550 15th Street,<br /> Denver, CO 80202</p>
+				<p>Tel: 800.445.8667<br />
+					Code: GopherCon</p></div>
+							<div style="float:right"><a href="http://hamptoninn.hilton.com/en/hp/groups/personalized/D/DENCVHX-GOP-20150705/index.jhtml" class="btn btn-orange" target="_blank">Book</a></div>
+            </section>
+		</div>
+		        <div class="homewood col-md-2">
+        	<h4>Homewood Suites</h4>
+        	<section>
+			<div style="float:left"><p><b>$179.00</b> / night, plus tax</p>
+				<p>550 15th Street,<br /> Denver, CO 80202</p>
+				<p>Tel: 800.445.8667<br />
+					Code: GopherCon</p></div>
+				<div style="float:right"><a href="http://homewoodsuites.hilton.com/en/hw/groups/personalized/D/DENDCHW-GOP-
+20150705/index.jhtml" class="btn btn-orange" target="_blank">Book</a></div>
+            </section>
+        </div>
+        <div class="hilton col-md-2">
+        	<h4>Hilton Garden Inn</h4>
+        	<section>
+				<div style="float:left"><p><b>$189.00</b> / night, plus tax</p>
+                <p>1400 Welton Street,<br /> Denver, CO 80202</p>
+				<p>Tel: 855.215.1283<br />
+					Code: GopherCon</p></div>
+				<div style="float:right"><a href="http://hiltongardeninn.hilton.com/en/gi/groups/personalized/D/DENDDGI-GOPHER-20150705/index.jhtml" class="btn btn-orange" target="_blank">Book</a></div>
+            </section>
+        </div>
+
+        <div class="curtis col-md-2">
+        	<h4>The Curtis</h4>
+        	<section>
+				<div style="float:left"><p><b>$199.00</b> / night, plus tax</p>
+                <p>1405 Curtis Street,<br /> Denver, CO 80202</p>
+				<p>Tel: 800.445.8667<br />
+					Code: GopherCon</p></div>
+				<div style="float:right"><a href="http://doubletree.hilton.com/en/dt/groups/personalized/D/DENCHDT-GCG-
+20150705/index.jhtml?WT.mc_id=POG" class="btn btn-orange" target="_blank">Book</a></div>
+            </section>
+		</div>
+    <div class="embassy col-md-2">
+        <h4>Embassy Suites</h4>
+        <section>
+      <div style="float:left"><p><b>$205.00</b> / night, plus tax</p>
+              <p>1420 Stout Street,<br /> Denver, CO 80202</p>
+      <p>Tel: 800.445.8667<br />
+        Code: GopherCon </p></div>
+      <div style="float:right"><a href="http://embassysuites.hilton.com/en/es/groups/personalized/D/DENESES-GOP-
+20150705/index.jhtml" class="btn btn-orange" target="_blank">Book</a></div>
+          </section>
+      </div>
+
+      <div class="clearfix"></div>
+  </section>    </main><footer>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-2 col-md-offset-1 text-center">
+            <img src="/images/cowboy-color.png" width="170" />
+          </div>
+          <div class="col-md-7 col-md-offset-1">
+            <p><b>GopherCon</b> is organized by GopherAcademy, LLC, a community-driven group of developers focused on the education of developers and the promotion of the Go programming language.</p>
+
+            <p class="copyright">© 2015 GopherAcademy, LLC</p>
+            <p class="copyright-character">The Gopher character is based on the Go mascot designed by
+              <a href="http://reneefrench.blogspot.com/" target="blank">Renée French</a>
+              and copyrighted under the
+              <a href="http://creativecommons.org/licenses/by/3.0/us/" target="blank">Creative Commons Attribution 3.0 license.</a>
+            </p>
+            <p>Powered by <a href="http://gohugo.io">Hugo</a>.</p>
+          </div>
+      </div>
+    </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40886074-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
+

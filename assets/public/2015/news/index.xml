@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on GopherCon 2015</title>
+    <link>http://gophercon.com/news/</link>
+    <description>Recent content in News on GopherCon 2015</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 May 2015 08:03:09 -0400</lastBuildDate>
+    <atom:link href="http://gophercon.com/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Speakers Announced</title>
+      <link>http://gophercon.com/news/speakers-announced/</link>
+      <pubDate>Thu, 07 May 2015 08:03:09 -0400</pubDate>
+      
+      <guid>http://gophercon.com/news/speakers-announced/</guid>
+      <description>&lt;p&gt;##FOR IMMEDIATE RELEASE: 5/7/15
+Brian Ketelsen
+GopherAcademy Inc.
+1-813-368-3425
+gophercon@gopheracademy.com&lt;/p&gt;
+
+&lt;p&gt;#GopherCon 2015 Announces 2015 Speakers
+##World&amp;rsquo;s Largest Gathering of Go Developers In Denver On July 7-10
+Denver, CO: Today, GopherAcademy, LLC announced the speakers for their annual conference celebrating the Go Programming Language. After a sold-out conference in 2014, GopherCon is expanding this year, to the Colorado Convention Center, where they will host 1,500 Go enthusiasts from around the globe. This three day conference will be the largest gathering of Go developers ever. The newly announced speakers include engineers with diverse backgrounds from companies large and small.&lt;/p&gt;
+
+&lt;p&gt;Once again, GopherCon has a variety of sponsors that highlights the impact this programming language has had on the industry. &amp;ldquo;Written for the cloud, Go was designed to solve a wide range of computing problems by providing a powerful and easy to understand way to write reliable code,&amp;rdquo; said Jason Buberel, Product Manager at Google. &amp;ldquo;GopherCon has been instrumental in bringing that community of developers together and we are proud to be a Diamond Sponsor of the event.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Even companies traditionally known for infrastructure are realizing the benefits of Go. Cisco&amp;rsquo;s Keith Chambers said: &amp;ldquo;We love Go for building distributed systems at Cisco. While we believe in polyglot microservices, the teams that have embraced Go are delivering new services to market in less time. Cisco wants to see the Go community grow and we believe sponsoring GopherCon is a great way to do that!&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Two great examples of companies that have built entirely new economies around Go are Docker, Inc. and CoreOS. “We wanted to support this event because the Go language has been absolutely essential to the growth and adoption of Docker,” said Steve Francia, chief operator of the Docker project. “Go is at the heart of the Docker project, providing the simplicity, reliability and feature set we need to create a strong foundation for the community. We look forward to GopherCon and collaborating with the developers and contributors that share our passion for Go and the Go community.”&lt;/p&gt;
+
+&lt;p&gt;Alex Polvi, CEO of CoreOS writes: &amp;ldquo;GopherCon is an important event for CoreOS because we have built many of our components with Go,&amp;rdquo; said Alex. &amp;ldquo;Go has propelled the container industry forward by providing a language that is easy to build reliant distributed systems. We are big supporters of Go and GopherCon and look forward to celebrating all things Go in July.”&lt;/p&gt;
+
+&lt;p&gt;The momentum of Go has captured the attention of venture capital firms, as well. Robin Vasan of Mayfield tells us: “The software stack is being re-imagined with a distributed systems architecture – and the Go community is right at the heart of that effort.”&lt;/p&gt;
+
+&lt;p&gt;This year, GopherCon also includes a pair of optional workshops on July 7 th with workshops available for both beginning and advanced programmers. “Our conference this year aims to build on the tremendous success of the sold-out GopherCon 2014,” said Erik St. Martin from Gopher Academy, LLC. “Last year we saw many early adopters of Go at GopherCon. This year, it&amp;rsquo;s clear that the attendees are coming equally from Fortune 500 companies, small to medium businesses, and startups.  We&amp;rsquo;re excited to be providing such a large venue for developers of all backgrounds to come together and advance their craft.”&lt;/p&gt;
+
+&lt;p&gt;More information can be found on GopherCon&amp;rsquo;s website at &lt;a href=&#34;http://www.gophercon.com&#34;&gt;http://www.gophercon.com&lt;/a&gt; Speakers, schedule information, and sponsors are now published there. Sponsorship opportunities are available until May 15 th , 2015, and conference tickets will be available until they sell out.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;About GopherAcademy LLC: GopherAcademy, LLC is a community organization founded in 2012 by Brian Ketelsen and Erik St. Martin for the promotion of the Go programming language through community events and educational programs. &lt;a href=&#34;http://www.gopheracademy.com&#34;&gt;http://www.gopheracademy.com&lt;/a&gt; or @gopheracademy on Twitter.
+###&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Diversity Information</title>
+      <link>http://gophercon.com/news/diversity/</link>
+      <pubDate>Thu, 26 Mar 2015 19:03:09 -0400</pubDate>
+      
+      <guid>http://gophercon.com/news/diversity/</guid>
+      <description>
+
+&lt;h4 id=&#34;diversity-scholarship-applications:a004a78b1274ecad5afe198d6011a10e&#34;&gt;Diversity Scholarship Applications&lt;/h4&gt;
+
+&lt;p&gt;If you are a member of an under-represented group and need help attending GopherCon 2015, we&amp;rsquo;ve created a scholarship application.  Please fill out &lt;a href=&#34;https://docs.google.com/forms/d/1OBjjr-x5rLKssAovvxjd5W5tr_uiK3JP9_XIyQhCoQo/viewform&#34;&gt;this form&lt;/a&gt; and we&amp;rsquo;ll do our best to help finance your trip using the donations of the community.  We at GopherAcademy strongly believe in creating an environment where everyone is welcome to enjoy the speed, elegance, and fun concurrency of Go.&lt;/p&gt;
+
+&lt;h4 id=&#34;child-care:a004a78b1274ecad5afe198d6011a10e&#34;&gt;Child Care&lt;/h4&gt;
+
+&lt;p&gt;We have finalized details of our Child Care arrangements.  We&amp;rsquo;ll have dedicated rooms for child care right at the conference.  If you need child care in order to attend GopherCon, please pre-register by following the &amp;ldquo;Tickets&amp;rdquo; links on this site, and registering your children by selecting the appropriate age groups. This will help us ensure that we have enough qualified child-care professionals to meet the demand.  We are hiring licensed professionals to staff our rooms, so you can enjoy the conference without worrying about your children.&lt;/p&gt;
+
+&lt;h4 id=&#34;kids-code:a004a78b1274ecad5afe198d6011a10e&#34;&gt;Kids Code&lt;/h4&gt;
+
+&lt;p&gt;If you or your company is interested in arranging a learning session for the older children during GopherCon get in touch with us today : gophercon@gopheracademy.com&lt;/p&gt;
+
+&lt;h4 id=&#34;donate-to-make-a-difference:a004a78b1274ecad5afe198d6011a10e&#34;&gt;Donate To Make a Difference&lt;/h4&gt;
+
+&lt;p&gt;Finally, we can&amp;rsquo;t help bring people to GopherCon without the donations from the Go community.  If you can help us make a more diverse conference, please purchase Diversity Scholarship tickets &lt;a href=&#34;https://ti.to/gophercon/gophercon-2015/with/bmhktj3apgi&#34;&gt;here&lt;/a&gt;.  Thank you for your support.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Site Updates</title>
+      <link>http://gophercon.com/news/site-updates/</link>
+      <pubDate>Thu, 26 Mar 2015 19:03:09 -0400</pubDate>
+      
+      <guid>http://gophercon.com/news/site-updates/</guid>
+      <description>
+
+&lt;p&gt;We&amp;rsquo;ve finally taken a few hours to update the website, so we&amp;rsquo;re excited to announce our first round of sponsors.  We&amp;rsquo;re extremely grateful to the sponsors of GopherCon for trusting us to put on a great conference.  Please check out the &lt;a href=&#34;http://gophercon.com/sponsors&#34;&gt;sponsors&lt;/a&gt; page and show them some appreciation, too.  There are still sponsorship opportunities available, so if you are interested in being part of this awesome program, &lt;a href=&#34;mailto:gophercon@gopheracademy.com&#34;&gt;send us an email&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;cfp:2631207e5b2b930b28c5885fd4f969f4&#34;&gt;CFP&lt;/h4&gt;
+
+&lt;p&gt;The CFP closes in just a few days.  Stop what you are doing and head &lt;a href=&#34;http://cfp.gophercon.com&#34;&gt;over to the CFP site&lt;/a&gt; and submit a speaking proposal.  We&amp;rsquo;ve got some great talks proposed already, but we are missing YOURS.  We want to hear from Gophers of all varieties and skill levels, so please submit your proposal now.  If you&amp;rsquo;re not a seasoned speaker, we&amp;rsquo;ll assign you a mentor to help you through the process.&lt;/p&gt;
+
+&lt;h4 id=&#34;child-care:2631207e5b2b930b28c5885fd4f969f4&#34;&gt;Child Care&lt;/h4&gt;
+
+&lt;p&gt;We&amp;rsquo;ve tentatively scheduled child care during the conference main program, but haven&amp;rsquo;t heard from many people whether they&amp;rsquo;re interested.  If this would help you attend, &lt;a href=&#34;mailto:gophercon@gopheracademy.com&#34;&gt;send us an email&lt;/a&gt; and let us know it&amp;rsquo;s important to you.&lt;/p&gt;
+
+&lt;h4 id=&#34;more-updates-coming-soon:2631207e5b2b930b28c5885fd4f969f4&#34;&gt;More Updates Coming Soon&lt;/h4&gt;
+
+&lt;p&gt;The schedule this year is shaping up nicely.  We&amp;rsquo;ll be updating the site with more information soon, including a schedule of activities during the whole week of GopherCon 2015.  Stay tuned.&lt;/p&gt;
+
+&lt;h4 id=&#34;dogfooding:2631207e5b2b930b28c5885fd4f969f4&#34;&gt;Dogfooding&lt;/h4&gt;
+
+&lt;p&gt;Gophercon.com is deployed using &lt;a href=&#34;https://github.com/spf13/hugo&#34;&gt;Hugo&lt;/a&gt;, on CoreOS servers, automated with Docker and &lt;a href=&#34;https://github.com/bketelsen/captainhook&#34;&gt;captainhook&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

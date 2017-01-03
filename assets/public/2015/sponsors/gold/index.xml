@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gold on GopherCon 2015</title>
+    <link>http://gophercon.com/sponsors/gold/</link>
+    <description>Recent content in Gold on GopherCon 2015</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Apr 2015 18:54:34 -0400</lastBuildDate>
+    <atom:link href="http://gophercon.com/sponsors/gold/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ClusterHQ</title>
+      <link>http://gophercon.com/sponsor/gold/clusterhq/</link>
+      <pubDate>Tue, 21 Apr 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/clusterhq/</guid>
+      <description>&lt;p&gt;As The Container Data People™, ClusterHQ is the company behind the container industry’s first solution for reliably running stateful services like databases inside containers. Through its innovative open-source data volume manager, Flocker, ClusterHQ solves the significant operational challenges that come from running data-backed services inside containers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Couchbase</title>
+      <link>http://gophercon.com/sponsor/gold/couchbase/</link>
+      <pubDate>Tue, 21 Apr 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/couchbase/</guid>
+      <description>&lt;p&gt;Couchbase Server is a high-performance NoSQL distributed database with a flexible data model. It scales on commodity hardware to support large data sets with a high number of concurrent reads and writes while maintaining low latency and strong consistency.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>http://gophercon.com/sponsor/gold/docker/</link>
+      <pubDate>Tue, 21 Apr 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/docker/</guid>
+      <description>&lt;p&gt;Docker, Inc is the company behind the open source Docker platform and the growing Docker ecosystem of contributors, partners and adopters revolutionizing the way distributed applications are built, shipped, and run.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pivotal</title>
+      <link>http://gophercon.com/sponsor/gold/pivotal/</link>
+      <pubDate>Wed, 08 Apr 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/pivotal/</guid>
+      <description>&lt;p&gt;Pivotal offers a modern approach to technology that organizations need to thrive in a new era of business innovation. Our solutions intersect cloud, big data and agile development, creating a framework that increases data leverage, accelerates application delivery, and decreases costs, while providing enterprises the speed and scale they need to compete.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Segment</title>
+      <link>http://gophercon.com/sponsor/gold/segment/</link>
+      <pubDate>Wed, 08 Apr 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/segment/</guid>
+      <description>&lt;p&gt;Segment is building the analytics routing layer for the world. We transform data into over 150 different services, adding new ones every day. We&amp;rsquo;re processing billions of events each month, and maintaining the analytics infrastructure for companies like Rdio, Bonobos, and Atlassian. We&amp;rsquo;re go-nuts for everything from our queueing layer to our data processing pipeline (and we &amp;lt;3 open source). The gopher is our spirit animal.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Thumbtack</title>
+      <link>http://gophercon.com/sponsor/gold/thumbtack/</link>
+      <pubDate>Thu, 26 Mar 2015 09:50:39 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/thumbtack/</guid>
+      <description>&lt;p&gt;Thumbtack helps you accomplish the personal projects that are central to your life. Whether you need to paint your home, learn a new language, or plan your daughter&amp;rsquo;s birthday party, Thumbtack is the easiest and most dependable way to hire the right professional for your projects.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>verizon</title>
+      <link>http://gophercon.com/sponsor/gold/verizon/</link>
+      <pubDate>Thu, 26 Mar 2015 09:50:39 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/verizon/</guid>
+      <description>&lt;p&gt;Verizon Labs is home to some of the most brilliant minds in the world and where humans and machines not only coexist—they thrive. Established in 2013, Verizon Labs is Verizon&amp;rsquo;s center of excellence for nearly 800 employees (and growing)—many with PhDs and other advanced degrees in disciplines such as engineering, computer science and optical physics. As part of Verizon’s Product and New Business Innovation organization, experts in locations such as Waltham, Massachusetts; Silicon Valley, California; and Bangalore, India; develop product software and solutions driven by needs identified by partners across each of Verizon’s business units. Verizon Labs also provides technical expertise and guidance for overall network architecture, collaborates on ideation, creates proof of concepts and prototypes, and develops critical platforms and applications for new products and services.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>xor</title>
+      <link>http://gophercon.com/sponsor/gold/xor/</link>
+      <pubDate>Thu, 26 Mar 2015 09:50:39 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/xor/</guid>
+      <description>&lt;p&gt;XOR Data Exchange has developed the nation’s first patent-pending permission-based data exchange, where data owners set finely tuned permissions for how their data is used. Unlike a consortium, which is limited in scope, single focused and has a one-to-one sharing relationship, XOR data exchanges can be used by any industry to share any data for any purpose allowed by the data owner, including fraud and risk management, and authentication.  XOR proudly employs Brian and Erik, organizers of GopherCon, and uses a 100% Go-powered platform to deliver breakthrough performance for our Fortune 100 customers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>yext</title>
+      <link>http://gophercon.com/sponsor/gold/yext/</link>
+      <pubDate>Thu, 26 Mar 2015 09:50:39 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/yext/</guid>
+      <description>&lt;p&gt;Yext lets companies manage their digital presence in online maps, directories and apps. Over 400,000 businesses make millions of monthly updates across 100+ exclusive global partners, making Yext the global market leader. Digital presence is a fundamental need for all 50 million businesses in the world, and Yext&amp;rsquo;s mission is perfect location information in every hand.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Canonical</title>
+      <link>http://gophercon.com/sponsor/gold/canonical/</link>
+      <pubDate>Thu, 26 Mar 2015 09:50:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/canonical/</guid>
+      <description>&lt;p&gt;Canonical is the company behind Ubuntu and a leading provider of cloud products and services, including its Ubuntu OpenStack distribution. Ubuntu is the most popular platform on all major public clouds as well as OpenStack deployments. Canonical works with top Telcos and enterprises to build and operate large-scale, production-grade clouds.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Timehop</title>
+      <link>http://gophercon.com/sponsor/gold/timehop/</link>
+      <pubDate>Thu, 26 Mar 2015 09:50:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/timehop/</guid>
+      <description>&lt;p&gt;A time capsule of you. See your photos and updates from this exact day in history. Timehop helps you celebrate the best moments of the past with your friends!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NodePrime</title>
+      <link>http://gophercon.com/sponsor/gold/nodeprime/</link>
+      <pubDate>Thu, 26 Mar 2015 09:50:28 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/nodeprime/</guid>
+      <description>&lt;p&gt;Bringing visibility, flexibility, and performance to datacenter infrastructure.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bugsnag</title>
+      <link>http://gophercon.com/sponsor/gold/bugsnag/</link>
+      <pubDate>Thu, 26 Mar 2015 09:50:19 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/bugsnag/</guid>
+      <description>&lt;p&gt;Bugsnag detects crashes in your deployed Go applications, and applications written in almost all other popular programming languages and frameworks. You’ll spend a fraction of the time finding and fixing bugs, leaving you to work on the projects that matter most. Bugsnag automatically collects useful diagnostic information, and alerts you to crashes so you can resolve errors quickly.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Datadog</title>
+      <link>http://gophercon.com/sponsor/gold/datadog/</link>
+      <pubDate>Thu, 26 Mar 2015 09:50:14 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/datadog/</guid>
+      <description>&lt;p&gt;Datadog is a full-stack performance monitoring service that aggregates metrics/events from servers, databases, and applications in unified infrastructure views. Our SaaS-based data analytics platform helps Dev&amp;amp;Ops teams collaborate, minimize downtime, resolve performance issues, and ensure timely completion of development/deployment cycles.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>InfluxDB</title>
+      <link>http://gophercon.com/sponsor/gold/influxdb/</link>
+      <pubDate>Thu, 26 Mar 2015 09:50:08 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/gold/influxdb/</guid>
+      <description>&lt;p&gt;An open-source, distributed, time series database with no external dependencies. InfluxDB is the new home for all of your metrics, events, and analytics.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

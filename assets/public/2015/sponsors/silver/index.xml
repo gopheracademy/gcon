@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Silver on GopherCon 2015</title>
+    <link>http://gophercon.com/sponsors/silver/</link>
+    <description>Recent content in Silver on GopherCon 2015</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Mar 2015 09:51:17 -0400</lastBuildDate>
+    <atom:link href="http://gophercon.com/sponsors/silver/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Qwinix Technologies</title>
+      <link>http://gophercon.com/sponsor/silver/qwinixtech/</link>
+      <pubDate>Thu, 26 Mar 2015 09:51:17 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/silver/qwinixtech/</guid>
+      <description>&lt;p&gt;Qwinix Technologies is an application development and software solutions provider based in Denver specializing in agile development, lean thinking, and continuous delivery using a global delivery model.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Context.io</title>
+      <link>http://gophercon.com/sponsor/silver/contextio/</link>
+      <pubDate>Thu, 26 Mar 2015 09:51:06 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/silver/contextio/</guid>
+      <description>&lt;p&gt;Context.IO takes the pain out of syncing email data with your app so you can focus on what makes your product great.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MongoDB</title>
+      <link>http://gophercon.com/sponsor/silver/mongodb/</link>
+      <pubDate>Thu, 26 Mar 2015 09:51:06 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/silver/mongodb/</guid>
+      <description>&lt;p&gt;MongoDB is the next-generation database that helps businesses transform their industries by harnessing the power of data. The world’s most sophisticated organizations, from cutting-edge startups to the largest companies, use MongoDB to create applications never before possible at a fraction of the cost of legacy databases. MongoDB is the fastest-growing database ecosystem, with over 9 million downloads, thousands of customers, and over 750 technology and service partners.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rackspace</title>
+      <link>http://gophercon.com/sponsor/silver/rackspace/</link>
+      <pubDate>Thu, 26 Mar 2015 09:51:06 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/silver/rackspace/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iron.io</title>
+      <link>http://gophercon.com/sponsor/silver/ironio/</link>
+      <pubDate>Mon, 23 Mar 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/silver/ironio/</guid>
+      <description>&lt;p&gt;Iron.io is the leading provider of cloud-based systems that meet the demands of the fastest moving companies around the world. Iron.io&amp;rsquo;s products are easy to use, highly available, and essential for building distributed cloud applications quickly and at scale.&lt;/p&gt;
+
+&lt;p&gt;Iron.io offers messaging queuing, task processing, and job scheduling services that provide a robust platform for orchestrating and processing event-driven workloads. Iron.io delivers powerful solutions to meet the challenges in mobile and IoT compute, stream processing, transaction processing, and other asynchronous computing patterns. Our customers include Hotel Tonight, Turner, Bleacher Report, TeeSpring, Untappd, Trunk Club, and more.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shopkeep</title>
+      <link>http://gophercon.com/sponsor/silver/shopkeep/</link>
+      <pubDate>Thu, 26 Mar 2015 09:51:52 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/silver/shopkeep/</guid>
+      <description>&lt;p&gt;ShopKeep POS, a rapidly expanding company based in New York City,
+provides cloud based point of sale software for managing retail
+shops and restaurants. Founded and designed by a merchant, we
+uniquely understand the challenges of growing a retail business.
+ShopKeep POS helps small business owners in every state across the
+country run a better business.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

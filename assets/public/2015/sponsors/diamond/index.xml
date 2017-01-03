@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Diamond on GopherCon 2015</title>
+    <link>http://gophercon.com/sponsors/diamond/</link>
+    <description>Recent content in Diamond on GopherCon 2015</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Mar 2015 18:54:34 -0400</lastBuildDate>
+    <atom:link href="http://gophercon.com/sponsors/diamond/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Google</title>
+      <link>http://gophercon.com/sponsor/diamond/google/</link>
+      <pubDate>Mon, 23 Mar 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/diamond/google/</guid>
+      <description>&lt;p&gt;Google&amp;rsquo;s mission is to organize the world&amp;rsquo;s information and make it universally accessible and useful. The Go programming language is meant to make it easier for software engineers around the world to create the next generation of applications to further that mission. Google believes firmly in the power of open source communities and is committed to building a vibrant ecosystem around Go.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Twitch</title>
+      <link>http://gophercon.com/sponsor/diamond/twitch/</link>
+      <pubDate>Mon, 23 Mar 2015 18:54:34 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/diamond/twitch/</guid>
+      <description>&lt;p&gt;Twitch is the world&amp;rsquo;s leading video platform and community for gamers. More than 45 million gamers gather every month on Twitch to broadcast, watch and chat about gaming. Twitch&amp;rsquo;s video platform is the backbone of both live and on-demand distribution for the entire video game ecosystem. This includes game publishers, developers, media outlets, industry conventions and press conferences, casual gamers and gaming for charity events. Twitch also caters to the entire esports industry, spanning the top pro players, tournaments, leagues, talk shows and organizations.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

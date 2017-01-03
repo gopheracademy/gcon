@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Additional on GopherCon 2015</title>
+    <link>http://gophercon.com/sponsors/additional/</link>
+    <description>Recent content in Additional on GopherCon 2015</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 May 2015 09:51:52 -0400</lastBuildDate>
+    <atom:link href="http://gophercon.com/sponsors/additional/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>changelog</title>
+      <link>http://gophercon.com/sponsor/additional/changelog/</link>
+      <pubDate>Thu, 21 May 2015 09:51:52 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/additional/changelog/</guid>
+      <description>&lt;p&gt;The Changelog covers what&amp;rsquo;s fresh and new in open source.  Open source moves fast, keep up.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>oreilly</title>
+      <link>http://gophercon.com/sponsor/additional/oreilly/</link>
+      <pubDate>Thu, 21 May 2015 09:51:52 -0400</pubDate>
+      
+      <guid>http://gophercon.com/sponsor/additional/oreilly/</guid>
+      <description>&lt;p&gt;O&amp;rsquo;Reilly Media spreads the knowledge of innovators through its books, video, articles, research, and conferences. You have something important to say, to teach, to champion. We can help you reach the people who need to hear it.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
