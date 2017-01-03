@@ -1,15 +1,8 @@
 package grifts
 
-import (
-	"os"
+//import . "github.com/markbates/grift/grift"
 
-	"github.com/gobuffalo/buffalo"
-	"github.com/gopheracademy/gcon/actions"
-	. "github.com/markbates/grift/grift"
-	"github.com/olekukonko/tablewriter"
-)
-
-var _ = Add("routes", func(c *Context) error {
+/*var _ = Add("routes", func(c *Context) error {
 	a := actions.App().(*buffalo.App)
 	routes := a.Routes()
 
@@ -23,3 +16,4 @@ var _ = Add("routes", func(c *Context) error {
 	table.Render()
 	return nil
 })
+*/
