@@ -3,8 +3,6 @@ package actions
 import (
 	"log"
 	"os"
-	"path/filepath"
-	"strings"
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/buffalo/middleware"
@@ -23,16 +21,14 @@ func App() *buffalo.App {
 	a := buffalo.Automatic(buffalo.Options{
 		Env: ENV,
 	})
-	at, err := filepath.Abs("../assets")
-	if err != nil {
-		log.Fatalln(err)
-	}
 	log.Println("Environment:", ENV)
-	log.Println("Assets:", strings.Join(strings.Split(at, "/")[5:], "/"))
 	a.Use(middleware.PopTransaction(models.DB))
 	a.ServeFiles("/assets", assetsPath())
-	a.GET("/home", HomeHandler)
-	a.GET("/", CountdownHandler)
+	a.GET("/", HomeHandler)
+	a.Resource("/speakers", &SpeakersResource{&buffalo.BaseResource{}})
+	a.Resource("/schedule", &ScheduleResource{&buffalo.BaseResource{}})
+	a.Resource("/hotels", &HotelsResource{&buffalo.BaseResource{}})
+	a.Resource("/sponsors", &SponsorsResource{&buffalo.BaseResource{}})
 	adm := a.Group("/admin")
 	adm.GET("/index", AdminHandler)
 
