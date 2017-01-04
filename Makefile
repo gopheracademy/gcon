@@ -48,7 +48,7 @@ setup-dev: deps
 teardown-dev: clean
 	$(DOCKERCOMPOSE) down
 
-run-dev: 
+run-dev: db-up
 	$(BUFFALO) dev
 
 define GIT_ERROR
