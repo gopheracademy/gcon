@@ -11,9 +11,9 @@ BUFFALO=buffalo
 
 deps: 
 	$(GLIDE) install
-	$(GOINSTALL) github.com/gobuffalo/buffalo
-	$(GOINSTALL) github.com/markbates/pop
-	$(GOINSTALL) github.com/markbates/pop/soda
+	$(GO) get github.com/gobuffalo/buffalo  && $(GOINSTALL) github.com/gobuffalo/buffalo
+	$(GO) get github.com/markbates/pop      && $(GOINSTALL) github.com/markbates/pop
+	$(GO) get github.com/markbates/pop/soda && $(GOINSTALL) github.com/markbates/pop/soda
 
 build:
 	$(GOBUILD) -v -o gcon
