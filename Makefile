@@ -1,4 +1,5 @@
 GOCMD=go
+GOGET=$(GOCMD) get
 GOBUILD=$(GOCMD) build
 GOBUILDPROD=$(GOCMD) build -ldflags "-linkmode external -extldflags -static" 
 GOCLEAN=$(GOCMD) clean
@@ -11,6 +12,9 @@ BUFFALO=buffalo
 
 deps: 
 	$(GLIDE) install
+	$(GOGET) github.com/gobuffalo/buffalo  && $(GOINSTALL) github.com/gobuffalo/buffalo
+	$(GOGET) github.com/markbates/pop      && $(GOINSTALL) github.com/markbates/pop
+	$(GOGET) github.com/markbates/pop/soda && $(GOINSTALL) github.com/markbates/pop/soda
 
 build:
 	$(GOBUILD) -v -o gcon
@@ -48,7 +52,7 @@ setup-dev: deps
 teardown-dev: clean
 	$(DOCKERCOMPOSE) down
 
-run-dev: 
+run-dev: db-up
 	$(BUFFALO) dev
 
 define GIT_ERROR
