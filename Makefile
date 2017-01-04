@@ -1,4 +1,5 @@
 GOCMD=go
+GOGET=$(GOCMD) get
 GOBUILD=$(GOCMD) build
 GOBUILDPROD=$(GOCMD) build -ldflags "-linkmode external -extldflags -static" 
 GOCLEAN=$(GOCMD) clean
@@ -11,9 +12,9 @@ BUFFALO=buffalo
 
 deps: 
 	$(GLIDE) install
-	$(GO) get github.com/gobuffalo/buffalo  && $(GOINSTALL) github.com/gobuffalo/buffalo
-	$(GO) get github.com/markbates/pop      && $(GOINSTALL) github.com/markbates/pop
-	$(GO) get github.com/markbates/pop/soda && $(GOINSTALL) github.com/markbates/pop/soda
+	$(GOGET) github.com/gobuffalo/buffalo  && $(GOINSTALL) github.com/gobuffalo/buffalo
+	$(GOGET) github.com/markbates/pop      && $(GOINSTALL) github.com/markbates/pop
+	$(GOGET) github.com/markbates/pop/soda && $(GOINSTALL) github.com/markbates/pop/soda
 
 build:
 	$(GOBUILD) -v -o gcon
