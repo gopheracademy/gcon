@@ -8,7 +8,7 @@ type HotelsResource struct {
 
 // List default implementation.
 func (v *HotelsResource) List(c buffalo.Context) error {
-	return c.Render(200, publicR.HTML("soon.html"))
+	return c.Render(200, publicR.HTML("hotels.html"))
 
 }
 
