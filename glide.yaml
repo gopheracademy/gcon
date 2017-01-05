@@ -1,7 +1,7 @@
 package: github.com/gopheracademy/gcon
 import:
 - package: github.com/gobuffalo/buffalo
-  version: f7758b1dd93b81714c4d7a20be13fc90473c54b4
+  version: 0.7.0
   subpackages:
   - middleware
   - render

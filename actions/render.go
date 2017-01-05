@@ -24,15 +24,15 @@ var aResolver = &resolvers.RiceBox{
 
 func init() {
 	adminR = render.New(render.Options{
-		HTMLLayout:     "main.html",
-		CacheTemplates: ENV == "production",
-		FileResolver:   aResolver,
+		HTMLLayout:       "main.html",
+		CacheTemplates:   ENV == "production",
+		FileResolverFunc: rice.MustFindBox("../templates/admin"),
 	})
 
 	publicR = render.New(render.Options{
-		HTMLLayout:     "main.html",
-		CacheTemplates: ENV == "production",
-		FileResolver:   pResolver,
+		HTMLLayout:       "main.html",
+		CacheTemplates:   ENV == "production",
+		FileResolverFunc: rice.MustFindBox("../templates/public"),
 	})
 }
 
