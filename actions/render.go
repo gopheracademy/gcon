@@ -8,31 +8,31 @@ import (
 	"github.com/gobuffalo/buffalo/render/resolvers"
 )
 
-// renderer for Admin Pages
+// adminR is the renderer for Admin Pages
 var adminR *render.Engine
 
-// renderer for Public Pages
+// publicR is the renderer for Public Pages
 var publicR *render.Engine
-
-var pResolver = &resolvers.RiceBox{
-	Box: rice.MustFindBox("../templates/public"),
-}
-
-var aResolver = &resolvers.RiceBox{
-	Box: rice.MustFindBox("../templates/admin"),
-}
 
 func init() {
 	adminR = render.New(render.Options{
-		HTMLLayout:       "main.html",
-		CacheTemplates:   ENV == "production",
-		FileResolverFunc: rice.MustFindBox("../templates/admin"),
+		HTMLLayout:     "main.html",
+		CacheTemplates: ENV == "production",
+		FileResolverFunc: func() resolvers.FileResolver {
+			return &resolvers.RiceBox{
+				Box: rice.MustFindBox("../templates/admin"),
+			}
+		},
 	})
 
 	publicR = render.New(render.Options{
-		HTMLLayout:       "main.html",
-		CacheTemplates:   ENV == "production",
-		FileResolverFunc: rice.MustFindBox("../templates/public"),
+		HTMLLayout:     "main.html",
+		CacheTemplates: ENV == "production",
+		FileResolverFunc: func() resolvers.FileResolver {
+			return &resolvers.RiceBox{
+				Box: rice.MustFindBox("../templates/public"),
+			}
+		},
 	})
 }
 
