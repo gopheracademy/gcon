@@ -5,6 +5,7 @@ GOBUILDPROD=$(GOBUILD) -ldflags "-linkmode external -extldflags -static"
 GOCLEAN=$(GOCMD) clean
 GOINSTALL=$(GOCMD) install
 GOTEST=$(GOCMD) test
+DOCKER=docker
 DOCKERCOMPOSE=docker-compose
 SODA=soda
 GLIDE=glide
@@ -32,21 +33,22 @@ test:
 	$(GOTEST) -v ./actions -race
 
 db-up: 
-	docker run --name=gophercon_db -d -p 5432:5432 -e POSTGRES_DB=gophercon_development postgres
-	sleep 10
-	$(BUFFALO) db create 
+	@echo "Make sure you've run 'make db-setup' before this"
+	$(DOCKER) run --name=gophercon_db -d -p 5432:5432 -e POSTGRES_DB=gophercon_development postgres
+
+db-setup: 
+	$(DOCKERCOMPOSE) build
+	$(DOCKER) run --name=gophercon_db -d -p 5432:5432 -e POSTGRES_DB=gophercon_development postgres
+	sleep 6
+	$(BUFFALO) db create -a
 	$(BUFFALO) db migrate up
-	docker ps | grep gophercon_db
+	$(DOCKER) ps | grep gophercon_db
 
 db-down: 
-	docker stop gophercon_db
-	docker rm gophercon_db 
+	$(DOCKER) stop gophercon_db
+	$(DOCKER) rm gophercon_db 
 
-setup-dev: deps
-	$(DOCKERCOMPOSE) build
-	$(DOCKERCOMPOSE) up -d
-	$(BUFFALO) db create -a
-	docker ps | grep gcon_db
+setup-dev: deps db-setup
 
 teardown-dev: clean
 	$(DOCKERCOMPOSE) down
