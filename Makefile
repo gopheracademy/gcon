@@ -1,9 +1,11 @@
 GOCMD=go
+GOGET=$(GOCMD) get
 GOBUILD=$(GOCMD) build
-GOBUILDPROD=$(GOCMD) build -ldflags "-linkmode external -extldflags -static" 
+GOBUILDPROD=$(GOBUILD) -ldflags "-linkmode external -extldflags -static" 
 GOCLEAN=$(GOCMD) clean
 GOINSTALL=$(GOCMD) install
 GOTEST=$(GOCMD) test
+DOCKER=docker
 DOCKERCOMPOSE=docker-compose
 SODA=buffalo db
 GLIDE=glide
@@ -12,9 +14,11 @@ BUFFALO=buffalo
 deps: 
 	$(GOCMD) get -u -t -v github.com/gobuffalo/buffalo/buffalo
 	$(GLIDE) install
+	$(GOGET) -u github.com/gobuffalo/buffalo  && $(GOINSTALL) github.com/gobuffalo/buffalo
+	$(GOGET) -u github.com/markbates/pop      && $(GOINSTALL) github.com/markbates/pop
 
 build:
-	$(GOBUILD) -v -o gcon
+	$(BUFFALO) build -o bin/gcon
 
 buildprod:
 	$(GOBUILDPROD) -v -o gcon
@@ -30,26 +34,27 @@ test:
 	$(GOTEST) -v ./actions -race
 
 db-up: 
-	docker run --name=gophercon_db -d -p 5432:5432 -e POSTGRES_DB=gophercon_development postgres
-	sleep 10
-	$(SODA) create 
-	$(SODA) migrate up
-	docker ps | grep gophercon_db
+	@echo "Make sure you've run 'make db-setup' before this"
+	$(DOCKER) run --name=gophercon_db -d -p 5432:5432 -e POSTGRES_DB=gophercon_development postgres
+
+db-setup: 
+	$(DOCKERCOMPOSE) build
+	$(DOCKER) run --name=gophercon_db -d -p 5432:5432 -e POSTGRES_DB=gophercon_development postgres
+	sleep 6
+	$(BUFFALO) db create -a
+	$(BUFFALO) db migrate up
+	$(DOCKER) ps | grep gophercon_db
 
 db-down: 
-	docker stop gophercon_db
-	docker rm gophercon_db 
+	$(DOCKER) stop gophercon_db
+	$(DOCKER) rm gophercon_db 
 
-setup-dev: deps
-	$(DOCKERCOMPOSE) build
-	$(DOCKERCOMPOSE) up -d
-	$(SODA) create -a
-	docker ps | grep gcon_db
+setup-dev: deps db-setup
 
 teardown-dev: clean
 	$(DOCKERCOMPOSE) down
 
-run-dev: 
+run-dev: db-up
 	$(BUFFALO) dev
 
 define GIT_ERROR
