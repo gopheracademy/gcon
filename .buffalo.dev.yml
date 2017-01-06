@@ -8,6 +8,7 @@ ignored_folders:
 - grifts
 - tmp
 - node_modules
+- original-themes
 - .sass-cache
 included_extensions:
 - .go

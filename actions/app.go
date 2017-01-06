@@ -1,7 +1,6 @@
 package actions
 
 import (
-	"log"
 	"os"
 
 	"github.com/gobuffalo/buffalo"
@@ -10,27 +9,29 @@ import (
 	"github.com/markbates/going/defaults"
 )
 
-// ENV is the environment, computed below from environment variable or defaulted
-// to development
+// ENV is used to help switch settings based on where the
+// application is being run. Default is "development".
 var ENV = defaults.String(os.Getenv("GO_ENV"), "development")
+var app *buffalo.App
 
 // App is where all routes and middleware for buffalo
 // should be defined. This is the nerve center of your
 // application.
 func App() *buffalo.App {
-	a := buffalo.Automatic(buffalo.Options{
-		Env: ENV,
-	})
-	log.Println("Environment:", ENV)
-	a.Use(middleware.PopTransaction(models.DB))
-	a.ServeFiles("/assets", assetsPath())
-	a.GET("/", HomeHandler)
-	a.Resource("/speakers", &SpeakersResource{&buffalo.BaseResource{}})
-	a.Resource("/schedule", &ScheduleResource{&buffalo.BaseResource{}})
-	a.Resource("/hotels", &HotelsResource{&buffalo.BaseResource{}})
-	a.Resource("/sponsors", &SponsorsResource{&buffalo.BaseResource{}})
-	adm := a.Group("/admin")
+	if app == nil {
+		app = buffalo.Automatic(buffalo.Options{
+			Env: ENV,
+		})
+	}
+	app.Use(middleware.PopTransaction(models.DB))
+	app.ServeFiles("/assets", assetsPath())
+	app.GET("/", HomeHandler)
+	app.Resource("/speakers", &SpeakersResource{&buffalo.BaseResource{}})
+	app.Resource("/schedule", &ScheduleResource{&buffalo.BaseResource{}})
+	app.Resource("/hotels", &HotelsResource{&buffalo.BaseResource{}})
+	app.Resource("/sponsors", &SponsorsResource{&buffalo.BaseResource{}})
+	adm := app.Group("/admin")
 	adm.GET("/index", AdminHandler)
 
-	return a
+	return app
 }
