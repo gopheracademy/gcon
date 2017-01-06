@@ -6,7 +6,6 @@ env:
   matrix:
   - PATH=/home/travis/gopath/bin:$PATH
   global:
-  - GOOGLE_APPLICATION_CREDENTIALS=/home/travis/.kube/gopherconference-d728956769b4.json
   - COMMIT=${TRAVIS_COMMIT::8}
   - IMAGE=bketelsen/gcon
   - CONTAINER_NAME=gconweb
@@ -20,13 +19,11 @@ go:
 - 1.7
 - master
 
-cache:
-  directories:
-    - "$HOME/google-cloud-sdk/"
 script:
   
 before_script:
 - go get github.com/Masterminds/glide
+- go get -v -t github.com/gobuffalo/buffalo/buffalo
 - go get -v -t github.com/markbates/pop/soda
 - go get github.com/GeertJohan/go.rice/rice
 - make deps
@@ -36,22 +33,8 @@ script:
 - make test
 
 before_deploy: 
-- go build -ldflags "-linkmode external -extldflags -static" -o gcon
-- gcloud version || true
-- if [ ! -d "$HOME/google-cloud-sdk/bin" ]; then rm -rf $HOME/google-cloud-sdk; export CLOUDSDK_CORE_DISABLE_PROMPTS=1; curl https://sdk.cloud.google.com | bash; fi
-# Add gcloud to $PATH
-- source /home/travis/google-cloud-sdk/path.bash.inc
-- gcloud version
+- buffalo build
 
-
-deploy:
-  provider: script
-  on:
-    branch: master
-    go: '1.7'
-  skip_cleanup: true
-  script: deployment/gce.sh
-  
 addons:
   code_climate:
     repo_token: 0c617dde8a5dc2e6870351abc96c4a689f147d0482bb795fe9e5c1e402c45a73
