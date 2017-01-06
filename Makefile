@@ -5,11 +5,12 @@ GOCLEAN=$(GOCMD) clean
 GOINSTALL=$(GOCMD) install
 GOTEST=$(GOCMD) test
 DOCKERCOMPOSE=docker-compose
-SODA=soda
+SODA=buffalo db
 GLIDE=glide
 BUFFALO=buffalo
 
 deps: 
+	$(GOCMD) get -u -t -v github.com/gobuffalo/buffalo/buffalo
 	$(GLIDE) install
 
 build:
