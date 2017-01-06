@@ -2,11 +2,19 @@ app_root: .
 ignored_folders:
 - vendor
 - log
+- logs
+- assets
+- public
+- grifts
 - tmp
-- original-themes
+- node_modules
+- .sass-cache
 included_extensions:
 - .go
 - .html
+- .md
+- .js
+- .tmpl
 build_path: /tmp
 build_delay: 200ns
 binary_name: gcon-build

@@ -3,5 +3,7 @@ vendor/
 **/*.sqlite
 bin/
 node_modules/
+.sass-cache/
+rice-box.go
+public/assets/
 gcon
-coverage/
