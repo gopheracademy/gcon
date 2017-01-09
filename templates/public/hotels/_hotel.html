@@ -1,0 +1,13 @@
+
+			<div class="col-sm-6">
+				<div class="speaker">
+					<div class="photo-wrapper"><a href="{{hotel.BlockCode}}"><img src="{{hotel.PhotoURL}}" alt="{{hotel.Name}}" class="img-responsive"></a></div>
+					<h3 class="name"><a href="{{hotel.BlockCode}}">{{hotel.Name}}</a></h3>
+					<p class="text-alt"><small>{{ hotel.Location.City}}, {{hotel.Location.State}}</small></p>
+					<ul class="speaker-socials">
+						<li><a href="#"><span class="fa fa-dollar"></span></a>{{hotel.RoomRate}}</li>
+						<li><a href="#"><span class="fa fa-phone"></span></a>{{hotel.Phone}}</li>
+					</ul>
+					<div class="name">{{#if hotel.Onsale}}<a href="{{hotel.BlockCode}}" class="">Reserve This Hotel</a>{{else}} Not Available {{/if}} </div>
+				</div>
+			</div>

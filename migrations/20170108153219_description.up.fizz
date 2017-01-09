@@ -1,0 +1,1 @@
+add_column("hotels", "description", "string", {"null":true})

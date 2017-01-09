@@ -12,7 +12,7 @@ type Location struct {
 	UpdatedAt time.Time `json:"updated_at" db:"updated_at"`
 	Name      string    `json:"name" db:"name"`
 	Address   string    `json:"address" db:"address"`
-	Ciy       string    `json:"ciy" db:"ciy"`
+	City      string    `json:"city" db:"city"`
 	State     string    `json:"state" db:"state"`
 	Zip       string    `json:"zip" db:"zip"`
 }
