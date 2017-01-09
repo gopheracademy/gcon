@@ -11,10 +11,11 @@ type Hotel struct {
 	CreatedAt  time.Time `json:"created_at" db:"created_at"`
 	UpdatedAt  time.Time `json:"updated_at" db:"updated_at"`
 	BlockCode  string    `json:"block_code" db:"block_code"`
-	RoomRate   int       `json:"room_rate" db:"room_rate"`
+	RoomRate   float64   `json:"room_rate" db:"room_rate"`
 	PhotoURL   string    `json:"photo_url" db:"photo_url"`
 	LocationID int       `json:"location_id" db:"location_id"`
 	ContactID  int       `json:"contact_id" db:"contact_id"`
+	OnSale     bool      `json:"on_sale" db:"on_sale"`
 }
 
 // String is not required by pop and may be deleted
