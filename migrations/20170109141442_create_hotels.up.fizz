@@ -4,4 +4,5 @@ create_table("hotels", func(t) {
 	t.Column("photo_url", "text", {})
 	t.Column("location_id", "integer", {})
 	t.Column("contact_id", "integer", {})
+	t.Column("on_sale", "bool", {})
 })

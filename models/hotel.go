@@ -15,6 +15,7 @@ type Hotel struct {
 	PhotoURL   string    `json:"photo_url" db:"photo_url"`
 	LocationID int       `json:"location_id" db:"location_id"`
 	ContactID  int       `json:"contact_id" db:"contact_id"`
+	OnSale     bool      `json:"on_sale" db:"on_sale"`
 }
 
 // String is not required by pop and may be deleted
