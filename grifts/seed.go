@@ -134,7 +134,7 @@ var _ = Add("seed", func(c *Context) error {
 	al.Phone = "877.462.5638 (refer to GopherCon)"
 	al.BlockCode = "https://www.starwoodmeeting.com/events/start.action?id=1612127103&key=33F262BB"
 	al.PhotoURL = "/assets/public/img/hotels/aloft.jpg"
-	al.Onsale = false
+	al.Onsale = true
 	al.RoomRate = 199
 	al.LocationID = alloc.ID
 
