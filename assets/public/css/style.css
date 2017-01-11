@@ -7208,3 +7208,43 @@ button[type="submit"] .loading {
     width: 100%;
   }
 }
+
+/* Custom styles */
+.home .main .copy-column,
+.home .proposals .copy-column {
+    text-align: left;
+}
+
+.home .main .copy-column article,
+.home .conference .copy-column article,
+.home .proposals .copy-column article {
+    margin: auto;
+    max-width: 480px;
+}
+
+.home .main .img-column img,
+.home .conference .img-column img {
+    max-width: 372px;
+    width: 100%;
+}
+
+.home .conference {
+    padding: 0 0 30px;
+}
+
+.home .conference .copy-column .buy-btn {
+    display: block;
+    margin: 30px auto 0;
+    max-width: 250px;
+}
+
+@media (min-width: 768px) {
+    .home .main .copy-column,
+    .home .proposals .copy-column {
+        text-align: right;
+    }
+
+    .home .conference .copy-column .buy-btn {
+        margin: 30px 0 0;
+    }
+}
