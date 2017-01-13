@@ -2,11 +2,40 @@ package grifts
 
 import (
 	"fmt"
+	"os"
+
+	"golang.org/x/crypto/bcrypt"
 
 	"github.com/gopheracademy/gcon/models"
 	"github.com/kr/pretty"
 	. "github.com/markbates/grift/grift"
 )
+
+var _ = Set("admin", func(c *Context) error {
+	if len(os.Args) < 6 {
+		return fmt.Errorf("Usage: admin [email] [password] [first_name] [last_name]")
+	}
+	email := os.Args[2]
+	pass := os.Args[3]
+	first := os.Args[4]
+	last := os.Args[5]
+	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(pass), bcrypt.DefaultCost)
+	if err != nil {
+		return fmt.Errorf("Error hashing password: %s", err)
+	}
+	fmt.Println(string(hashedPassword))
+	u := models.User{
+		FirstName: first,
+		LastName:  last,
+		Email:     email,
+		Password:  string(hashedPassword),
+		Role:      "Admin",
+	}
+	err = models.DB.Save(&u)
+	models.DB.Reload(&u)
+	fmt.Printf("Created User %d - %s\n", u.ID, u.Email)
+	return nil
+})
 
 var _ = Set("hotels", func(c *Context) error {
 	var ii models.Hotels
