@@ -57,3 +57,10 @@ buffalo dev
 ```
 buffalo test
 ```
+
+
+## Create Admin User
+
+```
+buffalo task admin 
+```

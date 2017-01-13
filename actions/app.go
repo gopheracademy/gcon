@@ -1,6 +1,7 @@
 package actions
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/gobuffalo/buffalo"
@@ -30,8 +31,26 @@ func App() *buffalo.App {
 	app.Resource("/schedule", &ScheduleResource{&buffalo.BaseResource{}})
 	app.Resource("/hotels", &HotelsResource{&buffalo.BaseResource{}})
 	app.Resource("/sponsors", &SponsorsResource{&buffalo.BaseResource{}})
+
 	adm := app.Group("/admin")
 	adm.GET("/index", AdminHandler)
-
+	adm.GET("/login", LoginHandler)
+	adm.POST("/login", AuthHandler)
+	adm.Use(authMiddleware())
+	adm.Middleware.Skip(authMiddleware(), AuthHandler, LoginHandler)
 	return app
+}
+
+func authMiddleware() buffalo.MiddlewareFunc {
+	return func(h buffalo.Handler) buffalo.Handler {
+		return func(c buffalo.Context) error {
+			name := c.Session().Get("username")
+			fmt.Println("Name", name)
+			if name == "" || name == nil {
+				return c.Redirect(302, "/admin/login")
+			}
+			c.LogField("User", name)
+			return h(c)
+		}
+	}
 }
