@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-The GopherCon 2017 website code requires a number of components to successfully build, deploy, and run.  For dependency managmeent, we're using [Glide](https://github.com/Masterminds/glide).
+The GopherCon 2017 website code requires a number of components to successfully build, deploy, and run.  For dependency management, we're using [Glide](https://github.com/Masterminds/glide).
 
 * UNIX/Linux 
 
