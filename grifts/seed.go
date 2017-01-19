@@ -3,7 +3,6 @@ package grifts
 import (
 	"fmt"
 	"os"
-	"strconv"
 
 	"golang.org/x/crypto/bcrypt"
 
@@ -39,8 +38,8 @@ var _ = Set("admin", func(c *Context) error {
 })
 
 var _ = Set("speaker", func(c *Context) error {
-	if len(os.Args) < 9 {
-		return fmt.Errorf("Usage: speaker [first_name] [last_name] [bio] [website] [twitter] [linkedin] [facebook] [contact_id] [photo_url]")
+	if len(os.Args) < 8 {
+		return fmt.Errorf("Usage: speaker [first_name] [last_name] [bio] [website] [twitter] [linkedin] [facebook] [photo_url]")
 	}
 	first := os.Args[2]
 	last := os.Args[3]
@@ -49,12 +48,7 @@ var _ = Set("speaker", func(c *Context) error {
 	twitter := os.Args[6]
 	linkedin := os.Args[7]
 	facebook := os.Args[8]
-	contactID, err := strconv.Atoi(os.Args[9])
-	if err != nil {
-		return err
-	}
-
-	photoURL := os.Args[10]
+	photoURL := os.Args[9]
 
 	s := models.Speaker{
 		FirstName: first,
@@ -64,7 +58,6 @@ var _ = Set("speaker", func(c *Context) error {
 		Twitter:   twitter,
 		Linkedin:  linkedin,
 		Facebook:  facebook,
-		ContactID: contactID,
 		PhotoURL:  photoURL,
 	}
 	err = models.DB.Save(&s)
