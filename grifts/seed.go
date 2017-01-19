@@ -39,7 +39,7 @@ var _ = Set("admin", func(c *Context) error {
 })
 
 var _ = Set("speaker", func(c *Context) error {
-	if len(os.Args) != 9 {
+	if len(os.Args) < 9 {
 		return fmt.Errorf("Usage: speaker [first_name] [last_name] [bio] [website] [twitter] [linkedin] [facebook] [contact_id] [photo_url]")
 	}
 	first := os.Args[2]
