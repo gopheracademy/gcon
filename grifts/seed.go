@@ -60,7 +60,9 @@ var _ = Set("speaker", func(c *Context) error {
 		Facebook:  facebook,
 		PhotoURL:  photoURL,
 	}
-	err = models.DB.Save(&s)
+	if err := models.DB.Save(&s); err != nil {
+		return err
+	}
 	models.DB.Reload(&s)
 	fmt.Printf("Created Speaker %d - %s %s\n", s.ID, s.FirstName, s.LastName)
 	return nil
