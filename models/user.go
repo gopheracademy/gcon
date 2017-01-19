@@ -11,6 +11,7 @@ import (
 	"github.com/markbates/validate"
 )
 
+// User represents a gcon user
 type User struct {
 	ID        int       `json:"id" db:"id"`
 	FirstName string    `json:"first_name" db:"first_name"`

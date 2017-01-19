@@ -37,6 +37,37 @@ var _ = Set("admin", func(c *Context) error {
 	return nil
 })
 
+var _ = Set("speaker", func(c *Context) error {
+	if len(os.Args) < 8 {
+		return fmt.Errorf("Usage: speaker [first_name] [last_name] [bio] [website] [twitter] [linkedin] [facebook] [photo_url]")
+	}
+	first := os.Args[2]
+	last := os.Args[3]
+	bio := os.Args[4]
+	website := os.Args[5]
+	twitter := os.Args[6]
+	linkedin := os.Args[7]
+	facebook := os.Args[8]
+	photoURL := os.Args[9]
+
+	s := models.Speaker{
+		FirstName: first,
+		LastName:  last,
+		Bio:       bio,
+		Website:   website,
+		Twitter:   twitter,
+		Linkedin:  linkedin,
+		Facebook:  facebook,
+		PhotoURL:  photoURL,
+	}
+	if err := models.DB.Save(&s); err != nil {
+		return err
+	}
+	models.DB.Reload(&s)
+	fmt.Printf("Created Speaker %d - %s %s\n", s.ID, s.FirstName, s.LastName)
+	return nil
+})
+
 var _ = Set("hotels", func(c *Context) error {
 	var ii models.Hotels
 	models.DB.All(&ii)
