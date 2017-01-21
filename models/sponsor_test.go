@@ -1,7 +1,7 @@
 package models_test
 
 import (
-	"strings"
+	"fmt"
 	"testing"
 
 	"github.com/gopheracademy/gcon/models"
@@ -9,23 +9,18 @@ import (
 
 // Test_Sponsor
 func Test_Sponsor(t *testing.T) {
-	s := &models.Sponsor{}
-	s.Name = "Google"
-	s.Website = "www.golang.org"
-	if m := s.String(); !strings.Contains(m, "Google") {
-		t.Errorf("expected contains %s, got %s", "Google", m)
+	sp, err := models.GetSponsor(1)
+	if err != nil {
+		t.Error(err)
 	}
+	fmt.Println(sp)
 }
 
-// Test_Sponsors
-func Test_Sponsors(t *testing.T) {
-	s := &models.Sponsors{
-		{
-			Name:    "Google",
-			Website: "www.golang.org",
-		},
+// Test_Sponsor
+func Test_SponsorAll(t *testing.T) {
+	sl, err := models.GetSponsorList()
+	if err != nil {
+		t.Error(err)
 	}
-	if m := s.String(); !strings.Contains(m, "Google") {
-		t.Errorf("expected contains %s, got %s", "Google", m)
-	}
+	fmt.Println(sl)
 }

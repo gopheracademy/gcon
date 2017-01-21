@@ -1,33 +1,68 @@
 package models
 
 import (
-	"encoding/json"
+	"errors"
 	"time"
+
+	"github.com/bketelsen/ponzi"
+	"github.com/gopheracademy/gccms/content"
 )
 
-// Sponsor represents a conference sponsor
-type Sponsor struct {
-	ID          int       `json:"id" db:"id"`
-	CreatedAt   time.Time `json:"created_at" db:"created_at"`
-	UpdatedAt   time.Time `json:"updated_at" db:"updated_at"`
-	Name        string    `json:"name" db:"name"`
-	Website     string    `json:"website" db:"website"`
-	Description string    `json:"description" db:"description"`
-	Logo        string    `json:"logo" db:"logo"`
-	ContactID   int       `json:"contact_id" db:"contact_id"`
+var sponsorCache *ponzi.Cache
+
+func initSponsorCache() {
+	if sponsorCache == nil {
+		sponsorCache = ponzi.New("http://127.0.0.1:8080", 1*time.Minute, 30*time.Second)
+	}
 }
 
-// String is not required by pop and may be deleted
-func (s Sponsor) String() string {
-	b, _ := json.Marshal(s)
-	return string(b)
+type SponsorList struct {
+	Diamond  []content.Sponsor
+	Platinum []content.Sponsor
+	Gold     []content.Sponsor
+	Silver   []content.Sponsor
+	Bronze   []content.Sponsor
 }
 
-// Sponsors is not required by pop and may be deleted
-type Sponsors []Sponsor
+func GetSponsor(id int) (content.Sponsor, error) {
+	initSponsorCache()
+	var sp content.SponsorListResult
+	err := sponsorCache.Get(id, "Sponsor", &sp)
+	if err != nil {
+		return content.Sponsor{}, err
+	}
+	if len(sp.Data) == 0 {
+		return content.Sponsor{}, errors.New("Not Found")
+	}
+	return sp.Data[0], err
 
-// String is not required by pop and may be deleted
-func (s Sponsors) String() string {
-	b, _ := json.Marshal(s)
-	return string(b)
+}
+
+func GetSponsorList() (SponsorList, error) {
+	initSponsorCache()
+	var sp content.SponsorListResult
+	err := sponsorCache.GetAll("Sponsor", &sp)
+	if err != nil {
+		return SponsorList{}, err
+	}
+	if len(sp.Data) == 0 {
+		return SponsorList{}, errors.New("Not Found")
+	}
+	var sl SponsorList
+	for _, s := range sp.Data {
+		switch s.Level {
+		case "Diamond":
+			sl.Diamond = append(sl.Diamond, s)
+		case "Platinum":
+			sl.Platinum = append(sl.Platinum, s)
+		case "Gold":
+			sl.Gold = append(sl.Gold, s)
+		case "Silver":
+			sl.Silver = append(sl.Silver, s)
+		case "Bronze":
+			sl.Bronze = append(sl.Bronze, s)
+		}
+	}
+	return sl, err
+
 }

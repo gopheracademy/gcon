@@ -1,37 +1,45 @@
 package models
 
 import (
-	"encoding/json"
+	"errors"
 	"time"
+
+	"github.com/bketelsen/ponzi"
+	"github.com/gopheracademy/gccms/content"
 )
 
-// Speaker represents a person speaking at the conference
-type Speaker struct {
-	ID        int       `json:"id" db:"id"`
-	CreatedAt time.Time `json:"created_at" db:"created_at"`
-	UpdatedAt time.Time `json:"updated_at" db:"updated_at"`
-	FirstName string    `json:"first_name" db:"first_name"`
-	LastName  string    `json:"last_name" db:"last_name"`
-	Bio       string    `json:"bio" db:"bio"`
-	Website   string    `json:"website" db:"website"`
-	Twitter   string    `json:"twitter" db:"twitter"`
-	Linkedin  string    `json:"linkedin" db:"linkedin"`
-	Facebook  string    `json:"facebook" db:"facebook"`
-	ContactID int       `json:"contact_id" db:"contact_id"` // link to contact table
-	PhotoURL  string    `json:"photo_url" db:"photo_url"`
+var speakerCache *ponzi.Cache
+
+func initSpeakerCache() {
+	if speakerCache == nil {
+		speakerCache = ponzi.New("http://127.0.0.1:8080", 1*time.Minute, 30*time.Second)
+	}
 }
 
-// String is not required by pop and may be deleted
-func (s Speaker) String() string {
-	b, _ := json.Marshal(s)
-	return string(b)
+func GetSpeaker(id int) (content.Speaker, error) {
+	initSpeakerCache()
+	var sp content.SpeakerListResult
+	err := speakerCache.Get(id, "Speaker", &sp)
+	if err != nil {
+		return content.Speaker{}, err
+	}
+	if len(sp.Data) == 0 {
+		return content.Speaker{}, errors.New("Not Found")
+	}
+	return sp.Data[0], err
+
 }
 
-// Speakers is not required by pop and may be deleted
-type Speakers []Speaker
+func GetSpeakerList() ([]content.Speaker, error) {
+	initSpeakerCache()
+	var sp content.SpeakerListResult
+	err := speakerCache.GetAll("Speaker", &sp)
+	if err != nil {
+		return []content.Speaker{}, err
+	}
+	if len(sp.Data) == 0 {
+		return []content.Speaker{}, errors.New("Not Found")
+	}
+	return sp.Data, err
 
-// String is not required by pop and may be deleted
-func (s Speakers) String() string {
-	b, _ := json.Marshal(s)
-	return string(b)
 }
