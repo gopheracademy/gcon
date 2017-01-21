@@ -1,20 +1,6 @@
 package models
 
-import (
-	"errors"
-	"time"
-
-	"github.com/bketelsen/ponzi"
-	"github.com/gopheracademy/gccms/content"
-)
-
-var sponsorCache *ponzi.Cache
-
-func initSponsorCache() {
-	if sponsorCache == nil {
-		sponsorCache = ponzi.New("http://127.0.0.1:8080", 1*time.Minute, 30*time.Second)
-	}
-}
+import "github.com/gopheracademy/gccms/content"
 
 type SponsorList struct {
 	Diamond  []content.Sponsor
@@ -24,32 +10,9 @@ type SponsorList struct {
 	Bronze   []content.Sponsor
 }
 
-func GetSponsor(id int) (content.Sponsor, error) {
-	initSponsorCache()
-	var sp content.SponsorListResult
-	err := sponsorCache.Get(id, "Sponsor", &sp)
-	if err != nil {
-		return content.Sponsor{}, err
-	}
-	if len(sp.Data) == 0 {
-		return content.Sponsor{}, errors.New("Not Found")
-	}
-	return sp.Data[0], err
-
-}
-
-func GetSponsorList() (SponsorList, error) {
-	initSponsorCache()
-	var sp content.SponsorListResult
-	err := sponsorCache.GetAll("Sponsor", &sp)
-	if err != nil {
-		return SponsorList{}, err
-	}
-	if len(sp.Data) == 0 {
-		return SponsorList{}, errors.New("Not Found")
-	}
+func SortedSponsorList(slr []content.Sponsor) SponsorList {
 	var sl SponsorList
-	for _, s := range sp.Data {
+	for _, s := range slr {
 		switch s.Level {
 		case "Diamond":
 			sl.Diamond = append(sl.Diamond, s)
@@ -63,6 +26,6 @@ func GetSponsorList() (SponsorList, error) {
 			sl.Bronze = append(sl.Bronze, s)
 		}
 	}
-	return sl, err
+	return sl
 
 }

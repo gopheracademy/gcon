@@ -6,14 +6,32 @@
 package models
 
 import (
-	"errors"
-	"time"
-
 	"github.com/bketelsen/ponzi"
 	"github.com/gopheracademy/gccms/content"
+	"github.com/pkg/errors"
+	"time"
 )
 
 var BaseURL string
+
+type EventListResult struct {
+	Data []content.Event `json:"data"`
+}
+type HotelListResult struct {
+	Data []content.Hotel `json:"data"`
+}
+type PageListResult struct {
+	Data []content.Page `json:"data"`
+}
+type PresentationListResult struct {
+	Data []content.Presentation `json:"data"`
+}
+type SpeakerListResult struct {
+	Data []content.Speaker `json:"data"`
+}
+type SponsorListResult struct {
+	Data []content.Sponsor `json:"data"`
+}
 
 var eventCache *ponzi.Cache
 var hotelCache *ponzi.Cache
@@ -55,7 +73,7 @@ func initSponsorCache() {
 
 func GetEvent(id int) (content.Event, error) {
 	initEventCache()
-	var sp content.EventListResult
+	var sp EventListResult
 	err := eventCache.Get(id, "Event", &sp)
 	if err != nil {
 		return content.Event{}, err
@@ -68,7 +86,7 @@ func GetEvent(id int) (content.Event, error) {
 }
 func GetHotel(id int) (content.Hotel, error) {
 	initHotelCache()
-	var sp content.HotelListResult
+	var sp HotelListResult
 	err := hotelCache.Get(id, "Hotel", &sp)
 	if err != nil {
 		return content.Hotel{}, err
@@ -81,7 +99,7 @@ func GetHotel(id int) (content.Hotel, error) {
 }
 func GetPage(id int) (content.Page, error) {
 	initPageCache()
-	var sp content.PageListResult
+	var sp PageListResult
 	err := pageCache.Get(id, "Page", &sp)
 	if err != nil {
 		return content.Page{}, err
@@ -94,7 +112,7 @@ func GetPage(id int) (content.Page, error) {
 }
 func GetPresentation(id int) (content.Presentation, error) {
 	initPresentationCache()
-	var sp content.PresentationListResult
+	var sp PresentationListResult
 	err := presentationCache.Get(id, "Presentation", &sp)
 	if err != nil {
 		return content.Presentation{}, err
@@ -107,7 +125,7 @@ func GetPresentation(id int) (content.Presentation, error) {
 }
 func GetSpeaker(id int) (content.Speaker, error) {
 	initSpeakerCache()
-	var sp content.SpeakerListResult
+	var sp SpeakerListResult
 	err := speakerCache.Get(id, "Speaker", &sp)
 	if err != nil {
 		return content.Speaker{}, err
@@ -120,7 +138,7 @@ func GetSpeaker(id int) (content.Speaker, error) {
 }
 func GetSponsor(id int) (content.Sponsor, error) {
 	initSponsorCache()
-	var sp content.SponsorListResult
+	var sp SponsorListResult
 	err := sponsorCache.Get(id, "Sponsor", &sp)
 	if err != nil {
 		return content.Sponsor{}, err
@@ -134,7 +152,7 @@ func GetSponsor(id int) (content.Sponsor, error) {
 
 func GetEventList() ([]content.Event, error) {
 	initEventCache()
-	var sp content.EventListResult
+	var sp EventListResult
 	err := eventCache.GetAll("Event", &sp)
 	if err != nil {
 		return []content.Event{}, err
@@ -147,7 +165,7 @@ func GetEventList() ([]content.Event, error) {
 }
 func GetHotelList() ([]content.Hotel, error) {
 	initHotelCache()
-	var sp content.HotelListResult
+	var sp HotelListResult
 	err := hotelCache.GetAll("Hotel", &sp)
 	if err != nil {
 		return []content.Hotel{}, err
@@ -160,7 +178,7 @@ func GetHotelList() ([]content.Hotel, error) {
 }
 func GetPageList() ([]content.Page, error) {
 	initPageCache()
-	var sp content.PageListResult
+	var sp PageListResult
 	err := pageCache.GetAll("Page", &sp)
 	if err != nil {
 		return []content.Page{}, err
@@ -173,7 +191,7 @@ func GetPageList() ([]content.Page, error) {
 }
 func GetPresentationList() ([]content.Presentation, error) {
 	initPresentationCache()
-	var sp content.PresentationListResult
+	var sp PresentationListResult
 	err := presentationCache.GetAll("Presentation", &sp)
 	if err != nil {
 		return []content.Presentation{}, err
@@ -186,7 +204,7 @@ func GetPresentationList() ([]content.Presentation, error) {
 }
 func GetSpeakerList() ([]content.Speaker, error) {
 	initSpeakerCache()
-	var sp content.SpeakerListResult
+	var sp SpeakerListResult
 	err := speakerCache.GetAll("Speaker", &sp)
 	if err != nil {
 		return []content.Speaker{}, err
@@ -199,7 +217,7 @@ func GetSpeakerList() ([]content.Speaker, error) {
 }
 func GetSponsorList() ([]content.Sponsor, error) {
 	initSponsorCache()
-	var sp content.SponsorListResult
+	var sp SponsorListResult
 	err := sponsorCache.GetAll("Sponsor", &sp)
 	if err != nil {
 		return []content.Sponsor{}, err
