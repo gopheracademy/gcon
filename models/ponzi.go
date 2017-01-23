@@ -150,6 +150,85 @@ func GetSponsor(id int) (content.Sponsor, error) {
 
 }
 
+func GetEventBySlug(slug string) (content.Event, error) {
+	initEventCache()
+	var sp EventListResult
+	err := eventCache.GetBySlug(slug, "Event", &sp)
+	if err != nil {
+		return content.Event{}, err
+	}
+	if len(sp.Data) == 0 {
+		return content.Event{}, errors.New("Not Found")
+	}
+	return sp.Data[0], err
+
+}
+func GetHotelBySlug(slug string) (content.Hotel, error) {
+	initHotelCache()
+	var sp HotelListResult
+	err := hotelCache.GetBySlug(slug, "Hotel", &sp)
+	if err != nil {
+		return content.Hotel{}, err
+	}
+	if len(sp.Data) == 0 {
+		return content.Hotel{}, errors.New("Not Found")
+	}
+	return sp.Data[0], err
+
+}
+func GetPageBySlug(slug string) (content.Page, error) {
+	initPageCache()
+	var sp PageListResult
+	err := pageCache.GetBySlug(slug, "Page", &sp)
+	if err != nil {
+		return content.Page{}, err
+	}
+	if len(sp.Data) == 0 {
+		return content.Page{}, errors.New("Not Found")
+	}
+	return sp.Data[0], err
+
+}
+func GetPresentationBySlug(slug string) (content.Presentation, error) {
+	initPresentationCache()
+	var sp PresentationListResult
+	err := presentationCache.GetBySlug(slug, "Presentation", &sp)
+	if err != nil {
+		return content.Presentation{}, err
+	}
+	if len(sp.Data) == 0 {
+		return content.Presentation{}, errors.New("Not Found")
+	}
+	return sp.Data[0], err
+
+}
+func GetSpeakerBySlug(slug string) (content.Speaker, error) {
+	initSpeakerCache()
+	var sp SpeakerListResult
+	err := speakerCache.GetBySlug(slug, "Speaker", &sp)
+	if err != nil {
+		return content.Speaker{}, err
+	}
+	if len(sp.Data) == 0 {
+		return content.Speaker{}, errors.New("Not Found")
+	}
+	return sp.Data[0], err
+
+}
+func GetSponsorBySlug(slug string) (content.Sponsor, error) {
+	initSponsorCache()
+	var sp SponsorListResult
+	err := sponsorCache.GetBySlug(slug, "Sponsor", &sp)
+	if err != nil {
+		return content.Sponsor{}, err
+	}
+	if len(sp.Data) == 0 {
+		return content.Sponsor{}, errors.New("Not Found")
+	}
+	return sp.Data[0], err
+
+}
+
 func GetEventList() ([]content.Event, error) {
 	initEventCache()
 	var sp EventListResult

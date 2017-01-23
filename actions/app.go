@@ -27,10 +27,9 @@ func App() *buffalo.App {
 	app.Use(middleware.PopTransaction(models.DB))
 	app.ServeFiles("/assets", assetsPath())
 	app.GET("/", HomeHandler)
-	app.Resource("/speakers", &SpeakersResource{&buffalo.BaseResource{}})
-	app.Resource("/schedule", &ScheduleResource{&buffalo.BaseResource{}})
-	app.Resource("/hotels", &HotelsResource{&buffalo.BaseResource{}})
-	app.Resource("/sponsors", &SponsorsResource{&buffalo.BaseResource{}})
+	app.GET("/about/{slug}", AboutHandler)
+	app.GET("/events/{slug}", EventHandler)
+	app.Resource("/sponsors", &SponsorResource{&buffalo.BaseResource{}})
 
 	adm := app.Group("/admin")
 	adm.GET("/index", AdminHandler)

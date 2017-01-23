@@ -1,9 +1,9 @@
 
 			<div class="col-sm-6">
 				<div class="speaker">
-					<div class="photo-wrapper"><a href="{{hotel.BlockCode}}"><img src="{{hotel.PhotoURL}}" alt="{{hotel.Name}}" class="img-responsive"></a></div>
+					<div class="photo-wrapper"><a href="{{hotel.BlockCode}}"><img src="http://localhost:8080{{hotel.PhotoURL}}" alt="{{hotel.Name}}" class="img-responsive"></a></div>
 					<h3 class="name"><a href="{{hotel.BlockCode}}">{{hotel.Name}}</a></h3>
-					<p class="text-alt"><small>{{ hotel.Location.Address}}, {{hotel.Location.City}}</small></p>
+					<p class="text-alt"><small>{{ hotel.Address}}, {{hotel.City}}</small></p>
 					<ul class="speaker-socials">
 						<li><a href="#"><span class="fa fa-dollar"></span></a>{{hotel.RoomRate}}</li>
 						<li><a href="#"><span class="fa fa-phone"></span></a>{{hotel.Phone}}</li>
