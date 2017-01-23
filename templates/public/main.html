@@ -1,15 +1,16 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 
 	<meta charset="utf-8">
 	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-	<title>GopherCon 2017</title>
+	<title>Home</title>
 
-	<meta name="description" content="GopherCon is the largest gathering of Go programmers in the world.  The annual conference is held in Denver every summer.">
-	<meta name="keywords" content="Go, golang, conference">
-	<meta name="author" content="gopheracademy">
+	<meta name="description" content="PSD to HTML5+CSS3 conversion.">
+	<meta name="keywords" content="PSD, HTML5, CSS3">
+	<meta name="author" content="Vivaco">
 
 	<link rel="shortcut icon" href="/assets/public/img/favicon.ico">
 	<link rel="apple-touch-icon" href="/assets/public/img/apple-touch-icon.jpg">
@@ -26,9 +27,11 @@
 </head>
 
 <body>
+	{{ partial "partials/headerinside.html" }}
 
-	{{ partial "partials/header.html" }}
-	{{ yield  }}
+
+
+	{{ yield }}
 
 	<!-- phone1.jpg -->
 
@@ -36,7 +39,7 @@
 		<script type="text/javascript" src="/assets/public/js/jquery-1.11.3.min.js?ver=1"></script>
 	<![endif]-->
 	<!--[if (gte IE 9) | (!IE)]><!-->
-		<script type="text/javascript" src="/assets/public/js/jquery-2.1.4.min.js?ver=1"></script>
+	<script type="text/javascript" src="/assets/public/js/jquery-2.1.4.min.js?ver=1"></script>
 	<!--<![endif]-->
 
 	<script type="text/javascript" src="/assets/public/js/bootstrap.min.js"></script>
@@ -48,4 +51,5 @@
 	<script type="text/javascript" src="/assets/public/js/jquery.countTo.js"></script>
 	<script type="text/javascript" src="/assets/public/js/ventcamp.js"></script>
 </body>
+
 </html>

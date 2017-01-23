@@ -1,0 +1,74 @@
+	<section class="section align-center">
+		<div class="container">
+			<h5 class="heading-alt">Diamond Sponsors</h5>
+			<p class="text-alt">Headline Sponsors</p>
+			<br/>
+			<br/>
+
+			<div class="sponsors">
+
+  {{#each sponsors.Diamond as |sponsor|}}
+  <div class="sponsor big"><a href="/sponsors/{{sponsor.ID}}"><img height="160" width="160" src="http://127.0.0.1:8080{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></a></div>
+  {{/each}}
+
+			</div>
+		</div>
+	</section>
+
+	<section class="section align-center">
+		<div class="container">
+			<h5 class="heading-alt">Platinum Sponsors</h5>
+			<br/>
+			<br/>
+
+			<div class="sponsors">
+  {{#each sponsors.Platinum as |sponsor|}}
+  <div class="sponsor big"><a href="/sponsors/{{sponsor.ID}}"><img height="160" width="160" src="http://127.0.0.1:8080{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></a></div>
+  {{/each}}
+			</div>
+
+		</div>
+	</section>
+
+	<section class="section align-center">
+		<div class="container">
+			<h5 class="heading-alt">Gold Sponsors</h5>
+			<br/>
+			<br/>
+
+			<div class="sponsors">
+  {{#each sponsors.Gold as |sponsor|}}
+  <div class="sponsor"><a href="/sponsors/{{sponsor.ID}}"><img height="160" width="160" src="http://127.0.0.1:8080{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></a></div>
+  {{/each}}
+			</div>
+
+		</div>
+	</section>
+	<section class="section align-center">
+	<div class="container">
+			<h5 class="heading-alt">Silver Sponsors</h5>
+			<br/>
+			<br/>
+
+			<div class="sponsors">
+  {{#each sponsors.Silver as |sponsor|}}
+  <div class="sponsor"><a href="/sponsors/{{sponsor.ID}}"><img height="160" width="160" src="http://127.0.0.1:8080{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></a></div>
+  {{/each}}
+			</div>
+
+		</div>
+	</section>
+	<section class="section align-center">
+	<div class="container">
+			<h5 class="heading-alt">Bronze Sponsors</h5>
+			<br/>
+			<br/>
+
+			<div class="sponsors">
+  {{#each sponsors.Bronze as |sponsor|}}
+  <div class="sponsor inline"><a href="/sponsors/{{sponsor.ID}}"><img height="160" width="160" src="http://127.0.0.1:8080{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></a></div>
+  {{/each}}
+			</div>
+
+		</div>
+	</section>

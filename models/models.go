@@ -1,3 +1,5 @@
+// go:generate ponzigen github.com/gopheracademy/gccms/content
+
 package models
 
 import (

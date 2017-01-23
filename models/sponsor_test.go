@@ -1,31 +1,31 @@
 package models_test
 
 import (
-	"strings"
+	"fmt"
 	"testing"
 
 	"github.com/gopheracademy/gcon/models"
+	"github.com/kr/pretty"
 )
 
 // Test_Sponsor
 func Test_Sponsor(t *testing.T) {
-	s := &models.Sponsor{}
-	s.Name = "Google"
-	s.Website = "www.golang.org"
-	if m := s.String(); !strings.Contains(m, "Google") {
-		t.Errorf("expected contains %s, got %s", "Google", m)
+	models.BaseURL = "http://127.0.0.1:8080"
+	sp, err := models.GetSponsor(1)
+	if err != nil {
+		t.Error(err)
 	}
+	fmt.Println(sp)
 }
 
-// Test_Sponsors
-func Test_Sponsors(t *testing.T) {
-	s := &models.Sponsors{
-		{
-			Name:    "Google",
-			Website: "www.golang.org",
-		},
+// Test_Sponsor
+func Test_SponsorAll(t *testing.T) {
+
+	models.BaseURL = "http://127.0.0.1:8080"
+	sl, err := models.GetSponsorList()
+	if err != nil {
+		t.Error(err)
 	}
-	if m := s.String(); !strings.Contains(m, "Google") {
-		t.Errorf("expected contains %s, got %s", "Google", m)
-	}
+	ssl := models.SortedSponsorList(sl)
+	pretty.Println(ssl)
 }

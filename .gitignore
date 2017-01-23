@@ -8,3 +8,5 @@ node_modules/
 rice-box.go
 public/assets/
 gcon
+**/.DS_Store
+
