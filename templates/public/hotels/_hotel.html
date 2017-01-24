@@ -8,15 +8,14 @@
 					<br />
 					<div class="speaker">
 						<ul class="speaker-socials align-{{rightleft @index}}">
-							<li><a href="#"><span class="fa fa-dollar"></span></a><span class="highlight">  195</span></small>
+							<li><a href="#"><span class="fa fa-dollar"></span></a><span class="highlight">  {{hotel.RoomRate}}</span></small>
 								</p>
-							</li>
-							<li><a href="#"><span class="fa fa-phone"></span></a><span class="highlight">  855.215.1283 (use code, "GopherCon")</span></small>
+							</li>{{hotel.Phone}}</span></small>
 								</p>
 							</li>
 						</ul>
 					</div>
-					<a href="http://hiltongardeninn.hilton.com/en/gi/groups/personalized/D/DENDDGI-GOPHER-20170711/index.jhtml?WT.mc_id=POG" class="btn btn-sm btn-outline-clr" style="margin: 30px 0 0">Reserve this Hotel</a>
+					<a href="{{hotel.BlockCode}}" class="btn btn-sm btn-outline-clr" style="margin: 30px 0 0">Reserve this Hotel</a>
 				</article>
 			</div>
 		</div>
