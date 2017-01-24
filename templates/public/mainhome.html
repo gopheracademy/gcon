@@ -57,7 +57,7 @@
 	<section id="about" class="section align-center">
 		<div class="container">
 			<span class="icon section-icon icon-multimedia-12"></span>
-			<h5 class="text-alt">GopherCon 2017 will be in Denver, Colorado again in 2017. The conference is July 13th-15th, with an optional workshop day on the 12th.<br/> <span class="highlight">Our final day the 15th is our "Community Day".</span></h5>
+			<h5 class="text-alt">GopherCon 2017 will return to Denver, Colorado. The conference is July 13th-15th, with an optional workshop day on the 12th.<br/> <span class="highlight">Our final day the 15th is our "Community Day".</span></h5>
 			<br/>
 			<br/>
 
@@ -65,7 +65,7 @@
 				<ul class="nav nav-tabs">
 					<li class="active">
 						<a href="#horizontal_tab1" data-toggle="tab">
-							<h6 class="heading-alt"><span class="fa fa-code"></span> General info</h6>
+							<h6 class="heading-alt"><span class="fa fa-code"></span> General Info</h6>
 						</a>
 					</li>
 					<li>
@@ -75,7 +75,7 @@
 					</li>
 					<li>
 						<a href="#horizontal_tab3" data-toggle="tab">
-							<h6 class="heading-alt"><span class="fa fa-external-link"></span> Sponsor info</h6>
+							<h6 class="heading-alt"><span class="fa fa-external-link"></span> Sponsor Info</h6>
 						</a>
 					</li>
 				</ul>
@@ -89,7 +89,7 @@
 							<h2>The Largest Go Conference in the World</h2>
 							<p>GopherCon is the <span class="highlight">original</span> Go conference.</p>
 							<p>GopherCon started in 2014, with an amazing first year attendance of over 700 people. Since then, we've doubled in attendance. We expect to sell out early this year, with a maximum capacity of 1500 people.
-							<span class="highlight">Don't wait for the last minute to buy your tickets.</span> We'd hate for you to be sad.</p>
+							<span class="highlight">Don't wait until last minute to buy your tickets.</span> We'd hate for you to be sad.</p>
 						</div>
 					</div>
 
@@ -120,8 +120,7 @@
 							<h6>Become a Sponsor</h6>
 							<p>Be seen by the most influential developers and decision makers in the Go community. Sponsorship is your opportunity to tell the world about your products and services, and to show support for the growing Go community.</p>
 							<ul>
-								<li>Most of our sponsors recruit new employees at GopherCon</li>
-								<li>Several unique and interesting ways to sponsor</li>
+								<li>Most of our sponsors recruit new employees at GopherCon and there are several unique and interesting ways to sponsor!</li>
 								<li>Email <a href="mailto:gophercon@gopheracademy.com">gophercon@gopheracademy.com</a> for more information.</li>
 							</ul>
 						</div>
@@ -193,7 +192,7 @@
 		<div class="container">
 			<span class="icon section-icon icon-faces-users-04"></span>
 			<h3>Speakers</h3>
-			<p>GopherCon is proud of our tradition of bringing exciting topics from a diverse range of speakers to the big stage. Each year, we strive to spotlight new and interesting topics from a wide variety of speakers to create a program that is rich, interesting,
+			<p>GopherCon is proud of our tradition of bringing exciting topics from a diverse range of speakers to the big stage.</p><p> Each year, we strive to spotlight new and interesting topics from a wide variety of speakers to create a program that is rich, interesting,
 			and diverse. If you have a story to tell, a lesson to teach, or an exciting technique to share, <span class="highlight"><a href="https://papercall.io/gophercon2017">we welcome your proposals until January 31st.</a></span> Accepted speakers will be notified in February.</p>
 			<br />
 			<br />
@@ -286,24 +285,6 @@
 				<a href="https://papercall.io/gophercon2017" target="_blank" class="btn btn-outline-clr btn-md">SUBMIT A PROPOSAL</a>
 			</div>
 
-		</div>
-	</section>
-
-
-	<section class="section" id="hotels" style="padding: 100px 0 30px;">
-		<div class="container">
-			<div class="col-sm-6 align-center img-column">
-				<img src="/assets/public/img/imac-371x412.png" alt="" />
-			</div>
-
-			<div class="col-sm-6 align-left">
-				<article style="max-width: 480px;">
-					<h3>LODGING OPTIONS</h3>
-					<p><small class="text-alt"><span class="highlight">Stay in style</span></small></p>
-					<p>To receive the Group room rate at our conference hotels, be sure to mention the <span class="highlight">GopherCon room block.</span> Rates will be honored until the block sells out.</p>
-					<a href="/hotels" class="btn btn-outline-clr" style="margin: 30px 0 0">See Hotels</a>
-				</article>
-			</div>
 		</div>
 	</section>
 
@@ -629,11 +610,14 @@
 			<div class="sponsors">
 			<h4>Diamond Sponsors</h4>
   {{#each homepage.Sponsors.Diamond as |sponsor|}}
-  <div class="sponsor big"><img height="160" width="160" src="http://127.0.0.1:8080{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></div>
+  <div class="sponsor big"><img height="160" width="160" src="https:/cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></div>
   {{/each}}
+
+			<br/>
+			<br/>
 			<h4>Platinum Sponsors</h4>
   {{#each homepage.Sponsors.Platinum as |sponsor|}}
-  <div class="sponsors"><img height="160" width="160"src="http://127.0.0.1:8080{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></div>
+  <div class="sponsors"><img height="160" width="160"src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></div>
   {{/each}}
 			</div>
 			<!--Uncomment this section for additional sponsors-->
