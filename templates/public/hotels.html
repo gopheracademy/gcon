@@ -1,12 +1,6 @@
-	<section class="section align-center">
-		<div class="container">
-			<h5 class="heading-alt">Lodging Options</h5>
-			<p class="text-alt">Stay in <span class="highlight">style</span></p>
-			<br />
-			<br />
-  {{#each homepage.Hotels as |hotel|}}
+	<section class="fullwidth-section">  
+{{#each hotels as |hotel|}}
       {{ partial "hotels/hotel.html" hotel=hotel}}
   {{/each}}
-		</div>
-	</section>
+  </section>
 

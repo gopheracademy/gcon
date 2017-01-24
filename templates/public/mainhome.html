@@ -289,17 +289,26 @@
 		</div>
 	</section>
 
-	<section id="hotels" class="section bg-cover overlay bg1 light-text align-center">
+
+	<section class="section" style="padding: 100px 0 30px;">
 		<div class="container">
-			<h5 class="heading-alt">Lodging Options</h5>
-			<p class="text-alt">Stay in <span class="highlight">style</span></p>
-			<br />
-			<br />
-  {{#each homepage.Hotels as |hotel|}}
-      {{ partial "hotels/hotel.html" hotel=hotel}}
-  {{/each}}
+			<div class="col-sm-6 align-center img-column">
+				<img src="/assets/public/img/imac-371x412.png" alt="" />
+			</div>
+
+			<div class="col-sm-6 align-left">
+				<article style="max-width: 480px;">
+					<h3>LODGING OPTIONS</h3>
+					<p><small class="text-alt"><span class="highlight">Stay in style</span></small></p>
+					<p>To receive the Group room rate at our conference hotels, be sure to mention the <span class="highlight">GopherCon room block.</span> Rates will be honored until the block sells out.</p>
+					<a href="/" class="btn btn-outline-clr" style="margin: 30px 0 0">See Hotels</a>
+				</article>
+			</div>
 		</div>
 	</section>
+
+
+
 	<section id="sign_up" class="section bg-cover overlay bg4 light-text align-center">
 		<div class="container">
 			<h2><span class="highlight">Newsletter</span> Sign Up</h2>

@@ -1,13 +1,22 @@
-
-			<div class="col-sm-6">
-				<div class="speaker">
-					<div class="photo-wrapper"><a href="{{hotel.BlockCode}}"><img src="http://localhost:8080{{hotel.PhotoURL}}" alt="{{hotel.Name}}" class="img-responsive"></a></div>
-					<h3 class="name"><a href="{{hotel.BlockCode}}">{{hotel.Name}}</a></h3>
-					<p class="text-alt"><small>{{ hotel.Address}}, {{hotel.City}}</small></p>
-					<ul class="speaker-socials">
-						<li><a href="#"><span class="fa fa-dollar"></span></a>{{hotel.RoomRate}}</li>
-						<li><a href="#"><span class="fa fa-phone"></span></a>{{hotel.Phone}}</li>
-					</ul>
-					<div class="name">{{#if hotel.Onsale}}<a href="{{hotel.BlockCode}}" class="">Reserve This Hotel</a>{{else}} Not Available {{/if}} </div>
-				</div>
+		<div class="fullwidth-path">
+			<div class="fullwidth-section-bg bg-{{rightleft @index}}" style="background-image: url('https://cms.gophercon.com{{hotel.PhotoURL}}');"></div>
+			<div class="col-sm-6 {{offset @index}} align-{{rightleft @index}} fullwidth-column">
+				<article>
+					<h3><a href="{{hotel.BlockCode}}">{{hotel.Name}}</a></h3>
+						<p><small class="text-alt"><span class="highlight"><a href="https://goo.gl/maps/B46mFQjQgHA2">{{hotel.Address}}, {{hotel.City}}</span></small></p></a>
+							<p>{{hotel.Description}}</p>
+					<br />
+					<div class="speaker">
+						<ul class="speaker-socials align-{{rightleft @index}}">
+							<li><a href="#"><span class="fa fa-dollar"></span></a><span class="highlight">  195</span></small>
+								</p>
+							</li>
+							<li><a href="#"><span class="fa fa-phone"></span></a><span class="highlight">  855.215.1283 (use code, "GopherCon")</span></small>
+								</p>
+							</li>
+						</ul>
+					</div>
+					<a href="http://hiltongardeninn.hilton.com/en/gi/groups/personalized/D/DENDDGI-GOPHER-20170711/index.jhtml?WT.mc_id=POG" class="btn btn-sm btn-outline-clr" style="margin: 30px 0 0">Reserve this Hotel</a>
+				</article>
 			</div>
+		</div>
