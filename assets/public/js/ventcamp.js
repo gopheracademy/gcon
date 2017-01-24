@@ -589,7 +589,8 @@ Ventcamp = {
                     mapOptions = {
                         zoom: 14,
                         scrollwheel: false,
-                        mapTypeControl: false
+                        mapTypeControl: false,
+			key: "AIzaSyCXjkHr33xRVToS8VycihMvQyZ2ABXoefY"
                     };
 
                 function createMap () {
