@@ -579,7 +579,7 @@ Ventcamp = {
 
                 var map, marker, geocoder, service;
 
-                var icon = '/assets/img/marker-46x46.png',
+                var icon = '/assets/public/img/marker-46x46.png',
                     address,
                     markerLatLng,
                     offsetX,
