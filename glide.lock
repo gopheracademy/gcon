@@ -1,5 +1,5 @@
-hash: 828494bd82104f0fabdfa8e95b3873802052675da8823685fffaf2c7d8fb887b
-updated: 2017-01-18T13:57:19.12390706-07:00
+hash: d4bd617b74d617b0e803071ac3ff73bc78bdd4236697d84c62195dac7813abeb
+updated: 2017-02-03T15:08:05.446738468-07:00
 imports:
 - name: github.com/ajg/form
   version: 523a5da1a92f01b01f840b61689c0340a0243532
@@ -9,6 +9,12 @@ imports:
   - ast
   - parser
   - lexer
+- name: github.com/bketelsen/ponzi
+  version: 468a9696b3a2b1475cba37233d9f0fdcdf00316a
+- name: github.com/boltdb/bolt
+  version: e9cf4fae01b5a8ff89d0ec6b32f0d9c9f79aefdd
+- name: github.com/bosssauce/reference
+  version: cd2ad731cc82838bbf280837d0772e5f3c3eb90a
 - name: github.com/daaku/go.zipexe
   version: a5fe2436ffcb3236e175e5149162b41cd28bd27d
 - name: github.com/daviddengcn/go-colortext
@@ -26,7 +32,7 @@ imports:
 - name: github.com/go-sql-driver/mysql
   version: 2e00b5cd70399450106cec6431c2e2ce3cae5034
 - name: github.com/gobuffalo/buffalo
-  version: f4ce950119f98d24682bd5eb2e1b5f9af94d868e
+  version: 2c4eb40f82f002a7d999308b0dab91b0aaa37de3
   subpackages:
   - middleware
   - render
@@ -35,6 +41,10 @@ imports:
   version: 5056ec9ebe876e444296d535fcf01fb2ddb8a802
 - name: github.com/gobuffalo/velvet
   version: 1a8e8f82e94e73731b5c196b11b71b468639a326
+- name: github.com/gopheracademy/gccms
+  version: caee9df616030b0a84625976749b3d8fe7109897
+  subpackages:
+  - content
 - name: github.com/gorilla/context
   version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
 - name: github.com/gorilla/mux
@@ -53,10 +63,6 @@ imports:
   - reflectx
 - name: github.com/kardianos/osext
   version: c2c54e542fb797ad986b31721e1baedf214ca413
-- name: github.com/kr/pretty
-  version: cfb55aafdaf3ec08f0db22699ab822c50091b1c4
-- name: github.com/kr/text
-  version: 7cafcd837844e784b526369c9bce262804aebc60
 - name: github.com/lib/pq
   version: 67c3f2a8884c9b1aac5503c8d42ae4f73a93511c
   subpackages:
@@ -140,10 +146,23 @@ imports:
   - internal/utilization
   - internal/jsonx
   - internal/sysinfo
+- name: github.com/nilslice/jwt
+  version: dab3054ad0d56718877715dc429b95302cf4c7d5
 - name: github.com/olekukonko/tablewriter
   version: 44e365d423f4f06769182abfeeae2b91be9d529b
+- name: github.com/patrickmn/go-cache
+  version: e7a9def80f35fe1b170b7b8b68871d59dea117e1
 - name: github.com/pkg/errors
   version: 248dadf4e9068a0b3e79f02ed0a610d935de5302
+- name: github.com/ponzu-cms/ponzu
+  version: e9747661400953c20f0c9ee7fd3aa003ae8c44af
+  subpackages:
+  - management/editor
+  - system/item
+  - system/addon
+  - system/db
+  - system/admin/config
+  - system/admin/user
 - name: github.com/russross/blackfriday
   version: 5f33e7b7878355cd2b7e6b8eefc48a5472c69f70
 - name: github.com/satori/go.uuid
@@ -170,6 +189,12 @@ imports:
   version: c95ac474b7cb9c711f4591b553a2caaa24ea3d37
 - name: github.com/stretchr/testify
   version: 2402e8e7a02fc811447d11f881aa9746cdc57983
+- name: github.com/tidwall/gjson
+  version: e3f249f4fdf33c278edeb770426a6f83c954ae64
+- name: github.com/tidwall/match
+  version: 173748da739a410c5b0b813b956f89ff94730b4c
+- name: github.com/tidwall/sjson
+  version: 6a22caf2fd45d5e2119bfc3717e984f15a7eb7ee
 - name: golang.org/x/crypto
   version: b8a2a83acfe6e6770b75de42d5ff4c67596675c0
   subpackages:
@@ -185,6 +210,11 @@ imports:
   version: d75a52659825e75fff6158388dddc6a5b04f9ba5
   subpackages:
   - unix
+- name: golang.org/x/text
+  version: 506f9d5c962f284575e88337e7d9296d27e729d3
+  subpackages:
+  - transform
+  - unicode/norm
 - name: gopkg.in/yaml.v2
   version: a5b47d31c556af34a302ce5d659e6fea44d90de0
 testImports: []
