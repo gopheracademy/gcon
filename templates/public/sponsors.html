@@ -8,7 +8,7 @@
 			<div class="sponsors">
 
   {{#each sponsors.Diamond as |sponsor|}}
-  <div class="sponsor big"><a href="/sponsors/{{sponsor.ID}}"><img height="160" width="160" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></a></div>
+  <div class="sponsor big"><a href="/sponsors/{{sponsor.ID}}"><img height="160" width="160" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></a><br/><a href="/sponsors/{{sponsor.ID}}">More about {{sponsor.Name}}</a></div>
   {{/each}}
 
 			</div>
@@ -23,7 +23,7 @@
 
 			<div class="sponsors">
   {{#each sponsors.Platinum as |sponsor|}}
-  <div class="sponsor big"><a href="/sponsors/{{sponsor.ID}}"><img height="160" width="160" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></a></div>
+  <div class="sponsor big"><a href="/sponsors/{{sponsor.ID}}"><img height="160" width="160" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></a><br/><a href="/sponsors/{{sponsor.ID}}">More about {{sponsor.Name}}</a></div>
   {{/each}}
 			</div>
 
@@ -39,6 +39,7 @@
 			<div class="sponsors">
   {{#each sponsors.Gold as |sponsor|}}
   <div class="sponsor"><a href="/sponsors/{{sponsor.ID}}"><img height="160" width="160" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></a></div>
+			<h6 class="heading-alt"><a href="/sponsors/{{sponsor.ID}}">More about {{sponsor.Name}}</a></h6>
   {{/each}}
 			</div>
 
@@ -52,7 +53,12 @@
 
 			<div class="sponsors">
   {{#each sponsors.Silver as |sponsor|}}
-  <div class="sponsor inline"><img height="75" width="175" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></div>
+  <div class="sponsor inline"><img height="75" width="175" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}">
+
+		{{#eq sponsor.ID 6}}
+			<h6 class="heading-alt"><a href="/sponsors/{{sponsor.ID}}">Live Blogging Partner</a></h6>
+		{{/eq}}
+  </div>
   {{/each}}
 			</div>
 
