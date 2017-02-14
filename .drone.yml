@@ -7,6 +7,10 @@ pipeline:
       - go get
       - go build
       - go test
+  slack:
+    image: plugins/slack
+    webhook: ${SLACK_WEBHOOK}
+    channel: general
 
 services:
   postgres:
