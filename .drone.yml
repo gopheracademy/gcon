@@ -1,0 +1,15 @@
+pipeline:
+  build:
+    image: golang
+    environment:
+      - GOPATH: /drone
+    commands:
+      - go get
+      - go build
+      - go test
+
+services:
+  postgres:
+    image: postgres:9.4.5
+    environment:
+      - POSTGRES_DB=gcon_test
