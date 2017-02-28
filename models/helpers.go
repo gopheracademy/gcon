@@ -3,13 +3,13 @@ package models
 import (
 	"net/url"
 	"strconv"
-	"github.com/kr/pretty"
+
 	"github.com/gopheracademy/gccms/content"
 )
 
 type HomePage struct {
-	Hotels   []content.Hotel
-	Sponsors SponsorList
+	Hotels        []content.Hotel
+	Sponsors      SponsorList
 	Presentations []Presentation
 }
 
@@ -24,7 +24,6 @@ func GetHomePage() (*HomePage, error) {
 	presentations := GetPresentations()
 
 	hp.Presentations = presentations
-	pretty.Println(presentations)
 	sponsors, err := GetSponsorList()
 	if err != nil {
 		return &hp, err
