@@ -193,97 +193,35 @@
 			<span class="icon section-icon icon-faces-users-04"></span>
 			<h3>Speakers</h3>
 			<p>GopherCon is proud of our tradition of bringing exciting topics from a diverse range of speakers to the big stage.<br/> Each year, we strive to spotlight new and interesting topics from a wide variety of speakers to create a program that is rich, interesting,
-			and diverse. If you have a story to tell, a lesson to teach, or an exciting technique to share, <span class="highlight"><a href="https://papercall.io/gophercon2017">we welcome your proposals until January 31st.</a></span> Accepted speakers will be notified in February.</p>
+			and diverse.</p>
 			<br />
 			<br />
 
-			<div class="col-sm-4">
-				<div class="speaker">
-					<div class="photo-wrapper rounded"><img src="/assets/public/img/speakers/speaker1.jpg" alt="John Doe" class="img-responsive"></div>
-					<h3 class="name">FORREST DWELLER</h3>
-					<p class="text-alt"><small>Project Manager</small></p>
-					<p class="about"><span class="highlight"><a href="https://papercall.io/gophercon2017">See Your Name Here</a></span></p>
-					<ul class="speaker-socials">
-						<li><a href="#"><span class="fa fa-facebook"></span></a></li>
-						<li><a href="#"><span class="fa fa-twitter"></span></a></li>
-						<li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-					</ul>
-				</div>
-			</div>
+			<div class="speakers masonry">
+			{{#each homepage.Presentations as |p| }}
 
-			<div class="col-sm-4">
-				<div class="speaker">
-					<div class="photo-wrapper rounded"><img src="/assets/public/img/speakers/speaker2.jpg" alt="John Doe" class="img-responsive"></div>
-					<h3 class="name">RUSSEL N. BUSHES</h3>
-					<p class="text-alt"><small>VP Product @ Furry Tales</small></p>
-					<p class="about"><span class="highlight"><a href="https://papercall.io/gophercon2017">What are you waiting for?</a></span></p>
-					<ul class="speaker-socials">
-						<li><a href="#"><span class="fa fa-facebook"></span></a></li>
-						<li><a href="#"><span class="fa fa-twitter"></span></a></li>
-						<li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-					</ul>
-				</div>
-			</div>
+                {{#each p.Speakers as |speaker| }}
+				<div class="speaker masonry-item">
+					<div class="speaker-top">
+						<div class="photo-wrapper rounded"><img src="https://cms.gophercon.com{{speaker.PhotoURL}}" alt="{{ speaker.FirstName }} {{speaker.LastName }}" class="img-responsive"></div>
+						<div class="speaker-title">
+					<h3 class="name">{{ speaker.FirstName }} {{speaker.LastName }}</h3>
+						</div>
+											<ul class="speaker-socials">
+						{{#eq speaker.Facebook  "" }}{{else}} <li><a href="https://facebook.com/{{speaker.Facebook}}"><span class="fa fa-facebook"></span></a></li> {{/eq}}
+			{{#eq speaker.Twitter"" }}{{else}}					<li><a href="https://twitter.com/{{speaker.Twitter}}"><span class="fa fa-twitter"></span></a></li>{{/eq}}
 
-			<div class="col-sm-4">
-				<div class="speaker">
-					<div class="photo-wrapper rounded"><img src="/assets/public/img/speakers/speaker3.jpg" alt="John Doe" class="img-responsive"></div>
-					<h3 class="name">CARROT D. STROYER</h3>
-					<p class="text-alt"><small>Designer @ Burrows-N-More</small></p>
-					<p class="about"><span class="highlight"><a href="https://papercall.io/gophercon2017">The Go Community wants to learn from YOU.</a></span></p>
-					<ul class="speaker-socials">
-						<li><a href="#"><span class="fa fa-facebook"></span></a></li>
-						<li><a href="#"><span class="fa fa-twitter"></span></a></li>
-						<li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+			{{#eq speaker.Linkedin"" }}{{else}}<li><a href="https://linkedin.com/{{speaker.Linkedin}}"><span class="fa fa-linkedin"></span></a></li>{{/eq}}
+			{{#eq speaker.Googleplus"" }}{{else}}		<li><a href="https://plus.google.com/{{speaker.Googleplus}}"><span class="fa fa-google-plus"></span></a></li>{{/eq}}
 					</ul>
-				</div>
-			</div>
+					</div>
+					<p class="about"><span class="highlight">{{p.Presentation.Title}}</span></p>
 
-			<div class="col-sm-4">
-				<div class="speaker">
-					<div class="photo-wrapper rounded"><img src="/assets/public/img/speakers/speaker4.jpg" alt="John Doe" class="img-responsive"></div>
-					<h3 class="name">HARRY PAWTER</h3>
-					<p class="text-alt"><small>Evangelist @ Fur Get Me Not</small></p>
-					<p class="about"><span class="highlight"><a href="https://papercall.io/gophercon2017">Submit a Proposal Today!</a></span></p>
-					<ul class="speaker-socials">
-						<li><a href="#"><span class="fa fa-facebook"></span></a></li>
-						<li><a href="#"><span class="fa fa-twitter"></span></a></li>
-						<li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-					</ul>
-				</div>
-			</div>
+				</div>
 
-			<div class="col-sm-4">
-				<div class="speaker">
-					<div class="photo-wrapper rounded"><img src="/assets/public/img/speakers/speaker5.jpg" alt="John Doe" class="img-responsive"></div>
-					<h3 class="name">BRITNEY EARS</h3>
-					<p class="text-alt"><small>Graphic Designer</small></p>
-					<p class="about"><span class="highlight"><a href="https://papercall.io/gophercon2017">Plenary, Tutorial, or Workshop Slots Available.</a></span></p>
-					<ul class="speaker-socials">
-						<li><a href="#"><span class="fa fa-facebook"></span></a></li>
-						<li><a href="#"><span class="fa fa-twitter"></span></a></li>
-						<li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="col-sm-4">
-				<div class="speaker">
-					<div class="photo-wrapper rounded"><img src="/assets/public/img/speakers/speaker6.jpg" alt="John Doe" class="img-responsive"></div>
-					<h3 class="name">WILL FURRELL</h3>
-					<p class="text-alt"><small>Project Manager</small></p>
-					<p class="about"><span class="highlight"><a href="https://papercall.io/gophercon2017">Speak at GopherCon 2017</a></span></p>
-					<ul class="speaker-socials">
-						<li><a href="#"><span class="fa fa-facebook"></span></a></li>
-						<li><a href="#"><span class="fa fa-twitter"></span></a></li>
-						<li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="col-sm-12 align-center">
-				<a href="https://papercall.io/gophercon2017" target="_blank" class="btn btn-outline-clr btn-md">SUBMIT A PROPOSAL</a>
-			</div>
+                {{/each }}
+			{{/each}}
+		</div>
 
 		</div>
 	</section>
@@ -619,6 +557,43 @@
   {{#each homepage.Sponsors.Platinum as |sponsor|}}
   <div class="sponsors"><img height="160" width="160"src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></div>
   {{/each}}
+
+			<br/>
+			<br/>
+			<h5>Gold Sponsors</h5>
+
+  <div class="sponsors">
+  {{#each homepage.Sponsors.Gold as |sponsor|}}
+  <div class="sponsor inline">
+	  <a href="/sponsors/{{sponsor.ID}}"><img height="160" width="160" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></a> </div>
+  {{/each}}
+</div>
+
+			<br/>
+			<br/>
+			<h6>Silver Sponsors</h6>
+			<div class="sponsors">
+  {{#each homepage.Sponsors.Silver as |sponsor|}}
+  <div class="sponsor inline"><img height="75" width="175" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}">
+
+		{{#eq sponsor.ID 6}}
+			<h6 class="heading-alt"><a href="/sponsors/{{sponsor.ID}}">Live Blogging Partner</a></h6>
+		{{/eq}}
+  </div>
+  {{/each}}
+
+			<br/>
+			<br/>
+			<h6>Bronze Sponsors</h6>
+			<div class="sponsors">
+  {{#each homepage.Sponsors.Bronze as |sponsor|}}
+  <div class="sponsor inline"><img height="75" width="175" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}">
+
+		{{#eq sponsor.ID 6}}
+			<h6 class="heading-alt"><a href="/sponsors/{{sponsor.ID}}">Live Blogging Partner</a></h6>
+		{{/eq}}
+  </div>
+  {{/each}}
 			</div>
 			<!--Uncomment this section for additional sponsors-->
 			<!-- <div class="sponsors">
@@ -650,7 +625,7 @@
 			</div>#}-->
 
 			<div class="col-sm-12 align-center">
-				<a href="/sponsors" class="btn btn-outline-clr btn-md">SEE ALL SPONSORS</a>
+				<a href="/sponsors" class="btn btn-outline-clr btn-md">SPONSOR LIST</a>
 			</div>
 		</div>
 	</section>
@@ -686,7 +661,6 @@
 					<img src="/assets/public/img/gophercon-143x105.png" alt="autograph">
 				</div>
 			</div>
-			<!--
 			<div class="col-md-4 col-lg-3 col-lg-offset-1">
 				<div class="widget twitter-widget">
 					<h6 class="widget-head"><span class="fa fa-twitter"></span> Twitter Feed</h6>
@@ -720,7 +694,6 @@
 					</ul>
 				</div>
 			</div>
-			-->
 
 		</div>
 
