@@ -1,6 +1,10 @@
 package actions
 
-import "github.com/gobuffalo/buffalo"
+import (
+	"fmt"
+	"github.com/gobuffalo/buffalo"
+	"github.com/gopheracademy/gcon/models"
+)
 
 type SpeakersResource struct {
 	buffalo.Resource
@@ -8,10 +12,28 @@ type SpeakersResource struct {
 
 // List default implementation.
 func (v *SpeakersResource) List(c buffalo.Context) error {
-	return c.Render(200, publicR.HTML("soon.html"))
+
+	presentations := models.GetPresentations()
+	c.Set("presentations", presentations)
+
+	return c.Render(200, publicR.HTML("speakerlist.html"))
 }
 
-// Show default implementation.
+// Show default implementation. note that we're listening
+// at /speakers but actually getting presentations.  This is important if your
+// don't want to be confused at some future point.
 func (v *SpeakersResource) Show(c buffalo.Context) error {
-	return c.Render(200, publicR.String("Speakers#Show"))
+	id, err := c.ParamInt("speaker_id")
+	if err != nil {
+		return c.Error(400, err)
+	}
+	s, err := models.GetFullPresentation(id)
+	if err != nil {
+		return c.Error(404, err)
+	}
+	fmt.Println(s)
+
+	c.Set("p", s)
+	publicR.HTMLLayout = "main.html"
+	return c.Render(200, publicR.HTML("speaker.html"))
 }

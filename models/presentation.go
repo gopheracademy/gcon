@@ -11,6 +11,32 @@ type Presentation struct {
 	Speakers     []content.Speaker
 }
 
+// GetFullPresentation returns a full presentation, with
+// the speaker populated.
+func GetFullPresentation(id int) (Presentation, error) {
+	var p Presentation
+	pl, err := GetPresentation(id)
+	if err != nil {
+		return p, err
+	}
+	p.Presentation = pl
+	for _, s := range pl.Speakers {
+		id, err := getID(s)
+		if err != nil {
+			fmt.Println(err, id, s)
+			continue
+		}
+		sp, err := GetSpeaker(id)
+		if err != nil {
+			fmt.Println(err)
+			continue
+		}
+		p.Speakers = append(p.Speakers, sp)
+	}
+
+	return p, nil
+}
+
 func GetPresentations() []Presentation {
 	var pp []Presentation
 	pl, err := GetPresentationList()

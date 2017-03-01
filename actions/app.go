@@ -31,7 +31,7 @@ func App() *buffalo.App {
 	app.GET("/events/{slug}", EventHandler)
 	app.GET("/hotels", HotelsHandler)
 	app.Resource("/sponsors", &SponsorResource{&buffalo.BaseResource{}})
-
+	app.Resource("/speakers", &SpeakersResource{&buffalo.BaseResource{}})
 	adm := app.Group("/admin")
 	adm.GET("/index", AdminHandler)
 	adm.GET("/login", LoginHandler)

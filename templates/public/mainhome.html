@@ -199,10 +199,10 @@
                 {{#each p.Speakers as |speaker| }}
 			<div class="col-sm-4">
 				<div class="speaker">
-					<div class="photo-wrapper rounded"><img src="https://cms.gophercon.com{{speaker.PhotoURL}}" alt="{{ speaker.FirstName }} {{speaker.LastName }}" class="img-responsive" width="125" height="125"></div>
-					<h3 class="name">{{ speaker.FirstName }} {{speaker.LastName }}</h3>
+					  <div class="photo-wrapper rounded"><a href="/speakers/{{p.Presentation.ID}}"><img src="https://cms.gophercon.com{{speaker.PhotoURL}}" alt="{{ speaker.FirstName }} {{speaker.LastName }}" class="img-responsive" width="125" height="125"></a></div>
+					  <h3 class="name"><a href="/speakers/{{p.Presentation.ID}}">{{ speaker.FirstName }} {{speaker.LastName }}</a></h3>
 					<!--		<p class="text-alt"><small>{{speaker.TalkType}}</small></p> -->
-					<p class="about">{{speaker.TalkType}}</p>
+					<p class="about"><a href="/speakers/{{p.Presentation.ID}}">{{speaker.TalkType}}</a></p>
 					<ul class="speaker-socials">
 						 						{{#eq speaker.Facebook  "" }}{{else}} <li><a href="https://facebook.com/{{speaker.Facebook}}"><span class="fa fa-facebook"></span></a></li> {{/eq}}
 			{{#eq speaker.Twitter"" }}{{else}}					<li><a href="https://twitter.com/{{speaker.Twitter}}"><span class="fa fa-twitter"></span></a></li>{{/eq}}
