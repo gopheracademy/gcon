@@ -185,7 +185,7 @@
 		<!-- countdown end -->
 	</section>
 
-	<section id="speakers" class="section align-center">
+	<section id="speakers" class="speakers align-center">
 		<div class="container">
 			<span class="icon section-icon icon-faces-users-04"></span>
 			<h3>Speakers</h3>
@@ -198,26 +198,26 @@
 
                 {{#each p.Speakers as |speaker| }}
 			<div class="col-sm-4">
-				<div class="speaker">
-					<div class="photo-wrapper rounded"><img src="https://cms.gophercon.com{{speaker.PhotoURL}}" alt="{{ speaker.FirstName }} {{speaker.LastName }}" width="200" height="200" class="img-responsive"></div>
+				<div class="speaker">
+					<div class="photo-wrapper rounded"><img src="https://cms.gophercon.com{{speaker.PhotoURL}}" alt="{{ speaker.FirstName }} {{speaker.LastName }}" class="img-responsive" width="125" height="125"></div>
 					<h3 class="name">{{ speaker.FirstName }} {{speaker.LastName }}</h3>
-					<p class="text-alt"><small></small></p>
+					<!--		<p class="text-alt"><small>{{speaker.TalkType}}</small></p> -->
+					<p class="about">{{speaker.TalkType}}</p>
 					<ul class="speaker-socials">
-						{{#eq speaker.Facebook  "" }}{{else}} <li><a href="https://facebook.com/{{speaker.Facebook}}"><span class="fa fa-facebook"></span></a></li> {{/eq}}
+						 						{{#eq speaker.Facebook  "" }}{{else}} <li><a href="https://facebook.com/{{speaker.Facebook}}"><span class="fa fa-facebook"></span></a></li> {{/eq}}
 			{{#eq speaker.Twitter"" }}{{else}}					<li><a href="https://twitter.com/{{speaker.Twitter}}"><span class="fa fa-twitter"></span></a></li>{{/eq}}
 
 			{{#eq speaker.Linkedin"" }}{{else}}<li><a href="https://linkedin.com/{{speaker.Linkedin}}"><span class="fa fa-linkedin"></span></a></li>{{/eq}}
 			{{#eq speaker.Googleplus"" }}{{else}}		<li><a href="https://plus.google.com/{{speaker.Googleplus}}"><span class="fa fa-google-plus"></span></a></li>{{/eq}}
 
 			{{#eq speaker.Github "" }}{{else}}		<li><a href="https://github.com/{{speaker.Github}}"><span class="fa fa-github"></span></a></li>{{/eq}}
-					</ul>
-					</div>
-				</div>
+			</ul>
+					</div>
+				</div>
 
                 {{/each }}
 			{{/each}}
-
-		</div>
+	</div>
 	</section>
 
 
