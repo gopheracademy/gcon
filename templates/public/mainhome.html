@@ -27,9 +27,6 @@
 </head>
 
 <body>
-	<div class="preloader-mask">
-		<div class="preloader"></div>
-	</div>
 
 	<section id="hero" class="hero-section bg1 bg-cover window-height light-text">
 		<ul class="socials-nav">
@@ -197,17 +194,14 @@
 			<br />
 			<br />
 
-			<div class="speakers masonry">
 			{{#each homepage.Presentations as |p| }}
 
                 {{#each p.Speakers as |speaker| }}
-				<div class="speaker masonry-item">
-					<div class="speaker-top">
-						<div class="photo-wrapper rounded"><img src="https://cms.gophercon.com{{speaker.PhotoURL}}" alt="{{ speaker.FirstName }} {{speaker.LastName }}" class="img-responsive"></div>
-						<div class="speaker-title">
+			<div class="col-sm-4">
+				<div class="speaker">
+					<div class="photo-wrapper rounded"><img src="https://cms.gophercon.com{{speaker.PhotoURL}}" alt="{{ speaker.FirstName }} {{speaker.LastName }}" width="200" height="200" class="img-responsive"></div>
 					<h3 class="name">{{ speaker.FirstName }} {{speaker.LastName }}</h3>
-						</div>
-											<ul class="speaker-socials">
+				<ul class="speaker-socials">
 						{{#eq speaker.Facebook  "" }}{{else}} <li><a href="https://facebook.com/{{speaker.Facebook}}"><span class="fa fa-facebook"></span></a></li> {{/eq}}
 			{{#eq speaker.Twitter"" }}{{else}}					<li><a href="https://twitter.com/{{speaker.Twitter}}"><span class="fa fa-twitter"></span></a></li>{{/eq}}
 
@@ -215,13 +209,10 @@
 			{{#eq speaker.Googleplus"" }}{{else}}		<li><a href="https://plus.google.com/{{speaker.Googleplus}}"><span class="fa fa-google-plus"></span></a></li>{{/eq}}
 					</ul>
 					</div>
-					<p class="about"><span class="highlight">{{p.Presentation.Title}}</span></p>
-
 				</div>
 
                 {{/each }}
 			{{/each}}
-		</div>
 
 		</div>
 	</section>

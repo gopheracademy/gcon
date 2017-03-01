@@ -3,16 +3,12 @@ package models
 import (
 	"fmt"
 
-
 	"github.com/gopheracademy/gccms/content"
-
 )
-
-
 
 type Presentation struct {
 	Presentation content.Presentation
-	Speakers []content.Speaker
+	Speakers     []content.Speaker
 }
 
 func GetPresentations() []Presentation {
@@ -26,7 +22,7 @@ func GetPresentations() []Presentation {
 	for _, p := range pl {
 		var pr Presentation
 		pr.Presentation = p
-		for _,s := range p.Speakers {
+		for _, s := range p.Speakers {
 			id, err := getID(s)
 			if err != nil {
 				fmt.Println(err, id, s)
@@ -37,7 +33,6 @@ func GetPresentations() []Presentation {
 				fmt.Println(err)
 				continue
 			}
-			fmt.Println(sp)
 			pr.Speakers = append(pr.Speakers, sp)
 		}
 		pp = append(pp, pr)
