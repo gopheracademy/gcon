@@ -201,12 +201,15 @@
 				<div class="speaker">
 					<div class="photo-wrapper rounded"><img src="https://cms.gophercon.com{{speaker.PhotoURL}}" alt="{{ speaker.FirstName }} {{speaker.LastName }}" width="200" height="200" class="img-responsive"></div>
 					<h3 class="name">{{ speaker.FirstName }} {{speaker.LastName }}</h3>
-				<ul class="speaker-socials">
+					<p class="text-alt"><small></small></p>
+					<ul class="speaker-socials">
 						{{#eq speaker.Facebook  "" }}{{else}} <li><a href="https://facebook.com/{{speaker.Facebook}}"><span class="fa fa-facebook"></span></a></li> {{/eq}}
 			{{#eq speaker.Twitter"" }}{{else}}					<li><a href="https://twitter.com/{{speaker.Twitter}}"><span class="fa fa-twitter"></span></a></li>{{/eq}}
 
 			{{#eq speaker.Linkedin"" }}{{else}}<li><a href="https://linkedin.com/{{speaker.Linkedin}}"><span class="fa fa-linkedin"></span></a></li>{{/eq}}
 			{{#eq speaker.Googleplus"" }}{{else}}		<li><a href="https://plus.google.com/{{speaker.Googleplus}}"><span class="fa fa-google-plus"></span></a></li>{{/eq}}
+
+			{{#eq speaker.Github "" }}{{else}}		<li><a href="https://github.com/{{speaker.Github}}"><span class="fa fa-github"></span></a></li>{{/eq}}
 					</ul>
 					</div>
 				</div>
