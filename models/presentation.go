@@ -2,6 +2,7 @@ package models
 
 import (
 	"fmt"
+	"sort"
 
 	"github.com/gopheracademy/gccms/content"
 )
@@ -45,6 +46,7 @@ func GetPresentations() []Presentation {
 		return pp
 	}
 
+	sort.Slice(pl, func(i, j int) bool { return pl[i].DisplayOrder < pl[j].DisplayOrder })
 	for _, p := range pl {
 		var pr Presentation
 		pr.Presentation = p
@@ -63,5 +65,6 @@ func GetPresentations() []Presentation {
 		}
 		pp = append(pp, pr)
 	}
+
 	return pp
 }
