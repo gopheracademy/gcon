@@ -1,22 +1,5 @@
 	<section class="section align-center">
 		<div class="container">
-			<h5 class="heading-alt">Diamond Sponsors</h5>
-			<p class="text-alt">Headline Sponsors</p>
-			<br/>
-			<br/>
-
-			<div class="sponsors">
-
-  {{#each sponsors.Diamond as |sponsor|}}
-  <div class="sponsor big"><a href="/sponsors/{{sponsor.ID}}"><img height="160" width="160" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></a><br/><a href="/sponsors/{{sponsor.ID}}">More about {{sponsor.Name}}</a></div>
-  {{/each}}
-
-			</div>
-		</div>
-	</section>
-
-	<section class="section align-center">
-		<div class="container">
 			<h5 class="heading-alt">Platinum Sponsors</h5>
 			<br/>
 			<br/>
@@ -38,7 +21,7 @@
 
 			<div class="sponsors">
   {{#each sponsors.Gold as |sponsor|}}
-  <div class="sponsor"><a href="/sponsors/{{sponsor.ID}}"><img width="175" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></a></div>
+  <div class="sponsor"><a href="/sponsors/{{sponsor.ID}}"><img height="160" width="160" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></a></div>
 			<h6 class="heading-alt"><a href="/sponsors/{{sponsor.ID}}">More about {{sponsor.Name}}</a></h6>
   {{/each}}
 			</div>
