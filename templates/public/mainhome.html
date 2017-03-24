@@ -556,10 +556,17 @@
 			<div class="sponsors">
 			<h4>Platinum Sponsors</h4>
 			<%=  for (sponsor) in homepage.Sponsors.Platinum {  %>
-			<div class="sponsors"><img height="160" width="160"src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<%= sponsor.Name %>"></div>
+			<div class="sponsors">
+				<a href="/sponsors/<%= sponsor.ID %>">	<img height="160"  src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<%= sponsor.Name %>"></a>
+				<br/>
+			<br/>
+			</div>
 			<% } %>
-			<br/>
-			<br/>
+			<div >
+				&npsb;
+				<br/>&npsb;<br/>
+				</div>
+
 			<h5>Gold Sponsors</h5>
 
   <div class="sponsors">
