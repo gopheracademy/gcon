@@ -2,7 +2,7 @@
 
 		<div class="container align-center">
 
-	<%= for (speaker) in p.Speakers { %>
+	<%= for (speaker) in w.Speakers { %>
 			<div class="col-sm-6 align-center img-column">
 
 				<img src="https://cms.gophercon.com<%= speaker.PhotoURL %>" alt="" />
@@ -11,22 +11,22 @@
 			<% } %>
 
 
-			<div class="col-sm-6 align-right">
+			<div class="col-sm-6 align-left">
 
 				  <article style="max-width: 480px;">
-		<%= for (speaker) in p.Speakers {  %>
+
+		<%= for (speaker) in w.Speakers {  %>
 		<h4><span class="highlight" ><%= speaker.TalkType %></span></h4>
-		<% } %>
 
-		<%= for (speaker) in p.Speakers {  %>
 		<h3><%= speaker.FirstName %> <%= speaker.LastName %></h3>
+
 		<% } %>
 
-		<%= for (speaker) in p.Speakers {  %>
-		<h4><span class="highlight" ><%= p.Presentation.Title %></span></h4>
-		<% } %>
-		<p><%= p.Presentation.LongDescription %></p>
+		<h4><span class="highlight" ><%= w.Workshop.Title %></span></h4>
+		<span class="highlight" >July 12, 2017 &mdash; 9A - 5P </span>
+		<p><%= w.Workshop.ShortDescription %></p>
 
+		<a href="<%= w.Workshop.TicketLink %>" class="btn btn-lg btn-outline-clr">$295 - Register Now</a>
 				</article>
 
 			</div>

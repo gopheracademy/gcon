@@ -11,6 +11,7 @@ type HomePage struct {
 	Hotels        []content.Hotel
 	Sponsors      SponsorList
 	Presentations []Presentation
+	Workshops     []Workshop
 }
 
 func GetHomePage() (*HomePage, error) {
@@ -24,6 +25,10 @@ func GetHomePage() (*HomePage, error) {
 	presentations := GetPresentations()
 
 	hp.Presentations = presentations
+
+	workshops := GetWorkshops()
+
+	hp.Workshops = workshops
 	sponsors, err := GetSponsorList()
 	if err != nil {
 		return &hp, err

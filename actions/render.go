@@ -5,7 +5,7 @@ import (
 
 	rice "github.com/GeertJohan/go.rice"
 	"github.com/gobuffalo/buffalo/render"
-	"github.com/gobuffalo/buffalo/render/resolvers"
+	"github.com/gobuffalo/packr"
 )
 
 // adminR is the renderer for Admin Pages
@@ -16,26 +16,18 @@ var publicR *render.Engine
 
 func init() {
 	adminR = render.New(render.Options{
-		HTMLLayout:     "main.html",
-		CacheTemplates: ENV == "production",
-		FileResolverFunc: func() resolvers.FileResolver {
-			return &resolvers.RiceBox{
-				Box: rice.MustFindBox("../templates/admin"),
-			}
-		},
+		HTMLLayout: "main.html",
+
+		// Box containing all of the templates:
+		TemplatesBox: packr.NewBox("../templates/admin"),
 		Helpers: map[string]interface{}{
 			"rightleft": RightLeft,
 		},
 	})
 
 	publicR = render.New(render.Options{
-		HTMLLayout:     "main.html",
-		CacheTemplates: ENV == "production",
-		FileResolverFunc: func() resolvers.FileResolver {
-			return &resolvers.RiceBox{
-				Box: rice.MustFindBox("../templates/public"),
-			}
-		},
+		HTMLLayout:   "main.html",
+		TemplatesBox: packr.NewBox("../templates/public"),
 		Helpers: map[string]interface{}{
 			"rightleft": RightLeft,
 			"offset":    Offset,

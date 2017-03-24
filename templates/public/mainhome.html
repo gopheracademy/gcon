@@ -50,7 +50,7 @@
 			</div>
 		</div>
 	</section>
-	{{ partial "partials/header.html" }}
+	<%= partial("partials/header.html") %>
 	<section id="about" class="section align-center">
 		<div class="container">
 			<span class="icon section-icon icon-multimedia-12"></span>
@@ -91,22 +91,37 @@
 					</div>
 
 					<div id="horizontal_tab2" class="tab-pane fade">
-						<div class="col-sm-7 align-right">
+						<div class="col-sm-12">
 							<h6>Workshops</h6>
-							<!--
-							<<<INSERT TEXT HERE>>>
-							<p>Faucibus sed pretium. Ridiculus <strong>consectetuer</strong> et. In arcu enim sit in libero scelerisque mauris sed. Nullam eleifend in varius arcu vitae feugiat magna id ut morbi consectetuer. In vivamus arcu. Id ut dui. Sed massa in. Scelerisque suscipit quisque maecenas aliquet in. Wisi mi ipsum. Elit et mauris. Duis in magni praesent <a href="#">content</a> massa.</p>
-							<p>Consectetuer amet wisi felis sem <strong>tincidunt</strong>. Ultricies blandit id euismod inceptos mauris pulvinar nec nullam quisque consequat nulla eleifend elementum vivamus aliquam placerat nec. Vehicula leo praesent vitae leo mauris ullamcorper lectus sed mollis id turpis dui cras suspendisse. Porta diam <a href="#">eleifend</a>. Praesent magnis sit. Enim ligula vel justo urna.</p>
-							<ul>
-								<li>Nisl cras vitae wisi odio amet.</li>
-								<li>Lacus amet vestibulum belas</li>
-								<li>Quis nunc curabitur assumenda</li>-->
-							</ul>
+
+			<%= for (w) in homepage.Workshops { %>
+			<%= for (speaker) in w.Speakers { %>
+			<div class="col-sm-4">
+				<div class="speaker">
+					<div class="photo-wrapper rounded"><a href="/workshops/<%=w.Workshop.ID%>"><img src="https://cms.gophercon.com<%= speaker.PhotoURL %>" alt="<%= speaker.FirstName %> <%= speaker.LastName %>" class="img-responsive" width="125" height="125"></a></div>
+					<h3 class="name"><a href="/workshops/<%= w.Workshop.ID %>"><%= speaker.FirstName %> <%= speaker.LastName %></a></h3>
+					<p class="about"><a href="/workshops/<%= w.Workshop.ID %>"><%= speaker.TalkType %></a></p>
+				<p class="about"><a href="/workshops/<%= w.Workshop.ID %>"><%= w.Workshop.Title%></a></p>
+					<p class="about"><%= w.Workshop.ShortDescription %></p>
+					<ul class="speaker-socials">
+						<%= if (speaker.Facebook ==  "" ) { %> <% } else { %> <li><a href="https://facebook.com/<%= speaker.Facebook %>"><span class="fa fa-facebook"></span></a></li> <% } %>
+						<%= if(speaker.Twitter == "") { %> <% } else {  %> 					<li><a href="https://twitter.com/<%= speaker.Twitter %>"><span class="fa fa-twitter"></span></a></li><% } %>
+
+						<% if (speaker.Linkedin == "") { %> <% } else { %> <li><a href="https://linkedin.com/<%= speaker.Linkedin %>"><span class="fa fa-linkedin"></span></a></li> <% } %>
+						<%= if (speaker.Googleplus == "") { %> <% } else { %>		<li><a href="https://plus.google.com/<%= speaker.Googleplus %>"><span class="fa fa-google-plus"></span></a></li> <% } %>
+
+						<%= if ( speaker.Github  == "") {   %> <% } else { %>		<li><a href="https://github.com/{{speaker.Github}}"><span class="fa fa-github"></span></a></li> <% } %> 
+			</ul>
+
+					<p class="about"><a href="/workshops/<%= w.Workshop.ID %>">More Information</a></p>
+					</div>
+				</div>
+
+				<% } %>
+				<% } %>
 						</div>
 
-						<div class="col-sm-12 img-column">
-							<img src="/assets/public/img/coming_soon.png" alt="" class="img-responsive" />
-						</div>
+
 					</div>
 
 					<div id="horizontal_tab3" class="tab-pane fade">
@@ -194,29 +209,28 @@
 			<br />
 			<br />
 
-			{{#each homepage.Presentations as |p| }}
+			<%= for (p) in homepage.Presentations  { %>
 
-                {{#each p.Speakers as |speaker| }}
+			<%= for (speaker) in p.Speakers { %>
 			<div class="col-sm-4">
 				<div class="speaker">
-					  <div class="photo-wrapper rounded"><a href="/speakers/{{p.Presentation.ID}}"><img src="https://cms.gophercon.com{{speaker.PhotoURL}}" alt="{{ speaker.FirstName }} {{speaker.LastName }}" class="img-responsive" width="125" height="125"></a></div>
-					  <h3 class="name"><a href="/speakers/{{p.Presentation.ID}}">{{ speaker.FirstName }} {{speaker.LastName }}</a></h3>
-					<!--		<p class="text-alt"><small>{{speaker.TalkType}}</small></p> -->
-					<p class="about"><a href="/speakers/{{p.Presentation.ID}}">{{speaker.TalkType}}</a></p>
+					<div class="photo-wrapper rounded"><a href="/speakers/<%=p.Presentation.ID%>"><img src="https://cms.gophercon.com<%= speaker.PhotoURL %>" alt="<%= speaker.FirstName %> <%= speaker.LastName %>" class="img-responsive" width="125" height="125"></a></div>
+					<h3 class="name"><a href="/speakers/<%= p.Presentation.ID %>"><%= speaker.FirstName %> <%= speaker.LastName %></a></h3>
+					<p class="about"><a href="/speakers/<%= p.Presentation.ID %>"><%= speaker.TalkType %></a></p>
 					<ul class="speaker-socials">
-						 						{{#eq speaker.Facebook  "" }}{{else}} <li><a href="https://facebook.com/{{speaker.Facebook}}"><span class="fa fa-facebook"></span></a></li> {{/eq}}
-			{{#eq speaker.Twitter"" }}{{else}}					<li><a href="https://twitter.com/{{speaker.Twitter}}"><span class="fa fa-twitter"></span></a></li>{{/eq}}
+						<%= if (speaker.Facebook ==  "" ) { %> <% } else { %> <li><a href="https://facebook.com/<%= speaker.Facebook %>"><span class="fa fa-facebook"></span></a></li> <% } %>
+						<%= if(speaker.Twitter == "") { %> <% } else {  %> 					<li><a href="https://twitter.com/<%= speaker.Twitter %>"><span class="fa fa-twitter"></span></a></li><% } %>
 
-			{{#eq speaker.Linkedin"" }}{{else}}<li><a href="https://linkedin.com/{{speaker.Linkedin}}"><span class="fa fa-linkedin"></span></a></li>{{/eq}}
-			{{#eq speaker.Googleplus"" }}{{else}}		<li><a href="https://plus.google.com/{{speaker.Googleplus}}"><span class="fa fa-google-plus"></span></a></li>{{/eq}}
+						<% if (speaker.Linkedin == "") { %> <% } else { %> <li><a href="https://linkedin.com/<%= speaker.Linkedin %>"><span class="fa fa-linkedin"></span></a></li> <% } %>
+						<%= if (speaker.Googleplus == "") { %> <% } else { %>		<li><a href="https://plus.google.com/<%= speaker.Googleplus %>"><span class="fa fa-google-plus"></span></a></li> <% } %>
 
-			{{#eq speaker.Github "" }}{{else}}		<li><a href="https://github.com/{{speaker.Github}}"><span class="fa fa-github"></span></a></li>{{/eq}}
+						<%= if ( speaker.Github  == "") {   %> <% } else { %>		<li><a href="https://github.com/{{speaker.Github}}"><span class="fa fa-github"></span></a></li> <% } %> 
 			</ul>
 					</div>
 				</div>
 
-                {{/each }}
-			{{/each}}
+				<% } %>
+				<% } %>
 	</div>
 	</section>
 
@@ -541,46 +555,44 @@
 
 			<div class="sponsors">
 			<h4>Platinum Sponsors</h4>
-  {{#each homepage.Sponsors.Platinum as |sponsor|}}
-  <div class="sponsors"><img height="160" width="160"src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></div>
-  {{/each}}
-
+			<%=  for (sponsor) in homepage.Sponsors.Platinum {  %>
+			<div class="sponsors"><img height="160" width="160"src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<%= sponsor.Name %>"></div>
+			<% } %>
 			<br/>
 			<br/>
 			<h5>Gold Sponsors</h5>
 
   <div class="sponsors">
-  {{#each homepage.Sponsors.Gold as |sponsor|}}
+	  <%= for (sponsor) in  homepage.Sponsors.Gold {  %>
   <div class="sponsor inline">
-	  <a href="/sponsors/{{sponsor.ID}}"><img width="175" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></a> </div>
-  {{/each}}
+	  <a href="/sponsors/<%= sponsor.ID %>"><img width="175" src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<%= sponsor.Name %>"></a> </div>
+  <% } %>
 </div>
 
 			<br/>
 			<br/>
 			<h6>Silver Sponsors</h6>
 			<div class="sponsors">
-  {{#each homepage.Sponsors.Silver as |sponsor|}}
-  <div class="sponsor inline"><img height="75" width="175" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}">
+				<%= for (sponsor) in homepage.Sponsors.Silver {  %>
+				<div class="sponsor inline"><img height="75" width="175" src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<% sponsor.Name %>">
 
-		{{#eq sponsor.ID 6}}
-			<h6 class="heading-alt"><a href="/sponsors/{{sponsor.ID}}">Live Blogging Partner</a></h6>
-		{{/eq}}
+					<%= if (sponsor.ID == 6) { %>
+					<h6 class="heading-alt"><a href="/sponsors/<%= sponsor.ID %>">Live Blogging Partner</a></h6>
+					<% } %>
   </div>
-  {{/each}}
-
+  <% } %>
 			<br/>
 			<br/>
 			<h6>Bronze Sponsors</h6>
 			<div class="sponsors">
-  {{#each homepage.Sponsors.Bronze as |sponsor|}}
-  <div class="sponsor inline"><img height="75" width="175" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}">
+				<%= for (sponsor) in homepage.Sponsors.Bronze { %>
+				<div class="sponsor inline"><img height="75" width="175" src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<%= sponsor.Name %>">
 
-		{{#eq sponsor.ID 6}}
-			<h6 class="heading-alt"><a href="/sponsors/{{sponsor.ID}}">Live Blogging Partner</a></h6>
-		{{/eq}}
+					<%= if  (sponsor.ID  == 6) { %>
+					<h6 class="heading-alt"><a href="/sponsors/<%= sponsor.ID %>">Live Blogging Partner</a></h6>
+					<% } %>
   </div>
-  {{/each}}
+  <% } %>
 			</div>
 			<!--Uncomment this section for additional sponsors-->
 			<!-- <div class="sponsors">

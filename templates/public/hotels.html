@@ -18,8 +18,8 @@
 
 
 <section id="hotels" class="fullwidth-section">  
-{{#each hotels as |hotel|}}
-      {{ partial "hotels/hotel.html" hotel=hotel}}
-  {{/each}}
+	<%= for (index,hotel) in hotels { %>
+	<%=  partial("hotels/hotel.html")%>
+      <% } %>
 </section>
 

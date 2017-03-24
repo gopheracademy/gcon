@@ -2,14 +2,13 @@
 	<section class="section" style="padding: 100px 0 30px;">
 
 		<div class="container align-center">
-
-        {{# each p.Speakers as |speaker| }}
+	<%= for (speaker) in p.Speakers {  %>
 			<div class="col-sm-6 align-center img-column">
 
-				<img src="https://cms.gophercon.com{{speaker.PhotoURL}}" alt="" />
+				<img src="https://cms.gophercon.com<%= speaker.PhotoURL %>" alt="" />
 
 			</div>
-      {{/each}}
+			<% } %>
 
 
 
@@ -17,17 +16,18 @@
 
 				  <article style="max-width: 480px;">
 
-           {{#each p.Speakers as |speaker| }}
-					  <h4><span class="highlight" >{{speaker.TalkType}}</span></h4>
-{{/each}}
-           {{#each p.Speakers as |speaker| }}
-            <h3>{{speaker.FirstName}} {{speaker.LastName}}</h3>
-            {{/each}}
+	<%= for (speaker) in p.Speakers {  %>
+	<h4><span class="highlight" ><%= speaker.TalkType %></span></h4>
+					  <% } %>
 
-           {{#each p.Speakers as |speaker| }}
-					  <h4><span class="highlight" >{{p.Presentation.Title}}</span></h4>
-{{/each}}
-					<p>{{p.Presentation.LongDescription}}</p>
+	<%= for (speaker) in p.Speakers {  %>
+	<h3><%= speaker.FirstName %> <%= speaker.LastName %></h3>
+	<% } %>
+
+	<%= for (speaker) in p.Speakers {  %>
+	<h4><span class="highlight" ><%= p.Presentation.Title %></span></h4>
+	<% } %>
+	<p><%= p.Presentation.LongDescription %></p>
 
 				</article>
 

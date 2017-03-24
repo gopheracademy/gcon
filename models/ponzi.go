@@ -32,6 +32,9 @@ type SpeakerListResult struct {
 type SponsorListResult struct {
 	Data []content.Sponsor `json:"data"`
 }
+type WorkshopListResult struct {
+	Data []content.Workshop `json:"data"`
+}
 
 var eventCache *ponzi.Cache
 var hotelCache *ponzi.Cache
@@ -39,6 +42,7 @@ var pageCache *ponzi.Cache
 var presentationCache *ponzi.Cache
 var speakerCache *ponzi.Cache
 var sponsorCache *ponzi.Cache
+var workshopCache *ponzi.Cache
 
 func initEventCache() {
 	if eventCache == nil {
@@ -68,6 +72,11 @@ func initSpeakerCache() {
 func initSponsorCache() {
 	if sponsorCache == nil {
 		sponsorCache = ponzi.New(BaseURL, 1*time.Minute, 30*time.Second)
+	}
+}
+func initWorkshopCache() {
+	if workshopCache == nil {
+		workshopCache = ponzi.New(BaseURL, 1*time.Minute, 30*time.Second)
 	}
 }
 
@@ -145,6 +154,19 @@ func GetSponsor(id int) (content.Sponsor, error) {
 	}
 	if len(sp.Data) == 0 {
 		return content.Sponsor{}, errors.New("Not Found")
+	}
+	return sp.Data[0], err
+
+}
+func GetWorkshop(id int) (content.Workshop, error) {
+	initWorkshopCache()
+	var sp WorkshopListResult
+	err := workshopCache.Get(id, "Workshop", &sp)
+	if err != nil {
+		return content.Workshop{}, err
+	}
+	if len(sp.Data) == 0 {
+		return content.Workshop{}, errors.New("Not Found")
 	}
 	return sp.Data[0], err
 
@@ -228,6 +250,19 @@ func GetSponsorBySlug(slug string) (content.Sponsor, error) {
 	return sp.Data[0], err
 
 }
+func GetWorkshopBySlug(slug string) (content.Workshop, error) {
+	initWorkshopCache()
+	var sp WorkshopListResult
+	err := workshopCache.GetBySlug(slug, "Workshop", &sp)
+	if err != nil {
+		return content.Workshop{}, err
+	}
+	if len(sp.Data) == 0 {
+		return content.Workshop{}, errors.New("Not Found")
+	}
+	return sp.Data[0], err
+
+}
 
 func GetEventList() ([]content.Event, error) {
 	initEventCache()
@@ -303,6 +338,19 @@ func GetSponsorList() ([]content.Sponsor, error) {
 	}
 	if len(sp.Data) == 0 {
 		return []content.Sponsor{}, errors.New("Not Found")
+	}
+	return sp.Data, err
+
+}
+func GetWorkshopList() ([]content.Workshop, error) {
+	initWorkshopCache()
+	var sp WorkshopListResult
+	err := workshopCache.GetAll("Workshop", &sp)
+	if err != nil {
+		return []content.Workshop{}, err
+	}
+	if len(sp.Data) == 0 {
+		return []content.Workshop{}, errors.New("Not Found")
 	}
 	return sp.Data, err
 

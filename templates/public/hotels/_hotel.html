@@ -1,21 +1,22 @@
-		<div class="fullwidth-path">
-			<div class="fullwidth-section-bg bg-{{rightleft @index}}" style="background-image: url('https://cms.gophercon.com{{hotel.PhotoURL}}');"></div>
-			<div class="col-sm-6 {{offset @index}} align-{{rightleft @index}} fullwidth-column">
+	
+<div class="fullwidth-path">
+			<div class="fullwidth-section-bg bg-<%= rightleft(index) %>" style="background-image: url('https://cms.gophercon.com<%= hotel.PhotoURL %>');"></div>
+			<div class="col-sm-6 <%= offset(index) %> align-<%= rightleft index %> fullwidth-column">
 				<article>
-					<h3><a href="{{hotel.BlockCode}}">{{hotel.Name}}</a></h3>
-						<p><small class="text-alt"><span class="highlight"><a href="https://goo.gl/maps/B46mFQjQgHA2">{{hotel.Address}}, {{hotel.City}}</span></small></p></a>
-							<p>{{hotel.Description}}</p>
+					<h3><a href="<%= hotel.BlockCode %>"><%= hotel.Name %></a></h3>
+					<p><small class="text-alt"><span class="highlight"><a href="https://goo.gl/maps/B46mFQjQgHA2"><%= hotel.Address %>, <%= hotel.City %></span></small></p></a>
+							<p><%= hotel.Description %></p>
 					<br />
 					<div class="speaker">
-						<ul class="speaker-socials align-{{rightleft @index}}">
-							<li><a href="#"><span class="fa fa-dollar"></span></a><span class="highlight">  {{hotel.RoomRate}}</span></small>
+						<ul class="speaker-socials align-<%= rightleft(index) %>">
+							<li><a href="#"><span class="fa fa-dollar"></span></a><span class="highlight">  <%= hotel.RoomRate %></span></small>
 								</p>
-							</li>{{hotel.Phone}}</span></small>
+							</li><%= hotel.Phone %></span></small>
 								</p>
 							</li>
 						</ul>
 					</div>
-					<a href="{{hotel.BlockCode}}" class="btn btn-sm btn-outline-clr" style="margin: 30px 0 0">Reserve this Hotel</a>
+					<a href="<%= hotel.BlockCode %>" class="btn btn-sm btn-outline-clr" style="margin: 30px 0 0">Reserve this Hotel</a>
 				</article>
 			</div>
 		</div>

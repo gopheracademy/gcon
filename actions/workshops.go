@@ -1,41 +1,37 @@
 package actions
 
 import (
-	"fmt"
-
 	"github.com/gobuffalo/buffalo"
 	"github.com/gopheracademy/gcon/models"
 )
 
-type SpeakersResource struct {
+type WorkshopsResource struct {
 	buffalo.Resource
 }
 
 // List default implementation.
-func (v *SpeakersResource) List(c buffalo.Context) error {
+func (v *WorkshopsResource) List(c buffalo.Context) error {
 
-	presentations := models.GetPresentations()
-	c.Set("presentations", presentations)
-
+	workshops := models.GetWorkshops()
+	c.Set("workshops", workshops)
 	publicR.HTMLLayout = "main.html"
-	return c.Render(200, publicR.HTML("speakerlist.html"))
+	return c.Render(200, publicR.HTML("workshoplist.html"))
 }
 
 // Show default implementation. note that we're listening
 // at /speakers but actually getting presentations.  This is important if your
 // don't want to be confused at some future point.
-func (v *SpeakersResource) Show(c buffalo.Context) error {
-	id, err := c.ParamInt("speaker_id")
+func (v *WorkshopsResource) Show(c buffalo.Context) error {
+	id, err := c.ParamInt("workshop_id")
 	if err != nil {
 		return c.Error(400, err)
 	}
-	s, err := models.GetFullPresentation(id)
+	s, err := models.GetFullWorkshop(id)
 	if err != nil {
 		return c.Error(404, err)
 	}
-	fmt.Println(s)
 
-	c.Set("p", s)
+	c.Set("w", s)
 	publicR.HTMLLayout = "main.html"
-	return c.Render(200, publicR.HTML("speaker.html"))
+	return c.Render(200, publicR.HTML("partials/_workshop.html"))
 }

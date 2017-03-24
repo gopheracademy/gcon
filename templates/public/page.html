@@ -4,9 +4,9 @@
 		<div class="container">
 		
 				<article>
-					<h6><span class="highlight">{{page.Title}}</span></h6>
-					<h6>{{page.Subtitle}}</h6>
-					<p class="align-left">{{markdown  page.Content }}</p>
+					<h6><span class="highlight"><%= page.Title %></span></h6>
+					<h6><%= page.Subtitle %></h6>
+					<p class="align-left"><%= markdown(page.Content) %></p>
 					<br />
 
 				</article>

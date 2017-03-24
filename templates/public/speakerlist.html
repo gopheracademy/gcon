@@ -1,4 +1,5 @@
-{{#each presentations as |p| }}
+<%= for (p) in presentations { %> 
 
-	{{ partial "partials/speaker.html" p=p }}
-{{/each}}
+<%=  partial("partials/speaker.html")  %>
+
+	<% } %>

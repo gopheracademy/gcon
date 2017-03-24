@@ -27,11 +27,9 @@
 </head>
 
 <body>
-	{{ partial "partials/headerinside.html" }}
+	<%= partial("partials/headerinside.html") %>
 
-
-
-	{{ yield }}
+	<%=  yield %> 
 
 	<section class="footer">
 		<div class="container">

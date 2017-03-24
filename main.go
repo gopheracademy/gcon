@@ -12,6 +12,7 @@ import (
 )
 
 func main() {
+
 	port := defaults.String(os.Getenv("PORT"), "3002")
 	baseURL := defaults.String(os.Getenv("CMS_URL"), "https://cms.gophercon.com")
 	models.BaseURL = baseURL

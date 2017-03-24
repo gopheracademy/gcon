@@ -5,9 +5,9 @@
 			<br/>
 
 			<div class="sponsors">
-  {{#each sponsors.Platinum as |sponsor|}}
-  <div class="sponsor big"><a href="/sponsors/{{sponsor.ID}}"><img height="160" width="160" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></a><br/><a href="/sponsors/{{sponsor.ID}}">More about {{sponsor.Name}}</a></div>
-  {{/each}}
+				<%= for (sponsor) in sponsors.Platinum  { %> 
+				<div class="sponsor big"><a href="/sponsors/<%= sponsor.ID %>"><img height="160" width="160" src="https://cms.gophercon.com<%=  sponsor.LogoURL %>" alt="<%= sponsor.Name %>"></a><br/><a href="/sponsors/<%= sponsor.ID %>">More about <%= sponsor.Name %></a></div>
+				<% } %>
 			</div>
 
 		</div>
@@ -20,10 +20,10 @@
 			<br/>
 
 			<div class="sponsors">
-  {{#each sponsors.Gold as |sponsor|}}
-  <div class="sponsor"><a href="/sponsors/{{sponsor.ID}}"><img width="175" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></a></div>
-			<h6 class="heading-alt"><a href="/sponsors/{{sponsor.ID}}">More about {{sponsor.Name}}</a></h6>
-  {{/each}}
+				<%= for (sponsor) in sponsors.Gold { %> 
+				<div class="sponsor"><a href="/sponsors/<%= sponsor.ID %>"><img width="175" src="https://cms.gophercon.com<%=  sponsor.LogoURL %>" alt="<%= sponsor.Name %>"></a></div>
+				<h6 class="heading-alt"><a href="/sponsors/<%= sponsor.ID %>">More about <%= sponsor.Name %></a></h6>
+				<% } %>
 			</div>
 
 		</div>
@@ -35,14 +35,15 @@
 			<br/>
 
 			<div class="sponsors">
-  {{#each sponsors.Silver as |sponsor|}}
-  <div class="sponsor inline"><img height="75" width="175" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}">
 
-		{{#eq sponsor.ID 6}}
-			<h6 class="heading-alt"><a href="/sponsors/{{sponsor.ID}}">Live Blogging Partner</a></h6>
-		{{/eq}}
+				<%= for (sponsor) in sponsors.Silver { %> 
+				<div class="sponsor inline"><img height="75" width="175" src="https://cms.gophercon.com<%=  sponsor.LogoURL %>" alt="<%=  sponsor.Name %>">
+
+					<%= if(sponsor.ID == 6) { %> 
+					<h6 class="heading-alt"><a href="/sponsors/<%= sponsor.ID %>">Live Blogging Partner</a></h6>
+					<% } %>	
   </div>
-  {{/each}}
+  <% } %>
 			</div>
 
 		</div>
@@ -54,9 +55,10 @@
 			<br/>
 
 			<div class="sponsors">
-  {{#each sponsors.Bronze as |sponsor|}}
-  <div class="sponsor inline"><img height="75" width="175" src="https://cms.gophercon.com{{ sponsor.LogoURL }}" alt="{{ sponsor.Name }}"></div>
-  {{/each}}
+
+				<%= for (sponsor) in sponsors.Bronze { %> 
+				<div class="sponsor inline"><img height="75" width="175" src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<%= sponsor.Name %>"></div>
+				<% } %>
 			</div>
 
 		</div>
