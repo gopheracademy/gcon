@@ -224,7 +224,7 @@
 						<% if (speaker.Linkedin == "") { %> <% } else { %> <li><a href="https://linkedin.com/<%= speaker.Linkedin %>"><span class="fa fa-linkedin"></span></a></li> <% } %>
 						<%= if (speaker.Googleplus == "") { %> <% } else { %>		<li><a href="https://plus.google.com/<%= speaker.Googleplus %>"><span class="fa fa-google-plus"></span></a></li> <% } %>
 
-						<%= if ( speaker.Github  == "") {   %> <% } else { %>		<li><a href="https://github.com/{{speaker.Github}}"><span class="fa fa-github"></span></a></li> <% } %> 
+						<%= if ( speaker.Github  == "") {   %> <% } else { %>		<li><a href="https://github.com/<%= speaker.Github %>"><span class="fa fa-github"></span></a></li> <% } %> 
 			</ul>
 					</div>
 				</div>
