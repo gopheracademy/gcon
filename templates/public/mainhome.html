@@ -554,10 +554,10 @@
 			<br/>
 
 			<div class="sponsors">
-			<h4>Platinum Sponsors</h4>
+				<h4><span class="highlight">Platinum</span> Sponsors</h4>
 			<%=  for (sponsor) in homepage.Sponsors.Platinum {  %>
 			<div class="sponsors">
-				<a href="/sponsors/<%= sponsor.ID %>">	<img height="160"  src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<%= sponsor.Name %>"></a>
+				<a href="/sponsors/<%= sponsor.ID %>">	<img   src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<%= sponsor.Name %>"></a>
 				<br/>
 			<br/>
 			<br/>
@@ -571,12 +571,12 @@
 			<br/>
 				</div>
 
-			<h5>Gold Sponsors</h5>
+				<h5><span class="highlight">Gold</span> Sponsors</h5>
 
   <div class="sponsors">
 	  <%= for (sponsor) in  homepage.Sponsors.Gold {  %>
   <div class="sponsor inline">
-	  <a href="/sponsors/<%= sponsor.ID %>"><img width="175" src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<%= sponsor.Name %>"></a> </div>
+	  <a href="/sponsors/<%= sponsor.ID %>"><img  src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<%= sponsor.Name %>"></a> </div>
   <% } %>
 </div>
 
@@ -585,7 +585,7 @@
 			<h6>Silver Sponsors</h6>
 			<div class="sponsors">
 				<%= for (sponsor) in homepage.Sponsors.Silver {  %>
-				<div class="sponsor inline"><img height="75" width="175" src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<% sponsor.Name %>">
+				<div class="sponsor inline"><img src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<% sponsor.Name %>">
 
 					<%= if (sponsor.ID == 6) { %>
 					<h6 class="heading-alt"><a href="/sponsors/<%= sponsor.ID %>">Live Blogging Partner</a></h6>
@@ -597,7 +597,7 @@
 			<h6>Bronze Sponsors</h6>
 			<div class="sponsors">
 				<%= for (sponsor) in homepage.Sponsors.Bronze { %>
-				<div class="sponsor inline"><img height="75" width="175" src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<%= sponsor.Name %>">
+				<div class="sponsor inline"><img src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<%= sponsor.Name %>">
 
 					<%= if  (sponsor.ID  == 6) { %>
 					<h6 class="heading-alt"><a href="/sponsors/<%= sponsor.ID %>">Live Blogging Partner</a></h6>

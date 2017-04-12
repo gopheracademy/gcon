@@ -6,7 +6,7 @@
 
 			<div class="sponsors">
 				<%= for (sponsor) in sponsors.Platinum  { %> 
-				<div class="sponsor big"><a href="/sponsors/<%= sponsor.ID %>"><img width="160"  src="https://cms.gophercon.com<%=  sponsor.LogoURL %>" alt="<%= sponsor.Name %>"></a></div>
+				<div class="sponsor big"><a href="/sponsors/<%= sponsor.ID %>"><img src="https://cms.gophercon.com<%=  sponsor.LogoURL %>" alt="<%= sponsor.Name %>"></a></div>
 				<h6 class="heading-alt"><a href="/sponsors/<%= sponsor.ID %>">More about <%= sponsor.Name %></a></h6>
 				<% } %>
 			</div>
@@ -22,7 +22,7 @@
 
 			<div class="sponsors big">
 				<%= for (sponsor) in sponsors.Gold { %> 
-				<div class="sponsor inline"><a href="/sponsors/<%= sponsor.ID %>"><img width="175" src="https://cms.gophercon.com<%=  sponsor.LogoURL %>" alt="<%= sponsor.Name %>"></a></div>
+				<div class="sponsor inline"><a href="/sponsors/<%= sponsor.ID %>"><img src="https://cms.gophercon.com<%=  sponsor.LogoURL %>" alt="<%= sponsor.Name %>"></a></div>
 				<h6 class="heading-alt"><a href="/sponsors/<%= sponsor.ID %>">More about <%= sponsor.Name %></a></h6>
 				<% } %>
 			</div>
@@ -38,7 +38,7 @@
 			<div class="sponsors">
 
 				<%= for (sponsor) in sponsors.Silver { %> 
-				<div class="sponsor inline"><img height="75" width="175" src="https://cms.gophercon.com<%=  sponsor.LogoURL %>" alt="<%=  sponsor.Name %>"></div>
+				<div class="sponsor inline"><img  src="https://cms.gophercon.com<%=  sponsor.LogoURL %>" alt="<%=  sponsor.Name %>"></div>
 
 					<%= if(sponsor.ID == 6) { %> 
 					<h6 class="heading-alt"><a href="/sponsors/<%= sponsor.ID %>">Live Blogging Partner</a></h6>
@@ -58,7 +58,7 @@
 			<div class="sponsors">
 
 				<%= for (sponsor) in sponsors.Bronze { %> 
-				<div class="sponsor inline"><img height="75" width="175" src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<%= sponsor.Name %>"></div>
+				<div class="sponsor inline"><img src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<%= sponsor.Name %>"></div>
 				<% } %>
 			</div>
 
