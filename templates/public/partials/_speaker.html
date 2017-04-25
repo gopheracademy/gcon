@@ -7,6 +7,9 @@
 
 				<img src="https://cms.gophercon.com<%= speaker.PhotoURL %>" alt="" />
 
+		<%= for (speaker) in p.Speakers {  %>
+    <p><%= speaker.Bio%></p>
+		<% } %>
 			</div>
 			<% } %>
 

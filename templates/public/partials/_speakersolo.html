@@ -6,8 +6,10 @@
 			<div class="col-sm-6 align-center img-column">
 
 				<img src="https://cms.gophercon.com<%= speaker.PhotoURL %>" alt="" />
-
-			</div>
+	<%= for (speaker) in p.Speakers {  %>
+    <blockquote><%= speaker.Bio%></blockquote>
+		<% } %>
+				</div>
 			<% } %>
 
 
