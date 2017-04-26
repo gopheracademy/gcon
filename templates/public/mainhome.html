@@ -585,7 +585,7 @@
 			<h6>Silver Sponsors</h6>
 			<div class="sponsors">
 				<%= for (sponsor) in homepage.Sponsors.Silver {  %>
-				<div class="sponsor inline"><img src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<% sponsor.Name %>">
+        <div class="sponsor inline"><a href="<%= sponsor.Website %>"><img src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<% sponsor.Name %>" /></a>
 
 					<%= if (sponsor.ID == 6) { %>
 					<h6 class="heading-alt"><a href="/sponsors/<%= sponsor.ID %>">Live Blogging Partner</a></h6>
@@ -597,7 +597,7 @@
 			<h6>Bronze Sponsors</h6>
 			<div class="sponsors">
 				<%= for (sponsor) in homepage.Sponsors.Bronze { %>
-				<div class="sponsor inline"><img src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<%= sponsor.Name %>">
+        <div class="sponsor inline"><a href="<%= sponsor.Website %>"><img src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<%= sponsor.Name %>" /></a>
 
 					<%= if  (sponsor.ID  == 6) { %>
 					<h6 class="heading-alt"><a href="/sponsors/<%= sponsor.ID %>">Live Blogging Partner</a></h6>
