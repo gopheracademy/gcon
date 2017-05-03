@@ -1,8 +1,6 @@
 package actions
 
 import (
-	"fmt"
-
 	"github.com/gobuffalo/buffalo"
 	"github.com/gopheracademy/gcon/models"
 )
@@ -33,7 +31,6 @@ func (v *SpeakersResource) Show(c buffalo.Context) error {
 	if err != nil {
 		return c.Error(404, err)
 	}
-	fmt.Println(s)
 
 	c.Set("p", s)
 	publicR.HTMLLayout = "main.html"

@@ -63,6 +63,5 @@ func GetWorkshops() []Workshop {
 		}
 		pp = append(pp, pr)
 	}
-	fmt.Println(pp)
 	return pp
 }

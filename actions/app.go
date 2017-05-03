@@ -39,6 +39,14 @@ func App() *buffalo.App {
 	adm.POST("/login", AuthHandler)
 	adm.Use(authMiddleware())
 	adm.Middleware.Skip(authMiddleware(), AuthHandler, LoginHandler)
+
+	app.ErrorHandlers[500] = func(status int, err error, c buffalo.Context) error {
+		res := c.Response()
+		res.WriteHeader(422)
+		res.Write([]byte(fmt.Sprintf("Internal server error!", err.Error())))
+		return nil
+	}
+
 	return app
 }
 
@@ -46,7 +54,6 @@ func authMiddleware() buffalo.MiddlewareFunc {
 	return func(h buffalo.Handler) buffalo.Handler {
 		return func(c buffalo.Context) error {
 			name := c.Session().Get("username")
-			fmt.Println("Name", name)
 			if name == "" || name == nil {
 				return c.Redirect(302, "/admin/login")
 			}
