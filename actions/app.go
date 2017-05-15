@@ -43,7 +43,7 @@ func App() *buffalo.App {
 	app.ErrorHandlers[500] = func(status int, err error, c buffalo.Context) error {
 		res := c.Response()
 		res.WriteHeader(422)
-		res.Write([]byte(fmt.Sprintf("Internal server error!", err.Error())))
+		res.Write([]byte(fmt.Sprintf("Internal server error! : %s", err.Error())))
 		return nil
 	}
 
