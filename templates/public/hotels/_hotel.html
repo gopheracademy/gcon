@@ -16,7 +16,7 @@
 							</li>
 						</ul>
 					</div>
-          <% if hotel.Onsale { %>
+          <%= if (hotel.Onsale) { %>
 					<a href="<%= hotel.BlockCode %>" class="btn btn-sm btn-outline-clr" style="margin: 30px 0 0">Reserve this Hotel</a>
           <% } else { %>
 					<span class="btn btn-sm btn-outline-clr" style="margin: 30px 0 0">No Inventory Available</span>
