@@ -557,15 +557,11 @@
 				<h4><span class="highlight">Platinum</span> Sponsors</h4>
 			<%=  for (sponsor) in homepage.Sponsors.Platinum {  %>
 			<div class="sponsors">
-				<a href="/sponsors/<%= sponsor.ID %>">	<img   src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<%= sponsor.Name %>"></a>
-				<br/>
-			<div >
-				&npsb;
-				<br/>&npsb;<br/>
+				<a href="/sponsors/<%= sponsor.ID %>"><img src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<%= sponsor.Name %>"></a>
+				&nbsp;<br/>
 			<br/>
+			&nbsp;<br/>
 			<br/>
-			<br/>
-				</div>
 			</div>
 			<% } %>
 			<div >
