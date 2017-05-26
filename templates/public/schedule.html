@@ -1,21 +1,18 @@
 
-	<section id="schedule" class="section schedule-section align-center">
+	<section class="section align-center">
 		<div class="container">
-			<span class="icon section-icon icon-office-21"></span>
-			<h3>Schedule</h3>
-			<p class="text-alt">Vast number of different <span class="highlight">talks, tutorials,</span><br/> and <span class="highlight">activities</span></p>
-			<br />
-			<br />
+			<h5 class="heading-alt">Gophercon Schedule</h5>
+			<p class="text-alt" style="margin-bottom: 80px;">July 12-15th, 2017</p>
 
 			<!-- Schedule start -->
 			<div class="schedule">
 
 				<!-- Navigation by day start -->
 				<ul class="nav nav-schedule">
-					<li class="active"><a href="#day1" data-toggle="tab"><h5 class="highlight">Day 1</h5><p class="text-alt">07/12/2017</p></a></li>
-					<li><a href="#day2" data-toggle="tab"><h5 class="highlight">Day 2</h5><p class="text-alt">07/13/2017</p></a></li>
-					<li><a href="#day3" data-toggle="tab"><h5 class="highlight">Day 3</h5><p class="text-alt">07/14/2017</p></a></li>
-					<li><a href="#day4" data-toggle="tab"><h5 class="highlight">Day 4</h5><p class="text-alt">07/15/2017</p></a></li>
+					<li class="active"><a href="#day1" data-toggle="tab"><h5 class="highlight">Pre-conference Workshops</h5><p class="text-alt">07/12/2017</p></a></li>
+					<li><a href="#day2" data-toggle="tab"><h5 class="highlight">Day 1</h5><p class="text-alt">07/13/2017</p></a></li>
+					<li><a href="#day3" data-toggle="tab"><h5 class="highlight">Day 2</h5><p class="text-alt">07/14/2017</p></a></li>
+					<li><a href="#day4" data-toggle="tab"><h5 class="highlight">Community Day</h5><p class="text-alt">07/15/2017</p></a></li>
 				</ul>
 				<!-- Navigation by day end -->
 
@@ -25,306 +22,129 @@
 					<!-- Day 1 content start -->
 					<div id="day1" class="tab-pane fade active in">
 
-						<!-- Navigation by ballroom start -->
+						<!-- Navigation by auditorium start -->
 						<ul class="nav nav-schedule">
-							<li class="active"><a href="#day1_ballroom1" data-toggle="tab">Ballroom 1</a></li>
-							<li><a href="#day1_ballroom2" data-toggle="tab">Ballroom 2</a></li>
-							<li><a href="#day1_ballroom3" data-toggle="tab">Ballroom 3</a></li>
+							<li class="active"><a href="#day1_general" data-toggle="tab">General</a></li>
+							<li ><a href="#day1_auditorium1" data-toggle="tab">Mile High Ballroom</a></li>
 						</ul>
-						<!-- Navigation by ballroom start -->
+						<!-- Navigation by auditorium start -->
 
 						<!-- Second level content start -->
 						<div class="tab-content tab-content-schedule">
 
-							<!-- ballroom 1 content start -->
-							<div id="day1_ballroom1" class="tab-pane fade active in">
+							<!-- Auditorium 1 content start -->
+							<div id="day1_general" class="tab-pane fade active in">
 
 								<!-- Accordion start -->
-								<div class="panel-group" id="day1_ballroom1_timeline">
-
+								<div class="panel-group" id="day1_general_timeline">
 									<!-- Lecture start -->
 									<div class="panel schedule-item">
 										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker1.jpg" alt="" class="img-responsive">
+											<span class="fa fa-cutlery"></span>
 										</div>
-										<a data-toggle="collapse" data-parent="#day1_ballroom1_timeline" href="#day1_ballroom1_time1" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
+										<a data-toggle="collapse" data-parent="#day1_auditorium1_timeline" href="#day1_auditorium1_time1" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>12:00 - 1:00 PM</strong>
+											<h6 class="title">Workshop Lunch Buffet<i class="icon icon-arrows-06"></i></h6>
 										</a>
-										<div id="day1_ballroom1_time1" class="panel-collapse collapse in schedule-item-body">
+										<div id="day1_auditorium1_time1" class="panel-collapse collapse in schedule-item-body">
 											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
+												<p class="description">Workshop participants will enjoy lunch in the Mile High Ballroom  Pre-function Area</p>
 											</article>
 										</div>
 									</div>
-									<!-- Lecture end -->
 
+                                    <div class="panel schedule-item">
+                                        <div class="lecture-icon-wrapper">
+                                            <span class="fa fa-cutlery"></span>
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#day1_auditorium1_timeline" href="#day1_auditorium1_time2" class="schedule-item-toggle">
+                                            <strong class="time highlight"><span class="icon icon-office-24"></span>4:00 - 6:00 PM</strong>
+                                            <h6 class="title">Gophercon Networking Night</h6>
+                                        </a>
+                                        <div id="day1_auditorium1_time2" class="panel-collapse collapse in schedule-item-body">
+                                            <article>
+                                                <p class="description">Network and socialize with fellow Gophers before the conference at the Wynkoop Brewery, 2nd Floor.</p>
+                                            </article>
+                                        </div>
+                                    </div>
+								</div>
+								<!-- Accordion end -->
+							</div>
+							<!-- Auditorium 1 content end -->
+							<!-- Auditorium 1 content start -->
+							<div id="day1_auditorium1" class="tab-pane fade in">
+
+								<!-- Accordion start -->
+								<div class="panel-group" id="day1_auditorium1_timeline">
+									<%= for (i,w) in workshops { %>
 									<!-- Lecture start -->
 									<div class="panel schedule-item">
 										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker2.jpg" alt="" class="img-responsive">
+											<%= for (speaker) in w.Speakers {  %>
+											<img src="https://cms.gophercon.com<%= speaker.PhotoURL %>" alt="<%=speakers.FirstName%> <%=speakers.LastName%>" class="img-responsive"/>
+											<% } %>
 										</div>
-										<a data-toggle="collapse" data-parent="#day1_ballroom1_timeline" href="#day1_ballroom1_time2" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
+										<a data-toggle="collapse" data-parent="#day1_auditorium1_timeline" href="#day1_auditorium1_time<%=i%>" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>9:00 AM - 5:00 PM</strong>
+											<h6 class="title"><%= w.Workshop.Title %><i class="icon icon-arrows-06"></i></h6>
 										</a>
-										<div id="day1_ballroom1_time2" class="panel-collapse collapse in schedule-item-body">
+										<div id="day1_auditorium1_time<%=i%>" class="panel-collapse collapse in schedule-item-body">
 											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
+												<p class="description"><%= w.Workshop.ShortDescription %></p>
+												<%= for (speaker) in w.Speakers {  %>
+												<strong class="highlight speaker-name"><%= speaker.FirstName %> <%= speaker.LastName %></strong>
+												<% } %><br/>
+												<a href="<%= w.Workshop.TicketLink %>" class="btn btn-med btn-outline-clr">$295 - Register Now</a>
 											</article>
 										</div>
 									</div>
-									<!-- Lecture end -->
-
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker3.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day1_ballroom1_timeline" href="#day1_ballroom1_time3" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day1_ballroom1_time3" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker4.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day1_ballroom1_timeline" href="#day1_ballroom1_time4" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day1_ballroom1_time4" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
+									<% } %>
+																		<!-- Lecture start -->
 
 								</div>
 								<!-- Accordion end -->
-
 							</div>
-							<!-- ballroom 1 content end -->
-
-							<!-- ballroom 2 content start -->
-							<div id="day1_ballroom2" class="tab-pane fade in">
-
-								<!-- Accordion start -->
-								<div class="panel-group" id="day1_ballroom2_timeline">
-
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker1.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day1_ballroom2_timeline" href="#day1_ballroom2_time1" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day1_ballroom2_time1" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker2.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day1_ballroom2_timeline" href="#day1_ballroom2_time3" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day1_ballroom2_time3" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker3.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day1_ballroom2_timeline" href="#day1_ballroom2_time3" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day1_ballroom2_time3" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker4.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day1_ballroom2_timeline" href="#day1_ballroom2_time4" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day1_ballroom2_time4" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-
-								</div>
-								<!-- Accordion end -->
-
-							</div>
-							<!-- ballroom 2 content end -->
-
-							<!-- ballroom 3 content start -->
-							<div id="day1_ballroom3" class="tab-pane fade in">
-
-								<!-- Accordion start -->
-								<div class="panel-group" id="day1_ballroom3_timeline">
-
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker1.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day1_ballroom3_timeline" href="#day1_ballroom3_time1" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day1_ballroom3_time1" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker2.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day1_ballroom3_timeline" href="#day1_ballroom3_time3" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day1_ballroom3_time3" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker3.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day1_ballroom3_timeline" href="#day1_ballroom3_time3" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day1_ballroom3_time3" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker4.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day1_ballroom3_timeline" href="#day1_ballroom3_time4" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day1_ballroom3_time4" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-
-								</div>
-								<!-- Accordion end -->
-
-							</div>
-							<!-- ballroom 3 content end -->
-
+							<!-- Auditorium 1 content end -->
 						</div>
 						<!-- Second level content end -->
-
 					</div>
 					<!-- Day 1 content end -->
 
 					<!-- Day 2 content start -->
 					<div id="day2" class="tab-pane fade in">
 
-						<!-- Navigation by ballroom start -->
+						<!-- Navigation by auditorium start -->
 						<ul class="nav nav-schedule">
-							<li class="active"><a href="#day2_ballroom1" data-toggle="tab">Ballroom 1</a></li>
-							<li><a href="#day2_ballroom2" data-toggle="tab">Ballroom 2</a></li>
-							<li><a href="#day2_ballroom3" data-toggle="tab">Ballroom 3</a></li>
+							<li class="active"><a href="#day2_auditorium1" data-toggle="tab">General</a></li>
+							<li><a href="#day2_auditorium2" data-toggle="tab">Main Stage</a></li>
+							<li><a href="#day2_auditorium3" data-toggle="tab">Ballroom 1a</a></li>
+							<li><a href="#day2_auditorium4" data-toggle="tab">Ballroom 1d</a></li>
+							<li><a href="#day2_auditorium5" data-toggle="tab">Ballroom 2a</a></li>
 						</ul>
-						<!-- Navigation by ballroom end -->
+						<!-- Navigation by auditorium end -->
 
 						<!-- Second level content start -->
 						<div class="tab-content tab-content-schedule">
 
-							<!-- ballroom 1 content start -->
-							<div id="day2_ballroom1" class="tab-pane fade active in">
+							<!-- Auditorium 1 content start -->
+							<div id="day2_auditorium1" class="tab-pane fade active in">
 
 								<!-- Accordion start -->
-								<div class="panel-group" id="day2_ballroom1_timeline">
+								<div class="panel-group" id="day2_auditorium1_timeline">
 
 									<!-- Lecture start -->
 									<div class="panel schedule-item">
 										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker1.jpg" alt="" class="img-responsive">
+											<span class="fa fa-cutlery"></span>
 										</div>
-										<a data-toggle="collapse" data-parent="#day2_ballroom1_timeline" href="#day2_ballroom1_time1" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time1" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>6:45a - 6:00 PM</strong>
+											<h6 class="title">Registration</h6>
 										</a>
-										<div id="day2_ballroom1_time1" class="panel-collapse collapse in schedule-item-body">
+										<div id="day2_auditorium1_time1" class="panel-collapse collapse in schedule-item-body">
 											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
+												<p class="description">Registration</p>
+												<strong class="highlight speaker-name">Grand Concourse E</strong>
 											</article>
 										</div>
 									</div>
@@ -333,16 +153,16 @@
 									<!-- Lecture start -->
 									<div class="panel schedule-item">
 										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker2.jpg" alt="" class="img-responsive">
+											<span class="fa fa-cutlery"></span>
 										</div>
-										<a data-toggle="collapse" data-parent="#day2_ballroom1_timeline" href="#day2_ballroom1_time2" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time2" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>7:00AM - 6:00 PM</strong>
+											<h6 class="title">Speaker and Sponsor Lounge</h6>
 										</a>
-										<div id="day2_ballroom1_time2" class="panel-collapse collapse in schedule-item-body">
+										<div id="day2_auditorium1_time2" class="panel-collapse collapse in schedule-item-body">
 											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
+												<p class="description">Speaker and Sponsor Lounge</p>
+												<strong class="highlight speaker-name">Room 401</strong>
 											</article>
 										</div>
 									</div>
@@ -351,16 +171,16 @@
 									<!-- Lecture start -->
 									<div class="panel schedule-item">
 										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker3.jpg" alt="" class="img-responsive">
+											<span class="fa fa-cutlery"></span>
 										</div>
-										<a data-toggle="collapse" data-parent="#day2_ballroom1_timeline" href="#day2_ballroom1_time3" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time3" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>8:00AM - 9:00 AM</strong>
+											<h6 class="title">Continental Breakfast</h6>
 										</a>
-										<div id="day2_ballroom1_time3" class="panel-collapse collapse in schedule-item-body">
+										<div id="day2_auditorium1_time3" class="panel-collapse collapse in schedule-item-body">
 											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
+												<p class="description">Contentinental Breakfast</p>
+												<strong class="highlight speaker-name">Dining Den</strong>
 											</article>
 										</div>
 									</div>
@@ -368,192 +188,230 @@
 									<!-- Lecture start -->
 									<div class="panel schedule-item">
 										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker4.jpg" alt="" class="img-responsive">
+											<span class="fa fa-cutlery"></span>
 										</div>
-										<a data-toggle="collapse" data-parent="#day2_ballroom1_timeline" href="#day2_ballroom1_time4" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time4" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>8:00AM - 5:00 PM</strong>
+											<h6 class="title">Family Track</h6>
 										</a>
-										<div id="day2_ballroom1_time4" class="panel-collapse collapse in schedule-item-body">
+										<div id="day2_auditorium1_time4" class="panel-collapse collapse in schedule-item-body">
 											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
+												<p class="description">Family Track Activities</p>
+												<strong class="highlight speaker-name">Room 402</strong>
 											</article>
 										</div>
 									</div>
 									<!-- Lecture end -->
-
-
+								    <!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											<span class="fa fa-cutlery"></span>
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time5" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>10:05AM - 10:50 AM</strong>
+											<h6 class="title">Morning Break</h6>
+										</a>
+										<div id="day2_auditorium1_time5" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description">Morning Break</p>
+												<strong class="highlight speaker-name">Dining Den</strong>
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											<span class="fa fa-cutlery"></span>
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time6" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>12:30PM - 2:00 PM</strong>
+											<h6 class="title">Lunch</h6>
+										</a>
+										<div id="day2_auditorium1_time6" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description">Lunch</p>
+												<strong class="highlight speaker-name">Dining Den</strong>
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											<span class="fa fa-cutlery"></span>
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium1_timeline" href="#day2_auditorium1_time7" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>7:00PM - 10:00 PM</strong>
+											<h6 class="title">Welcome Party</h6>
+										</a>
+										<div id="day2_auditorium1_time7" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description">Welcome Party at the Punch Bowl Social</p>
+												<strong class="highlight speaker-name">Punch Bowl Social</strong>
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
 								</div>
 								<!-- Accordion end -->
 
 							</div>
-							<!-- ballroom 1 content end -->
+							<!-- Auditorium 1 content end -->
 
-							<!-- ballroom 2 content start -->
-							<div id="day2_ballroom2" class="tab-pane fade in">
+							<!-- Auditorium 2 content start -->
+							<div id="day2_auditorium2" class="tab-pane fade in">
 
 								<!-- Accordion start -->
-								<div class="panel-group" id="day2_ballroom2_timeline">
+								<div class="panel-group" id="day2_auditorium2_timeline">
 
+									<%= for (i,p) in dayone { %>
+									<%= if (p.Presentation.Track == "Main") { %>
 									<!-- Lecture start -->
 									<div class="panel schedule-item">
 										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker1.jpg" alt="" class="img-responsive">
+											<%= for (speaker) in p.Speakers {  %>
+												<img src="https://cms.gophercon.com<%= speaker.PhotoURL %>" alt="" />
+											<% } %>
 										</div>
-										<a data-toggle="collapse" data-parent="#day2_ballroom2_timeline" href="#day2_ballroom2_time1" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
+										<a data-toggle="collapse" data-parent="#day2_auditorium2_timeline" href="#day2_auditorium2_time<%=i%>" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span><%= p.Slot.Description  %></strong>
+											<h6 class="title"><%= p.Presentation.Title %></h6>
 										</a>
-										<div id="day2_ballroom2_time1" class="panel-collapse collapse in schedule-item-body">
+										<div id="day2_auditorium2_time<%=i%>" class="panel-collapse collapse in schedule-item-body">
 											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
+												<p class="description"><%= p.Presentation.LongDescription %> </p>
+												<%= for (speaker) in p.Speakers {  %>
+													<strong class="highlight speaker-name"><%= speaker.FirstName %> <%= speaker.LastName %></strong>
+												<% } %>
 											</article>
 										</div>
 									</div>
-									<!-- Lecture end -->
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker2.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day2_ballroom2_timeline" href="#day2_ballroom2_time2" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day2_ballroom2_time2" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker3.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day2_ballroom2_timeline" href="#day2_ballroom2_time3" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day2_ballroom2_time3" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker4.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day2_ballroom2_timeline" href="#day2_ballroom2_time4" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day2_ballroom2_time4" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
 
+									<% } %>
+									<% } %>
+									<!-- Lecture end -->
 								</div>
 								<!-- Accordion end -->
 
 							</div>
-							<!-- ballroom 2 content end -->
+							<!-- Auditorium 2 content end -->
 
-							<!-- ballroom 3 content start -->
-							<div id="day2_ballroom3" class="tab-pane fade in">
+							<!-- Auditorium 3 content start -->
+							<div id="day2_auditorium3" class="tab-pane fade in">
 
 								<!-- Accordion start -->
-								<div class="panel-group" id="day2_ballroom3_timeline">
+								<div class="panel-group" id="day2_auditorium3_timeline">
+									<!-- Lecture start -->
+									<%= for (i,p) in dayone { %>
+									<%= if (p.Presentation.Track == "MHB1a") { %>
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											<%= for (speaker) in p.Speakers {  %>
+											<img src="https://cms.gophercon.com<%= speaker.PhotoURL %>" alt="" />
+											<% } %>
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium3_timeline" href="#day2_auditorium3_time<%=i%>" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span><%= p.Slot.Description  %></strong>
+											<h6 class="title"><%= p.Presentation.Title %></h6>
+										</a>
+										<div id="day2_auditorium3_time<%=i%>" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description"><%= p.Presentation.LongDescription %> </p>
+												<%= for (speaker) in p.Speakers {  %>
+												<strong class="highlight speaker-name"><%= speaker.FirstName %> <%= speaker.LastName %></strong>
+												<% } %>
+											</article>
+										</div>
+									</div>
 
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker1.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day2_ballroom3_timeline" href="#day2_ballroom3_time1" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day2_ballroom3_time1" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker2.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day2_ballroom3_timeline" href="#day2_ballroom3_time2" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day2_ballroom3_time2" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker3.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day2_ballroom3_timeline" href="#day2_ballroom3_time3" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day2_ballroom3_time3" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker4.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day2_ballroom3_timeline" href="#day2_ballroom3_time4" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day2_ballroom3_time4" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
+									<% } %>
+									<% } %>
 									<!-- Lecture end -->
 
 								</div>
 								<!-- Accordion end -->
 
 							</div>
-							<!-- ballroom 3 content end -->
+							<!-- Auditorium 3 content end -->
+							<!-- Auditorium 4 content start -->
+							<div id="day2_auditorium4" class="tab-pane fade in">
 
+								<!-- Accordion start -->
+								<div class="panel-group" id="day2_auditorium4_timeline">
+									<!-- Lecture start -->
+									<%= for (i,p) in dayone { %>
+									<%= if (p.Presentation.Track == "MHB1d") { %>
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											<%= for (speaker) in p.Speakers {  %>
+											<img src="https://cms.gophercon.com<%= speaker.PhotoURL %>" alt="" />
+											<% } %>
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium4_timeline" href="#day2_auditorium4_time<%=i%>" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span><%= p.Slot.Description  %></strong>
+											<h6 class="title"><%= p.Presentation.Title %></h6>
+										</a>
+										<div id="day2_auditorium4_time<%=i%>" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description"><%= p.Presentation.LongDescription %> </p>
+												<%= for (speaker) in p.Speakers {  %>
+												<strong class="highlight speaker-name"><%= speaker.FirstName %> <%= speaker.LastName %></strong>
+												<% } %>
+											</article>
+										</div>
+									</div>
+
+									<% } %>
+									<% } %>
+									<!-- Lecture end -->
+
+								</div>
+								<!-- Accordion end -->
+
+							</div>
+							<!-- Auditorium 4 content end -->
+
+							<!-- Auditorium 5 content start -->
+							<div id="day2_auditorium5" class="tab-pane fade in">
+
+								<!-- Accordion start -->
+								<div class="panel-group" id="day2_auditorium5_timeline">
+									<!-- Lecture start -->
+									<%= for (i,p) in dayone { %>
+									<%= if (p.Presentation.Track == "MBH2a") { %>
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											<%= for (speaker) in p.Speakers {  %>
+											<img src="https://cms.gophercon.com<%= speaker.PhotoURL %>" alt="" />
+											<% } %>
+										</div>
+										<a data-toggle="collapse" data-parent="#day2_auditorium5_timeline" href="#day2_auditorium5_time<%=i%>" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span><%= p.Slot.Description  %></strong>
+											<h6 class="title"><%= p.Presentation.Title %></h6>
+										</a>
+										<div id="day2_auditorium5_time<%=i%>" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description"><%= p.Presentation.LongDescription %> </p>
+												<%= for (speaker) in p.Speakers {  %>
+												<strong class="highlight speaker-name"><%= speaker.FirstName %> <%= speaker.LastName %></strong>
+												<% } %>
+											</article>
+										</div>
+									</div>
+
+									<% } %>
+									<% } %>
+									<!-- Lecture end -->
+
+								</div>
+								<!-- Accordion end -->
+
+							</div>
+							<!-- Auditorium 5 content end -->
 						</div>
 						<!-- Second level content end -->
 
@@ -563,37 +421,39 @@
 					<!-- Day 3 content start -->
 					<div id="day3" class="tab-pane fade in">
 
-						<!-- Navigation by ballroom start -->
+						<!-- Navigation by auditorium start -->
+						<!-- Navigation by auditorium start -->
 						<ul class="nav nav-schedule">
-							<li class="active"><a href="#day3_ballroom1" data-toggle="tab">Ballroom 1</a></li>
-							<li><a href="#day3_ballroom2" data-toggle="tab">ballroom 2</a></li>
-							<li><a href="#day3_ballroom3" data-toggle="tab">ballroom 3</a></li>
+							<li class="active"><a href="#day3_auditorium1" data-toggle="tab">General</a></li>
+							<li><a href="#day3_auditorium2" data-toggle="tab">Main Stage</a></li>
+							<li><a href="#day3_auditorium3" data-toggle="tab">Ballroom 1a</a></li>
+							<li><a href="#day3_auditorium4" data-toggle="tab">Ballroom 1d</a></li>
+							<li><a href="#day3_auditorium5" data-toggle="tab">Ballroom 2a</a></li>
 						</ul>
-						<!-- Navigation by ballroom end -->
+						<!-- Navigation by auditorium end -->
 
 						<!-- Second level content start -->
 						<div class="tab-content tab-content-schedule">
 
-							<!-- ballroom 1 content start -->
-							<div id="day3_ballroom1" class="tab-pane fade active in">
+							<!-- Auditorium 1 content start -->
+							<div id="day3_auditorium1" class="tab-pane fade active in">
 
 								<!-- Accordion start -->
-								<div class="panel-group" id="day3_ballroom1_timeline">
+								<div class="panel-group" id="day3_auditorium1_timeline">
 
-									<!-- Lecture start -->
 									<!-- Lecture start -->
 									<div class="panel schedule-item">
 										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker1.jpg" alt="" class="img-responsive">
+											<span class="fa fa-cutlery"></span>
 										</div>
-										<a data-toggle="collapse" data-parent="#day3_ballroom1_timeline" href="#day3_ballroom1_time1" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
+										<a data-toggle="collapse" data-parent="#day3_auditorium1_timeline" href="#day3_auditorium1_time1" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>6:45a - 6:00 PM</strong>
+											<h6 class="title">Registration</h6>
 										</a>
-										<div id="day3_ballroom1_time1" class="panel-collapse collapse in schedule-item-body">
+										<div id="day3_auditorium1_time1" class="panel-collapse collapse in schedule-item-body">
 											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
+												<p class="description">Registration</p>
+												<strong class="highlight speaker-name">Grand Concourse E</strong>
 											</article>
 										</div>
 									</div>
@@ -602,16 +462,34 @@
 									<!-- Lecture start -->
 									<div class="panel schedule-item">
 										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker2.jpg" alt="" class="img-responsive">
+											<span class="fa fa-cutlery"></span>
 										</div>
-										<a data-toggle="collapse" data-parent="#day3_ballroom1_timeline" href="#day3_ballroom1_time2" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
+										<a data-toggle="collapse" data-parent="#day3_auditorium1_timeline" href="#day3_auditorium1_time2" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>7:00AM - 6:00 PM</strong>
+											<h6 class="title">Speaker and Sponsor Lounge</h6>
 										</a>
-										<div id="day3_ballroom1_time2" class="panel-collapse collapse in schedule-item-body">
+										<div id="day3_auditorium1_time2" class="panel-collapse collapse in schedule-item-body">
 											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
+												<p class="description">Speaker and Sponsor Lounge</p>
+												<strong class="highlight speaker-name">Room 401</strong>
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											<span class="fa fa-cutlery"></span>
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium1_timeline" href="#day3_auditorium1_time3" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>8:00AM - 9:00 AM</strong>
+											<h6 class="title">Continental Breakfast</h6>
+										</a>
+										<div id="day3_auditorium1_time3" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description">Contentinental Breakfast</p>
+												<strong class="highlight speaker-name">Dining Den</strong>
 											</article>
 										</div>
 									</div>
@@ -619,16 +497,16 @@
 									<!-- Lecture start -->
 									<div class="panel schedule-item">
 										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker3.jpg" alt="" class="img-responsive">
+											<span class="fa fa-cutlery"></span>
 										</div>
-										<a data-toggle="collapse" data-parent="#day3_ballroom1_timeline" href="#day3_ballroom1_time3" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
+										<a data-toggle="collapse" data-parent="#day3_auditorium1_timeline" href="#day3_auditorium1_time4" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>8:00AM - 5:00 PM</strong>
+											<h6 class="title">Family Track</h6>
 										</a>
-										<div id="day3_ballroom1_time3" class="panel-collapse collapse in schedule-item-body">
+										<div id="day3_auditorium1_time4" class="panel-collapse collapse in schedule-item-body">
 											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
+												<p class="description">Family Track Activities</p>
+												<strong class="highlight speaker-name">Room 402</strong>
 											</article>
 										</div>
 									</div>
@@ -636,189 +514,233 @@
 									<!-- Lecture start -->
 									<div class="panel schedule-item">
 										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker4.jpg" alt="" class="img-responsive">
+											<span class="fa fa-cutlery"></span>
 										</div>
-										<a data-toggle="collapse" data-parent="#day3_ballroom1_timeline" href="#day3_ballroom1_time4" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
+										<a data-toggle="collapse" data-parent="#day3_auditorium1_timeline" href="#day3_auditorium1_time5" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>10:05AM - 10:50 AM</strong>
+											<h6 class="title">Morning Break</h6>
 										</a>
-										<div id="day3_ballroom1_time4" class="panel-collapse collapse in schedule-item-body">
+										<div id="day3_auditorium1_time5" class="panel-collapse collapse in schedule-item-body">
 											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
+												<p class="description">Morning Break</p>
+												<strong class="highlight speaker-name">Dining Den</strong>
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											<span class="fa fa-cutlery"></span>
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium1_timeline" href="#day3_auditorium1_time6" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>12:30PM - 2:00 PM</strong>
+											<h6 class="title">Lunch</h6>
+										</a>
+										<div id="day3_auditorium1_time6" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description">Lunch</p>
+												<strong class="highlight speaker-name">Dining Den</strong>
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											<span class="fa fa-cutlery"></span>
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium1_timeline" href="#day3_auditorium1_time7" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>5:00PM - 6:00 PM</strong>
+											<h6 class="title">Exhibitor Happy Hour</h6>
+										</a>
+										<div id="day3_auditorium1_time7" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description">Exhibitor Happy Hour</p>
+												<strong class="highlight speaker-name">Dining Den</strong>
 											</article>
 										</div>
 									</div>
 									<!-- Lecture end -->
 
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											<span class="fa fa-cutlery"></span>
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium1_timeline" href="#day3_auditorium1_time8" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>6:00PM - 10:00 PM</strong>
+											<h6 class="title">CoreOS Reception</h6>
+										</a>
+										<div id="day3_auditorium1_time8" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description">CoreOS Reception at Pizza Republic - limited to first 150 attendees who RSVP, must bring badge, RSVP link coming shortly.</p>
+												<strong class="highlight speaker-name">Pizza Republic</strong>
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+								</div>
+								<!-- Accordion end -->
 
+
+
+							</div>
+							<!-- Auditorium 1 content end -->
+
+							<!-- Auditorium 2 content start -->
+							<div id="day3_auditorium2" class="tab-pane fade in">
+
+								<!-- Accordion start -->
+								<div class="panel-group" id="day3_auditorium2_timeline">
+
+									<%= for (i,p) in daytwo { %>
+									<%= if (p.Presentation.Track == "Main") { %>
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											<%= for (speaker) in p.Speakers {  %>
+											<img src="https://cms.gophercon.com<%= speaker.PhotoURL %>" alt="" />
+											<% } %>
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium2_timeline" href="#day3_auditorium2_time<%=i%>" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span><%= p.Slot.Description  %></strong>
+											<h6 class="title"><%= p.Presentation.Title %></h6>
+										</a>
+										<div id="day3_auditorium2_time<%=i%>" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description"><%= p.Presentation.LongDescription %> </p>
+												<%= for (speaker) in p.Speakers {  %>
+												<strong class="highlight speaker-name"><%= speaker.FirstName %> <%= speaker.LastName %></strong>
+												<% } %>
+											</article>
+										</div>
+									</div>
+
+									<% } %>
+									<% } %>
+									<!-- Lecture end -->
 								</div>
 								<!-- Accordion end -->
 
 							</div>
-							<!-- ballroom 1 content end -->
+							<!-- Auditorium 2 content end -->
 
-							<!-- ballroom 2 content start -->
-							<div id="day3_ballroom2" class="tab-pane fade in">
-
-								<!-- Accordion start -->
-								<div class="panel-group" id="day3_ballroom2_timeline">
-
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker1.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day3_ballroom2_timeline" href="#day3_ballroom2_time1" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day3_ballroom2_time1" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker2.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day3_ballroom2_timeline" href="#day3_ballroom2_time2" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day3_ballroom2_time2" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker3.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day3_ballroom2_timeline" href="#day3_ballroom2_time3" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day3_ballroom2_time3" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker4.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day3_ballroom2_timeline" href="#day3_ballroom2_time4" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day3_ballroom2_time4" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-
-								</div>
-								<!-- Accordion end -->
-
-							</div>
-							<!-- ballroom 2 content end -->
-
-							<!-- ballroom 3 content start -->
-							<div id="day3_ballroom3" class="tab-pane fade in">
+							<!-- Auditorium 3 content start -->
+							<div id="day3_auditorium3" class="tab-pane fade in">
 
 								<!-- Accordion start -->
-								<div class="panel-group" id="day3_ballroom3_timeline">
+								<div class="panel-group" id="day3_auditorium3_timeline">
+									<!-- Lecture start -->
+									<%= for (i,p) in daytwo { %>
+									<%= if (p.Presentation.Track == "MHB1a") { %>
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											<%= for (speaker) in p.Speakers {  %>
+											<img src="https://cms.gophercon.com<%= speaker.PhotoURL %>" alt="" />
+											<% } %>
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium3_timeline" href="#day3_auditorium3_time<%=i%>" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span><%= p.Slot.Description  %></strong>
+											<h6 class="title"><%= p.Presentation.Title %></h6>
+										</a>
+										<div id="day3_auditorium3_time<%=i%>" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description"><%= p.Presentation.LongDescription %> </p>
+												<%= for (speaker) in p.Speakers {  %>
+												<strong class="highlight speaker-name"><%= speaker.FirstName %> <%= speaker.LastName %></strong>
+												<% } %>
+											</article>
+										</div>
+									</div>
 
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker1.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day3_ballroom3_timeline" href="#day3_ballroom3_time1" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day3_ballroom3_time1" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker2.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day3_ballroom3_timeline" href="#day3_ballroom3_time2" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day3_ballroom3_time2" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker3.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day3_ballroom3_timeline" href="#day3_ballroom3_time3" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day3_ballroom3_time3" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker4.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day3_ballroom3_timeline" href="#day3_ballroom3_time4" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day3_ballroom3_time4" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
+									<% } %>
+									<% } %>
 									<!-- Lecture end -->
 
 								</div>
 								<!-- Accordion end -->
 
 							</div>
-							<!-- ballroom 3 content end -->
+							<!-- Auditorium 3 content end -->
+							<!-- Auditorium 4 content start -->
+							<div id="day3_auditorium4" class="tab-pane fade in">
+
+								<!-- Accordion start -->
+								<div class="panel-group" id="day3_auditorium4_timeline">
+									<!-- Lecture start -->
+									<%= for (i,p) in daytwo { %>
+									<%= if (p.Presentation.Track == "MHB1d") { %>
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											<%= for (speaker) in p.Speakers {  %>
+											<img src="https://cms.gophercon.com<%= speaker.PhotoURL %>" alt="" />
+											<% } %>
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium4_timeline" href="#day3_auditorium4_time<%=i%>" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span><%= p.Slot.Description  %></strong>
+											<h6 class="title"><%= p.Presentation.Title %></h6>
+										</a>
+										<div id="day3_auditorium4_time<%=i%>" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description"><%= p.Presentation.LongDescription %> </p>
+												<%= for (speaker) in p.Speakers {  %>
+												<strong class="highlight speaker-name"><%= speaker.FirstName %> <%= speaker.LastName %></strong>
+												<% } %>
+											</article>
+										</div>
+									</div>
+
+									<% } %>
+									<% } %>
+									<!-- Lecture end -->
+
+								</div>
+								<!-- Accordion end -->
+
+							</div>
+							<!-- Auditorium 4 content end -->
+
+							<!-- Auditorium 5 content start -->
+							<div id="day3_auditorium5" class="tab-pane fade in">
+
+								<!-- Accordion start -->
+								<div class="panel-group" id="day3_auditorium5_timeline">
+									<!-- Lecture start -->
+									<%= for (i,p) in daytwo { %>
+									<%= if (p.Presentation.Track == "MBH2a") { %>
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											<%= for (speaker) in p.Speakers {  %>
+											<img src="https://cms.gophercon.com<%= speaker.PhotoURL %>" alt="" />
+											<% } %>
+										</div>
+										<a data-toggle="collapse" data-parent="#day3_auditorium5_timeline" href="#day3_auditorium5_time<%=i%>" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span><%= p.Slot.Description  %></strong>
+											<h6 class="title"><%= p.Presentation.Title %></h6>
+										</a>
+										<div id="day3_auditorium5_time<%=i%>" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description"><%= p.Presentation.LongDescription %> </p>
+												<%= for (speaker) in p.Speakers {  %>
+												<strong class="highlight speaker-name"><%= speaker.FirstName %> <%= speaker.LastName %></strong>
+												<% } %>
+											</article>
+										</div>
+									</div>
+
+									<% } %>
+									<% } %>
+									<!-- Lecture end -->
+
+								</div>
+								<!-- Accordion end -->
+
+							</div>
+							<!-- Auditorium 5 content end -->
 
 						</div>
 						<!-- Second level content end -->
@@ -829,36 +751,50 @@
 					<!-- Day 4 content start -->
 					<div id="day4" class="tab-pane fade in">
 
-						<!-- Navigation by ballroom start -->
+						<!-- Navigation by auditorium start -->
 						<ul class="nav nav-schedule">
-							<li class="active"><a href="#day4_ballroom1" data-toggle="tab">ballroom 1</a></li>
-							<li><a href="#day4_ballroom2" data-toggle="tab">ballroom 2</a></li>
-							<li><a href="#day4_ballroom3" data-toggle="tab">ballroom 3</a></li>
+							<li class="active"><a href="#day4_auditorium1" data-toggle="tab">General</a></li>
 						</ul>
-						<!-- Navigation by ballroom start -->
+						<!-- Navigation by auditorium start -->
 
 						<!-- Second level content start -->
 						<div class="tab-content tab-content-schedule">
 
-							<!-- ballroom 1 content start -->
-							<div id="day4_ballroom1" class="tab-pane fade active in">
+							<!-- Auditorium 1 content start -->
+							<div id="day4_auditorium1" class="tab-pane fade active in">
 
 								<!-- Accordion start -->
-								<div class="panel-group" id="day4_ballroom1_timeline">
+								<div class="panel-group" id="day4_auditorium1_timeline">
 
 									<!-- Lecture start -->
 									<div class="panel schedule-item">
 										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker1.jpg" alt="" class="img-responsive">
+											<span class="fa fa-cutlery"></span>
 										</div>
-										<a data-toggle="collapse" data-parent="#day4_ballroom1_timeline" href="#day4_ballroom1_time1" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
+										<a data-toggle="collapse" data-parent="#day4_auditorium1_timeline" href="#day4_auditorium1_time1" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>10:00 - 10:45 AM</strong>
+											<h6 class="title">Morning Break</h6>
 										</a>
-										<div id="day4_ballroom1_time1" class="panel-collapse collapse in schedule-item-body">
+										<div id="day4_auditorium1_time1" class="panel-collapse collapse in schedule-item-body">
 											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
+												<p class="description">Morning Break</p>
+												<strong class="highlight speaker-name">Mile High Ballroom - Pre-Function Area</strong>
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper"></div>
+										<a data-toggle="collapse" data-parent="#day4_auditorium1_timeline" href="#day4_auditorium1_time2" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>10:00 AM - 5:00 PM</strong>
+											<h6 class="title">Family Track</h6>
+										</a>
+										<div id="day4_auditorium1_time2" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Family Track Activities</p>
+												<strong class="highlight speaker-name">Room 402</strong>
 											</article>
 										</div>
 									</div>
@@ -867,16 +803,16 @@
 									<!-- Lecture start -->
 									<div class="panel schedule-item">
 										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker2.jpg" alt="" class="img-responsive">
+											<img src="../assets/img/speakers/speaker1.jpg" alt="" class="img-responsive">
 										</div>
-										<a data-toggle="collapse" data-parent="#day4_ballroom1_timeline" href="#day4_ballroom1_time2" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
+										<a data-toggle="collapse" data-parent="#day4_auditorium1_timeline" href="#day4_auditorium1_time3" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>10:00 AM - 5:00 PM</strong>
+											<h6 class="title">Community Day Roundtables</h6>
 										</a>
-										<div id="day4_ballroom1_time2" class="panel-collapse collapse in schedule-item-body">
+										<div id="day4_auditorium1_time3" class="panel-collapse collapse schedule-item-body">
 											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
+												<p class="description">Join like-minded Gophers for hacking on your favorite projects.  Find fellow hackers by picking a table with your favorite topic.</p>
+												<strong class="highlight speaker-name">Mile High Ballroom 1 & 2</strong>
 											</article>
 										</div>
 									</div>
@@ -885,16 +821,20 @@
 									<!-- Lecture start -->
 									<div class="panel schedule-item">
 										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker3.jpg" alt="" class="img-responsive">
+											<img src="../assets/img/speakers/speaker1.jpg" alt="" class="img-responsive">
 										</div>
-										<a data-toggle="collapse" data-parent="#day4_ballroom1_timeline" href="#day4_ballroom1_time3" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
+										<a data-toggle="collapse" data-parent="#day4_auditorium1_timeline" href="#day4_auditorium1_time4" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>10:00 - 5:00 PM</strong>
+											<h6 class="title">Community Day Rooms</h6>
 										</a>
-										<div id="day4_ballroom1_time3" class="panel-collapse collapse in schedule-item-body">
+										<div id="day4_auditorium1_time4" class="panel-collapse collapse schedule-item-body">
 											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
+												<p class="description">
+													Gobots and Other Flying Objects - The Hybrid Group : Mile High Ballroom 3a <br/>
+													Community Forum - Google : Mile High Ballroom 3b <br/>
+													Lightning Talks - Hosted by Mark Bates: Mile High Ballroom 3c <br/>
+												</p>
+												<strong class="highlight speaker-name">Michael Lambert</strong>
 											</article>
 										</div>
 									</div>
@@ -903,16 +843,99 @@
 									<!-- Lecture start -->
 									<div class="panel schedule-item">
 										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker4.jpg" alt="" class="img-responsive">
+											<img src="../assets/img/speakers/speaker1.jpg" alt="" class="img-responsive">
 										</div>
-										<a data-toggle="collapse" data-parent="#day4_ballroom1_timeline" href="#day4_ballroom1_time4" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
+										<a data-toggle="collapse" data-parent="#day4_auditorium1_timeline" href="#day4_auditorium1_time5" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>10:00 AM - 5:00 PM</strong>
+											<h6 class="title">Go Technologies with NATS and Minio</h6>
 										</a>
-										<div id="day4_ballroom1_time4" class="panel-collapse collapse in schedule-item-body">
+										<div id="day4_auditorium1_time5" class="panel-collapse collapse schedule-item-body">
 											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
+												<p class="description">Go Technologies with NATS and Minio <a href="https://www.eventbrite.com/e/gophercon-2017-apcera-nats-community-day-tickets-34719089732">RSVP HERE</a></p>
+												<strong class="highlight speaker-name">Mile High Ballroom 4a</strong>
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											<img src="../assets/img/speakers/speaker1.jpg" alt="" class="img-responsive">
+										</div>
+										<a data-toggle="collapse" data-parent="#day4_auditorium1_timeline" href="#day4_auditorium1_time6" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>12:30 PM - 1:30 PM</strong>
+											<h6 class="title">Lunch Break</h6>
+										</a>
+										<div id="day4_auditorium1_time6" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Lunch Break</p>
+												<strong class="highlight speaker-name">Mile High Ballroom Pre-Function Area</strong>
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											<img src="../assets/img/speakers/speaker1.jpg" alt="" class="img-responsive">
+										</div>
+										<a data-toggle="collapse" data-parent="#day4_auditorium1_timeline" href="#day4_auditorium1_time7" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>3:00 PM - 3:45 PM</strong>
+											<h6 class="title">Afternoon Break</h6>
+										</a>
+										<div id="day4_auditorium1_time7" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Afternoon Break</p>
+												<strong class="highlight speaker-name">Mile High Ballroom Pre-Function Area</strong>
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+								</div>
+								<!-- Accordion end -->
+
+							</div>
+							<!-- Auditorium 1 content end -->
+
+							<!-- Auditorium 2 content start -->
+							<div id="day4_auditorium2" class="tab-pane fade in">
+
+								<!-- Accordion start -->
+								<div class="panel-group" id="day4_auditorium2_timeline">
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											<img src="../assets/img/speakers/speaker1.jpg" alt="" class="img-responsive">
+										</div>
+										<a data-toggle="collapse" data-parent="#day4_auditorium2_timeline" href="#day4_auditorium2_time1" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>2:20 PM</strong>
+											<h6 class="title">How to organize great events<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day4_auditorium2_time1" class="panel-collapse collapse in schedule-item-body">
+											<article>
+												<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.</p>
+												<strong class="highlight speaker-name">Michael Lambert</strong>
+											</article>
+										</div>
+									</div>
+									<!-- Lecture end -->
+
+									<!-- Lecture start -->
+									<div class="panel schedule-item">
+										<div class="lecture-icon-wrapper">
+											<img src="../assets/img/speakers/speaker1.jpg" alt="" class="img-responsive">
+										</div>
+										<a data-toggle="collapse" data-parent="#day4_auditorium2_timeline" href="#day4_auditorium2_time2" class="schedule-item-toggle collapsed">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>5:40 PM</strong>
+											<h6 class="title">Scaling into crowded space<i class="icon icon-arrows-06"></i></h6>
+										</a>
+										<div id="day4_auditorium2_time2" class="panel-collapse collapse schedule-item-body">
+											<article>
+												<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.</p>
+												<strong class="highlight speaker-name">Michael Lambert</strong>
 											</article>
 										</div>
 									</div>
@@ -922,79 +945,27 @@
 								<!-- Accordion end -->
 
 							</div>
-							<!-- ballroom 1 content end -->
+							<!-- Auditorium 2 content end -->
 
-							<!-- ballroom 2 content start -->
-							<div id="day4_ballroom2" class="tab-pane fade in">
+							<!-- Auditorium 3 content start -->
+							<div id="day4_auditorium3" class="tab-pane fade in">
 
 								<!-- Accordion start -->
-								<div class="panel-group" id="day4_ballroom2_timeline">
+								<div class="panel-group" id="day4_auditorium3_timeline">
 
 									<!-- Lecture start -->
 									<div class="panel schedule-item">
 										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker1.jpg" alt="" class="img-responsive">
+											<img src="../assets/img/speakers/speaker1.jpg" alt="" class="img-responsive">
 										</div>
-										<a data-toggle="collapse" data-parent="#day4_ballroom2_timeline" href="#day4_ballroom2_time1" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
+										<a data-toggle="collapse" data-parent="#day4_auditorium3_timeline" href="#day4_auditorium3_time1" class="schedule-item-toggle">
+											<strong class="time highlight"><span class="icon icon-office-24"></span>2:20 PM</strong>
+											<h6 class="title">How to organize great events<i class="icon icon-arrows-06"></i></h6>
 										</a>
-										<div id="day4_ballroom2_time1" class="panel-collapse collapse in schedule-item-body">
+										<div id="day4_auditorium3_time1" class="panel-collapse collapse in schedule-item-body">
 											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker2.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day4_ballroom2_timeline" href="#day4_ballroom2_time2" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day4_ballroom2_time2" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker3.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day4_ballroom2_timeline" href="#day4_ballroom2_time3" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day4_ballroom2_time3" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker4.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day4_ballroom2_timeline" href="#day4_ballroom2_time4" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day4_ballroom2_time4" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
+												<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.</p>
+												<strong class="highlight speaker-name">Michael Lambert</strong>
 											</article>
 										</div>
 									</div>
@@ -1004,88 +975,7 @@
 								<!-- Accordion end -->
 
 							</div>
-							<!-- ballroom 2 content end -->
-
-							<!-- ballroom 3 content start -->
-							<div id="day4_ballroom3" class="tab-pane fade in">
-
-								<!-- Accordion start -->
-								<div class="panel-group" id="day4_ballroom3_timeline">
-
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker1.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day4_ballroom3_timeline" href="#day4_ballroom3_time1" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day4_ballroom3_time1" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker2.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day4_ballroom3_timeline" href="#day4_ballroom3_time2" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day4_ballroom3_time2" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker3.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day4_ballroom3_timeline" href="#day4_ballroom3_time3" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day4_ballroom3_time3" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-									<!-- Lecture start -->
-									<div class="panel schedule-item">
-										<div class="lecture-icon-wrapper">
-											<img src="/assets/public/img/speakers/speaker4.jpg" alt="" class="img-responsive">
-										</div>
-										<a data-toggle="collapse" data-parent="#day4_ballroom3_timeline" href="#day4_ballroom3_time4" class="schedule-item-toggle">
-											<strong class="time highlight"><span class="icon icon-office-24"></span>TBD</strong>
-											<h6 class="title">Coming Soon<i class="icon icon-arrows-06"></i></h6>
-										</a>
-										<div id="day4_ballroom3_time4" class="panel-collapse collapse in schedule-item-body">
-											<article>
-												<p class="description">Luctus at accumsan eget ut ante. Cras molestie sollicitudin. Ultricies et eros id quisque auctor. Per mus enim ac lorem integer. Erat netus id. Porta enim quis et elementum amet risus volutpat magna nec ac.</p>
-												<strong class="highlight speaker-name">Go Gopher</strong>
-											</article>
-										</div>
-									</div>
-									<!-- Lecture end -->
-
-								</div>
-								<!-- Accordion end -->
-
-							</div>
-							<!-- ballroom 3 content end -->
+							<!-- Auditorium 3 content end -->
 
 						</div>
 						<!-- Second level content end -->
@@ -1094,16 +984,10 @@
 					<!-- Day 4 content end -->
 
 
-		</div>
-		<!-- First level content end -->
+				</div>
+				<!-- First level content end -->
 
+			</div>
+			<!-- Schedule end -->
 		</div>
-		<!-- Schedule end -->
-
-		<div class="col-sm-12 align-center">
-			<a href="https://papercall.io/gophercon2017" target="_blank" class="btn btn-outline-clr btn-md">SUBMIT A PROPOSAL</a>
-		</div>
-
-		</div>
-
 	</section>

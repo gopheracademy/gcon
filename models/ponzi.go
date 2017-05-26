@@ -26,6 +26,9 @@ type PageListResult struct {
 type PresentationListResult struct {
 	Data []content.Presentation `json:"data"`
 }
+type SlotListResult struct {
+	Data []content.Slot `json:"data"`
+}
 type SpeakerListResult struct {
 	Data []content.Speaker `json:"data"`
 }
@@ -40,6 +43,7 @@ var eventCache *ponzi.Cache
 var hotelCache *ponzi.Cache
 var pageCache *ponzi.Cache
 var presentationCache *ponzi.Cache
+var slotCache *ponzi.Cache
 var speakerCache *ponzi.Cache
 var sponsorCache *ponzi.Cache
 var workshopCache *ponzi.Cache
@@ -62,6 +66,11 @@ func initPageCache() {
 func initPresentationCache() {
 	if presentationCache == nil {
 		presentationCache = ponzi.New(BaseURL, 1*time.Minute, 30*time.Second)
+	}
+}
+func initSlotCache() {
+	if slotCache == nil {
+		slotCache = ponzi.New(BaseURL, 1*time.Minute, 30*time.Second)
 	}
 }
 func initSpeakerCache() {
@@ -128,6 +137,19 @@ func GetPresentation(id int) (content.Presentation, error) {
 	}
 	if len(sp.Data) == 0 {
 		return content.Presentation{}, errors.New("Not Found")
+	}
+	return sp.Data[0], err
+
+}
+func GetSlot(id int) (content.Slot, error) {
+	initSlotCache()
+	var sp SlotListResult
+	err := slotCache.Get(id, "Slot", &sp)
+	if err != nil {
+		return content.Slot{}, err
+	}
+	if len(sp.Data) == 0 {
+		return content.Slot{}, errors.New("Not Found")
 	}
 	return sp.Data[0], err
 
@@ -224,6 +246,19 @@ func GetPresentationBySlug(slug string) (content.Presentation, error) {
 	return sp.Data[0], err
 
 }
+func GetSlotBySlug(slug string) (content.Slot, error) {
+	initSlotCache()
+	var sp SlotListResult
+	err := slotCache.GetBySlug(slug, "Slot", &sp)
+	if err != nil {
+		return content.Slot{}, err
+	}
+	if len(sp.Data) == 0 {
+		return content.Slot{}, errors.New("Not Found")
+	}
+	return sp.Data[0], err
+
+}
 func GetSpeakerBySlug(slug string) (content.Speaker, error) {
 	initSpeakerCache()
 	var sp SpeakerListResult
@@ -312,6 +347,19 @@ func GetPresentationList() ([]content.Presentation, error) {
 	}
 	if len(sp.Data) == 0 {
 		return []content.Presentation{}, errors.New("Not Found")
+	}
+	return sp.Data, err
+
+}
+func GetSlotList() ([]content.Slot, error) {
+	initSlotCache()
+	var sp SlotListResult
+	err := slotCache.GetAll("Slot", &sp)
+	if err != nil {
+		return []content.Slot{}, err
+	}
+	if len(sp.Data) == 0 {
+		return []content.Slot{}, errors.New("Not Found")
 	}
 	return sp.Data, err
 

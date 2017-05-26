@@ -1,18 +1,47 @@
 package actions
 
-import "github.com/gobuffalo/buffalo"
+import (
+	"sort"
+	"github.com/gobuffalo/buffalo"
+	"github.com/gopheracademy/gcon/models"
+)
 
-type ScheduleResource struct {
-	buffalo.Resource
+func ScheduleHandler(c buffalo.Context) error {
+
+	presentations := models.GetPresentations()
+	c.Set("presentations", presentations)
+
+	workshops := models.GetWorkshops()
+	c.Set("workshops", workshops)
+
+	dayone, daytwo := byDays(presentations)
+
+	sort.Slice(dayone, func(i, j int) bool { return dayone[i].Slot.Number < dayone[j].Slot.Number})
+	sort.Slice(daytwo, func(i, j int) bool { return daytwo[i].Slot.Number < daytwo[j].Slot.Number})
+
+	c.Set("dayone", dayone)
+	c.Set("daytwo", daytwo)
+
+	return c.Render(200, publicR.HTML("schedule.html"))
 }
 
-// List default implementation.
-func (v *ScheduleResource) List(c buffalo.Context) error {
-	return c.Render(200, publicR.HTML("soon.html"))
 
-}
+func byDays(p []models.Presentation) ([]models.Presentation, []models.Presentation) {
 
-// Show default implementation.
-func (v *ScheduleResource) Show(c buffalo.Context) error {
-	return c.Render(200, publicR.String("Schedule#Show"))
+	var day1 []models.Presentation
+	var day2 []models.Presentation
+
+	for _, pres := range p {
+		if pres.Presentation.Day == 1 {
+			day1=append(day1,pres)
+		}
+
+		if pres.Presentation.Day == 2 {
+			day2=append(day2,pres)
+		}
+	}
+
+	return day1, day2
+
+
 }
