@@ -26,7 +26,6 @@ func App() *buffalo.App {
 	}
 	app.Use(middleware.PopTransaction(models.DB))
 	app.ServeFiles("/assets", assetsPath())
-	app.GET("/", HomeHandler)
 	app.GET("/about/{slug}", AboutHandler)
 	app.GET("/events/{slug}", EventHandler)
 	app.GET("/hotels", HotelsHandler)
@@ -38,6 +37,7 @@ func App() *buffalo.App {
 	adm.GET("/index", AdminHandler)
 	adm.GET("/login", LoginHandler)
 	adm.POST("/login", AuthHandler)
+	app.GET("/", HomeHandler)
 	adm.Use(authMiddleware())
 	adm.Middleware.Skip(authMiddleware(), AuthHandler, LoginHandler)
 
