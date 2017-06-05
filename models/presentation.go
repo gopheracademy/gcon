@@ -35,6 +35,9 @@ func GetFullPresentation(id int) (Presentation, error) {
 		}
 		p.Speakers = append(p.Speakers, sp)
 	}
+	sid, err := getID(p.Presentation.Slot)
+	slot, err := GetSlot(sid)
+	p.Slot = slot
 
 	return p, nil
 }
@@ -51,6 +54,13 @@ func GetPresentations() []Presentation {
 	for _, p := range pl {
 		var pr Presentation
 		pr.Presentation = p
+		sid, err := getID(pr.Presentation.Slot)
+		slot, err := GetSlot(sid)
+
+		if err != nil {
+			fmt.Println(err, sid, slot)
+		}
+		pr.Slot = slot
 		for _, s := range p.Speakers {
 			id, err := getID(s)
 			if err != nil {
