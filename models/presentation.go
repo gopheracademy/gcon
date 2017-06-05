@@ -55,6 +55,10 @@ func GetPresentations() []Presentation {
 		var pr Presentation
 		pr.Presentation = p
 		sid, err := getID(pr.Presentation.Slot)
+		if err != nil {
+			fmt.Printf("no id for presentation [%v]. error: %s\n", pr.Presentation.Slot, err)
+			continue
+		}
 		slot, err := GetSlot(sid)
 
 		if err != nil {
