@@ -1,6 +1,7 @@
 package models
 
 import (
+	"errors"
 	"net/url"
 	"strconv"
 
@@ -46,7 +47,7 @@ func getID(s string) (int, error) {
 	vals := u.Query()
 	ii, ok := vals["id"]
 	if !ok {
-		return 0, err
+		return 0, errors.New("error: id field not present in url map")
 	}
 	return strconv.Atoi(ii[0])
 }
