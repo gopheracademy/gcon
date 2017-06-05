@@ -6,10 +6,11 @@
 package models
 
 import (
+	"time"
+
 	"github.com/bketelsen/ponzi"
 	"github.com/gopheracademy/gccms/content"
 	"github.com/pkg/errors"
-	"time"
 )
 
 var BaseURL string
