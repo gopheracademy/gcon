@@ -297,7 +297,7 @@
 										</a>
 										<div id="day2_auditorium2_time<%=i%>" class="panel-collapse collapse in schedule-item-body">
 											<article>
-												<p class="description"><%= p.Presentation.LongDescription %> </p>
+												<p class="description"><%= markdown(p.Presentation.LongDescription) %> </p>
 												<%= for (speaker) in p.Speakers {  %>
 													<strong class="highlight speaker-name"><%= speaker.FirstName %> <%= speaker.LastName %></strong>
 												<% } %>
