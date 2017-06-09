@@ -2,11 +2,11 @@
 
 
 		<div class="container">
-		
+
 				<article>
 					<h6><span class="highlight"><%= event.Name %></span></h6>
 					<h6><%= event.ShortDescription %> </h6>
-					<p class="align-left"><%=  event.LongDescription %> </p>
+					<p class="align-left"><%= markdown(event.LongDescription) %> </p>
 					<br />
 
 				</article>
