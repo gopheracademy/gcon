@@ -59,6 +59,10 @@
 
 				<%= for (sponsor) in sponsors.Bronze { %> 
         <div class="sponsor inline"><a href="<% sponsor.Website %>"><img src="https://cms.gophercon.com<%= sponsor.LogoURL %>" alt="<%= sponsor.Name %>" /></a></div>
+
+					<%= if(sponsor.ID == 34) { %> 
+					<h6 class="heading-alt"><a href="/sponsors/<%= sponsor.ID %>">Sticker Swag Partner</a></h6>
+					<% } %>	
 				<% } %>
 			</div>
 
