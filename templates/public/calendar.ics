@@ -3,8 +3,7 @@ VERSION:2.0
 PRODID:-//gophercon//speaker calendar//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-<%= for (i,w) in workshops { %>
-BEGIN:VEVENT
+<%= for (i,w) in workshops { %>BEGIN:VEVENT
 ORGANIZER;CN="GopherCon":mailto:gophercon@gopheracademy.com
 SUMMARY:<%= w.Workshop.Title %>
 UID:<%= w.Workshop.Item.UUID %>
@@ -15,10 +14,8 @@ DTSTART;TZID=America/Denver:20170712T090000
 DTEND;TZID=America/Denver:20170712T170000
 LOCATION:Main Ballroom
 END:VEVENT
-<% end %>
-
-<%= for (i,p) in presentations { %>
-BEGIN:VEVENT
+<% } %>
+<%= for (i,p) in presentations { %>BEGIN:VEVENT
 ORGANIZER;CN="GopherCon":mailto:gophercon@gopheracademy.com
 SUMMARY:<%= p.Presentation.Title %>
 UID:<%= p.Presentation.Item.UUID %>
@@ -27,7 +24,7 @@ STATUS:CONFIRMED
 DTSTAMP:20060102T150405Z
 DTSTART;TZID=America/Denver:20060102T150405
 DTEND;TZID=America/Denver:20060102T150405
-LOCATION:Main Ballroom
+LOCATION:<%= p.Presentation.Track %>
 END:VEVENT
-<% end %>
+<% } %>
 END:VCALENDAR
