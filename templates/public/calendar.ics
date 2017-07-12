@@ -1,6 +1,6 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//elm-conf//speaker calendar//EN
+PRODID:-//gophercon//speaker calendar//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 <%= for (i,w) in workshops { %>
@@ -8,6 +8,20 @@ BEGIN:VEVENT
 ORGANIZER;CN="GopherCon":mailto:gophercon@gopheracademy.com
 SUMMARY:<%= w.Workshop.Title %>
 UID:<%= w.Workshop.Item.UUID %>
+SEQUENCE:0
+STATUS:CONFIRMED
+DTSTAMP:20170712T000000
+DTSTART;TZID=America/Denver:20170712T090000
+DTEND;TZID=America/Denver:20170712T170000
+LOCATION:Main Ballroom
+END:VEVENT
+<% end %>
+
+<%= for (i,p) in presentations { %>
+BEGIN:VEVENT
+ORGANIZER;CN="GopherCon":mailto:gophercon@gopheracademy.com
+SUMMARY:<%= p.Presentation.Title %>
+UID:<%= p.Presentation.Item.UUID %>
 SEQUENCE:0
 STATUS:CONFIRMED
 DTSTAMP:20060102T150405Z

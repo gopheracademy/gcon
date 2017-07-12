@@ -2,6 +2,7 @@ package models
 
 import (
 	"fmt"
+	"time"
 
 	"github.com/gopheracademy/gccms/content"
 )
@@ -9,6 +10,13 @@ import (
 type Workshop struct {
 	Workshop content.Workshop
 	Speakers []content.Speaker
+}
+
+func (w Workshop) FormattedDate() string {
+	fmt.Println("Get date")
+
+	fmt.Println(time.Now().Format("20060102T150405Z"))
+	return time.Now().Format("20060102T150405Z")
 }
 
 // GetFullWorkshop returns a full presentation, with
