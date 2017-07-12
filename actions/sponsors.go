@@ -1,6 +1,8 @@
 package actions
 
 import (
+	"strconv"
+
 	"github.com/gobuffalo/buffalo"
 	"github.com/gopheracademy/gcon/models"
 )
@@ -27,7 +29,8 @@ func (v *SponsorResource) List(c buffalo.Context) error {
 
 // Show default implementation.
 func (v *SponsorResource) Show(c buffalo.Context) error {
-	id, err := c.ParamInt("sponsor_id")
+	ids := c.Param("speaker_ID")
+	id, err := strconv.Atoi(ids)
 	if err != nil {
 		return c.Error(400, err)
 	}

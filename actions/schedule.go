@@ -7,6 +7,27 @@ import (
 	"github.com/gopheracademy/gcon/models"
 )
 
+func CalendarHandler(c buffalo.Context) error {
+
+	presentations := models.GetPresentations()
+	c.Set("presentations", presentations)
+
+	workshops := models.GetWorkshops()
+	c.Set("workshops", workshops)
+
+	dayone, daytwo := byDays(presentations)
+
+	sort.Slice(dayone, func(i, j int) bool { return dayone[i].Slot.Number < dayone[j].Slot.Number })
+	sort.Slice(daytwo, func(i, j int) bool { return daytwo[i].Slot.Number < daytwo[j].Slot.Number })
+
+	c.Set("dayone", dayone)
+	c.Set("daytwo", daytwo)
+
+	publicR.HTMLLayout = "main.html"
+	//return c.Render(200, publicR.HTML("schedule.html"))
+	return c.Render(200, publicR.Template("text/calendar", "calendar.ics"))
+}
+
 func ScheduleHandler(c buffalo.Context) error {
 
 	presentations := models.GetPresentations()

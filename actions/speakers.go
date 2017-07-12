@@ -1,6 +1,8 @@
 package actions
 
 import (
+	"strconv"
+
 	"github.com/gobuffalo/buffalo"
 	"github.com/gopheracademy/gcon/models"
 )
@@ -23,7 +25,8 @@ func (v *SpeakersResource) List(c buffalo.Context) error {
 // at /speakers but actually getting presentations.  This is important if your
 // don't want to be confused at some future point.
 func (v *SpeakersResource) Show(c buffalo.Context) error {
-	id, err := c.ParamInt("speaker_id")
+	ids := c.Param("speaker_ID")
+	id, err := strconv.Atoi(ids)
 	if err != nil {
 		return c.Error(400, err)
 	}

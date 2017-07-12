@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//elm-conf//speaker calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+<%= for (i,w) in workshops { %>
+BEGIN:VEVENT
+ORGANIZER;CN="GopherCon":mailto:gophercon@gopheracademy.com
+SUMMARY:<%= w.Workshop.Title %>
+UID:<%= w.Workshop.Item.UUID %>
+SEQUENCE:0
+STATUS:CONFIRMED
+DTSTAMP:20060102T150405Z
+DTSTART;TZID=America/Denver:20060102T150405
+DTEND;TZID=America/Denver:20060102T150405
+LOCATION:Main Ballroom
+END:VEVENT
+<% end %>
+END:VCALENDAR
